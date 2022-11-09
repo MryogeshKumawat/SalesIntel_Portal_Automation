@@ -1,4 +1,4 @@
-Feature: Validate Search By Job Title
+#Feature: Validate Search By Job Title
 
 #  @First @Sanity
 #  Scenario: To validate SalesIntel application Valid User Username and Valid Password

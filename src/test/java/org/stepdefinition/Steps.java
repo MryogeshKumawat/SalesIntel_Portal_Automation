@@ -164,13 +164,13 @@ public class Steps extends Global {
 	public void i_enter_the_Universal_LastName() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getLastName(), ReadDatafromJson("Contact_Name", "UniversalLastName"));
 //		enterData(PageObjectManager.getInstance().getLoginPage().getFirstName(),readData(0,1));
-		log.info("Enter the Universal Last Name");
+		log.info("Enter the Last Name");
 	}
 
 	@Then("Click on Search Button")
 	public void I_Click_Search_Button() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getSearchButton());
-		log.info("User click the Contact Name Button");
+		log.info("User click on Search Button");
 		Thread.sleep(10000);
 	}
 	@Then("Click on Company Search Button")
@@ -646,14 +646,15 @@ public class Steps extends Global {
 		Thread.sleep(3000);
 	}
 
-	@And("Click On Contact Universal Search")
+	@And("Click On Searched Contact")
 	public void I_Click_Contact_Universal_search() throws Throwable {
-		String UniversalContactsearchname = ReadDatafromJson("Contact_Name", "UniversalSearch");
-//		driver.findElement(By.xpath("//*[contains(text(),\'"+Contactsearchname1+"\')]"));
-		clickButton(driver.findElement(By.xpath("//*[contains(text(),\'" + UniversalContactsearchname + "\')]")));
-		System.out.println("The Label Name is: " + driver.findElement(By.xpath("//*[contains(text(),\'" + UniversalContactsearchname + "\')]")).getText());
-//		clickButton(PageObjectManager.getInstance().getLoginPage().getContactSearch1());
-		log.info("User click Click On Login Button");
+		clickButton(driver.findElement(By.xpath("(//span[@placement='auto' and contains(text(),'Kirst')])[1]")));
+//		String UniversalContactsearchname = ReadDatafromJson("Contact_Name", "UniversalSearch");
+////		driver.findElement(By.xpath("//*[contains(text(),\'"+Contactsearchname1+"\')]"));
+//		clickButton(driver.findElement(By.xpath("//*[contains(text(),\'" + UniversalContactsearchname + "\')]")));
+//		System.out.println("The Label Name is: " + driver.findElement(By.xpath("//*[contains(text(),\'" + UniversalContactsearchname + "\')]")).getText());
+////		clickButton(PageObjectManager.getInstance().getLoginPage().getContactSearch1());
+		log.info("User click Click On Searched Contact for Request Verification");
 		Thread.sleep(3000);
 	}
 
@@ -666,6 +667,7 @@ public class Steps extends Global {
 
 	@When("Verify Request Verification Button is displayed")
 	public void I_verify_Request_Verification_Button() throws Throwable {
+		Thread.sleep(3000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().RequestVerificationButton().isDisplayed());
 		log.info("Verify Request Verification Button is displayed");
 		Thread.sleep(3000);
@@ -673,9 +675,9 @@ public class Steps extends Global {
 
 	@When("Verify RoD Tab is displayed")
 	public void I_verify_RoD_Tab() throws Throwable {
+		Thread.sleep(3000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getRoDTab().isDisplayed());
 		log.info("Verify Request Verification Button is displayed");
-		Thread.sleep(3000);
 	}
 
 	@And("Click On RoD Tab")
@@ -688,7 +690,7 @@ public class Steps extends Global {
 	public void I_verify_Request_Verification_Status_Button() throws Throwable {
 		Thread.sleep(10000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().RequestVerificationButton().isDisplayed());
-		log.info("Verify Request Verification Button is displayed");
+		log.info("Verify Request Verification is clicked");
 	}
 	@And("Click On Request Verification Button")
 	public void I_Click_Request_Verification() throws Throwable {
@@ -1039,24 +1041,33 @@ public class Steps extends Global {
 		log.info("Click On Delete Contact List");
 	}
 
+	@And("Verify Requested ROD is Displayed in ROD tab")
+	public void I_verify_Requested_ROD_In_ROD_Tab() throws Throwable {
+		Thread.sleep(10000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().RODreqestedInRODtab().isDisplayed());
+		log.info("User Verified Requested ROD in ROD Tab");
+	}
+
+
 	@When("Click On Setting Options")
 	public void I_click_welcome_Logout() throws Throwable {
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getWelcomeTextforLogout());
 		log.info("Click On Delete Contact List");
 	}
 
 	@And("Click On Logout Options")
 	public void I_click_Logout() throws Throwable {
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLogout());
-		log.info("Click On Delete Contact List");
+		log.info("Click On Logout Button");
 	}
 	@And("Click On Delete Company List")
 	public void I_delete_company_list() throws Throwable {
 		Thread.sleep(5000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getDeletecontactList());
 		log.info("Click On Delete Company List");
+		Thread.sleep(10000);
 	}
 	@Then("Click On Contact Tab")
 	public void I_contact_Tab() throws Throwable {

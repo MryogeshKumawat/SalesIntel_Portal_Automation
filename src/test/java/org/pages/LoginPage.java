@@ -18,10 +18,13 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//input[@type='text']")
 	private WebElement userName;
 
-	@FindBy(xpath = "//button[@type='button' and contains(text(),'Request')]")
+	@FindBy(xpath = "(//button[@type='button' and contains(text(),'Request')])[1]")
 	private WebElement RequestVerificationButton;
 
-	@FindBy(xpath = "//a[@class='nav-link active' and contains(text(),'RoD')]")
+	@FindBy(xpath = "//div[contains(text(),'Jonathan Kirst')]")
+	private WebElement RODreqestedInRODtab;
+
+	@FindBy(xpath = "//a[@class='nav-link' and contains(text(),'RoD')]")
 	private WebElement RoDTab;
 
 	@FindBy(xpath = "//input[@type='password']")
@@ -473,6 +476,10 @@ public class LoginPage extends Global {
 
 	public WebElement RequestVerificationButton() {
 		return RequestVerificationButton;
+	}
+
+	public WebElement RODreqestedInRODtab(){
+		return RODreqestedInRODtab;
 	}
 	public WebElement getRoDTab() {
 		return RoDTab;

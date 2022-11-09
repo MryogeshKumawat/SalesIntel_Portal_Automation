@@ -200,7 +200,7 @@ public class Global {
 	public static void generateJVMReport(String jsonFile) {
 		Configuration configuration = new Configuration(
 				new File(System.getProperty("user.dir") + "\\src\\test\\resources\\Reports\\CucumberReports"),
-				"Salesforce Site Automation");
+				"SalesIntel Site Automation");
 		configuration.addClassifications("Browser", "Chrome");
 		configuration.addClassifications("OS Name", System.getProperty("os.name"));
 		try {

@@ -22,7 +22,7 @@ Feature: Validate RoD Contacts Verification
     When Enter the Universal First Name
     And Enter the Universal Last Name
     And Click on Search Button
-    And Click On Contact Universal Search
+    And Click On Searched Contact
 
   @First @Smoke @Reg
   @Sanity
@@ -38,8 +38,9 @@ Feature: Validate RoD Contacts Verification
   @First @Smoke @Reg
   @Sanity
   Scenario: To validate application Contact Requested in ROD Section
-#     Then Verify RoD Tab is displayed
-#     And Click On RoD Tab
+     Then Verify RoD Tab is displayed
+     And Click On RoD Tab
+    And Verify Requested ROD is Displayed in ROD tab
      When Click On Setting Options
 
 #  @First @Smoke @Reg

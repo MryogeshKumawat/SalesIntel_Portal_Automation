@@ -1,7 +1,7 @@
 Feature: Validate Search By Job Department
 
   @First @Sanity
-  Scenario: To validate SalesIntel application Valid User Username and Valid Password
+  Scenario: To validate SalesIntel application login Valid User Username and Valid Password
     And Enter Valid Username
     And Enter Valid Password
     And Click On Login Button

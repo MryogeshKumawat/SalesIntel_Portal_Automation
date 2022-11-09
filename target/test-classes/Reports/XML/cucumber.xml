@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="68" time="1195.700617">
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Launching application" time="12.339723">
+<testsuite failures="8" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="68" time="1049.442535">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Launching application" time="8.895843">
         <system-out><![CDATA[Given Launch the url........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login Screen Content" time="0.609423">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login Screen Content" time="0.579107">
         <system-out><![CDATA[Then Validate Login Page Title is displayed.................................passed
 And Validate Email Field is displayed.......................................passed
 And Validate Password Field is displayed....................................passed
@@ -14,20 +14,20 @@ And Validate FAQ Link is displayed..........................................pass
 And Validate Login Button is displayed......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Tapping only Login Button" time="0.45625">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Tapping only Login Button" time="0.314409">
         <system-out><![CDATA[When Click On Login Button..................................................passed
 Then Validate Error Text when Tried with Invalid Username and Invalid Password.passed
 And Validate Error Text when Tried with Invalid Password and Invalid Username.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Valid Password" time="0.716128">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Valid Password" time="0.4459">
         <system-out><![CDATA[When Enter Invalid Username.................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 Then Validate Error Text when Tried with Invalid Username and Valid Password.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Valid Username and Invalid Password" time="0.698872">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Valid Username and Invalid Password" time="0.431312">
         <system-out><![CDATA[When Clear the Text in Username Field.......................................passed
 And Clear the Text in Password Field........................................passed
 And Enter Valid Username....................................................passed
@@ -35,7 +35,7 @@ And Enter Invalid Password..................................................pass
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Invalid Password" time="0.804425">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Invalid Password" time="0.421477">
         <system-out><![CDATA[When Clear the Text in Username Field.......................................passed
 And Clear the Text in Password Field........................................passed
 And Enter Invalid Username..................................................passed
@@ -44,7 +44,7 @@ And Click On Login Button...................................................pass
 Then Validate Error Text when Tried with Invalid Username and Valid Password.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Forget Password" time="16.859334">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Forget Password" time="16.510642">
         <system-out><![CDATA[When Click on Forget Password...............................................passed
 Then Verify Forget Email Address Field is displayed.........................passed
 When Enter Forget Email Address.............................................passed
@@ -52,11 +52,11 @@ Then Verify Reset Password Button is displayed..............................pass
 When Click On Reset Password Button.........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Remember Me" time="0.292027">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Remember Me" time="0.25249">
         <system-out><![CDATA[When Click on Remember Me...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.876953">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.51754">
         <system-out><![CDATA[When Click on Remember Me...................................................passed
 And Clear the Text in Username Field........................................passed
 And Clear the Text in Password Field........................................passed
@@ -65,18 +65,18 @@ And Enter Valid Password....................................................pass
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate application Logout" time="15.48623">
+    <testcase classname="Validate application login Page" name="To validate application Logout" time="6.579132">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.591599">
+    <testcase classname="Validate Search By Contact Name" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.418261">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search Page Content is displayed" time="45.715305">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search Page Content is displayed" time="45.645482">
         <system-out><![CDATA[Then Click on Contact Radio Button..........................................passed
 When Click on Search Button.................................................passed
 And Verify Contact Name is displayed........................................passed
@@ -85,11 +85,11 @@ Then Verify First Name is displayed.........................................pass
 And Verify Last Name is displayed...........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search without Firstname and LastName" time="10.361388">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search without Firstname and LastName" time="10.30998">
         <system-out><![CDATA[When Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search by FirstName and LastName using Integer Value" time="31.712568">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search by FirstName and LastName using Integer Value" time="31.74368">
         <system-out><![CDATA[When Click on Contact Name Button...........................................passed
 And Enter the First Name with Integer Value.................................passed
 And Enter the Last Name with Integer Value..................................passed
@@ -97,7 +97,7 @@ And Click on Search Button..................................................pass
 Then Verify Error Message is displayed When search with FirstName and LastName only Integer.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search by Valid FirstName and LastName" time="10.844072">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search by Valid FirstName and LastName" time="10.795349">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the First Name....................................................passed
@@ -108,7 +108,7 @@ When Clear the Text in First Name Field.....................................pass
 And Clear the Text in Last Name Field.......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into New Contact List" time="37.424073">
+    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into New Contact List" time="37.249623">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click on Contact Name Button...........................................passed
@@ -124,12 +124,12 @@ When Enter New Contact List.................................................pass
 And Click On Create New Contact List Save Button............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Contact into the Contact List" time="10.57961">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Contact into the Contact List" time="10.577463">
         <system-out><![CDATA[When Click On List Tab......................................................passed
 Then Select Preview Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into Existing Contact List" time="37.431329">
+    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into Existing Contact List" time="37.24608">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click on Contact Name Button...........................................passed
@@ -144,13 +144,13 @@ And Click on Contact List Drop Down Option..................................pass
 And Click On Add Contact List Save Button...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Delete Contact List" time="15.677276">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Delete Contact List" time="15.661154">
         <system-out><![CDATA[And Click On List Tab.......................................................passed
 And Delete Contact List.....................................................passed
 And Click On Delete Contact List............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact1 Search by Valid FirstName and LastName" time="25.118958">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact1 Search by Valid FirstName and LastName" time="24.873127">
         <system-out><![CDATA[Then Click On SalesIntel Tab................................................passed
 And Clear the Text in First Name Field......................................passed
 And Clear the Text in Last Name Field.......................................passed
@@ -161,7 +161,7 @@ And Click On Contact Search1................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact2 Search by Valid FirstName and LastName" time="16.900666">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact2 Search by Valid FirstName and LastName" time="16.838722">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name2............................................passed
@@ -171,7 +171,7 @@ And Click On Contact Search2................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact3 Search by Valid FirstName and LastName" time="16.708216">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact3 Search by Valid FirstName and LastName" time="16.855239">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name3............................................passed
@@ -181,7 +181,7 @@ And Click On Contact Search3................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact4 Search by Valid FirstName and LastName" time="16.700598">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact4 Search by Valid FirstName and LastName" time="16.831811">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name4............................................passed
@@ -191,7 +191,7 @@ And Click On Contact Search4................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact5 Search by Valid FirstName and LastName" time="16.737939">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact5 Search by Valid FirstName and LastName" time="16.792082">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name5............................................passed
@@ -201,23 +201,23 @@ And Click On Contact Search5................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Logout" time="15.520444">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Logout" time="6.576339">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.490008">
+    <testcase classname="Validate Search By Company" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.543211">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Search without Company Name" time="16.489207">
+    <testcase classname="Validate Search By Company" name="To validate application Search without Company Name" time="16.04958">
         <system-out><![CDATA[Then Click on Company Radio Button..........................................passed
 When Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Search by Valid Company Name" time="36.15183">
+    <testcase classname="Validate Search By Company" name="To validate application Search by Valid Company Name" time="36.26578">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click On Company.......................................................passed
@@ -226,7 +226,7 @@ And Click on Search Button..................................................pass
 And Validate Company Search Result..........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into New Company List" time="42.321971">
+    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into New Company List" time="42.797148">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click On Company.......................................................passed
@@ -241,7 +241,7 @@ When Enter New Company List.................................................pass
 And Click On Create New Company List Save Button............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into Existing Company List" time="48.108695">
+    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into Existing Company List" time="47.467129">
         <system-out><![CDATA[Then Click On SalesIntel Tab................................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -257,120 +257,336 @@ And Click on Company List Drop Down Option..................................pass
 And Click On Add Company List Save Button...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Delete Company List" time="15.799873">
+    <testcase classname="Validate Search By Company" name="To validate application Delete Company List" time="15.709928">
         <system-out><![CDATA[And Click On List Tab.......................................................passed
 And Delete Company List.....................................................passed
 And Click On Delete Company List............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Logout" time="15.522962">
+    <testcase classname="Validate Search By Company" name="To validate application Logout" time="4.578754">
+        <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-ldt-c174=&quot;&quot; dropdowntoggle=&quot;&quot; class=&quot;welcome-anchor-color text-decoration-none&quot; aria-haspopup=&quot;true&quot;&gt;...&lt;/span&gt; is not clickable at point (1426, 37). Other element would receive the click: &lt;div role=&quot;alertdialog&quot; aria-live=&quot;polite&quot; class=&quot;ng-tns-c91-3 toast-message ng-star-inserted&quot; style=&quot;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=107.0.5304.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e314a3fdbfee5b3271484079bd2a8019&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:75)&#13;&#10;&#9;at org.stepdefinition.Steps.I_click_welcome_Logout(Steps.java:1055)&#13;&#10;&#9;at ✽.Click On Setting Options(file:TC_03_Search_By_Company.feature:77)&#13;&#10;"><![CDATA[When Click On Setting Options...............................................failed
+And Click On Logout Options.................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span _ngcontent-ldt-c174="" dropdowntoggle="" class="welcome-anchor-color text-decoration-none" aria-haspopup="true">...</span> is not clickable at point (1426, 37). Other element would receive the click: <div role="alertdialog" aria-live="polite" class="ng-tns-c91-3 toast-message ng-star-inserted" style="">...</div>
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e314a3fdbfee5b3271484079bd2a8019
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:75)
+	at org.stepdefinition.Steps.I_click_welcome_Logout(Steps.java:1055)
+	at ✽.Click On Setting Options(file:TC_03_Search_By_Company.feature:77)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="20.523103">
+        <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=107.0.5304.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e314a3fdbfee5b3271484079bd2a8019&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)&#13;&#10;&#9;at org.base.Global.enterData(Global.java:71)&#13;&#10;&#9;at org.stepdefinition.Steps.i_enter_the_username(Steps.java:59)&#13;&#10;&#9;at ✽.Enter Valid Username(file:TC_04_Contact_Sort_List.feature:5)&#13;&#10;"><![CDATA[And Enter Valid Username....................................................failed
+And Enter Valid Password....................................................skipped
+And Click On Login Button...................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e314a3fdbfee5b3271484079bd2a8019
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
+	at org.base.Global.enterData(Global.java:71)
+	at org.stepdefinition.Steps.i_enter_the_username(Steps.java:59)
+	at ✽.Enter Valid Username(file:TC_04_Contact_Sort_List.feature:5)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="35.566412">
+        <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=107.0.5304.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e314a3fdbfee5b3271484079bd2a8019&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:75)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Contact_Radio_Button(Steps.java:103)&#13;&#10;&#9;at ✽.Click on Contact Radio Button(file:TC_04_Contact_Sort_List.feature:13)&#13;&#10;"><![CDATA[Then Click on Contact Radio Button..........................................failed
+When Click on Search Button.................................................skipped
+And Click On Sort Icon For Display Contact based on Contact Name............skipped
+And Click On Sort Icon For Display Contact based on Contact Name............skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e314a3fdbfee5b3271484079bd2a8019
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:75)
+	at org.stepdefinition.Steps.I_Click_Contact_Radio_Button(Steps.java:103)
+	at ✽.Click on Contact Radio Button(file:TC_04_Contact_Sort_List.feature:13)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="20.44901">
+        <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=107.0.5304.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e314a3fdbfee5b3271484079bd2a8019&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:75)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)&#13;&#10;&#9;at ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:22)&#13;&#10;"><![CDATA[And Click on Search Button..................................................failed
+And Click On Sort Icon For Display Contact based on Job Title...............skipped
+And Click On Sort Icon For Display Contact based on Job Title...............skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e314a3fdbfee5b3271484079bd2a8019
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:75)
+	at org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)
+	at ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:22)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="20.522402">
+        <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=107.0.5304.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e314a3fdbfee5b3271484079bd2a8019&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:75)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)&#13;&#10;&#9;at ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:30)&#13;&#10;"><![CDATA[And Click on Search Button..................................................failed
+And Click On Sort Icon For Display Contact based on Job Level...............skipped
+And Click On Sort Icon For Display Contact based on Job Level...............skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e314a3fdbfee5b3271484079bd2a8019
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:75)
+	at org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)
+	at ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:30)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="20.519367">
+        <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=107.0.5304.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e314a3fdbfee5b3271484079bd2a8019&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:75)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)&#13;&#10;&#9;at ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:38)&#13;&#10;"><![CDATA[And Click on Search Button..................................................failed
+And Click On Sort Icon For Display Contact based on Dept....................skipped
+And Click On Sort Icon For Display Contact based on Dept....................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e314a3fdbfee5b3271484079bd2a8019
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:75)
+	at org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)
+	at ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:38)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="20.558725">
+        <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=107.0.5304.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e314a3fdbfee5b3271484079bd2a8019&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:75)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)&#13;&#10;&#9;at ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:46)&#13;&#10;"><![CDATA[And Click on Search Button..................................................failed
+And Click On Sort Icon For Display Contact based on Comp....................skipped
+And Click On Sort Icon For Display Contact based on Comp....................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e314a3fdbfee5b3271484079bd2a8019
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:75)
+	at org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)
+	at ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:46)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="20.482732">
+        <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=107.0.5304.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e314a3fdbfee5b3271484079bd2a8019&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:75)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)&#13;&#10;&#9;at ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:54)&#13;&#10;"><![CDATA[And Click on Search Button..................................................failed
+And Click On Sort Icon For Display Contact based on Location................skipped
+And Click On Sort Icon For Display Contact based on Location................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e314a3fdbfee5b3271484079bd2a8019
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:75)
+	at org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)
+	at ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:54)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="6.504966">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.580464">
+    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.425484">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="60.730064">
-        <system-out><![CDATA[Then Click on Contact Radio Button..........................................passed
-When Click on Search Button.................................................passed
-And Click On Sort Icon For Display Contact based on Contact Name............passed
-And Click On Sort Icon For Display Contact based on Contact Name............passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="40.598635">
-        <system-out><![CDATA[And Click on Search Button..................................................passed
-And Click On Sort Icon For Display Contact based on Job Title...............passed
-And Click On Sort Icon For Display Contact based on Job Title...............passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.618053">
-        <system-out><![CDATA[And Click on Search Button..................................................passed
-And Click On Sort Icon For Display Contact based on Job Level...............passed
-And Click On Sort Icon For Display Contact based on Job Level...............passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="40.640942">
-        <system-out><![CDATA[And Click on Search Button..................................................passed
-And Click On Sort Icon For Display Contact based on Dept....................passed
-And Click On Sort Icon For Display Contact based on Dept....................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="40.621644">
-        <system-out><![CDATA[And Click on Search Button..................................................passed
-And Click On Sort Icon For Display Contact based on Comp....................passed
-And Click On Sort Icon For Display Contact based on Comp....................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="40.586996">
-        <system-out><![CDATA[And Click on Search Button..................................................passed
-And Click On Sort Icon For Display Contact based on Location................passed
-And Click On Sort Icon For Display Contact based on Location................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="15.482649">
-        <system-out><![CDATA[When Click On Setting Options...............................................passed
-And Click On Logout Options.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.500818">
-        <system-out><![CDATA[And Enter Valid Username....................................................passed
-And Enter Valid Password....................................................passed
-And Click On Login Button...................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="46.340055">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="46.330261">
         <system-out><![CDATA[Then Click on Company Radio Button..........................................passed
 When Click on Search Button.................................................passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="40.652766">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="40.770493">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.600315">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.848643">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="40.656333">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="40.863888">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Dept....................passed
 And Click On Sort Icon For Display Contact based on Dept....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="40.700281">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="40.898529">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Comp....................passed
 And Click On Sort Icon For Display Contact based on Comp....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="40.639817">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="40.820815">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Location................passed
 And Click On Sort Icon For Display Contact based on Location................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="15.481904">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="6.614073">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.498348">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.541999">
         <system-out><![CDATA[And Enter Universal Valid Username..........................................passed
 And Enter Universal Valid Password..........................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Search Contact for ROD" time="59.779328">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Search Contact for ROD" time="60.115472">
         <system-out><![CDATA[Then Click on Contact Radio Button for Universal User.......................passed
 When Click on Search Button.................................................passed
 Then Verify Contact Name is displayed.......................................passed
@@ -380,83 +596,86 @@ And Verify Last Name is displayed...........................................pass
 When Enter the Universal First Name.........................................passed
 And Enter the Universal Last Name...........................................passed
 And Click on Search Button..................................................passed
-And Click On Contact Universal Search.......................................passed
+And Click On Searched Contact...............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application &quot;Request Verification&quot;" time="6.38483">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application &quot;Request Verification&quot;" time="9.488757">
         <system-out><![CDATA[Then Verify Request Verification Button is displayed........................passed
 And Click On Request Verification Button....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application for Validate &quot;Requested Verification&quot;" time="10.283273">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application for Validate &quot;Requested Verification&quot;" time="10.294918">
         <system-out><![CDATA[Then Verify Requested Verification Status...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Contact Requested in ROD Section" time="10.388985">
-        <system-out><![CDATA[When Click On Setting Options...............................................passed
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Contact Requested in ROD Section" time="20.073177">
+        <system-out><![CDATA[Then Verify RoD Tab is displayed............................................passed
+And Click On RoD Tab........................................................passed
+And Verify Requested ROD is Displayed in ROD tab............................passed
+When Click On Setting Options...............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Logout" time="5.415323">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Logout" time="3.527318">
         <system-out><![CDATA[And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.500622">
+    <testcase classname="Validate Search By Job Department" name="To validate SalesIntel application Valid User Username and Valid Password" time="0.481188">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search By Job Department section contents" time="1.264603">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search By Job Department section contents" time="0.965711">
         <system-out><![CDATA[When Verify Role Section is displayed.......................................passed
 When Verify Job Level is displayed..........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search without Job Level" time="10.351511">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search without Job Level" time="10.381184">
         <system-out><![CDATA[Then Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Finance Job Department" time="0.369117">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Finance Job Department" time="0.432539">
         <system-out><![CDATA[Then Click On Job Level.....................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by HR Job Department" time="0.272971">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by HR Job Department" time="0.333178">
         <system-out><![CDATA[Then Click On Job Level.....................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by IT Job Department" time="0.293711">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by IT Job Department" time="0.36665">
         <system-out><![CDATA[Then Click On Job Level.....................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Legal Job Department" time="0.325202">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Legal Job Department" time="0.390127">
         <system-out><![CDATA[Then Click On Job Level.....................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Legal Job Department 2" time="0.294861">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Legal Job Department 2" time="0.317582">
         <system-out><![CDATA[Then Click On Job Level.....................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Operations Job Department" time="0.295605">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Operations Job Department" time="0.389878">
         <system-out><![CDATA[Then Click On Job Level.....................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Procurements Job Department" time="0.300065">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Procurements Job Department" time="0.309255">
         <system-out><![CDATA[Then Click On Job Level.....................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by R&amp;D Job Department" time="0.283489">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by R&amp;D Job Department" time="0.39951">
         <system-out><![CDATA[Then Click On Job Level.....................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Sales Job Department" time="0.287257">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Sales Job Department" time="0.345192">
         <system-out><![CDATA[Then Click On Job Level.....................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search By Job Level section contents" time="0.29229">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search By Job Level section contents" time="0.371731">
         <system-out><![CDATA[When Verify Role Section is displayed.......................................passed
 When Verify Job Level is displayed..........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search without Job Level" time="10.339538">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search without Job Level" time="10.444492">
         <system-out><![CDATA[Then Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
