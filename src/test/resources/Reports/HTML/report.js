@@ -765,6 +765,26 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
+  "name": "Click On Clear Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "Click on Contact Name Button",
   "keyword": "When "
 });
@@ -2518,8 +2538,7 @@ formatter.match({
   "location": "Steps.I_click_welcome_Logout()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan _ngcontent-ttu-c174\u003d\"\" dropdowntoggle\u003d\"\" class\u003d\"welcome-anchor-color text-decoration-none\" aria-haspopup\u003d\"true\"\u003e...\u003c/span\u003e is not clickable at point (1426, 37). Other element would receive the click: \u003cdiv role\u003d\"alertdialog\" aria-live\u003d\"polite\" class\u003d\"ng-tns-c91-3 toast-message ng-star-inserted\" style\u003d\"\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d107.0.5304.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.120\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cf4bc06c5edb12c87de06582adabe054\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:577)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:75)\r\n\tat org.stepdefinition.Steps.I_click_welcome_Logout(Steps.java:1055)\r\n\tat ✽.Click On Setting Options(file:TC_03_Search_By_Company.feature:77)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Logout Options",
@@ -2529,12 +2548,11 @@ formatter.match({
   "location": "Steps.I_click_Logout()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -2571,8 +2589,7 @@ formatter.match({
   "location": "Steps.i_enter_the_username()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d107.0.5304.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.120\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cf4bc06c5edb12c87de06582adabe054\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:577)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)\r\n\tat org.base.Global.enterData(Global.java:71)\r\n\tat org.stepdefinition.Steps.i_enter_the_username(Steps.java:59)\r\n\tat ✽.Enter Valid Username(file:TC_04_Contact_Sort_List.feature:5)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Enter Valid Password",
@@ -2582,7 +2599,7 @@ formatter.match({
   "location": "Steps.i_enter_the_password()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Login Button",
@@ -2592,12 +2609,11 @@ formatter.match({
   "location": "Steps.I_Click_Login_Button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -2628,8 +2644,7 @@ formatter.match({
   "location": "Steps.I_Click_Contact_Radio_Button()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d107.0.5304.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.120\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cf4bc06c5edb12c87de06582adabe054\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:577)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:75)\r\n\tat org.stepdefinition.Steps.I_Click_Contact_Radio_Button(Steps.java:103)\r\n\tat ✽.Click on Contact Radio Button(file:TC_04_Contact_Sort_List.feature:13)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click on Search Button",
@@ -2639,7 +2654,7 @@ formatter.match({
   "location": "Steps.I_Click_Search_Button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Contact Name",
@@ -2649,7 +2664,7 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Name()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Contact Name",
@@ -2659,12 +2674,11 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Name()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded2.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -2695,8 +2709,7 @@ formatter.match({
   "location": "Steps.I_Click_Search_Button()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d107.0.5304.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.120\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cf4bc06c5edb12c87de06582adabe054\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:577)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:75)\r\n\tat org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)\r\n\tat ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:22)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Job Title",
@@ -2706,7 +2719,7 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Job()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Job Title",
@@ -2716,12 +2729,11 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Job()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded3.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -2752,8 +2764,7 @@ formatter.match({
   "location": "Steps.I_Click_Search_Button()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d107.0.5304.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.120\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cf4bc06c5edb12c87de06582adabe054\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:577)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:75)\r\n\tat org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)\r\n\tat ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:30)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Job Level",
@@ -2763,7 +2774,7 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Level()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Job Level",
@@ -2773,12 +2784,11 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Level()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded4.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -2809,8 +2819,7 @@ formatter.match({
   "location": "Steps.I_Click_Search_Button()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d107.0.5304.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.120\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cf4bc06c5edb12c87de06582adabe054\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:577)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:75)\r\n\tat org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)\r\n\tat ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:38)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Dept",
@@ -2820,7 +2829,7 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Dept()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Dept",
@@ -2830,12 +2839,11 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Dept()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded5.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -2866,8 +2874,7 @@ formatter.match({
   "location": "Steps.I_Click_Search_Button()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d107.0.5304.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.120\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cf4bc06c5edb12c87de06582adabe054\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:577)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:75)\r\n\tat org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)\r\n\tat ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:46)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Comp",
@@ -2877,7 +2884,7 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Comp()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Comp",
@@ -2887,12 +2894,11 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Comp()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded6.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -2923,8 +2929,7 @@ formatter.match({
   "location": "Steps.I_Click_Search_Button()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d107.0.5304.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.120\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cf4bc06c5edb12c87de06582adabe054\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:577)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:75)\r\n\tat org.stepdefinition.Steps.I_Click_Search_Button(Steps.java:172)\r\n\tat ✽.Click on Search Button(file:TC_04_Contact_Sort_List.feature:54)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Location",
@@ -2934,7 +2939,7 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Location()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click On Sort Icon For Display Contact based on Location",
@@ -2944,12 +2949,11 @@ formatter.match({
   "location": "Steps.I_Click_Sort_Icon_Location()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded7.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -3925,11 +3929,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Verify Job Level is displayed",
-  "keyword": "When "
+  "name": "Verify Job Department is displayed",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_verify_Job_Level()"
+  "location": "Steps.I_verify_Job_Department()"
 });
 formatter.result({
   "status": "passed"
@@ -3941,7 +3945,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate application Search without Job Level",
+  "name": "To validate application Search without Job Department Filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -3976,7 +3980,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate application Search by Finance Job Department",
+  "name": "To validate application Search by Finance Job Department Filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -3995,11 +3999,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Job Level",
+  "name": "Click On Clear Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Job Department Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_JobDepartment_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Finance Department Filter",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_Click_Job_Level_Button()"
+  "location": "Steps.I_Click_Finance_Department_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Finance Department in Search Result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_Finance_Department_In_Result()"
 });
 formatter.result({
   "status": "passed"
@@ -4011,7 +4065,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate application Search by HR Job Department",
+  "name": "To validate application Search by HR Job Department Filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -4030,11 +4084,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Job Level",
+  "name": "Click On Clear Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Job Department Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_JobDepartment_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on HR Department Filter",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_Click_Job_Level_Button()"
+  "location": "Steps.I_Click_HR_Department_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check HR Department in Search Result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_Hr_Department_In_Result()"
 });
 formatter.result({
   "status": "passed"
@@ -4046,7 +4150,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate application Search by IT Job Department",
+  "name": "To validate application Search by IT Job Department Filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -4065,11 +4169,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Job Level",
+  "name": "Click On Clear Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Job Department Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_JobDepartment_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on IT Department Filter",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_Click_Job_Level_Button()"
+  "location": "Steps.I_Click_IT_Department_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check IT Department in Search Result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_IT_Department_In_Result()"
 });
 formatter.result({
   "status": "passed"
@@ -4081,7 +4235,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate application Search by Legal Job Department",
+  "name": "To validate application Search by Legal Job Department Filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -4100,11 +4254,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Job Level",
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Job Department Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_JobDepartment_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Legal Department Filter",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_Click_Job_Level_Button()"
+  "location": "Steps.I_Click_Legal_Department_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Legal Department in Search Result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_Legal_Department_In_Result()"
 });
 formatter.result({
   "status": "passed"
@@ -4116,7 +4320,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate application Search by Legal Job Department",
+  "name": "To validate application Search by Marketing Job Department Filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -4135,11 +4339,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Job Level",
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Job Department Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_JobDepartment_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Marketing Department Filter",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_Click_Job_Level_Button()"
+  "location": "Steps.I_Click_Marketing_Department_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Marketing Department in Search Result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_Marketing_Department_In_Result()"
 });
 formatter.result({
   "status": "passed"
@@ -4151,7 +4405,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate application Search by Operations Job Department",
+  "name": "To validate application Search by Operations Job Department Filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -4170,11 +4424,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Job Level",
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Job Department Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_JobDepartment_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Operations Department Filter",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_Click_Job_Level_Button()"
+  "location": "Steps.I_Click_Operations_Department_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Operations Department in Search Result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_Operations_Department_Result()"
 });
 formatter.result({
   "status": "passed"
@@ -4186,7 +4490,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate application Search by Procurements Job Department",
+  "name": "To validate application Search by Procurement Job Department Filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -4205,11 +4509,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Job Level",
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Job Department Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_JobDepartment_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Procurement Department Filter",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_Click_Job_Level_Button()"
+  "location": "Steps.I_Click_Procurement_Department_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Procurement Department in Search Result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_Procurement_Department_Result()"
 });
 formatter.result({
   "status": "passed"
@@ -4221,7 +4575,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate application Search by R\u0026D Job Department",
+  "name": "To validate application Search by R\u0026D Job Department Filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -4240,11 +4594,61 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Job Level",
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Job Department Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_JobDepartment_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on R\u0026D Department Filter",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_Click_Job_Level_Button()"
+  "location": "Steps.I_Click_RnD_Department_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check R\u0026D Department in Search Result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_RnD_Department_In_Result()"
 });
 formatter.result({
   "status": "passed"
@@ -4256,7 +4660,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate application Search by Sales Job Department",
+  "name": "To validate application Search by Sales Job Department Filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -4275,11 +4679,146 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Job Level",
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Job Department Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_JobDepartment_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Sales Department Filter",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_Click_Job_Level_Button()"
+  "location": "Steps.I_Click_Sales_Department_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Sales Department in Search Result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_Sales_Department_In_Search_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate application Search by Cross Functional Job Department Filter",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@First"
+    },
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Job Department Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_JobDepartment_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Cross Functional Department Filter",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Click_Cross_Functional_Department_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Cross Functional Department in Search Result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_Cross_Functional_Department_In_Result()"
 });
 formatter.result({
   "status": "passed"

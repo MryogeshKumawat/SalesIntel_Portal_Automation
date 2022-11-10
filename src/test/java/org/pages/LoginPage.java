@@ -1,9 +1,12 @@
 package org.pages;
 
+import org.apache.xmlbeans.impl.xb.xsdschema.FieldDocument;
 import org.base.Global;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.PrimitiveIterator;
 
 public class LoginPage extends Global {
 
@@ -122,6 +125,70 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//*[contains(text(),'Role')]")
 	private WebElement Rolesection;
+
+	@FindBy(xpath = "(//span[contains(text(),'Department')])[1]")
+	private WebElement DepartmentFilter;
+
+	@FindBy(xpath = "(//span[contains(text(),'Finance')])[2]")
+	private WebElement FinanceDepartmentFilter;
+
+	@FindBy(xpath = "//span[contains(text(),'HR')]")
+	private WebElement HrDepartmentFilter;
+
+
+	@FindBy(xpath = "(//span[contains(text(),'IT')])[1]")
+	private WebElement ITDepartmentFilter;
+
+	@FindBy(xpath = "//span[contains(text(),'Legal')]")
+	private WebElement LegalDepartmentFilter;
+
+	@FindBy(xpath = "(//span[contains(text(),'Marketing')])[1]")
+	private WebElement MarketingDepartmentFilter;
+
+	@FindBy(xpath = "(//div[contains(text(),'Marketing')])[1]")
+	private WebElement MarketingDepartmentInResult;
+
+	@FindBy(xpath = "(//div[contains(text(),'Legal')])[1]")
+	private WebElement LegalDepartmentInResult;
+
+	@FindBy(xpath = "(//div[contains(text(),'HR')])[1]")
+	private WebElement HrDepartmentInResult;
+
+	@FindBy(xpath = "(//div[contains(text(),'IT')])[1]")
+	private WebElement ITDepartmentInResult;
+
+	@FindBy(xpath = "(//div[contains(text(),'Finance')])[1]")
+	private WebElement FinanceDepartmentInResult;
+
+	@FindBy(xpath = "(//span[contains(text(),'Operations')])[1]")
+	private WebElement OperationsDepartmentFilter;
+
+	@FindBy(xpath = "(//div[contains(text(),'Operations')])[1]")
+	private WebElement OperationsDepartmentInResult;
+
+	@FindBy(xpath = "//span[contains(text(),'Procurement')]")
+	private WebElement ProcurementDepartmentFilter;
+
+	@FindBy(xpath = "(//div[contains(text(),'Procurement')])[1]")
+	private WebElement ProcurementDepartmentInResult;
+
+	@FindBy(xpath = "//span[contains(text(),'R&D')]")
+	private WebElement RndDepartmentFilter;
+
+	@FindBy(xpath = "(//div[contains(text(),'R&D')])[1]")
+	private WebElement RndDepartmentInResult;
+
+	@FindBy(xpath = "(//span[contains(text(),'Sales')])[1]")
+	private WebElement SalesDepartmentFilter;
+
+	@FindBy(xpath = "(//div[contains(text(),'Sales')])[1]")
+	private WebElement SalesDepartmentIn_Result;
+
+	@FindBy(xpath = "//span[contains(text(),'Cross Functional')]")
+	private WebElement CrossFunctionalDepartmentFilter;
+
+	@FindBy(xpath = "(//div[contains(text(),'Cross Function')])[1]")
+	private WebElement CrossFunctionalDepartmentInResult;
 
 	@FindBy(xpath = "(//span[contains(text(),'Job Level')]//following::input[@type='checkbox'])[1]")
 	private WebElement JobLevelSelectAll;
@@ -332,6 +399,85 @@ public class LoginPage extends Global {
 	public WebElement getRolesection() {
 		return Rolesection;
 	}
+	public WebElement getDepartmentFilter(){
+		return DepartmentFilter;
+	}
+	public WebElement getFinanceDepartmentFilter(){
+		return FinanceDepartmentFilter;
+	}
+
+	public WebElement getHrDepartmentFilter(){
+		return HrDepartmentFilter;
+	}
+
+	public WebElement getITDepartmentFilter(){
+		return ITDepartmentFilter;
+	}
+
+	public WebElement getLegalDepartmentFilter(){
+		return LegalDepartmentFilter;
+	}
+
+	public WebElement getMarketingDepartmentFilter(){
+		return MarketingDepartmentFilter;
+	}
+	public WebElement getMarketingDepartmentInResult(){
+		return MarketingDepartmentInResult;
+	}
+	public WebElement getLegalDepartmentInResult(){
+		return LegalDepartmentInResult;
+	}
+	public WebElement getITDepartmentInResult(){
+		return ITDepartmentInResult;
+	}
+
+	public WebElement getHrDepartmentInResult(){
+		return HrDepartmentInResult;
+	}
+
+	public WebElement getFinanceDepartmentInResult(){
+		return FinanceDepartmentInResult;
+	}
+
+	public WebElement getOperationsDepartmentFilter(){
+		return OperationsDepartmentFilter;
+	}
+
+	public WebElement getOperationsDepartmentInResult(){
+		return OperationsDepartmentInResult;
+	}
+
+	public WebElement getProcurementDepartmentFilter(){
+		return ProcurementDepartmentFilter;
+	}
+
+	public WebElement getProcurementDepartmentInResult(){
+		return ProcurementDepartmentInResult;
+	}
+
+	public WebElement getRndDepartmentFilter(){
+		return RndDepartmentFilter;
+	}
+
+	public WebElement getRndDepartmentInResult(){
+		return RndDepartmentInResult;
+	}
+
+	public WebElement getSalesDepartmentFilter(){
+		return SalesDepartmentFilter;
+	}
+
+	public WebElement getSalesDepartmentIn_Result(){
+		return SalesDepartmentIn_Result;
+	}
+
+	public WebElement getCrossFunctionalDepartmentFilter(){
+		return CrossFunctionalDepartmentFilter;
+	}
+	public WebElement getCrossFunctionalDepartmentInResult(){
+		return CrossFunctionalDepartmentInResult;
+	}
+
 	public WebElement getJobBoardMember() {
 		return JobBoardMember;
 	}

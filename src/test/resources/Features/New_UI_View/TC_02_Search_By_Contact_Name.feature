@@ -26,6 +26,8 @@ Feature: Validate Search By Contact Name
     When Click on Search Button
     #Then Verify Individual section is displayed
     And Verify Contact Name is displayed
+    And Click On Clear Button
+    And Click On Do Not Save Button
     When Click on Contact Name Button
     Then Verify First Name is displayed
     And Verify Last Name is displayed

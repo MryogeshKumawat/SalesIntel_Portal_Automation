@@ -215,6 +215,7 @@ public class Steps extends Global {
 	public void I_Click_Login_Button() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLoginButton());
 		log.info("User click Click On Login Button");
+		Thread.sleep(10000);
 	}
 
 	@Then("Validate Email Field is displayed")
@@ -484,6 +485,152 @@ public class Steps extends Global {
 		enterData(PageObjectManager.getInstance().getLoginPage().getContactEmailInputbox(),
 				ReadDatafromJson("Contact_Name", "InvalidEmail"));
 		log.info("Enter Invalid Contact Email Address");
+	}
+
+	@And("Verify Job Department is displayed")
+	public void I_verify_Job_Department() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getDepartmentFilter().isDisplayed());
+		log.info("Verify Department Filter is Displayed");
+	}
+
+	@And("Click on Job Department Filter")
+	public void I_Click_On_JobDepartment_Filter() throws Throwable {
+		Thread.sleep(5000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getDepartmentFilter());
+		Thread.sleep(5000);
+		log.info("User Click on Department Filter");
+	}
+
+	@Then("Click on Finance Department Filter")
+	public void I_Click_Finance_Department_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getFinanceDepartmentFilter());
+		Thread.sleep(2000);
+		log.info("User Click on Finance Department Filter");
+	}
+
+	@Then("Check Finance Department in Search Result")
+	public void I_Check_Finance_Department_In_Result() throws Throwable{
+		Thread.sleep(10000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getFinanceDepartmentInResult().isDisplayed());
+		log.info("User Check Finance Department in Search Result");
+	}
+
+	@Then("Click on HR Department Filter")
+	public void I_Click_HR_Department_Filter() throws Throwable{
+	clickButton(PageObjectManager.getInstance().getLoginPage().getHrDepartmentFilter());
+	Thread.sleep(2000);
+	log.info("User Click on HR Department Filter");
+	}
+
+	@Then("Check HR Department in Search Result")
+	public void I_Check_Hr_Department_In_Result() throws Throwable{
+		Thread.sleep(10000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHrDepartmentInResult().isDisplayed());
+		log.info("User Check HR Department in Search Result");
+	}
+
+	@Then("Click on IT Department Filter")
+	public void I_Click_IT_Department_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getITDepartmentFilter());
+		Thread.sleep(2000);
+		log.info("User Click on IT Department Filter");
+	}
+
+	@Then("Check IT Department in Search Result")
+	public void I_Check_IT_Department_In_Result() throws Throwable{
+		Thread.sleep(10000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getITDepartmentInResult().isDisplayed());
+		log.info("User Check IT Department in Search Result");
+	}
+
+	@Then("Click on Legal Department Filter")
+	public void I_Click_Legal_Department_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLegalDepartmentFilter());
+		log.info("Click on Legal Department Filter");
+	}
+
+	@Then("Check Legal Department in Search Result")
+	public void I_Check_Legal_Department_In_Result() throws Throwable{
+		Thread.sleep(10000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getLegalDepartmentInResult().isDisplayed());
+		log.info("User Check Legal Department in Search Result");
+	}
+
+	@Then("Click on Marketing Department Filter")
+	public void I_Click_Marketing_Department_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getMarketingDepartmentFilter());
+		log.info("Click on Marketing Department Filter");
+	}
+
+	@Then("Check Marketing Department in Search Result")
+	public void I_Check_Marketing_Department_In_Result() throws Throwable{
+		Thread.sleep(10000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getMarketingDepartmentInResult().isDisplayed());
+		log.info("User Check Marketing Department in Search Result");
+	}
+
+
+	@Then("Click on Operations Department Filter")
+	public void I_Click_Operations_Department_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getOperationsDepartmentFilter());
+		log.info("Click on Operations Department Filter");
+	}
+
+	@Then("Check Operations Department in Search Result")
+	public void I_Check_Operations_Department_Result() throws Throwable{
+		Thread.sleep(10000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOperationsDepartmentInResult().isDisplayed());
+		log.info("User Check Operations Department in Search Result");
+	}
+
+	@Then("Click on Procurement Department Filter")
+	public void I_Click_Procurement_Department_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getProcurementDepartmentFilter());
+		log.info("Click on Procurement Department Filter");
+	}
+
+	@Then("Check Procurement Department in Search Result")
+	public void I_Check_Procurement_Department_Result() throws Throwable{
+		Thread.sleep(10000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getProcurementDepartmentInResult().isDisplayed());
+		log.info("User Check Procurement Department in Search Result");
+	}
+
+	@Then("Click on R&D Department Filter")
+	public void I_Click_RnD_Department_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getRndDepartmentFilter());
+		log.info("Click on R&D Department Filter");
+	}
+
+	@Then("Check R&D Department in Search Result")
+	public void I_Check_RnD_Department_In_Result() throws Throwable{
+		Thread.sleep(10000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getRndDepartmentInResult().isDisplayed());
+		log.info("User Check R&D Department in Search Result");
+	}
+
+	@Then("Click on Sales Department Filter")
+	public void I_Click_Sales_Department_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesDepartmentFilter());
+		log.info("User Click on Sales Department Filter");
+	}
+
+	@Then("Check Sales Department in Search Result")
+	public void I_Check_Sales_Department_In_Search_Result() throws Throwable{
+		Thread.sleep(10000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getSalesDepartmentIn_Result().isDisplayed());
+		log.info("User Check Sales Department in Search Result");
+	}
+	@Then("Click on Cross Functional Department Filter")
+	public void I_Click_Cross_Functional_Department_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getCrossFunctionalDepartmentFilter());
+		log.info("User Click on Cross Functional Department Filter");
+	}
+	@Then("Check Cross Functional Department in Search Result")
+	public void I_Check_Cross_Functional_Department_In_Result() throws Throwable{
+		Thread.sleep(10000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getCrossFunctionalDepartmentInResult().isDisplayed());
+		log.info("User Check Cross Functional Department in Search Result");
 	}
 
 	@When("Verify Job Level is displayed")
