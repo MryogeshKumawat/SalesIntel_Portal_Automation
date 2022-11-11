@@ -510,7 +510,6 @@ public class Steps extends Global {
 
 	@Then("Check Finance Department in Search Result")
 	public void I_Check_Finance_Department_In_Result() throws Throwable{
-		Thread.sleep(10000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getFinanceDepartmentInResult().isDisplayed());
 		log.info("User Check Finance Department in Search Result");
 	}
@@ -524,7 +523,6 @@ public class Steps extends Global {
 
 	@Then("Check HR Department in Search Result")
 	public void I_Check_Hr_Department_In_Result() throws Throwable{
-		Thread.sleep(10000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHrDepartmentInResult().isDisplayed());
 		log.info("User Check HR Department in Search Result");
 	}
@@ -538,7 +536,6 @@ public class Steps extends Global {
 
 	@Then("Check IT Department in Search Result")
 	public void I_Check_IT_Department_In_Result() throws Throwable{
-		Thread.sleep(10000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getITDepartmentInResult().isDisplayed());
 		log.info("User Check IT Department in Search Result");
 	}
@@ -551,7 +548,6 @@ public class Steps extends Global {
 
 	@Then("Check Legal Department in Search Result")
 	public void I_Check_Legal_Department_In_Result() throws Throwable{
-		Thread.sleep(10000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getLegalDepartmentInResult().isDisplayed());
 		log.info("User Check Legal Department in Search Result");
 	}
@@ -564,7 +560,6 @@ public class Steps extends Global {
 
 	@Then("Check Marketing Department in Search Result")
 	public void I_Check_Marketing_Department_In_Result() throws Throwable{
-		Thread.sleep(10000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getMarketingDepartmentInResult().isDisplayed());
 		log.info("User Check Marketing Department in Search Result");
 	}
@@ -578,7 +573,6 @@ public class Steps extends Global {
 
 	@Then("Check Operations Department in Search Result")
 	public void I_Check_Operations_Department_Result() throws Throwable{
-		Thread.sleep(10000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOperationsDepartmentInResult().isDisplayed());
 		log.info("User Check Operations Department in Search Result");
 	}
@@ -591,7 +585,6 @@ public class Steps extends Global {
 
 	@Then("Check Procurement Department in Search Result")
 	public void I_Check_Procurement_Department_Result() throws Throwable{
-		Thread.sleep(10000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getProcurementDepartmentInResult().isDisplayed());
 		log.info("User Check Procurement Department in Search Result");
 	}
@@ -604,7 +597,6 @@ public class Steps extends Global {
 
 	@Then("Check R&D Department in Search Result")
 	public void I_Check_RnD_Department_In_Result() throws Throwable{
-		Thread.sleep(10000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getRndDepartmentInResult().isDisplayed());
 		log.info("User Check R&D Department in Search Result");
 	}
@@ -617,7 +609,6 @@ public class Steps extends Global {
 
 	@Then("Check Sales Department in Search Result")
 	public void I_Check_Sales_Department_In_Search_Result() throws Throwable{
-		Thread.sleep(10000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getSalesDepartmentIn_Result().isDisplayed());
 		log.info("User Check Sales Department in Search Result");
 	}
@@ -628,21 +619,34 @@ public class Steps extends Global {
 	}
 	@Then("Check Cross Functional Department in Search Result")
 	public void I_Check_Cross_Functional_Department_In_Result() throws Throwable{
-		Thread.sleep(10000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getCrossFunctionalDepartmentInResult().isDisplayed());
 		log.info("User Check Cross Functional Department in Search Result");
 	}
 
-	@When("Verify Job Level is displayed")
-	public void I_verify_Job_Level() throws Throwable {
+	@When("Verify Job Level Filter is displayed")
+	public void I_verify_Job_Level_Filter() throws Throwable {
+		Thread.sleep(3000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getContactJobLevel().isDisplayed());
-		log.info("Verify Contact Name is displayed");
+		log.info("Verify Job Level Filter is displayed");
 	}
 
-	@And("Click On Job Level")
-	public void I_Click_Job_Level_Button() throws Throwable {
+	@And("Click On Job Level Filter")
+	public void I_Click_Job_Level_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getContactJobLevel());
-		log.info("User click Click On Login Button");
+		log.info("User click Click On Job Level Filter");
+	}
+
+	@Then("Click on Board Member Job Level Filter")
+	public void I_Click_Board_Member_Job_Level_Filter() throws Throwable{
+		Thread.sleep(5000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getBoardMemberJobLevelFilter());
+		log.info("User Click on Board Member Job Level Filter");
+	}
+
+	@Then("Check Board Member Job Level in Result")
+	public void I_Check_BoardMember_Job_Level_In_Result() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getBoardMemberJobLevelInResult().isDisplayed());
+		log.info("User Check Board Member Job Level in Result");
 	}
 
 	@When("Verify Role Section is displayed")
@@ -677,14 +681,68 @@ public class Steps extends Global {
 
 	@When("Verify Job Level C-Level Executive Option is displayed")
 	public void I_verify_job_level_cexecutive() throws Throwable {
-		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getJobclevelexecutive().isDisplayed());
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getJobclevelexecutiveFilter().isDisplayed());
 		log.info("Verify Job Level C-Level Executive Option is displayed");
 	}
 
-	@And("Click On Job Level C-Level Executive Option")
-	public void I_Click_Job_Level_clevel_Button() throws Throwable {
-		clickButton(PageObjectManager.getInstance().getLoginPage().getJobclevelexecutive());
-		log.info("User click Click On Login Button");
+	@And("Click On C-Level Executive Job Level Filter")
+	public void I_Click_Clevel_Executive_Job_Level_Filter() throws Throwable {
+		Thread.sleep(5000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getJobclevelexecutiveFilter());
+		log.info("User Click On C-Level Executive Job Level Filter");
+	}
+	@And("Click On Vice Presidents Job Level Filter")
+	public void I_Click_Voice_Precident_Job_Level_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getVicePrecidentsJobLevelFilter());
+		log.info("Click On Vice Presidents Job Level Filter");
+	}
+
+	@And("Click On Directors Job Level Filter")
+	public void I_Click_Directors_Job_Level_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getDirectorsJobLevelFilter());
+		log.info("User Click On Directors Job Level Filter");
+	}
+
+	@And("Click On Managers Job Level Filter")
+	public void I_Click_Managers_Job_Level_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getManagersJobLevelFilter());
+		log.info("User Click On Managers Job Level Filter");
+	}
+
+	@And("Click On Key Influencers Job Level Filter")
+	public void I_Click_Key_Influencers_Job_Level_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getKeyInfluencersJobLevelFilter());
+		log.info("User Click On Key Influencers Job Level Filter");
+	}
+
+	@Then("Check Vice Presidents Job level in Result")
+	public void I_Check_Vice_President_Job_Level_IN_Result() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getVicePresidentJobLevelInResult().isDisplayed());
+		log.info("User Check Vice Presidents Job level in Result");
+	}
+
+	@Then("Check Directors Job level in Result")
+	public void I_Check_Directors_Job_Level_IN_Result() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getDirectorsJobLevelInResult().isDisplayed());
+		log.info("User Check Directors Job level in Result");
+	}
+
+	@Then("Check Managers Job level in Result")
+	public void I_Check_Managers_Job_Level_IN_Result() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getManagersJobLevelInResult().isDisplayed());
+		log.info("User Check Managers Job level in Result");
+	}
+
+	@Then("Check Key Influencers Job level in Result")
+	public void I_Check_Key_Influencers_Job_Level_IN_Result() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getKeyInfluencersJobLevelInResult().isDisplayed());
+		Thread.sleep(5000);
+		log.info("User Check Key Influencers Job level in Result");
+	}
+
+	@Then("Check C-level Executive Job level in Result")
+	public void I_Check_Clevel_Executive_Job_Level_Result() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getClevelExecutiveJobLevelInResult().isDisplayed());
 	}
 
 	@When("Verify Job Level Vice President Option is displayed")
@@ -1026,7 +1084,7 @@ public class Steps extends Global {
 
 	@And("Click On Do Not Save Button")
 	public void I_Click_do_not_save_Button() throws Throwable {
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getDonotsavebutton());
 		log.info("User click on Clear Button");
 	}
@@ -1205,7 +1263,7 @@ public class Steps extends Global {
 
 	@And("Click On Logout Options")
 	public void I_click_Logout() throws Throwable {
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLogout());
 		log.info("Click On Logout Button");
 	}

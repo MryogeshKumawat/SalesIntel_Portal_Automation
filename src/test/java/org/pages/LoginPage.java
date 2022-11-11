@@ -120,9 +120,26 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//*[@placeholder='Work or Personal Email']")
 	private WebElement ContactEmailInputbox;
 
-	@FindBy(xpath = "(//span[@class='h6 py-2 px-0 cursor-pointer search-bar-title'])[15]")
+	@FindBy(xpath = "//span[contains(text(),'Level')]")
 	private WebElement ContactJobLevel;
 
+	@FindBy(xpath = "//Label[contains(text(),'Board Members')]")
+	private WebElement BoardMemberJobLevelFilter;
+
+	@FindBy(xpath = "(//div[contains(text(),'Board Member')])[1]")
+	private WebElement BoardMemberJobLevelInResult;
+
+	@FindBy(xpath = "(//div[contains(text(),'C-level Executive')])[1]")
+	private WebElement ClevelExecutiveJobLevelInResult;
+
+	@FindBy(xpath = "(//div[contains(text(),'Vice President')])[1]")
+	private WebElement VicePresidentJobLevelInResult;
+	@FindBy(xpath = "(//div[contains(text(),'Director')])[1]")
+	private WebElement DirectorsJobLevelInResult;
+	@FindBy(xpath = "(//div[contains(text(),'Manager')])[1]")
+	private WebElement ManagersJobLevelInResult;
+	@FindBy(xpath = "(//div[contains(text(),'Key Influencer')])[1]")
+	private WebElement KeyInfluencersJobLevelInResult;
 	@FindBy(xpath = "//*[contains(text(),'Role')]")
 	private WebElement Rolesection;
 
@@ -196,8 +213,19 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//span[contains(text(),'Job Level')]//following::input[@type='checkbox'])[2]")
 	private WebElement JobBoardMember;
 
-	@FindBy(xpath = "(//span[contains(text(),'Job Level')]//following::input[@type='checkbox'])[3]")
-	private WebElement Jobclevelexecutive;
+	@FindBy(xpath = "//Label[contains(text(),'C-level Executive')]")
+	private WebElement JobclevelexecutiveFilter;
+
+	@FindBy(xpath = "//Label[contains(text(),'Vice Presidents')]")
+	private WebElement VicePrecidentsJobLevelFilter;
+
+	@FindBy(xpath = "//Label[contains(text(),'Directors')]")
+	private WebElement DirectorsJobLevelFilter;
+
+	@FindBy(xpath = "//Label[contains(text(),'Managers')]")
+	private WebElement ManagersJobLevelFilter;
+	@FindBy(xpath = "//Label[contains(text(),'Key Influencers')]")
+	private WebElement KeyInfluencersJobLevelFilter;
 
 	@FindBy(xpath = "(//span[contains(text(),'Job Level')]//following::input[@type='checkbox'])[4]")
 	private WebElement JobVicepresident;
@@ -396,6 +424,32 @@ public class LoginPage extends Global {
 	public WebElement getContactJobLevel() {
 		return ContactJobLevel;
 	}
+
+	public WebElement getBoardMemberJobLevelFilter() {
+		return BoardMemberJobLevelFilter;
+	}
+
+	public WebElement getBoardMemberJobLevelInResult() {
+		return BoardMemberJobLevelInResult;
+	}
+	public WebElement getClevelExecutiveJobLevelInResult() {
+		return ClevelExecutiveJobLevelInResult;
+	}
+
+	public WebElement getVicePresidentJobLevelInResult() {
+		return VicePresidentJobLevelInResult;
+	}
+	public WebElement getDirectorsJobLevelInResult() {
+		return DirectorsJobLevelInResult;
+	}
+
+	public WebElement getManagersJobLevelInResult() {
+		return ManagersJobLevelInResult;
+	}
+	public WebElement getKeyInfluencersJobLevelInResult() {
+		return KeyInfluencersJobLevelInResult;
+	}
+
 	public WebElement getRolesection() {
 		return Rolesection;
 	}
@@ -481,8 +535,24 @@ public class LoginPage extends Global {
 	public WebElement getJobBoardMember() {
 		return JobBoardMember;
 	}
-	public WebElement getJobclevelexecutive() {
-		return Jobclevelexecutive;
+	public WebElement getJobclevelexecutiveFilter() {
+		return JobclevelexecutiveFilter;
+	}
+
+	public WebElement getVicePrecidentsJobLevelFilter(){
+		return VicePrecidentsJobLevelFilter;
+	}
+
+	public WebElement getDirectorsJobLevelFilter(){
+		return DirectorsJobLevelFilter;
+	}
+
+	public WebElement getManagersJobLevelFilter(){
+		return ManagersJobLevelFilter;
+	}
+
+	public WebElement getKeyInfluencersJobLevelFilter(){
+		return KeyInfluencersJobLevelFilter;
 	}
 	public WebElement getJobVicepresident() {
 		return JobVicepresident;

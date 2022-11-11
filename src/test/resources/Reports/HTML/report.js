@@ -4836,7 +4836,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "To validate application Search By Job Level section contents",
+  "name": "To validate application Job Level is displayed",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -4855,21 +4855,31 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Verify Role Section is displayed",
+  "name": "Click On Clear Button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "Steps.I_verify_Role_Section()"
+  "location": "Steps.I_Click_clear_Button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Verify Job Level is displayed",
-  "keyword": "When "
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_verify_Job_Level()"
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify Job Level Filter is displayed",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_verify_Job_Level_Filter()"
 });
 formatter.result({
   "status": "passed"
@@ -4881,7 +4891,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate application Search without Job Level",
+  "name": "To validate application Search by Board Member Job Level Filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -4900,11 +4910,511 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
+  "name": "Click On Job Level Filter",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Board Member Job Level Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Board_Member_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "Click on Search Button",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Board Member Job Level in Result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_BoardMember_Job_Level_In_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate application Search by C-level Executive Job Level Filter",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@First"
+    },
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Job Level Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On C-Level Executive Job Level Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Clevel_Executive_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check C-level Executive Job level in Result",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Check_Clevel_Executive_Job_Level_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate application Search by Voice Presidents Job Level Filter",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@First"
+    },
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Job Level Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Vice Presidents Job Level Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Voice_Precident_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Vice Presidents Job level in Result",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Check_Vice_President_Job_Level_IN_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate application Search by Directors Job Level Filter",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@First"
+    },
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Job Level Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Directors Job Level Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Directors_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Directors Job level in Result",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Check_Directors_Job_Level_IN_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate application Search by Managers Job Level Filter",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@First"
+    },
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Job Level Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Managers Job Level Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Managers_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Managers Job level in Result",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Check_Managers_Job_Level_IN_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate application Search by Key Influencers Job Level Filter",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@First"
+    },
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Clear Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_Click_clear_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Do Not Save Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_do_not_save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Job Level Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Key Influencers Job Level Filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Key_Influencers_Job_Level_Filter()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Search Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Search_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Check Key Influencers Job level in Result",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Check_Key_Influencers_Job_Level_IN_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate application Logout",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@First"
+    },
+    {
+      "name": "@Sanity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Setting Options",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.I_click_welcome_Logout()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Logout Options",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_click_Logout()"
 });
 formatter.result({
   "status": "passed"

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="69" time="1781.752268">
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Launching application" time="8.284813">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="75" time="1949.908228">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Launching application" time="9.020895">
         <system-out><![CDATA[Given Launch the url........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login Screen Content" time="0.472711">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login Screen Content" time="0.86182">
         <system-out><![CDATA[Then Validate Login Page Title is displayed.................................passed
 And Validate Email Field is displayed.......................................passed
 And Validate Password Field is displayed....................................passed
@@ -14,20 +14,20 @@ And Validate FAQ Link is displayed..........................................pass
 And Validate Login Button is displayed......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Tapping only Login Button" time="10.334842">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Tapping only Login Button" time="10.526331">
         <system-out><![CDATA[When Click On Login Button..................................................passed
 Then Validate Error Text when Tried with Invalid Username and Invalid Password.passed
 And Validate Error Text when Tried with Invalid Password and Invalid Username.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Valid Password" time="10.403655">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Valid Password" time="10.74125">
         <system-out><![CDATA[When Enter Invalid Username.................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 Then Validate Error Text when Tried with Invalid Username and Valid Password.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Valid Username and Invalid Password" time="10.407908">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Valid Username and Invalid Password" time="10.813533">
         <system-out><![CDATA[When Clear the Text in Username Field.......................................passed
 And Clear the Text in Password Field........................................passed
 And Enter Valid Username....................................................passed
@@ -35,7 +35,7 @@ And Enter Invalid Password..................................................pass
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Invalid Password" time="10.415012">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Invalid Password" time="10.816889">
         <system-out><![CDATA[When Clear the Text in Username Field.......................................passed
 And Clear the Text in Password Field........................................passed
 And Enter Invalid Username..................................................passed
@@ -44,7 +44,7 @@ And Click On Login Button...................................................pass
 Then Validate Error Text when Tried with Invalid Username and Valid Password.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Forget Password" time="16.512704">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Forget Password" time="16.771272">
         <system-out><![CDATA[When Click on Forget Password...............................................passed
 Then Verify Forget Email Address Field is displayed.........................passed
 When Enter Forget Email Address.............................................passed
@@ -52,11 +52,11 @@ Then Verify Reset Password Button is displayed..............................pass
 When Click On Reset Password Button.........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Remember Me" time="0.211865">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Remember Me" time="0.332572">
         <system-out><![CDATA[When Click on Remember Me...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.461375">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.841084">
         <system-out><![CDATA[When Click on Remember Me...................................................passed
 And Clear the Text in Username Field........................................passed
 And Clear the Text in Password Field........................................passed
@@ -65,18 +65,18 @@ And Enter Valid Password....................................................pass
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate application Logout" time="13.402046">
+    <testcase classname="Validate application login Page" name="To validate application Logout" time="6.666335">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.404984">
+    <testcase classname="Validate Search By Contact Name" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.655461">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search Page Content is displayed" time="61.255985">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search Page Content is displayed" time="66.699927">
         <system-out><![CDATA[Then Click on Contact Radio Button..........................................passed
 When Click on Search Button.................................................passed
 And Verify Contact Name is displayed........................................passed
@@ -87,11 +87,11 @@ Then Verify First Name is displayed.........................................pass
 And Verify Last Name is displayed...........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search without Firstname and LastName" time="10.297006">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search without Firstname and LastName" time="10.444434">
         <system-out><![CDATA[When Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search by FirstName and LastName using Integer Value" time="31.69267">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search by FirstName and LastName using Integer Value" time="32.01456">
         <system-out><![CDATA[When Click on Contact Name Button...........................................passed
 And Enter the First Name with Integer Value.................................passed
 And Enter the Last Name with Integer Value..................................passed
@@ -99,7 +99,7 @@ And Click on Search Button..................................................pass
 Then Verify Error Message is displayed When search with FirstName and LastName only Integer.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search by Valid FirstName and LastName" time="10.689324">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search by Valid FirstName and LastName" time="11.34838">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the First Name....................................................passed
@@ -110,7 +110,7 @@ When Clear the Text in First Name Field.....................................pass
 And Clear the Text in Last Name Field.......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into New Contact List" time="37.128973">
+    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into New Contact List" time="43.354093">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click on Contact Name Button...........................................passed
@@ -126,12 +126,12 @@ When Enter New Contact List.................................................pass
 And Click On Create New Contact List Save Button............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Contact into the Contact List" time="10.519859">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Contact into the Contact List" time="10.761176">
         <system-out><![CDATA[When Click On List Tab......................................................passed
 Then Select Preview Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into Existing Contact List" time="37.025573">
+    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into Existing Contact List" time="43.233339">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click on Contact Name Button...........................................passed
@@ -146,13 +146,13 @@ And Click on Contact List Drop Down Option..................................pass
 And Click On Add Contact List Save Button...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Delete Contact List" time="15.595377">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Delete Contact List" time="15.842063">
         <system-out><![CDATA[And Click On List Tab.......................................................passed
 And Delete Contact List.....................................................passed
 And Click On Delete Contact List............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact1 Search by Valid FirstName and LastName" time="24.870686">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact1 Search by Valid FirstName and LastName" time="25.500294">
         <system-out><![CDATA[Then Click On SalesIntel Tab................................................passed
 And Clear the Text in First Name Field......................................passed
 And Clear the Text in Last Name Field.......................................passed
@@ -163,7 +163,7 @@ And Click On Contact Search1................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact2 Search by Valid FirstName and LastName" time="16.58884">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact2 Search by Valid FirstName and LastName" time="17.0707">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name2............................................passed
@@ -173,7 +173,7 @@ And Click On Contact Search2................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact3 Search by Valid FirstName and LastName" time="16.68284">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact3 Search by Valid FirstName and LastName" time="17.120214">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name3............................................passed
@@ -183,7 +183,7 @@ And Click On Contact Search3................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact4 Search by Valid FirstName and LastName" time="16.609819">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact4 Search by Valid FirstName and LastName" time="17.109709">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name4............................................passed
@@ -193,7 +193,7 @@ And Click On Contact Search4................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact5 Search by Valid FirstName and LastName" time="16.642833">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact5 Search by Valid FirstName and LastName" time="17.102801">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name5............................................passed
@@ -203,23 +203,23 @@ And Click On Contact Search5................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Logout" time="13.385197">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Logout" time="6.649107">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.364728">
+    <testcase classname="Validate Search By Company" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.747644">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Search without Company Name" time="15.370385">
+    <testcase classname="Validate Search By Company" name="To validate application Search without Company Name" time="15.63853">
         <system-out><![CDATA[Then Click on Company Radio Button..........................................passed
 When Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Search by Valid Company Name" time="35.724391">
+    <testcase classname="Validate Search By Company" name="To validate application Search by Valid Company Name" time="41.277812">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click On Company.......................................................passed
@@ -228,7 +228,7 @@ And Click on Search Button..................................................pass
 And Validate Company Search Result..........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into New Company List" time="41.695769">
+    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into New Company List" time="47.997796">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click On Company.......................................................passed
@@ -243,7 +243,7 @@ When Enter New Company List.................................................pass
 And Click On Create New Company List Save Button............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into Existing Company List" time="46.810653">
+    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into Existing Company List" time="52.997601">
         <system-out><![CDATA[Then Click On SalesIntel Tab................................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -259,120 +259,120 @@ And Click on Company List Drop Down Option..................................pass
 And Click On Add Company List Save Button...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Delete Company List" time="25.601592">
+    <testcase classname="Validate Search By Company" name="To validate application Delete Company List" time="25.958619">
         <system-out><![CDATA[And Click On List Tab.......................................................passed
 And Delete Company List.....................................................passed
 And Click On Delete Company List............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Logout" time="13.389456">
+    <testcase classname="Validate Search By Company" name="To validate application Logout" time="6.656002">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.394439">
+    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.676324">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="60.59279">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="60.995336">
         <system-out><![CDATA[Then Click on Contact Radio Button..........................................passed
 When Click on Search Button.................................................passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="40.609432">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="40.808542">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.542024">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.789509">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="40.505397">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="40.847847">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Dept....................passed
 And Click On Sort Icon For Display Contact based on Dept....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="40.483733">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="40.798519">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Comp....................passed
 And Click On Sort Icon For Display Contact based on Comp....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="40.507784">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="40.809275">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Location................passed
 And Click On Sort Icon For Display Contact based on Location................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="13.400888">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="6.629515">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.343318">
+    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.63172">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="45.606417">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="45.94062">
         <system-out><![CDATA[Then Click on Company Radio Button..........................................passed
 When Click on Search Button.................................................passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="40.552655">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="40.763289">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.497841">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.861287">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="40.508292">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="40.868652">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Dept....................passed
 And Click On Sort Icon For Display Contact based on Dept....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="40.529806">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="40.806591">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Comp....................passed
 And Click On Sort Icon For Display Contact based on Comp....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="40.49225">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="40.84503">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Location................passed
 And Click On Sort Icon For Display Contact based on Location................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="13.38722">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="6.627697">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.352256">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.67974">
         <system-out><![CDATA[And Enter Universal Valid Username..........................................passed
 And Enter Universal Valid Password..........................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Search Contact for ROD" time="59.268321">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Search Contact for ROD" time="60.145062">
         <system-out><![CDATA[Then Click on Contact Radio Button for Universal User.......................passed
 When Click on Search Button.................................................passed
 Then Verify Contact Name is displayed.......................................passed
@@ -385,42 +385,42 @@ And Click on Search Button..................................................pass
 And Click On Searched Contact...............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application &quot;Request Verification&quot;" time="9.342691">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application &quot;Request Verification&quot;" time="9.554459">
         <system-out><![CDATA[Then Verify Request Verification Button is displayed........................passed
 And Click On Request Verification Button....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application for Validate &quot;Requested Verification&quot;" time="10.234436">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application for Validate &quot;Requested Verification&quot;" time="10.392395">
         <system-out><![CDATA[Then Verify Requested Verification Status...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Contact Requested in ROD Section" time="19.721102">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Contact Requested in ROD Section" time="20.129369">
         <system-out><![CDATA[Then Verify RoD Tab is displayed............................................passed
 And Click On RoD Tab........................................................passed
 And Verify Requested ROD is Displayed in ROD tab............................passed
 When Click On Setting Options...............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Logout" time="10.31788">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Logout" time="3.510934">
         <system-out><![CDATA[And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate SalesIntel application login Valid User Username and Valid Password" time="10.365467">
+    <testcase classname="Validate Search By Job Department" name="To validate SalesIntel application login Valid User Username and Valid Password" time="10.619182">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search By Job Department section contents" time="0.257357">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search By Job Department section contents" time="0.386004">
         <system-out><![CDATA[When Verify Role Section is displayed.......................................passed
 And Verify Job Department is displayed......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search without Job Department Filter" time="10.242492">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search without Job Department Filter" time="10.433938">
         <system-out><![CDATA[Then Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Finance Job Department Filter" time="47.683818">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Finance Job Department Filter" time="43.162174">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -429,7 +429,7 @@ And Click on Search Button..................................................pass
 Then Check Finance Department in Search Result..............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by HR Job Department Filter" time="47.66357">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by HR Job Department Filter" time="43.059329">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -438,7 +438,7 @@ And Click on Search Button..................................................pass
 Then Check HR Department in Search Result...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by IT Job Department Filter" time="47.66418">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by IT Job Department Filter" time="43.016547">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -447,7 +447,7 @@ And Click on Search Button..................................................pass
 Then Check IT Department in Search Result...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Legal Job Department Filter" time="45.794383">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Legal Job Department Filter" time="41.09657">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -456,7 +456,7 @@ And Click on Search Button..................................................pass
 Then Check Legal Department in Search Result................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Marketing Job Department Filter" time="45.63478">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Marketing Job Department Filter" time="41.230253">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -465,7 +465,7 @@ And Click on Search Button..................................................pass
 Then Check Marketing Department in Search Result............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Operations Job Department Filter" time="45.684382">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Operations Job Department Filter" time="41.246242">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -474,7 +474,7 @@ And Click on Search Button..................................................pass
 Then Check Operations Department in Search Result...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Procurement Job Department Filter" time="45.64462">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Procurement Job Department Filter" time="41.152745">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -483,7 +483,7 @@ And Click on Search Button..................................................pass
 Then Check Procurement Department in Search Result..........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by R&amp;D Job Department Filter" time="45.640676">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by R&amp;D Job Department Filter" time="41.203152">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -492,7 +492,7 @@ And Click on Search Button..................................................pass
 Then Check R&D Department in Search Result..................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Sales Job Department Filter" time="45.665382">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Sales Job Department Filter" time="41.033734">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -501,7 +501,7 @@ And Click on Search Button..................................................pass
 Then Check Sales Department in Search Result................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Cross Functional Job Department Filter" time="45.661721">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Cross Functional Job Department Filter" time="41.072566">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -510,13 +510,67 @@ And Click on Search Button..................................................pass
 Then Check Cross Functional Department in Search Result.....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search By Job Level section contents" time="0.26882">
-        <system-out><![CDATA[When Verify Role Section is displayed.......................................passed
-When Verify Job Level is displayed..........................................passed
+    <testcase classname="Validate Search By Job Level" name="To validate application Job Level is displayed" time="23.673729">
+        <system-out><![CDATA[When Click On Clear Button..................................................passed
+And Click On Do Not Save Button.............................................passed
+And Verify Job Level Filter is displayed....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search without Job Level" time="10.435777">
-        <system-out><![CDATA[Then Click on Search Button.................................................passed
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Board Member Job Level Filter" time="15.67311">
+        <system-out><![CDATA[When Click On Job Level Filter..............................................passed
+And Click on Board Member Job Level Filter..................................passed
+And Click on Search Button..................................................passed
+Then Check Board Member Job Level in Result.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by C-level Executive Job Level Filter" time="36.337591">
+        <system-out><![CDATA[When Click On Clear Button..................................................passed
+And Click On Do Not Save Button.............................................passed
+And Click On Job Level Filter...............................................passed
+And Click On C-Level Executive Job Level Filter.............................passed
+And Click on Search Button..................................................passed
+And Check C-level Executive Job level in Result.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Voice Presidents Job Level Filter" time="31.363712">
+        <system-out><![CDATA[When Click On Clear Button..................................................passed
+And Click On Do Not Save Button.............................................passed
+And Click On Job Level Filter...............................................passed
+And Click On Vice Presidents Job Level Filter...............................passed
+And Click on Search Button..................................................passed
+And Check Vice Presidents Job level in Result...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Directors Job Level Filter" time="31.775748">
+        <system-out><![CDATA[When Click On Clear Button..................................................passed
+And Click On Do Not Save Button.............................................passed
+And Click On Job Level Filter...............................................passed
+And Click On Directors Job Level Filter.....................................passed
+And Click on Search Button..................................................passed
+And Check Directors Job level in Result.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Managers Job Level Filter" time="31.771755">
+        <system-out><![CDATA[When Click On Clear Button..................................................passed
+And Click On Do Not Save Button.............................................passed
+And Click On Job Level Filter...............................................passed
+And Click On Managers Job Level Filter......................................passed
+And Click on Search Button..................................................passed
+And Check Managers Job level in Result......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Key Influencers Job Level Filter" time="36.335701">
+        <system-out><![CDATA[When Click On Clear Button..................................................passed
+And Click On Do Not Save Button.............................................passed
+And Click On Job Level Filter...............................................passed
+And Click On Key Influencers Job Level Filter...............................passed
+And Click on Search Button..................................................passed
+And Check Key Influencers Job level in Result...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Search By Job Level" name="To validate application Logout" time="6.580491">
+        <system-out><![CDATA[When Click On Setting Options...............................................passed
+And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
