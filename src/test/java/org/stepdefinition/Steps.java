@@ -2,6 +2,7 @@ package org.stepdefinition;
 
 import com.github.dockerjava.api.model.HealthCheck;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en_scouse.An;
 import org.apache.log4j.Logger;
 import org.apache.velocity.runtime.directive.contrib.For;
 import org.base.Global;
@@ -121,7 +122,7 @@ public class Steps extends Global {
 	@Then("Click on Contact Email Button")
 	public void I_Click_Contact_Email() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getContactEmail());
-		log.info("User click the Contact Name Button");
+		log.info("User click the Contact Email Filter");
 	}
 //	@When("Enter the First Name")
 //	public void i_enter_the_FirstName() throws Throwable {
@@ -432,8 +433,8 @@ public class Steps extends Global {
 	@When("Enter Contact Email Address")
 	public void i_enter_the_Contact_Email() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getContactEmailInputbox(),
-				ReadDatafromJson("Contact_Name", "Email"));
-		log.info("Enter Forget Email Address");
+				ReadDatafromJson("Contact_Name", "Email1"));
+		log.info("Enter Contact Email Address");
 	}
 
 	/*
@@ -471,7 +472,7 @@ public class Steps extends Global {
 	@When("Clear the Text in Contact Email Field")
 	public void i_clear_the_contactEmail() throws Throwable {
 		clearText(PageObjectManager.getInstance().getLoginPage().getContactEmailInputbox());
-		log.info("Clear the Text in First Name Field");
+		log.info("User Clear the Text in Email Field");
 	}
 
 	//	@When("Enter Invalid Contact Email Address")
@@ -484,7 +485,7 @@ public class Steps extends Global {
 	public void i_enter_the_invalid_Contact_Email() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getContactEmailInputbox(),
 				ReadDatafromJson("Contact_Name", "InvalidEmail"));
-		log.info("Enter Invalid Contact Email Address");
+		log.info("User Enter Invalid Contact Email Address");
 	}
 
 	@And("Verify Job Department is displayed")
@@ -715,6 +716,119 @@ public class Steps extends Global {
 		log.info("User Click On Key Influencers Job Level Filter");
 	}
 
+
+	@And("Verify Title filter is Displayed")
+	public void I_Verify_Title_Filter() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getTitleFilter().isDisplayed());
+		log.info("User Verify Title filter is Displayed");
+	}
+
+	@And("Click on Title Filter")
+	public void I_Click_On_Title_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getTitleFilter());
+		Thread.sleep(2000);
+		log.info("User click on Title Filter");
+	}
+
+	@And("Enter Title in Title filter")
+	public void I_Enter_Job_Title() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getTitleTextField(),
+				ReadDatafromJson("Contact_Name", "Job_Title"));
+		log.info("User enter Job Title in Tile text field");
+		Thread.sleep(2000);
+	}
+
+	@Then("Check searched title is displayed in Search Result")
+	public void I_Check_Title_In_Result() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getTitleInResult().isDisplayed());
+		Thread.sleep(3000);
+		log.info("User Check searched title is displayed in Search Result");
+	}
+
+	@When("Verify Location filter is Displayed")
+	public void I_Verify_Location_Filter() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getLocationFilter().isDisplayed());
+		log.info("User verify Location filter is Displayed");
+	}
+
+	@And("Click on Location Filter")
+	public void I_Click_Location_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLocationFilter());
+		Thread.sleep(2000);
+		log.info("User Click on Location Filter");
+	}
+
+	@And("Click on States Filter")
+	public void I_Click_State_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getStateField());
+		Thread.sleep(2000);
+		log.info("User click on States Filter");
+	}
+
+	@And("Click on California State")
+	public void I_Click_On_California_State() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getCaliforniaState());
+		Thread.sleep(3000);
+		log.info("User Click on California State");
+	}
+
+	@Then("Check CA for California State in Search Result")
+	public void I_Check_California_In_Result() throws Throwable{
+		Thread.sleep(2000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getCaliforniaInResult().isDisplayed());
+		log.info("User Check CA for California State in Search Result");
+	}
+
+	@And("Click on Zip code under USA")
+	public void I_Click_On_Zip_Code_Page() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getZipCodePage());
+		log.info("User click on Zip code page under USA");
+		Thread.sleep(2000);
+	}
+
+	@And("Enter Zip Code in the text field")
+	public void I_Enter_Zip_Code() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getZipCodeTextField(),
+				ReadDatafromJson("Contact_Name", "Zip_Code"));
+		log.info("User Enter the Zip Code");
+	}
+
+	@And("Select 100 Miles in the dropdown")
+	public void I_Select_100_Miles_Under_Zip_Code() throws Throwable{
+		Thread.sleep(2000);
+		Select milesOptions = new Select(driver.findElement(By.xpath("//Select[@class='custom-select custom-select-sm ng-pristine ng-valid ng-touched']")));
+		milesOptions.selectByVisibleText("100 Miles");
+		Thread.sleep(2000);
+		log.info("User select 100 Miles in the dropdown");
+	}
+
+	@And("Click on Metro Areas under USA")
+	public void I_Click_On_Metro_Area_Page() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getMetroAreaPage());
+		Thread.sleep(2000);
+		log.info("User click on Metro Areas under USA");
+	}
+
+	@And("Click on Metro Areas Text Field")
+	public void I_Click_on_Metro_Area_Text_Field() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getMetroAreaTextField());
+		Thread.sleep(1000);
+		log.info("User Click on Metro Areas Text Field");
+	}
+
+	@And("Click on Albany GA Metro Area")
+	public void I_Click_On_Albany_GA_Metro_Area() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAlbanyORMetroArea());
+		Thread.sleep(2000);
+		log.info("Click on Albany GA Metro Area");
+	}
+
+	@Then("Check email in Search Result")
+	public void I_Check_Email_In_Result() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getEmailInResult().isDisplayed());
+	}
+
 	@Then("Check Vice Presidents Job level in Result")
 	public void I_Check_Vice_President_Job_Level_IN_Result() throws Throwable{
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getVicePresidentJobLevelInResult().isDisplayed());
@@ -744,6 +858,7 @@ public class Steps extends Global {
 	public void I_Check_Clevel_Executive_Job_Level_Result() throws Throwable{
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getClevelExecutiveJobLevelInResult().isDisplayed());
 	}
+
 
 	@When("Verify Job Level Vice President Option is displayed")
 	public void I_verify_job_Vicepresident() throws Throwable {
@@ -778,8 +893,9 @@ public class Steps extends Global {
 	@And("Click On Job Level Manager Option")
 	public void I_Click_Job_Level_Button_Manager() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getJobManagers());
-		log.info("User click Click On Login Button");
+		log.info("User Click On Job Level Manager Option");
 	}
+
 
 	@And("Validate Search Result")
 	public void I_Validate_Search_Result() {

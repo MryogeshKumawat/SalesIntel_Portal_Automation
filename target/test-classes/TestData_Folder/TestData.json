@@ -16,6 +16,7 @@
     "FirstName_Integer": "123",
     "LastName_Integer": "123",
     "Email": "mvansil+700@astegic.com",
+    "Email1": "wabdelati@imf.org",
     "InvalidEmail": "1111111111@astegic.com",
     "FirstName1": "Brian",
     "LastName1": "Adkins",
@@ -35,6 +36,8 @@
     "Contactlist": "Test_SalesIntel",
     "Search_name": "Micheal",
     "Company_name": "Adobe",
-    "Companylist": "Test_Comp_SalesIntel"
+    "Companylist": "Test_Comp_SalesIntel",
+    "Job_Title": "Manager",
+    "Zip_Code": "90011"
   }
 }

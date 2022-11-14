@@ -40,7 +40,7 @@ public class LoginPage extends Global {
 	private WebElement FirstName;
 	@FindBy(xpath = "//*[@name='lastName']")
 	private WebElement LastName;
-	@FindBy(xpath = "(//span[@class='h6 py-2 px-0 cursor-pointer search-bar-title'])[15]")
+	@FindBy(xpath = "(//span[contains(text(),'Email')])[1]")
 	private WebElement contactemail;
 	@FindBy(xpath = "//*[@type='submit' and @class='btn btn-primary btn-search']")
 	private WebElement SearchButton;
@@ -227,6 +227,43 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//Label[contains(text(),'Key Influencers')]")
 	private WebElement KeyInfluencersJobLevelFilter;
 
+	@FindBy(xpath = "//Span[contains(text(),'Title')]")
+	private WebElement TitleFilter;
+
+	@FindBy(xpath = "//textarea[@name='jobTitle']")
+	private WebElement TitleTextField;
+
+	@FindBy(xpath = "//Span[contains(text(),'Location')]")
+	private WebElement LocationFilter;
+
+	@FindBy(xpath = "(//div[contains(text(),'States')])[1]")
+	private WebElement StateField;
+
+	@FindBy(xpath = "//div[contains(text(),'California')]")
+	private WebElement CaliforniaState;
+
+	@FindBy(xpath = "//Span[contains(text(),'CA')]")
+	private WebElement CaliforniaInResult;
+
+	@FindBy(xpath = "(//a[contains(text(),'Zip Code')])[1]")
+	private WebElement ZipCodePage;
+
+	@FindBy(xpath = "//input[@placeholder='e.g. 20001']")
+	private WebElement ZipCodeTextField;
+
+	@FindBy(xpath = "(//a[contains(text(),'Metro Area')])[1]")
+	private WebElement MetroAreaPage;
+
+	@FindBy(xpath = "//div[contains(text(),'Metro Areas')]")
+	private WebElement MetroAreaTextField;
+
+	@FindBy(xpath = "//div[@title='Albany, OR']")
+	private WebElement AlbanyORMetroArea;
+	@FindBy(xpath = "(//div[contains(text(),'Manager')])[1]")
+	private WebElement TitleInResult;
+
+	@FindBy(xpath = "//span[contains(text(),'wabdelati@imf.org')]")
+	private WebElement EmailInResult;
 	@FindBy(xpath = "(//span[contains(text(),'Job Level')]//following::input[@type='checkbox'])[4]")
 	private WebElement JobVicepresident;
 
@@ -554,6 +591,57 @@ public class LoginPage extends Global {
 	public WebElement getKeyInfluencersJobLevelFilter(){
 		return KeyInfluencersJobLevelFilter;
 	}
+	public WebElement getTitleFilter(){
+		return TitleFilter;
+	}
+
+	public WebElement getTitleTextField(){
+		return TitleTextField;
+	}
+
+	public WebElement getLocationFilter(){
+		return LocationFilter;
+	}
+
+	public WebElement getStateField(){
+		return StateField;
+	}
+
+	public WebElement getCaliforniaState(){
+		return CaliforniaState;
+	}
+
+	public WebElement getCaliforniaInResult(){
+		return CaliforniaInResult;
+	}
+
+	public WebElement getZipCodePage(){
+		return ZipCodePage;
+	}
+
+	public WebElement getZipCodeTextField(){
+		return ZipCodeTextField;
+	}
+
+	public WebElement getMetroAreaPage(){
+		return MetroAreaPage;
+	}
+
+	public WebElement getMetroAreaTextField(){
+		return MetroAreaTextField;
+	}
+
+	public WebElement getAlbanyORMetroArea(){
+		return AlbanyORMetroArea;
+	}
+
+	public WebElement getTitleInResult(){
+		return TitleInResult;
+	}
+	public WebElement getEmailInResult(){
+		return EmailInResult;
+	}
+
 	public WebElement getJobVicepresident() {
 		return JobVicepresident;
 	}
