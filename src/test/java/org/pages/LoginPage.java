@@ -233,7 +233,7 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//textarea[@name='jobTitle']")
 	private WebElement TitleTextField;
 
-	@FindBy(xpath = "//Span[contains(text(),'Location')]")
+	@FindBy(xpath = "(//Span[contains(text(),'Location')])[1]")
 	private WebElement LocationFilter;
 
 	@FindBy(xpath = "(//div[contains(text(),'States')])[1]")
@@ -242,11 +242,14 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//div[contains(text(),'California')]")
 	private WebElement CaliforniaState;
 
-	@FindBy(xpath = "//Span[contains(text(),'CA')]")
+	@FindBy(xpath = "(//Span[contains(text(),'CA')])[1]")
 	private WebElement CaliforniaInResult;
 
 	@FindBy(xpath = "(//a[contains(text(),'Zip Code')])[1]")
 	private WebElement ZipCodePage;
+
+	@FindBy(xpath = "(//a[contains(text(),'State')])[1]")
+	private WebElement StatePage;
 
 	@FindBy(xpath = "//input[@placeholder='e.g. 20001']")
 	private WebElement ZipCodeTextField;
@@ -254,7 +257,7 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//a[contains(text(),'Metro Area')])[1]")
 	private WebElement MetroAreaPage;
 
-	@FindBy(xpath = "//div[contains(text(),'Metro Areas')]")
+	@FindBy(xpath = "(//input[@type='text'])[2]")
 	private WebElement MetroAreaTextField;
 
 	@FindBy(xpath = "//div[@title='Albany, OR']")
@@ -264,6 +267,10 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//span[contains(text(),'wabdelati@imf.org')]")
 	private WebElement EmailInResult;
+
+	@FindBy(xpath = "//span[contains(text(),'Wafa Abdelati')]")
+	private WebElement SearchedContact;
+
 	@FindBy(xpath = "(//span[contains(text(),'Job Level')]//following::input[@type='checkbox'])[4]")
 	private WebElement JobVicepresident;
 
@@ -371,6 +378,12 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//*[contains(text(),'Logout')]")
 	private WebElement Logout;
+
+	@FindBy(xpath = "(//span[text()='Location'])[1]")
+	private WebElement LocationTab;
+
+	@FindBy(xpath = "(//input[@type='text'])[2]")
+	private WebElement Statevalueselection;
 
 	public LoginPage() throws Throwable {
 		PageFactory.initElements(driver, this);
@@ -618,6 +631,9 @@ public class LoginPage extends Global {
 	public WebElement getZipCodePage(){
 		return ZipCodePage;
 	}
+	public WebElement getStatePage(){
+		return StatePage;
+	}
 
 	public WebElement getZipCodeTextField(){
 		return ZipCodeTextField;
@@ -637,6 +653,10 @@ public class LoginPage extends Global {
 
 	public WebElement getTitleInResult(){
 		return TitleInResult;
+	}
+
+	public WebElement getSearchedContact(){
+		return SearchedContact;
 	}
 	public WebElement getEmailInResult(){
 		return EmailInResult;
@@ -791,5 +811,15 @@ public class LoginPage extends Global {
 	public WebElement getnewuniversalContactradiobutton() {
 		return newuniversalContactradiobutton;
 	}
+
+	public WebElement Statevalueselection() {
+		return Statevalueselection;
+	}
+
+
+	public WebElement LocationTab() {
+		return LocationTab;
+	}
+
 
 }

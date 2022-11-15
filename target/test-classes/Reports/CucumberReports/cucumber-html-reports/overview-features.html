@@ -50,7 +50,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                348,
+                26,
                 0,
                 0,
                 0,
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 348) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 26) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                75,
-                0
+                2,
+                3
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 75) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   8,
-                   0
+                   0,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SalesIntel Site Automation</td>
-      <td>11 Nov 2022, 18:44</td>
+      <td>15 Nov 2022, 19:00</td>
     </tr>
   </tbody>
 </table>
@@ -341,159 +341,40 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_2700143182.html">Validate application login Page</a></td>
+        <td class="tagname"><a href="report-feature_3078863761.html">Validate Search by States in Location</a></td>
 
-        <td      class="passed"    >40</td>
+        <td      class="passed"    >26</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">40</td>
+        <td class="total">26</td>
 
-        <td  class="passed"    >10</td>
-        <td >0</td>
-        <td class="total">10</td>
+        <td  class="passed"    >2</td>
+        <td  class="failed"    >3</td>
+        <td class="total">5</td>
 
-        <td class="duration" data-value="83764116400">1:23.764</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_1_3484979501.html">Validate Search By Contact Name</a></td>
-
-        <td      class="passed"    >93</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">93</td>
-
-        <td  class="passed"    >15</td>
-        <td >0</td>
-        <td class="total">15</td>
-
-        <td class="duration" data-value="340271750100">5:40.271</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_2_1262914825.html">Validate Search By Company</a></td>
-
-        <td      class="passed"    >41</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">41</td>
-
-        <td  class="passed"    >7</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td class="duration" data-value="199097396600">3:19.097</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_3_3740632958.html">Validate Contact by Sort Option</a></td>
-
-        <td      class="passed"    >24</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">24</td>
-
-        <td  class="passed"    >8</td>
-        <td >0</td>
-        <td class="total">8</td>
-
-        <td class="duration" data-value="280033078300">4:40.033</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_4_2890281820.html">Validate Contact by Sort Option</a></td>
-
-        <td      class="passed"    >24</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">24</td>
-
-        <td  class="passed"    >8</td>
-        <td >0</td>
-        <td class="total">8</td>
-
-        <td class="duration" data-value="265064878500">4:25.064</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_5_2758553608.html">Validate RoD Contacts Verification</a></td>
-
-        <td      class="passed"    >21</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">21</td>
-
-        <td  class="passed"    >6</td>
-        <td >0</td>
-        <td class="total">6</td>
-
-        <td class="duration" data-value="112593925900">1:52.593</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_6_3023943314.html">Validate Search By Job Department</a></td>
-
-        <td      class="passed"    >66</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">66</td>
-
-        <td  class="passed"    >13</td>
-        <td >0</td>
-        <td class="total">13</td>
-
-        <td class="duration" data-value="434832653200">7:14.832</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_7_3087445299.html">Validate Search By Job Level</a></td>
-
-        <td      class="passed"    >39</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">39</td>
-
-        <td  class="passed"    >8</td>
-        <td >0</td>
-        <td class="total">8</td>
-
-        <td class="duration" data-value="210374371200">3:30.374</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="170839845800">2:50.839</td>
+        <td class="failed">Failed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>348</td>
+      <td>26</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>348</td>
+      <td>26</td>
 
-      <td>75</td>
-      <td>0</td>
-      <td>75</td>
+      <td>2</td>
+      <td>3</td>
+      <td>5</td>
 
-      <td class="duration">32:6.032</td>
-      <td>8</td>
+      <td class="duration">2:50.839</td>
+      <td>1</td>
     </tr>
     <tr>
       <td></td>
@@ -503,11 +384,11 @@ $(document).ready(function() {
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
+      <td>40.00%</td>
+      <td>60.00%</td>
+      <td></td>
+      <td></td>
       <td>0.00%</td>
-      <td></td>
-      <td></td>
-      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

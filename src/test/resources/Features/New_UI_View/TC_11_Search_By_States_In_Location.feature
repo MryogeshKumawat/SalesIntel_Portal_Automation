@@ -1,4 +1,7 @@
 Feature: Validate Search by States in Location
+  @First @Sanity
+  Scenario: To validate SalesIntel application Launching application
+    Given Launch the url
 
   @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
@@ -8,10 +11,11 @@ Feature: Validate Search by States in Location
 
   @First @Sanity
   Scenario: To validate Search by States in US Location
+    And Click on Contact Radio Button
     When Verify Location filter is Displayed
-    And Click on Location Filter
-    And Click on States Filter
-    And Click on California State
+    Then Click on Location Tab
+    Then Click on State Combobox
+    Then Enter the Data in State Combobox
     And Click on Search Button
     Then Check CA for California State in Search Result
 
@@ -23,7 +27,7 @@ Feature: Validate Search by States in Location
     And Click on Location Filter
     And Click on Zip code under USA
     And Enter Zip Code in the text field
-    And Select 100 Miles in the dropdown
+#    And Select 100 Miles in the dropdown
     Then Click on Search Button
 
   @First @Sanity
@@ -34,7 +38,7 @@ Feature: Validate Search by States in Location
     And Click on Location Filter
     And Click on Metro Areas under USA
     And Click on Metro Areas Text Field
-    And Click on Albany GA Metro Area
+    And Enter Albany GA Metro Area
     Then Click on Search Button
 
 

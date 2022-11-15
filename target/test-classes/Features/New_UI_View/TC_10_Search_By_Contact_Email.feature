@@ -27,9 +27,11 @@ Feature: Validate Search By Contact Email
 
   @First @Sanity
   Scenario: To validate application Search by Valid Contact Email Address
-    When Clear the Text in Contact Email Field
+    When Click On Clear Button
+    And Click on Contact Email Button
     And Enter Contact Email Address
     And Click on Search Button
+    And Click on Searched Contact
     Then Check email in Search Result
 
   @First @Sanity

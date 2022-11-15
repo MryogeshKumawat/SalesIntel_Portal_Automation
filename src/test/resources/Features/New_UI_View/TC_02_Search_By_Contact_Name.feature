@@ -61,7 +61,6 @@ Feature: Validate Search By Contact Name
     And Click On Do Not Save Button
     When Click on Contact Name Button
     And Enter the First Name
-    And Enter the Last Name
     And Click on Search Button
     And Validate Search Result
     And Select Multiple contact to Add Contact List

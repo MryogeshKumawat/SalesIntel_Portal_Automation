@@ -19,6 +19,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
@@ -754,8 +756,14 @@ public class Steps extends Global {
 	@And("Click on Location Filter")
 	public void I_Click_Location_Filter() throws Throwable{
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLocationFilter());
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		log.info("User Click on Location Filter");
+	}
+
+	@And("Click on State Page")
+	public void I_Click_On_State_Page() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getStatePage());
+		log.info("User Click on State Page");
 	}
 
 	@And("Click on States Filter")
@@ -764,6 +772,40 @@ public class Steps extends Global {
 		Thread.sleep(2000);
 		log.info("User click on States Filter");
 	}
+
+	@And("Enter California State")
+	public void I_Enter_California_State() throws Throwable{
+		Thread.sleep(5000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getStateField(),
+				ReadDatafromJson("Contact_Name", "StateName"));
+		log.info("User Enter the California State");
+	}
+
+	@Then("Click on Location Tab")
+	public void I_Click_Location_Tab() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().LocationTab());
+		log.info("User click on Location Tab");
+		Thread.sleep(10000);
+	}
+
+	@Then("Click on State Combobox")
+	public void I_Click_State_Combobox() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().Statevalueselection());
+		log.info("User click on Location Tab");
+		Thread.sleep(10000);
+	}
+
+	@When("Enter the Data in State Combobox")
+	public void i_enter_the_Data_State_Combobox() throws Throwable {
+		enterData(PageObjectManager.getInstance().getLoginPage().Statevalueselection(), ReadDatafromJson("Contact_Name", "Stateselection"));
+//		enterData(PageObjectManager.getInstance().getLoginPage().getFirstName(),readData(0,1));
+		log.info("Enter the Data in State Combobox");
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(3000);
+	}
+
 
 	@And("Click on California State")
 	public void I_Click_On_California_State() throws Throwable{
@@ -822,6 +864,23 @@ public class Steps extends Global {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getAlbanyORMetroArea());
 		Thread.sleep(2000);
 		log.info("Click on Albany GA Metro Area");
+	}
+
+	@And("Enter Albany GA Metro Area")
+	public void I_Enter_Albany_GA_Metro_Area() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getMetroAreaTextField(), ReadDatafromJson("Contact_Name", "Metro Area"));
+//		enterData(PageObjectManager.getInstance().getLoginPage().getFirstName(),readData(0,1));
+		log.info("Enter Albany GA Metro Area");
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(3000);
+	}
+
+
+	@And("Click on Searched Contact")
+	public void I_Click_On_Searched_Contact() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSearchedContact());
 	}
 
 	@Then("Check email in Search Result")
@@ -898,8 +957,8 @@ public class Steps extends Global {
 
 
 	@And("Validate Search Result")
-	public void I_Validate_Search_Result() {
-		List<WebElement> allElement = driver.findElements(By.xpath("//*[contains(text(),'Vikas')]"));
+	public void I_Validate_Search_Result() throws Throwable {
+		List<WebElement> allElement = driver.findElements(By.xpath("(//span[contains(text(),'Vikas')])[2]"));
 		for (WebElement eachElement : allElement) {
 			String actualValue = eachElement.getText();
 			if (actualValue.contains("Vikas")) {
@@ -1068,7 +1127,7 @@ public class Steps extends Global {
 		String Contactsearchname2 = ReadDatafromJson("Contact_Name", "ContactSearch2");
 //		driver.findElement(By.xpath("//*[contains(text(),\'"+Contactsearchname1+"\')]"));
 		clickButton(driver.findElement(By.xpath("//*[contains(text(),\'" + Contactsearchname2 + "\')]")));
-		log.info("User click Click On Login Button");
+		log.info("User Click On Contact Search2");
 		Thread.sleep(3000);
 	}
 
@@ -1202,6 +1261,7 @@ public class Steps extends Global {
 	public void I_Click_do_not_save_Button() throws Throwable {
 		Thread.sleep(10000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getDonotsavebutton());
+		Thread.sleep(5000);
 		log.info("User click on Clear Button");
 	}
 
@@ -1213,6 +1273,7 @@ public class Steps extends Global {
 
 	@And("Click On Add all to List")
 	public void I_Click_add_all_list() throws Throwable {
+		Thread.sleep(2000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getAddalltolistbutton());
 		log.info("User click on Add All to List");
 	}
@@ -1512,7 +1573,7 @@ public class Steps extends Global {
 	}
 	@And("Click On Sort Icon For Display Contact based on Dept")
 	public void I_Click_Sort_Icon_Dept() throws Throwable {
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getSortbyDept());
 		System.out.println("Click On Sort Icon For Display Contact based on Job Title Name");
 		log.info("Click On Sort Icon For Display Contact based on Job Title Name");
