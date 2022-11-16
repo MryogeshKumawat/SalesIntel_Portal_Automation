@@ -1,4 +1,4 @@
-Feature: Validate Search by States in Location
+Feature: Validate Search by Location
 
   @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
@@ -8,7 +8,6 @@ Feature: Validate Search by States in Location
 
   @First @Sanity
   Scenario: To validate Search by States in USA Location
-    And Click on Contact Radio Button
     When Verify Location filter is Displayed
     Then Click on Location Tab
     Then Click on State Combobox
@@ -50,5 +49,24 @@ Feature: Validate Search by States in Location
     And Enter Non USA Country Name
     And Click on Search Button
     Then Check Country in Location in Search Result
+
+  @First @Sanity
+  Scenario: To validate Search by Global Location
+    When Click On Clear Button
+    And Click On Do Not Save Button
+    And Verify Location filter is Displayed
+    And Click on Location Filter
+    And Click on Global Radio Button
+    And Click on Country Input Box
+    And Enter Global Country Name
+    And Click on Search Button
+    Then Check Global Country in Location in Search Result
+
+  @First @Sanity
+  Scenario: Logout the application
+    When Click On Setting Options
+    Then Click On Logout Options
+
+
 
 

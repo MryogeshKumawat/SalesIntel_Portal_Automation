@@ -49,7 +49,7 @@ public class Steps extends Global {
 //	@When("Enter Valid Username")
 //	public void i_enter_the_username() throws Throwable {
 //		log = readLog4jData();
-//		log.info("User is navigate to Salesforce site");
+//		log.info("User is navigate to SalesIntel site");
 //		enterData(PageObjectManager.getInstance().getLoginPage().getUserName(),
 //				readPropertyFileData().getProperty("UserName"));
 //		log.info("User enter the correct username");
@@ -58,7 +58,7 @@ public class Steps extends Global {
 	@When("Enter Valid Username")
 	public void i_enter_the_username() throws Throwable {
 		log = readLog4jData();
-		log.info("User is navigate to Salesforce site");
+		log.info("User is navigate to SalesIntel site");
 		enterData(PageObjectManager.getInstance().getLoginPage().getUserName(),
 				ReadDatafromJson("Contact_Name", "UserName"));
 		log.info("User enter the correct username");
@@ -67,7 +67,7 @@ public class Steps extends Global {
 	@When("Enter Universal Valid Username")
 	public void i_enter_the_Universal_username() throws Throwable {
 		log = readLog4jData();
-		log.info("User is navigate to Salesforce site");
+		log.info("User is navigate to SalesIntel site");
 		enterData(PageObjectManager.getInstance().getLoginPage().getUserName(),
 				ReadDatafromJson("Contact_Name", "UniversalUserName"));
 		log.info("User enter the correct username");
@@ -886,6 +886,14 @@ public class Steps extends Global {
 		Thread.sleep(2000);
 	}
 
+	@And("Click on Global Radio Button")
+	public void I_Click_on_Global_Radio_Button() throws Throwable{
+		Thread.sleep(5000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getGlobalRadioButton());
+		log.info("User Click on Global Radio Button");
+		Thread.sleep(2000);
+	}
+
 	@And("Click on Country Input Box")
 	public void I_Click_On_Country_Box() throws Throwable{
 		clickButton(PageObjectManager.getInstance().getLoginPage().getCountryBox());
@@ -904,12 +912,69 @@ public class Steps extends Global {
 		Thread.sleep(3000);
 	}
 
+	@And("Enter Global Country Name")
+	public void I_Enter_Global_Country_Name() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getCountryBox(), ReadDatafromJson("Contact_Name", "Global Country"));
+//		enterData(PageObjectManager.getInstance().getLoginPage().getFirstName(),readData(0,1));
+		log.info("User enter Global Country Name");
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(3000);
+	}
+
 	@Then("Check Country in Location in Search Result")
 	public void I_Check_Country_Location_In_Result() throws Throwable{
 		String NonUSACountry = ReadDatafromJson("Contact_Name", "Non-USA Country");
 		Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(),\'" + NonUSACountry + "\')]")).isDisplayed());
 		log.info("Non USA Country is displayed under Location in Search Result");
 		Thread.sleep(3000);
+	}
+
+	@Then("Check Global Country in Location in Search Result")
+	public void I_Check_Global_Country_Location_In_Result() throws Throwable{
+		String GlobalCountryName = ReadDatafromJson("Contact_Name", "Global Country");
+		Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(),\'" + GlobalCountryName + "\')]")).isDisplayed());
+		log.info("Global Country is displayed under Location in Search Result");
+		Thread.sleep(3000);
+	}
+
+	@When("Click on Keywords Filter")
+	public void I_Click_On_Keywords_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getKeywordsFilter());
+		log.info("User click on Keywords Filter");
+	}
+
+	@And("Click on Keywords Input box")
+	public void I_Click_On_Keywords_Input_Box() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getKeywordsInputBox());
+		log.info("User click on Keywords Input Box");
+	}
+
+	@And("Enter the Keyword")
+	public void I_Enter_Keyword_In_Input_Box() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getKeywordsInputBox(), ReadDatafromJson("Contact_Name", "Keyword"));
+		Thread.sleep(3000);
+//		enterData(PageObjectManager.getInstance().getLoginPage().getFirstName(),readData(0,1));
+		log.info("User Enter the Keyword");
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(3000);
+	}
+
+	@When("Click on Industry Filter")
+	public void I_Click_On_Industry_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getIndustryFilter());
+		log.info("Click on Industry Filter");
+		Thread.sleep(2000);
+	}
+
+	@And("Click on Select All Check Box")
+	public void I_Click_On_Select_All_Check_Box() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSelectAllCheckBox());
+		log.info("User Select All Industries");
+		Thread.sleep(2000);
 	}
 
 	@And("Click on Searched Contact")

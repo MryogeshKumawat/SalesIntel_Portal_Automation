@@ -74,7 +74,7 @@ Feature: Validate Search By Contact Name
   Scenario: To validate application Contact into the Contact List
     When Click On List Tab
     Then Select Preview Button
-    #And Compare Contact details into the List
+#    And Compare Contact details into the List
 
   @First @Sanity
   Scenario: To validate application add multiple contact into Existing Contact List

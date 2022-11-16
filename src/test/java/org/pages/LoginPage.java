@@ -267,8 +267,23 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//input[@type='radio'])[2]")
 	private WebElement NonUsaRadioButton;
 
+	@FindBy(xpath = "(//input[@type='radio'])[3]")
+	private WebElement GlobalRadioButton;
+
 	@FindBy(xpath = "(//input[@type='text'])[2]")
 	private WebElement CountryBox;
+
+	@FindBy(xpath = "//span[contains(text(),'Keywords')]")
+	private WebElement KeywordsFilter;
+
+	@FindBy(xpath = "(//input[@type='text'])[3]")
+	private WebElement KeywordsInputBox;
+
+	@FindBy(xpath = "(//span[contains(text(),'Industry')])[1]")
+	private WebElement IndustryFilter;
+
+	@FindBy(xpath = "(//label[contains(text(),' Select All ')])[1]")
+	private WebElement SelectAllCheckBox;
 
 	@FindBy(xpath = "//div[@title='Albany, OR']")
 	private WebElement AlbanyORMetroArea;
@@ -665,9 +680,30 @@ public class LoginPage extends Global {
 	public WebElement getNonUsaRadioButton(){
 		return NonUsaRadioButton;
 	}
+
+	public WebElement getGlobalRadioButton(){
+		return GlobalRadioButton;
+	}
 	public WebElement getCountryBox(){
 		return CountryBox;
 	}
+
+	public WebElement getKeywordsFilter(){
+		return KeywordsFilter;
+	}
+
+	public WebElement getIndustryFilter(){
+		return IndustryFilter;
+	}
+
+	public WebElement getSelectAllCheckBox(){
+		return SelectAllCheckBox;
+	}
+
+	public WebElement getKeywordsInputBox(){
+		return KeywordsInputBox;
+	}
+
 
 	public WebElement getAlbanyORMetroArea(){
 		return AlbanyORMetroArea;

@@ -41,6 +41,9 @@
     "Zip_Code": "90011",
     "StateName": "California",
     "Stateselection": "California",
-    "Metro Area": "Albany, GA"
+    "Metro Area": "Albany, GA",
+    "Non-USA Country": "Spain",
+    "Global Country": "Canada",
+    "Keyword": "commercial sales"
   }
 }
