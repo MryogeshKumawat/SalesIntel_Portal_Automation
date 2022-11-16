@@ -104,7 +104,7 @@ public class Steps extends Global {
 	public void I_Click_Contact_Radio_Button() throws Throwable {
 		Thread.sleep(15000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getnewContactradiobutton());
-		log.info("User Click on Contact Radio Buttonn");
+		log.info("User Click on Contact Radio Button");
 		Thread.sleep(5000);
 	}
 
@@ -839,7 +839,9 @@ public class Steps extends Global {
 	@And("Select 100 Miles in the dropdown")
 	public void I_Select_100_Miles_Under_Zip_Code() throws Throwable{
 		Thread.sleep(2000);
-		Select milesOptions = new Select(driver.findElement(By.xpath("//Select[@class='custom-select custom-select-sm ng-pristine ng-valid ng-touched']")));
+		clickButton(PageObjectManager.getInstance().getLoginPage().getMilesSelectBox());
+		Thread.sleep(2000);
+		Select milesOptions = new Select(PageObjectManager.getInstance().getLoginPage().getMilesSelectBox());
 		milesOptions.selectByVisibleText("100 Miles");
 		Thread.sleep(2000);
 		log.info("User select 100 Miles in the dropdown");
@@ -876,11 +878,44 @@ public class Steps extends Global {
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
 	}
+	@And("Click on Non USA Radio Button")
+	public void I_Click_on_Non_USA_Radio_Button() throws Throwable{
+		Thread.sleep(5000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNonUsaRadioButton());
+		log.info("User Click on Non USA Radio Button");
+		Thread.sleep(2000);
+	}
 
+	@And("Click on Country Input Box")
+	public void I_Click_On_Country_Box() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getCountryBox());
+		log.info("User click on Country Input Box");
+		Thread.sleep(2000);
+	}
+
+	@And("Enter Non USA Country Name")
+	public void I_Enter_Non_USA_Country_Name() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getCountryBox(), ReadDatafromJson("Contact_Name", "Non-USA Country"));
+//		enterData(PageObjectManager.getInstance().getLoginPage().getFirstName(),readData(0,1));
+		log.info("User enter Non USA Country Name");
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(3000);
+	}
+
+	@Then("Check Country in Location in Search Result")
+	public void I_Check_Country_Location_In_Result() throws Throwable{
+		String NonUSACountry = ReadDatafromJson("Contact_Name", "Non-USA Country");
+		Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(),\'" + NonUSACountry + "\')]")).isDisplayed());
+		log.info("Non USA Country is displayed under Location in Search Result");
+		Thread.sleep(3000);
+	}
 
 	@And("Click on Searched Contact")
 	public void I_Click_On_Searched_Contact() throws Throwable{
 		clickButton(PageObjectManager.getInstance().getLoginPage().getSearchedContact());
+		log.info("User Click on Searched Contact");
 	}
 
 	@Then("Check email in Search Result")

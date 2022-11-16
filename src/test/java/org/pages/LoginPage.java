@@ -2,6 +2,7 @@ package org.pages;
 
 import org.apache.xmlbeans.impl.xb.xsdschema.FieldDocument;
 import org.base.Global;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -254,11 +255,20 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//input[@placeholder='e.g. 20001']")
 	private WebElement ZipCodeTextField;
 
+	@FindBy(xpath = "(//Select)[2]")
+	private WebElement MilesSelectBox;
+
 	@FindBy(xpath = "(//a[contains(text(),'Metro Area')])[1]")
 	private WebElement MetroAreaPage;
 
 	@FindBy(xpath = "(//input[@type='text'])[2]")
 	private WebElement MetroAreaTextField;
+
+	@FindBy(xpath = "(//input[@type='radio'])[2]")
+	private WebElement NonUsaRadioButton;
+
+	@FindBy(xpath = "(//input[@type='text'])[2]")
+	private WebElement CountryBox;
 
 	@FindBy(xpath = "//div[@title='Albany, OR']")
 	private WebElement AlbanyORMetroArea;
@@ -639,12 +649,24 @@ public class LoginPage extends Global {
 		return ZipCodeTextField;
 	}
 
+	public WebElement getMilesSelectBox(){
+		return MilesSelectBox;
+	}
+
+
 	public WebElement getMetroAreaPage(){
 		return MetroAreaPage;
 	}
 
 	public WebElement getMetroAreaTextField(){
 		return MetroAreaTextField;
+	}
+
+	public WebElement getNonUsaRadioButton(){
+		return NonUsaRadioButton;
+	}
+	public WebElement getCountryBox(){
+		return CountryBox;
 	}
 
 	public WebElement getAlbanyORMetroArea(){
