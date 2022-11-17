@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="10" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="95" time="2563.619612">
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Launching application" time="8.053643">
+<testsuite failures="15" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="100" time="2793.716409">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Launching application" time="8.190535">
         <system-out><![CDATA[Given Launch the url........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login Screen Content" time="0.581583">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login Screen Content" time="0.541722">
         <system-out><![CDATA[Then Validate Login Page Title is displayed.................................passed
 And Validate Email Field is displayed.......................................passed
 And Validate Password Field is displayed....................................passed
@@ -14,20 +14,20 @@ And Validate FAQ Link is displayed..........................................pass
 And Validate Login Button is displayed......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Tapping only Login Button" time="10.37348">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Tapping only Login Button" time="10.328087">
         <system-out><![CDATA[When Click On Login Button..................................................passed
 Then Validate Error Text when Tried with Invalid Username and Invalid Password.passed
 And Validate Error Text when Tried with Invalid Password and Invalid Username.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Valid Password" time="10.434329">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Valid Password" time="10.42936">
         <system-out><![CDATA[When Enter Invalid Username.................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 Then Validate Error Text when Tried with Invalid Username and Valid Password.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Valid Username and Invalid Password" time="10.460624">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Valid Username and Invalid Password" time="10.427772">
         <system-out><![CDATA[When Clear the Text in Username Field.......................................passed
 And Clear the Text in Password Field........................................passed
 And Enter Valid Username....................................................passed
@@ -35,7 +35,7 @@ And Enter Invalid Password..................................................pass
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Invalid Password" time="10.439389">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Invalid Password" time="10.449519">
         <system-out><![CDATA[When Clear the Text in Username Field.......................................passed
 And Clear the Text in Password Field........................................passed
 And Enter Invalid Username..................................................passed
@@ -44,7 +44,7 @@ And Click On Login Button...................................................pass
 Then Validate Error Text when Tried with Invalid Username and Valid Password.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Forget Password" time="16.567945">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Forget Password" time="16.551432">
         <system-out><![CDATA[When Click on Forget Password...............................................passed
 Then Verify Forget Email Address Field is displayed.........................passed
 When Enter Forget Email Address.............................................passed
@@ -52,11 +52,11 @@ Then Verify Reset Password Button is displayed..............................pass
 When Click On Reset Password Button.........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Remember Me" time="0.226194">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Remember Me" time="0.240812">
         <system-out><![CDATA[When Click on Remember Me...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.553939">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.559809">
         <system-out><![CDATA[When Click on Remember Me...................................................passed
 And Clear the Text in Username Field........................................passed
 And Clear the Text in Password Field........................................passed
@@ -65,18 +65,18 @@ And Enter Valid Password....................................................pass
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate application Logout" time="6.438109">
+    <testcase classname="Validate application login Page" name="To validate application Logout" time="6.426288">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.410582">
+    <testcase classname="Validate Search By Contact Name" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.436963">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search Page Content is displayed" time="70.927586">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search Page Content is displayed" time="70.975611">
         <system-out><![CDATA[Then Click on Contact Radio Button..........................................passed
 When Click on Search Button.................................................passed
 And Verify Contact Name is displayed........................................passed
@@ -87,11 +87,11 @@ Then Verify First Name is displayed.........................................pass
 And Verify Last Name is displayed...........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search without Firstname and LastName" time="10.297099">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search without Firstname and LastName" time="10.314367">
         <system-out><![CDATA[When Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search by FirstName and LastName using Integer Value" time="31.744837">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search by FirstName and LastName using Integer Value" time="31.754164">
         <system-out><![CDATA[When Click on Contact Name Button...........................................passed
 And Enter the First Name with Integer Value.................................passed
 And Enter the Last Name with Integer Value..................................passed
@@ -99,7 +99,7 @@ And Click on Search Button..................................................pass
 Then Verify Error Message is displayed When search with FirstName and LastName only Integer.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search by Valid FirstName and LastName" time="10.703976">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search by Valid FirstName and LastName" time="10.736274">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the First Name....................................................passed
@@ -110,7 +110,7 @@ When Clear the Text in First Name Field.....................................pass
 And Clear the Text in Last Name Field.......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into New Contact List" time="48.736346">
+    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into New Contact List" time="48.761662">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click on Contact Name Button...........................................passed
@@ -125,12 +125,12 @@ When Enter New Contact List.................................................pass
 And Click On Create New Contact List Save Button............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Contact into the Contact List" time="10.646736">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Contact into the Contact List" time="10.583152">
         <system-out><![CDATA[When Click On List Tab......................................................passed
 Then Select Preview Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into Existing Contact List" time="48.829027">
+    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into Existing Contact List" time="48.766766">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click on Contact Name Button...........................................passed
@@ -145,13 +145,13 @@ And Click on Contact List Drop Down Option..................................pass
 And Click On Add Contact List Save Button...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Delete Contact List" time="15.686311">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Delete Contact List" time="15.681064">
         <system-out><![CDATA[And Click On List Tab.......................................................passed
 And Delete Contact List.....................................................passed
 And Click On Delete Contact List............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact1 Search by Valid FirstName and LastName" time="24.958546">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact1 Search by Valid FirstName and LastName" time="24.953408">
         <system-out><![CDATA[Then Click On SalesIntel Tab................................................passed
 And Clear the Text in First Name Field......................................passed
 And Clear the Text in Last Name Field.......................................passed
@@ -162,7 +162,7 @@ And Click On Contact Search1................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact2 Search by Valid FirstName and LastName" time="16.714428">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact2 Search by Valid FirstName and LastName" time="16.694531">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name2............................................passed
@@ -172,7 +172,7 @@ And Click On Contact Search2................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact3 Search by Valid FirstName and LastName" time="16.702824">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact3 Search by Valid FirstName and LastName" time="16.734217">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name3............................................passed
@@ -182,7 +182,7 @@ And Click On Contact Search3................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact4 Search by Valid FirstName and LastName" time="16.70172">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact4 Search by Valid FirstName and LastName" time="16.715989">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name4............................................passed
@@ -192,7 +192,7 @@ And Click On Contact Search4................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact5 Search by Valid FirstName and LastName" time="16.702877">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact5 Search by Valid FirstName and LastName" time="16.716273">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name5............................................passed
@@ -202,23 +202,23 @@ And Click On Contact Search5................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Logout" time="6.424399">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Logout" time="6.406015">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.418827">
+    <testcase classname="Validate Search By Company" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.427191">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Search without Company Name" time="15.421105">
+    <testcase classname="Validate Search By Company" name="To validate application Search without Company Name" time="15.426081">
         <system-out><![CDATA[Then Click on Company Radio Button..........................................passed
 When Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Search by Valid Company Name" time="45.795233">
+    <testcase classname="Validate Search By Company" name="To validate application Search by Valid Company Name" time="45.865563">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click On Company.......................................................passed
@@ -227,7 +227,7 @@ And Click on Search Button..................................................pass
 And Validate Company Search Result..........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into New Company List" time="53.921515">
+    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into New Company List" time="53.975596">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click On Company.......................................................passed
@@ -242,7 +242,7 @@ When Enter New Company List.................................................pass
 And Click On Create New Company List Save Button............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into Existing Company List" time="59.033226">
+    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into Existing Company List" time="58.959352">
         <system-out><![CDATA[Then Click On SalesIntel Tab................................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -258,31 +258,31 @@ And Click on Company List Drop Down Option..................................pass
 And Click On Add Company List Save Button...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Delete Company List" time="25.632328">
+    <testcase classname="Validate Search By Company" name="To validate application Delete Company List" time="25.654456">
         <system-out><![CDATA[And Click On List Tab.......................................................passed
 And Delete Company List.....................................................passed
 And Click On Delete Company List............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Logout" time="6.406839">
+    <testcase classname="Validate Search By Company" name="To validate application Logout" time="6.459309">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.42959">
+    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.414148">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="60.688365">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="60.660684">
         <system-out><![CDATA[Then Click on Contact Radio Button..........................................passed
 When Click on Search Button.................................................passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="65.80481">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="65.809327">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Search Button..................................................passed
@@ -290,13 +290,13 @@ And Click On Sort Icon For Display Contact based on Job Title...............pass
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.549082">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.533727">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="75.819">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="75.77444">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Search Button..................................................passed
@@ -304,7 +304,7 @@ And Click On Sort Icon For Display Contact based on Dept....................pass
 And Click On Sort Icon For Display Contact based on Dept....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="65.832431">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="65.731605">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Search Button..................................................passed
@@ -312,7 +312,7 @@ And Click On Sort Icon For Display Contact based on Comp....................pass
 And Click On Sort Icon For Display Contact based on Comp....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="65.743973">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="65.768693">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Search Button..................................................passed
@@ -320,66 +320,66 @@ And Click On Sort Icon For Display Contact based on Location................pass
 And Click On Sort Icon For Display Contact based on Location................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="6.413875">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="6.436729">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.364865">
+    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.431155">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="45.653116">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="45.663227">
         <system-out><![CDATA[Then Click on Company Radio Button..........................................passed
 When Click on Search Button.................................................passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="40.545984">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="40.552409">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.55599">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.555551">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="50.545376">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="50.593416">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Dept....................passed
 And Click On Sort Icon For Display Contact based on Dept....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="40.551865">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="40.677449">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Comp....................passed
 And Click On Sort Icon For Display Contact based on Comp....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="40.53759">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="40.575077">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Location................passed
 And Click On Sort Icon For Display Contact based on Location................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="6.385879">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="6.410933">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.431412">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.454587">
         <system-out><![CDATA[And Enter Universal Valid Username..........................................passed
 And Enter Universal Valid Password..........................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Search Contact for ROD" time="59.445282">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Search Contact for ROD" time="59.440609">
         <system-out><![CDATA[Then Click on Contact Radio Button for Universal User.......................passed
 When Click on Search Button.................................................passed
 Then Verify Contact Name is displayed.......................................passed
@@ -392,42 +392,42 @@ And Click on Search Button..................................................pass
 And Click On Searched Contact...............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application &quot;Request Verification&quot;" time="9.332262">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application &quot;Request Verification&quot;" time="9.372917">
         <system-out><![CDATA[Then Verify Request Verification Button is displayed........................passed
 And Click On Request Verification Button....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application for Validate &quot;Requested Verification&quot;" time="10.240766">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application for Validate &quot;Requested Verification&quot;" time="10.245241">
         <system-out><![CDATA[Then Verify Requested Verification Status...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Contact Requested in ROD Section" time="19.75183">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Contact Requested in ROD Section" time="19.781029">
         <system-out><![CDATA[Then Verify RoD Tab is displayed............................................passed
 And Click On RoD Tab........................................................passed
 And Verify Requested ROD is Displayed in ROD tab............................passed
 When Click On Setting Options...............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Logout" time="3.338057">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Logout" time="3.361724">
         <system-out><![CDATA[And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate SalesIntel application login Valid User Username and Valid Password" time="10.411859">
+    <testcase classname="Validate Search By Job Department" name="To validate SalesIntel application login Valid User Username and Valid Password" time="10.420049">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search By Job Department section contents" time="0.281329">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search By Job Department section contents" time="0.241399">
         <system-out><![CDATA[When Verify Role Section is displayed.......................................passed
 And Verify Job Department is displayed......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search without Job Department Filter" time="10.283121">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search without Job Department Filter" time="10.276568">
         <system-out><![CDATA[Then Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Finance Job Department Filter" time="47.767126">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Finance Job Department Filter" time="47.799835">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -436,7 +436,7 @@ And Click on Search Button..................................................pass
 Then Check Finance Department in Search Result..............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by HR Job Department Filter" time="47.714883">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by HR Job Department Filter" time="47.761498">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -445,7 +445,7 @@ And Click on Search Button..................................................pass
 Then Check HR Department in Search Result...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by IT Job Department Filter" time="47.742508">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by IT Job Department Filter" time="47.746333">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -454,7 +454,7 @@ And Click on Search Button..................................................pass
 Then Check IT Department in Search Result...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Legal Job Department Filter" time="45.833598">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Legal Job Department Filter" time="45.844526">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -463,7 +463,7 @@ And Click on Search Button..................................................pass
 Then Check Legal Department in Search Result................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Marketing Job Department Filter" time="45.696592">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Marketing Job Department Filter" time="45.771926">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -472,7 +472,7 @@ And Click on Search Button..................................................pass
 Then Check Marketing Department in Search Result............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Operations Job Department Filter" time="45.734309">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Operations Job Department Filter" time="45.846029">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -481,7 +481,7 @@ And Click on Search Button..................................................pass
 Then Check Operations Department in Search Result...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Procurement Job Department Filter" time="45.739655">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Procurement Job Department Filter" time="45.744657">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -490,7 +490,7 @@ And Click on Search Button..................................................pass
 Then Check Procurement Department in Search Result..........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by R&amp;D Job Department Filter" time="45.681361">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by R&amp;D Job Department Filter" time="45.739847">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -499,7 +499,7 @@ And Click on Search Button..................................................pass
 Then Check R&D Department in Search Result..................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Sales Job Department Filter" time="45.723153">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Sales Job Department Filter" time="45.696274">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -508,7 +508,7 @@ And Click on Search Button..................................................pass
 Then Check Sales Department in Search Result................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Cross Functional Job Department Filter" time="45.688629">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Cross Functional Job Department Filter" time="45.728462">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -517,20 +517,20 @@ And Click on Search Button..................................................pass
 Then Check Cross Functional Department in Search Result.....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Job Level is displayed" time="28.440133">
+    <testcase classname="Validate Search By Job Level" name="To validate application Job Level is displayed" time="28.45692">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Verify Job Level Filter is displayed....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by Board Member Job Level Filter" time="15.487261">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Board Member Job Level Filter" time="15.470398">
         <system-out><![CDATA[When Click On Job Level Filter..............................................passed
 And Click on Board Member Job Level Filter..................................passed
 And Click on Search Button..................................................passed
 Then Check Board Member Job Level in Result.................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by C-level Executive Job Level Filter" time="40.687676">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by C-level Executive Job Level Filter" time="40.712828">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click On Job Level Filter...............................................passed
@@ -539,7 +539,7 @@ And Click on Search Button..................................................pass
 And Check C-level Executive Job level in Result.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by Voice Presidents Job Level Filter" time="35.672397">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Voice Presidents Job Level Filter" time="35.662895">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click On Job Level Filter...............................................passed
@@ -548,7 +548,7 @@ And Click on Search Button..................................................pass
 And Check Vice Presidents Job level in Result...............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by Directors Job Level Filter" time="35.664077">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Directors Job Level Filter" time="35.623744">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click On Job Level Filter...............................................passed
@@ -557,7 +557,7 @@ And Click on Search Button..................................................pass
 And Check Directors Job level in Result.....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by Managers Job Level Filter" time="35.650995">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Managers Job Level Filter" time="35.688663">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click On Job Level Filter...............................................passed
@@ -566,7 +566,7 @@ And Click on Search Button..................................................pass
 And Check Managers Job level in Result......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by Key Influencers Job Level Filter" time="40.65543">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Key Influencers Job Level Filter" time="40.686341">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click On Job Level Filter...............................................passed
@@ -575,18 +575,18 @@ And Click on Search Button..................................................pass
 And Check Key Influencers Job level in Result...............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Logout" time="6.410459">
+    <testcase classname="Validate Search By Job Level" name="To validate application Logout" time="6.423535">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Title" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.395144">
+    <testcase classname="Validate Search By Job Title" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.426291">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Title" name="To validate application Search By Job Title Filter" time="17.661731">
+    <testcase classname="Validate Search By Job Title" name="To validate application Search By Job Title Filter" time="17.650238">
         <system-out><![CDATA[When Verify Role Section is displayed.......................................passed
 And Verify Title filter is Displayed........................................passed
 And Click on Title Filter...................................................passed
@@ -595,25 +595,25 @@ And Click on Search Button..................................................pass
 Then Check searched title is displayed in Search Result.....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Title" name="To validate application Logout" time="6.398904">
+    <testcase classname="Validate Search By Job Title" name="To validate application Logout" time="6.432839">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Email" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.393063">
+    <testcase classname="Validate Search By Contact Email" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.416927">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Email" name="To validate application Search by Invalid Email Address" time="10.789423">
+    <testcase classname="Validate Search By Contact Email" name="To validate application Search by Invalid Email Address" time="10.573056">
         <system-out><![CDATA[Then Click on Contact Email Button..........................................passed
 When Enter Invalid Contact Email Address....................................passed
 Then Click on Search Button.................................................passed
 And Verify Error Message is displayed When search with Invalid Email Address.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Email" name="To validate application Search by Valid Contact Email Address" time="20.768092">
+    <testcase classname="Validate Search By Contact Email" name="To validate application Search by Valid Contact Email Address" time="20.765146">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click on Contact Email Button...........................................passed
 And Enter Contact Email Address.............................................passed
@@ -622,18 +622,18 @@ And Click on Searched Contact...............................................pass
 Then Check email in Search Result...........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Email" name="To validate application Logout" time="6.392161">
+    <testcase classname="Validate Search By Contact Email" name="To validate application Logout" time="6.382853">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.38633">
+    <testcase classname="Validate Search by Location" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.419585">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate Search by States in USA Location" time="35.825086">
+    <testcase classname="Validate Search by Location" name="To validate Search by States in USA Location" time="36.064439">
         <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Verify Location filter is Displayed....................................passed
 Then Click on Location Tab..................................................passed
 Then Click on State Combobox................................................passed
@@ -682,7 +682,7 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ]]></failure>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate Search by Zip Code in USA Location" time="44.958927">
+    <testcase classname="Validate Search by Location" name="To validate Search by Zip Code in USA Location" time="45.03435">
         <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Verify Location filter is Displayed.....................................passed
@@ -732,7 +732,7 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ]]></failure>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate Search by Metro Areas in USA Location" time="47.089437">
+    <testcase classname="Validate Search by Location" name="To validate Search by Metro Areas in USA Location" time="47.156058">
         <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Verify Location filter is Displayed.....................................passed
@@ -783,7 +783,7 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ]]></failure>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate Search by Non-USA Location" time="56.055681">
+    <testcase classname="Validate Search by Location" name="To validate Search by Non-USA Location" time="56.126616">
         <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Verify Location filter is Displayed.....................................passed
@@ -835,7 +835,7 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ]]></failure>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate Search by Global Location" time="56.111665">
+    <testcase classname="Validate Search by Location" name="To validate Search by Global Location" time="56.143612">
         <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Verify Location filter is Displayed.....................................passed
@@ -887,7 +887,7 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ]]></failure>
     </testcase>
-    <testcase classname="Validate Search by Location" name="Logout the application" time="6.488449">
+    <testcase classname="Validate Search by Location" name="Logout the application" time="6.548566">
         <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 
@@ -932,13 +932,13 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ]]></failure>
     </testcase>
-    <testcase classname="To validate search by Keywords" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.39883">
+    <testcase classname="To validate search by Keywords" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.407997">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate search by Keywords" name="To validate Search by Keywords" time="16.694283">
+    <testcase classname="To validate search by Keywords" name="To validate Search by Keywords" time="16.745338">
         <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click on Keywords Filter...............................................passed
 And Click on Keywords Input box.............................................passed
 And Enter the Keyword.......................................................passed
@@ -985,7 +985,7 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ]]></failure>
     </testcase>
-    <testcase classname="To validate search by Keywords" name="Logout the application" time="6.476489">
+    <testcase classname="To validate search by Keywords" name="Logout the application" time="6.466953">
         <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 
@@ -1030,16 +1030,17 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ]]></failure>
     </testcase>
-    <testcase classname="To validate Search by Industry" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.406379">
+    <testcase classname="To validate Search by Industry" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.410594">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Industry" name="To Validate search by Any Of Industry Name Filter" time="14.556269">
+    <testcase classname="To validate Search by Industry" name="To Validate search by Any of Industry Names Filter where Selected All" time="16.814479">
         <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click on Industry Filter...............................................passed
 And Click on Select All Check Box...........................................passed
 Then Click on Search Button.................................................passed
+And Click on Searched Contact for Industry..................................passed
 
 StackTrace:
 java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
@@ -1082,7 +1083,256 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ]]></failure>
     </testcase>
-    <testcase classname="To validate Search by Industry" name="Logout the application" time="6.499716">
+    <testcase classname="To validate Search by Industry" name="To Validate search by Any Of Industry Names Filter where a single Industry is selected" time="51.424651">
+        <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click On Clear Button..................................................passed
+And Click On Do Not Save Button.............................................passed
+And Click on Industry Filter................................................passed
+And Click on Industry Name Input box........................................passed
+And Enter Industry Name.....................................................passed
+And Click on Particular Industry............................................passed
+And Click on Search Button..................................................passed
+And Click on Searched Contact for Industry..................................passed
+Then Check the Industry in Search Result....................................passed
+
+StackTrace:
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:250)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Search by Industry" name="To Validate search by None Of Industry Names Filter Where Selected All" time="45.017004">
+        <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click On Clear Button..................................................passed
+And Click On Do Not Save Button.............................................passed
+And Click on Industry Filter................................................passed
+And Click on None of Page...................................................passed
+And Click on Select All Check Box...........................................passed
+Then Click on Search Button.................................................passed
+And Click on Searched Contact for Industry..................................passed
+
+StackTrace:
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:250)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Search by Industry" name="To Validate search by None Of Industry Names Filter Where single Industry is selected" time="49.409819">
+        <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click On Clear Button..................................................passed
+And Click On Do Not Save Button.............................................passed
+And Click on Industry Filter................................................passed
+And Click on None of Page...................................................passed
+And Click on Industry Name Input box........................................passed
+And Enter Industry Name.....................................................passed
+And Click on Particular Industry............................................passed
+And Click on Search Button..................................................passed
+And Click on Searched Contact for Industry..................................passed
+
+StackTrace:
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:250)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Search by Industry" name="To Validate search by NAICS Codes in Industry Filter" time="55.226987">
+        <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click On Clear Button..................................................passed
+And Click On Do Not Save Button.............................................passed
+And Click on Industry Filter................................................passed
+And Click on NAICS or SIC Code page.........................................passed
+And CLick on NAICS Code input box...........................................passed
+And Enter NAICS Code........................................................passed
+And Click on Search Button..................................................passed
+And Click on Searched Contact for Industry..................................passed
+Then Check Industry for NAICS code in Search Result.........................passed
+
+StackTrace:
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:250)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Search by Industry" name="To Validate search by SIC Codes in Industry Filter" time="25.426341">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[contains(text(),'Clear')])[2]&quot;}&#10;  (Session info: chrome=107.0.5304.107)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64807}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3d6ae1d5bc983de9aa3162003f1d794d&#10;*** Element info: {Using=xpath, value=(//*[contains(text(),'Clear')])[2]}&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:75)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_clear_Button(Steps.java:1459)&#13;&#10;&#9;at ✽.Click On Clear Button(file:TC_13_Search_By_Industry.feature:67)&#13;&#10;"><![CDATA[When Click On Clear Button..................................................failed
+And Click On Do Not Save Button.............................................skipped
+And Click on Industry Filter................................................skipped
+And Click on NAICS or SIC Code page.........................................skipped
+And Click on SIC Radio button...............................................skipped
+And CLick on NAICS Code input box...........................................skipped
+And Enter SIC Code..........................................................skipped
+And Click on Search Button..................................................skipped
+And Click on Searched Contact for Industry..................................skipped
+Then Check Industry for SIC code in Search Result...........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[contains(text(),'Clear')])[2]"}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64807}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d6ae1d5bc983de9aa3162003f1d794d
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Clear')])[2]}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:75)
+	at org.stepdefinition.Steps.I_Click_clear_Button(Steps.java:1459)
+	at ✽.Click On Clear Button(file:TC_13_Search_By_Industry.feature:67)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Search by Industry" name="Logout the application" time="6.494926">
         <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:250)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 

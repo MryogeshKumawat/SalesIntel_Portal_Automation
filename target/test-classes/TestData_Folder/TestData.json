@@ -44,6 +44,11 @@
     "Metro Area": "Albany, GA",
     "Non-USA Country": "Spain",
     "Global Country": "Canada",
-    "Keyword": "commercial sales"
+    "Keyword": "commercial sales",
+    "Industry Name": "Financial Software",
+    "NAICS Code": "316210",
+    "NAICS Code Industry": "Textile & Apparel Manufacturing",
+    "SIC Code": "6531",
+    "SIC Code Industry": "Real Estate"
   }
 }

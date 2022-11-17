@@ -282,6 +282,18 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//span[contains(text(),'Industry')])[1]")
 	private WebElement IndustryFilter;
 
+	@FindBy(xpath = "//a[contains(text(),'NAICS or SIC')]")
+	private WebElement NAICSorSICpage;
+
+	@FindBy(xpath = "//label[contains(text(),'SIC Codes')]")
+	private WebElement SICcodeRadioButton;
+
+	@FindBy(xpath = "//input[@placeholder='Enter Industry Name']")
+	private WebElement IndustryNameInputBox;
+
+	@FindBy(xpath = "(//div[@class='tbody'])[1]")
+	private WebElement FirstSearchedContact;
+
 	@FindBy(xpath = "(//label[contains(text(),' Select All ')])[1]")
 	private WebElement SelectAllCheckBox;
 
@@ -345,6 +357,12 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//*[contains(text(), 'Reveal')]")
 	private WebElement ContactSearchReveal;
+
+	@FindBy(xpath = "//a[contains(text(),'NONE OF')]")
+	private WebElement NoneOfPage;
+
+	@FindBy(xpath = "//textarea[@placeholder='1234, 5678']")
+	private WebElement NAICScodeInputBox;
 
 	@FindBy(xpath = "//*[@class='list-inline-item px-4 font-weight-light credit-values border-right']")
 	private WebElement UpdatedReveal;
@@ -695,6 +713,21 @@ public class LoginPage extends Global {
 	public WebElement getIndustryFilter(){
 		return IndustryFilter;
 	}
+	public WebElement getNAICSorSICpage(){
+		return NAICSorSICpage;
+	}
+
+	public WebElement getSICcodeRadioButton(){
+		return SICcodeRadioButton;
+	}
+
+	public WebElement getIndustryNameInputBox(){
+		return IndustryNameInputBox;
+	}
+
+	public WebElement getFirstSearchedContact(){
+		return FirstSearchedContact;
+	}
 
 	public WebElement getSelectAllCheckBox(){
 		return SelectAllCheckBox;
@@ -749,6 +782,13 @@ public class LoginPage extends Global {
 	}
 	public WebElement getContactSearchReveal() {
 		return ContactSearchReveal;
+	}
+
+	public WebElement getNoneOfPage(){
+		return NoneOfPage;
+	}
+	public WebElement getNAICScodeInputBox(){
+		return NAICScodeInputBox;
 	}
 	public WebElement getUpdatedReveal() {
 		return UpdatedReveal;

@@ -176,6 +176,14 @@ public class Steps extends Global {
 		log.info("User click on Search Button");
 		Thread.sleep(10000);
 	}
+
+	@And("Click on Searched Contact for Industry")
+	public void I_Click_Searched_Contact() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstSearchedContact());
+		log.info("User click on Searched Contact for Industry");
+		Thread.sleep(2000);
+	}
+
 	@Then("Click on Company Search Button")
 	public void I_Click_Company_Search_Button() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getCompanySearchButton());
@@ -968,6 +976,102 @@ public class Steps extends Global {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getIndustryFilter());
 		log.info("Click on Industry Filter");
 		Thread.sleep(2000);
+	}
+
+	@And("Click on NAICS or SIC Code page")
+	public void I_Click_NAICSorSIC_Code_page() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNAICSorSICpage());
+		log.info("User Click on NAICS or SIC Code page");
+		Thread.sleep(3000);
+	}
+
+	@And("Click on SIC Radio button")
+	public void I_Click_SIC_Code_Radio_Button() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSICcodeRadioButton());
+		log.info("User Click on SIC Radio button");
+	}
+
+	@And("Click on Industry Name Input box")
+	public void I_Click_On_Industry_Name_Input_Box() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getIndustryNameInputBox());
+		log.info("Click on Industry Name Input box");
+		Thread.sleep(2000);
+	}
+
+	@And("Enter Industry Name")
+	public void I_Enter_Industry_Name() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getIndustryNameInputBox(),ReadDatafromJson("Contact_Name", "Industry Name"));
+		log.info("User enter Industry Name");
+		Thread.sleep(2000);
+	}
+
+	@And("Click on Particular Industry")
+	public void I_Click_On_Particular_Industry() throws Throwable{
+		String IndustryName = ReadDatafromJson("Contact_Name" , "Industry Name");
+		clickButton(driver.findElement(By.xpath("//*[contains(text(),\'" + IndustryName + "\')]")));
+		log.info("USer click on Particular Industry");
+		Thread.sleep(2000);
+	}
+
+	@Then("Check the Industry in Search Result")
+	public void I_Check_Industry_In_Result() throws Throwable{
+		String IndustryInResult = ReadDatafromJson("Contact_Name" , "Industry Name");
+		Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),\'" + IndustryInResult + "\')])[2]")).isDisplayed());
+		log.info("User check the Industry in Search Result");
+		Thread.sleep(5000);
+	}
+
+//	@Then("Check the Industry is not in Search Result")
+//	public void I_Check_Industry_Is_Not_In_Result() throws Throwable{
+//		String IndustryInResult = ReadDatafromJson("Contact_Name" , "Industry Name");
+//		Assert.assertFalse(driver.findElement(By.xpath("(//*[contains(text(),\'" + IndustryInResult + "\')])[2]")).isDisplayed());
+//		log.info("Check the Industry is not in Search Result");
+//		Thread.sleep(5000);
+//	}
+
+	@Then("Check Industry for NAICS code in Search Result")
+	public void I_Check_Industry_For_NAICS_In_Result() throws Throwable{
+		String NAICSIndustryInResult = ReadDatafromJson("Contact_Name" , "NAICS Code Industry");
+		Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),\'" + NAICSIndustryInResult + "\')])[1]")).isDisplayed());
+		log.info("USer Check Industry for NAICS code in Search Result");
+		Thread.sleep(5000);
+	}
+
+	@Then("Check Industry for SIC code in Search Result")
+	public void I_Check_Industry_For_SIC_In_Result() throws Throwable{
+		String SICIndustryInResult = ReadDatafromJson("Contact_Name" , "SIC Code Industry");
+		Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),\'" + SICIndustryInResult + "\')])[1]")).isDisplayed());
+		log.info("USer Check Industry for SIC code in Search Result");
+		Thread.sleep(5000);
+	}
+
+	@And("CLick on NAICS Code input box")
+	public void I_Click_On_NAICS_Code_Input_Box() throws Throwable{
+		Thread.sleep(3000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNAICScodeInputBox());
+		log.info("User cLick on NAICS Code input box");
+		Thread.sleep(2000);
+	}
+
+	@And("Enter NAICS Code")
+	public void I_Enter_NAICS_Code() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getNAICScodeInputBox(), ReadDatafromJson("Contact_Name", "NAICS Code"));
+		log.info("User Enters NAICS Code");
+		Thread.sleep(2000);
+	}
+
+	@And("Enter SIC Code")
+	public void I_Enter_SIC_Code() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getNAICScodeInputBox(), ReadDatafromJson("Contact_Name", "SIC Code"));
+		log.info("User Enters SIC Code");
+		Thread.sleep(2000);
+	}
+
+	@And("Click on None of Page")
+	public void I_Click_On_None_Of_Page() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNoneOfPage());
+		log.info("User Click on None of Page");
+		Thread.sleep(3000);
 	}
 
 	@And("Click on Select All Check Box")
