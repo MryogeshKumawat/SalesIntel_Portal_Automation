@@ -4,6 +4,7 @@ import com.github.dockerjava.api.model.HealthCheck;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en_scouse.An;
 import org.apache.log4j.Logger;
+import org.apache.log4j.spi.ThrowableInformation;
 import org.apache.velocity.runtime.directive.contrib.For;
 import org.base.Global;
 import org.openqa.selenium.*;
@@ -177,10 +178,10 @@ public class Steps extends Global {
 		Thread.sleep(10000);
 	}
 
-	@And("Click on Searched Contact for Industry")
+	@And("Click on the First Contact in Search Result")
 	public void I_Click_Searched_Contact() throws Throwable{
 		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstSearchedContact());
-		log.info("User click on Searched Contact for Industry");
+		log.info("User Click on the First Contact in Search Result");
 		Thread.sleep(2000);
 	}
 
@@ -989,6 +990,86 @@ public class Steps extends Global {
 	public void I_Click_SIC_Code_Radio_Button() throws Throwable{
 		clickButton(PageObjectManager.getInstance().getLoginPage().getSICcodeRadioButton());
 		log.info("User Click on SIC Radio button");
+	}
+
+	@When("Click on Revenue Filter")
+	public void I_Click_On_Revenue_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getRevenueFilter());
+		log.info("USer Click on Revenue Filter");
+		Thread.sleep(2000);
+	}
+
+	@When("Click on Employee Size Filter")
+	public void I_Click_On_Employee_Size_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getEmployeeSizeFilter());
+		log.info("USer Click on Employee Size Filter");
+		Thread.sleep(2000);
+	}
+	@And("Enter Minimum Revenue")
+	public void I_Enter_Minimum_Revenue() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getMinRevenueInputBox(), ReadDatafromJson("Contact_Name", "Minimum Revenue"));
+		log.info("User Enter Minimum Revenue");
+		Thread.sleep(2000);
+	}
+
+	@And("Enter Minimum Employee Size")
+	public void I_Enter_Minimum_Employee_Size() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getMinEmpSizeInputBox(), ReadDatafromJson("Contact_Name", "Minimum Employee Size"));
+		log.info("User Enter Minimum Employee Size");
+		Thread.sleep(2000);
+	}
+	@And("Enter Maximum Revenue")
+	public void I_Enter_Maximum_Revenue() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getMaxRevenueInputBox(), ReadDatafromJson("Contact_Name", "Maximum Revenue"));
+		log.info("User Enter Maximum Revenue");
+		Thread.sleep(2000);
+	}
+
+	@And("Enter Maximum Employee Size")
+	public void I_Enter_Maximum_Employee_Size() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getMaxEmpSizeInputBox(), ReadDatafromJson("Contact_Name", "Maximum Employee Size"));
+		log.info("User Enter Maximum Employee Size");
+		Thread.sleep(2000);
+	}
+
+	@Then("validate the Revenue in Search Result")
+	public void I_Check_Revenue_In_Result() throws Throwable{
+		Thread.sleep(2000);
+		String RevenueInResult = PageObjectManager.getInstance().getLoginPage().getRevenueInSearchResult().getText();
+		String RevenueCleaned = RevenueInResult.replaceAll("[A-Z]", "");
+		double RevenueDouble = Double.parseDouble(RevenueCleaned);
+		int RevenueInteger = (int)RevenueDouble;
+		int MinimumRevenue = Integer.parseInt(ReadDatafromJson("Contact_Name", "Minimum Revenue"));
+		int MaximumRevenue = Integer.parseInt(ReadDatafromJson("Contact_Name", "Maximum Revenue"));
+		if (RevenueInteger>=MinimumRevenue && RevenueInteger<=MaximumRevenue){
+			System.out.println("Revenue Range is From "+MinimumRevenue+" To "+MaximumRevenue+" and Revenue in Searched Result is "+RevenueInteger+"");
+			log.info("User Validated that Searched Revenue is Between the Input Range");
+		}
+		else {
+			System.out.println("Revenue Range is From "+MinimumRevenue+" To "+MaximumRevenue+" and Revenue in Searched Result is "+RevenueInteger+"");
+			log.info("User Validated that Searched Revenue is Out of the Input Range");
+		}
+		Thread.sleep(3000);
+	}
+
+	@Then("validate the Employee Size in Search Result")
+	public void I_Check_Employee_Size_In_Result() throws Throwable{
+		Thread.sleep(2000);
+		String EmpSizeInResult = PageObjectManager.getInstance().getLoginPage().getEmpSizeInSearchResult().getText();
+//		String RevenueCleaned = RevenueInResult.replaceAll("[A-Z]", "");
+//		double RevenueDouble = Double.parseDouble(RevenueCleaned);
+		int EmpSizeInteger = Integer.parseInt(EmpSizeInResult);
+		int MinimumEmpSize = Integer.parseInt(ReadDatafromJson("Contact_Name", "Minimum Employee Size"));
+		int MaximumEmpSize = Integer.parseInt(ReadDatafromJson("Contact_Name", "Maximum Employee Size"));
+		if (EmpSizeInteger>=MinimumEmpSize && EmpSizeInteger<=MaximumEmpSize){
+			System.out.println("Employees / Size Range is From "+MinimumEmpSize+" To "+MaximumEmpSize+" and Company Size in Searched Result is "+EmpSizeInteger+"");
+			log.info("User Validated that Searched Company size is Between the Input Range");
+		}
+		else {
+			System.out.println("Employees / size Range is From "+MinimumEmpSize+" To "+MaximumEmpSize+" and Company size in Searched Result is "+EmpSizeInResult+"");
+			log.info("User Validated that Searched Company Size is Out of the Input Range");
+		}
+		Thread.sleep(3000);
 	}
 
 	@And("Click on Industry Name Input box")

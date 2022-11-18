@@ -1,13 +1,9 @@
 package org.pages;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.FieldDocument;
 import org.base.Global;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.util.PrimitiveIterator;
 
 public class LoginPage extends Global {
 
@@ -287,6 +283,30 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//label[contains(text(),'SIC Codes')]")
 	private WebElement SICcodeRadioButton;
+
+	@FindBy(xpath = "//span[contains(text(),'Revenue')]")
+	private WebElement RevenueFilter;
+
+	@FindBy(xpath = "//span[contains(text(),'Employees / Size')]")
+	private WebElement EmployeeSizeFilter;
+
+	@FindBy(xpath = "//input[@placeholder='no min.']")
+	private WebElement MinRevenueInputBox;
+
+	@FindBy(xpath = "//input[@placeholder='no minimum']")
+	private WebElement MinEmpSizeInputBox;
+
+	@FindBy(xpath = "//input[@placeholder='no max.']")
+	private WebElement MaxRevenueInputBox;
+
+	@FindBy(xpath = "//input[@placeholder='no maximum']")
+	private WebElement MaxEmpSizeInputBox;
+
+	@FindBy(xpath = "(//div[contains(text(),'Company Revenue:')])[1]/../span")
+	private WebElement RevenueInSearchResult;
+
+	@FindBy(xpath = "(//div[contains(text(),'Company Size')]/..)/span")
+	private WebElement	EmpSizeInSearchResult;
 
 	@FindBy(xpath = "//input[@placeholder='Enter Industry Name']")
 	private WebElement IndustryNameInputBox;
@@ -720,6 +740,48 @@ public class LoginPage extends Global {
 	public WebElement getSICcodeRadioButton(){
 		return SICcodeRadioButton;
 	}
+
+	public WebElement getRevenueFilter(){
+		return RevenueFilter;
+	}
+
+	public WebElement getEmployeeSizeFilter(){
+		return EmployeeSizeFilter;
+	}
+
+	public WebElement getMinRevenueInputBox(){
+		return MinRevenueInputBox;
+	}
+
+	public WebElement getMinEmpSizeInputBox(){
+		return MinEmpSizeInputBox;
+	}
+
+	public WebElement getMaxRevenueInputBox(){
+		return MaxRevenueInputBox;
+	}
+
+	public WebElement getMaxEmpSizeInputBox(){
+		return MaxEmpSizeInputBox;
+	}
+
+
+
+	public WebElement getRevenueInSearchResult(){
+		return RevenueInSearchResult;
+	}
+
+	public WebElement getEmpSizeInSearchResult(){
+		return EmpSizeInSearchResult;
+	}
+
+//	@Override
+//	public String toString() {
+//		return "LoginPage{" +
+//				"RevenueInSearchResult=" + RevenueInSearchResult +
+//				'}';
+//	}
+
 
 	public WebElement getIndustryNameInputBox(){
 		return IndustryNameInputBox;

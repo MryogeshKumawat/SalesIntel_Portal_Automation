@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                21,
-                0,
-                0,
+                45,
+                1,
+                9,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 21) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 55) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,7 +107,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                 2,
-                3
+                7
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SalesIntel Site Automation</td>
-      <td>17 Nov 2022, 18:21</td>
+      <td>18 Nov 2022, 17:52</td>
     </tr>
   </tbody>
 </table>
@@ -343,18 +343,18 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_2095711067.html">To validate Search by Industry</a></td>
 
-        <td      class="passed"    >21</td>
+        <td      class="passed"    >45</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >9</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">21</td>
+        <td class="total">55</td>
 
         <td  class="passed"    >2</td>
-        <td  class="failed"    >3</td>
-        <td class="total">5</td>
+        <td  class="failed"    >7</td>
+        <td class="total">9</td>
 
-        <td class="duration" data-value="116271817600">1:56.271</td>
+        <td class="duration" data-value="285136345300">4:45.136</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -362,30 +362,30 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>21</td>
+      <td>45</td>
+      <td>1</td>
+      <td>9</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>21</td>
+      <td>55</td>
 
       <td>2</td>
-      <td>3</td>
-      <td>5</td>
+      <td>7</td>
+      <td>9</td>
 
-      <td class="duration">1:56.271</td>
+      <td class="duration">4:45.136</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+      <td>81.82%</td>
+      <td>1.82%</td>
+      <td>16.36%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>40.00%</td>
-      <td>60.00%</td>
+      <td>22.22%</td>
+      <td>77.78%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>

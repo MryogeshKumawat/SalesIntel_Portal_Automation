@@ -23,7 +23,6 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,6 +42,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
+import org.w3c.dom.Text;
 
 public class Global {
 
@@ -73,9 +73,6 @@ public class Global {
 
 	public static void clickButton(WebElement webElement) {
 		webElement.click();
-	}
-	public static void gettext(WebElement webElement) {
-		webElement.getText();
 	}
 	public static void clearText(WebElement webElement) {
 		webElement.clear();
@@ -281,4 +278,6 @@ public class Global {
 		JSONObject jsonObject1=(JSONObject) object;
 		return jsonObject1.get(arg2).toString();
 	}
+
+
 }

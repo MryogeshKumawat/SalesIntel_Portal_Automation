@@ -1,5 +1,4 @@
 Feature: To validate Search by Industry
-  @First @Sanity
 
   @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
@@ -12,7 +11,7 @@ Feature: To validate Search by Industry
     When Click on Industry Filter
     And Click on Select All Check Box
     Then Click on Search Button
-    And Click on Searched Contact for Industry
+    And Click on the First Contact in Search Result
 
   @First @Sanity
   Scenario: To Validate search by Any Of Industry Names Filter where a single Industry is selected
@@ -23,7 +22,7 @@ Feature: To validate Search by Industry
     And Enter Industry Name
     And Click on Particular Industry
     And Click on Search Button
-    And Click on Searched Contact for Industry
+    And Click on the First Contact in Search Result
     Then Check the Industry in Search Result
 
   @First @Sanity
@@ -34,7 +33,7 @@ Feature: To validate Search by Industry
     And Click on None of Page
     And Click on Select All Check Box
     Then Click on Search Button
-    And Click on Searched Contact for Industry
+    And Click on the First Contact in Search Result
 
   @First @Sanity
   Scenario: To Validate search by None Of Industry Names Filter Where single Industry is selected
@@ -46,7 +45,7 @@ Feature: To validate Search by Industry
     And Enter Industry Name
     And Click on Particular Industry
     And Click on Search Button
-    And Click on Searched Contact for Industry
+    And Click on the First Contact in Search Result
 
 
   @First @Sanity
@@ -58,7 +57,7 @@ Feature: To validate Search by Industry
     And CLick on NAICS Code input box
     And Enter NAICS Code
     And Click on Search Button
-    And Click on Searched Contact for Industry
+    And Click on the First Contact in Search Result
     Then Check Industry for NAICS code in Search Result
 
 
@@ -72,7 +71,7 @@ Feature: To validate Search by Industry
     And CLick on NAICS Code input box
     And Enter SIC Code
     And Click on Search Button
-    And Click on Searched Contact for Industry
+    And Click on the First Contact in Search Result
     Then Check Industry for SIC code in Search Result
 
 

@@ -49,6 +49,10 @@
     "NAICS Code": "316210",
     "NAICS Code Industry": "Textile & Apparel Manufacturing",
     "SIC Code": "6531",
-    "SIC Code Industry": "Real Estate"
+    "SIC Code Industry": "Real Estate",
+    "Minimum Revenue": "100",
+    "Maximum Revenue": "500",
+    "Minimum Employee Size": "500",
+    "Maximum Employee Size": "5000"
   }
 }
