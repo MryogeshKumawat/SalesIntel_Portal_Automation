@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SalesIntel Site Automation</td>
-      <td>18 Nov 2022, 17:52</td>
+      <td>21 Nov 2022, 12:41</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">To validate Search by Industry</td>
-          <td      class="passed"    >45</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >9</td>
+          <td      class="passed"    >55</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">55</td>
 
-          <td  class="passed"    >2</td>
-          <td  class="failed"    >7</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >8</td>
           <td class="total">9</td>
 
-          <td class="duration" data-value="285136345300">4:45.136</td>
+          <td class="duration" data-value="231647691700">3:51.647</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -192,14 +192,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">6.455</span>
+  <span class="lead-duration duration">7.434</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">To validate SalesIntel application Launching application</span>
+  <span class="name">Login</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -208,7 +208,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -230,7 +230,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">BeforeExection.beforeExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -246,7 +246,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.108</span>
+  <span class="lead-duration duration">0.136</span>
 
           </div>
 
@@ -263,7 +263,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -275,15 +275,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
   <span class="name">Launch the url</span>
 
-  <span class="lead-duration duration">6.455</span>
+  <span class="lead-duration duration">7.434</span>
 
 </div>
 
@@ -310,9 +310,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-4">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -322,17 +322,66 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.231</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-5">
+          <a>Error message</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details ">
+        <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:247)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -344,7 +393,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.152</span>
+  <span class="lead-duration duration">0.507</span>
 
           </div>
 
@@ -353,6 +402,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-529690272.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-529690272.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
@@ -372,10 +436,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.245</span>
+  <span class="lead-duration duration">10.507</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -388,11 +452,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -404,7 +468,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-6" class="inner-level collapse collapsable-details ">
+    <div id="before-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -426,7 +490,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
@@ -443,7 +507,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -455,7 +519,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -463,7 +527,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Enter Valid Username</span>
 
-  <span class="lead-duration duration">0.129</span>
+  <span class="lead-duration duration">0.300</span>
 
 </div>
 
@@ -490,7 +554,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Enter Valid Password</span>
 
-  <span class="lead-duration duration">0.059</span>
+  <span class="lead-duration duration">0.118</span>
 
 </div>
 
@@ -517,7 +581,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Click On Login Button</span>
 
-  <span class="lead-duration duration">10.056</span>
+  <span class="lead-duration duration">10.089</span>
 
 </div>
 
@@ -544,7 +608,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -556,13 +620,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-8" class="inner-level collapse collapsable-details ">
+    <div id="after-10" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.091</span>
+  <span class="lead-duration duration">0.803</span>
 
           </div>
 
@@ -578,7 +642,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.151</span>
+  <span class="lead-duration duration">0.238</span>
 
           </div>
 
@@ -606,10 +670,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">36.603</span>
+  <span class="lead-duration duration">36.860</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -622,11 +686,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details  in ">
+  <div id="element-11" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -638,7 +702,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-10" class="inner-level collapse collapsable-details ">
+    <div id="before-12" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -660,7 +724,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
@@ -677,7 +741,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -689,7 +753,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -697,7 +761,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Contact Radio Button</span>
 
-  <span class="lead-duration duration">20.130</span>
+  <span class="lead-duration duration">20.172</span>
 
 </div>
 
@@ -724,7 +788,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Click on Industry Filter</span>
 
-  <span class="lead-duration duration">2.098</span>
+  <span class="lead-duration duration">2.168</span>
 
 </div>
 
@@ -751,7 +815,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Select All Check Box</span>
 
-  <span class="lead-duration duration">2.115</span>
+  <span class="lead-duration duration">2.161</span>
 
 </div>
 
@@ -778,7 +842,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Click on Search Button</span>
 
-  <span class="lead-duration duration">10.120</span>
+  <span class="lead-duration duration">7.168</span>
 
 </div>
 
@@ -805,7 +869,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on the First Contact in Search Result</span>
 
-  <span class="lead-duration duration">2.138</span>
+  <span class="lead-duration duration">5.189</span>
 
 </div>
 
@@ -832,7 +896,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-12">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-14">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -844,13 +908,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-12" class="inner-level collapse collapsable-details  in ">
+    <div id="after-14" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -858,10 +922,10 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-13">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-15">
           <a>Error message</a>
       </div>
-      <div id="msg-13" class="collapse collapsable-details ">
+      <div id="msg-15" class="collapse collapsable-details ">
         <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at org.base.Global.generateTestReport(Global.java:247)
 	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
@@ -915,7 +979,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.371</span>
+  <span class="lead-duration duration">0.496</span>
 
           </div>
 
@@ -926,15 +990,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-14" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-747440691.png" download target="_blank">
+      <a href="embeddings/embedding_2025489059.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-14" class="collapse collapsable-details ">
+    <div id="embedding-16" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-747440691.png">
+        <img src="embeddings/embedding_2025489059.png">
       </div>
     </div>
   </div>
@@ -958,10 +1022,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">51.372</span>
+  <span class="lead-duration duration">34.832</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -974,11 +1038,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-15" class="collapse collapsable-details  in ">
+  <div id="element-17" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -990,7 +1054,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-16" class="inner-level collapse collapsable-details ">
+    <div id="before-18" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1012,7 +1076,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -1029,7 +1093,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1041,7 +1105,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -1049,7 +1113,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Click On Clear Button</span>
 
-  <span class="lead-duration duration">10.120</span>
+  <span class="lead-duration duration">2.171</span>
 
 </div>
 
@@ -1076,7 +1140,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click On Do Not Save Button</span>
 
-  <span class="lead-duration duration">15.134</span>
+  <span class="lead-duration duration">6.251</span>
 
 </div>
 
@@ -1103,7 +1167,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Industry Filter</span>
 
-  <span class="lead-duration duration">2.098</span>
+  <span class="lead-duration duration">2.104</span>
 
 </div>
 
@@ -1130,7 +1194,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Industry Name Input box</span>
 
-  <span class="lead-duration duration">2.100</span>
+  <span class="lead-duration duration">2.140</span>
 
 </div>
 
@@ -1157,7 +1221,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Enter Industry Name</span>
 
-  <span class="lead-duration duration">2.411</span>
+  <span class="lead-duration duration">2.527</span>
 
 </div>
 
@@ -1184,7 +1248,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Particular Industry</span>
 
-  <span class="lead-duration duration">2.152</span>
+  <span class="lead-duration duration">2.194</span>
 
 </div>
 
@@ -1211,7 +1275,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Search Button</span>
 
-  <span class="lead-duration duration">10.147</span>
+  <span class="lead-duration duration">7.150</span>
 
 </div>
 
@@ -1238,7 +1302,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on the First Contact in Search Result</span>
 
-  <span class="lead-duration duration">2.130</span>
+  <span class="lead-duration duration">5.185</span>
 
 </div>
 
@@ -1265,7 +1329,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Check the Industry in Search Result</span>
 
-  <span class="lead-duration duration">5.076</span>
+  <span class="lead-duration duration">5.106</span>
 
 </div>
 
@@ -1292,7 +1356,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-18">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-20">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -1304,7 +1368,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-18" class="inner-level collapse collapsable-details  in ">
+    <div id="after-20" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
@@ -1318,10 +1382,10 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-19">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-21">
           <a>Error message</a>
       </div>
-      <div id="msg-19" class="collapse collapsable-details ">
+      <div id="msg-21" class="collapse collapsable-details ">
         <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at org.base.Global.generateTestReport(Global.java:247)
 	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
@@ -1375,7 +1439,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.304</span>
+  <span class="lead-duration duration">0.458</span>
 
           </div>
 
@@ -1386,15 +1450,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-20" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-22" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_619506631.png" download target="_blank">
+      <a href="embeddings/embedding_-1716257289.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-20" class="collapse collapsable-details ">
+    <div id="embedding-22" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_619506631.png">
+        <img src="embeddings/embedding_-1716257289.png">
       </div>
     </div>
   </div>
@@ -1418,10 +1482,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">44.820</span>
+  <span class="lead-duration duration">28.043</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-23">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -1434,11 +1498,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details  in ">
+  <div id="element-23" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-24">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1450,7 +1514,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-22" class="inner-level collapse collapsable-details ">
+    <div id="before-24" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1472,7 +1536,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -1489,7 +1553,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-23">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-25">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1501,7 +1565,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-23" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-25" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -1509,7 +1573,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Click On Clear Button</span>
 
-  <span class="lead-duration duration">10.121</span>
+  <span class="lead-duration duration">2.119</span>
 
 </div>
 
@@ -1536,7 +1600,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click On Do Not Save Button</span>
 
-  <span class="lead-duration duration">15.189</span>
+  <span class="lead-duration duration">6.179</span>
 
 </div>
 
@@ -1563,7 +1627,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Industry Filter</span>
 
-  <span class="lead-duration duration">2.096</span>
+  <span class="lead-duration duration">2.107</span>
 
 </div>
 
@@ -1590,7 +1654,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on None of Page</span>
 
-  <span class="lead-duration duration">3.105</span>
+  <span class="lead-duration duration">3.188</span>
 
 </div>
 
@@ -1617,7 +1681,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Select All Check Box</span>
 
-  <span class="lead-duration duration">2.092</span>
+  <span class="lead-duration duration">2.116</span>
 
 </div>
 
@@ -1644,7 +1708,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Click on Search Button</span>
 
-  <span class="lead-duration duration">10.098</span>
+  <span class="lead-duration duration">7.133</span>
 
 </div>
 
@@ -1671,7 +1735,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on the First Contact in Search Result</span>
 
-  <span class="lead-duration duration">2.116</span>
+  <span class="lead-duration duration">5.198</span>
 
 </div>
 
@@ -1698,7 +1762,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-24">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-26">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -1710,7 +1774,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-24" class="inner-level collapse collapsable-details  in ">
+    <div id="after-26" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
@@ -1724,10 +1788,10 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-25">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-27">
           <a>Error message</a>
       </div>
-      <div id="msg-25" class="collapse collapsable-details ">
+      <div id="msg-27" class="collapse collapsable-details ">
         <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at org.base.Global.generateTestReport(Global.java:247)
 	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
@@ -1781,7 +1845,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.308</span>
+  <span class="lead-duration duration">0.423</span>
 
           </div>
 
@@ -1792,15 +1856,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-26" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-28" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_1686765260.png" download target="_blank">
+      <a href="embeddings/embedding_-856227941.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-26" class="collapse collapsable-details ">
+    <div id="embedding-28" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1686765260.png">
+        <img src="embeddings/embedding_-856227941.png">
       </div>
     </div>
   </div>
@@ -1824,10 +1888,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">49.309</span>
+  <span class="lead-duration duration">32.765</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-27">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -1840,11 +1904,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-27" class="collapse collapsable-details  in ">
+  <div id="element-29" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-28">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-30">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1856,7 +1920,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-28" class="inner-level collapse collapsable-details ">
+    <div id="before-30" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1878,7 +1942,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -1895,7 +1959,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-29">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-31">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1907,7 +1971,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-29" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-31" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -1915,7 +1979,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Click On Clear Button</span>
 
-  <span class="lead-duration duration">10.134</span>
+  <span class="lead-duration duration">2.133</span>
 
 </div>
 
@@ -1942,7 +2006,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click On Do Not Save Button</span>
 
-  <span class="lead-duration duration">15.171</span>
+  <span class="lead-duration duration">6.210</span>
 
 </div>
 
@@ -1969,7 +2033,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Industry Filter</span>
 
-  <span class="lead-duration duration">2.086</span>
+  <span class="lead-duration duration">2.122</span>
 
 </div>
 
@@ -1996,7 +2060,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on None of Page</span>
 
-  <span class="lead-duration duration">3.095</span>
+  <span class="lead-duration duration">3.141</span>
 
 </div>
 
@@ -2023,7 +2087,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Industry Name Input box</span>
 
-  <span class="lead-duration duration">2.102</span>
+  <span class="lead-duration duration">2.131</span>
 
 </div>
 
@@ -2050,7 +2114,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Enter Industry Name</span>
 
-  <span class="lead-duration duration">2.381</span>
+  <span class="lead-duration duration">2.550</span>
 
 </div>
 
@@ -2077,7 +2141,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Particular Industry</span>
 
-  <span class="lead-duration duration">2.126</span>
+  <span class="lead-duration duration">2.156</span>
 
 </div>
 
@@ -2104,7 +2168,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Search Button</span>
 
-  <span class="lead-duration duration">10.098</span>
+  <span class="lead-duration duration">7.147</span>
 
 </div>
 
@@ -2131,7 +2195,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on the First Contact in Search Result</span>
 
-  <span class="lead-duration duration">2.111</span>
+  <span class="lead-duration duration">5.171</span>
 
 </div>
 
@@ -2158,7 +2222,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-30">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-32">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -2170,7 +2234,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-30" class="inner-level collapse collapsable-details  in ">
+    <div id="after-32" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
@@ -2184,10 +2248,10 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-31">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-33">
           <a>Error message</a>
       </div>
-      <div id="msg-31" class="collapse collapsable-details ">
+      <div id="msg-33" class="collapse collapsable-details ">
         <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at org.base.Global.generateTestReport(Global.java:247)
 	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
@@ -2241,7 +2305,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.285</span>
+  <span class="lead-duration duration">0.450</span>
 
           </div>
 
@@ -2252,15 +2316,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-32" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-34" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_2051135350.png" download target="_blank">
+      <a href="embeddings/embedding_88388567.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-32" class="collapse collapsable-details ">
+    <div id="embedding-34" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_2051135350.png">
+        <img src="embeddings/embedding_88388567.png">
       </div>
     </div>
   </div>
@@ -2284,10 +2348,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">54.995</span>
+  <span class="lead-duration duration">38.367</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-33">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-35">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -2300,11 +2364,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-33" class="collapse collapsable-details  in ">
+  <div id="element-35" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-34">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-36">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2316,7 +2380,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-34" class="inner-level collapse collapsable-details ">
+    <div id="before-36" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -2338,7 +2402,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -2355,7 +2419,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-35">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-37">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2367,7 +2431,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-35" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-37" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -2375,7 +2439,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Click On Clear Button</span>
 
-  <span class="lead-duration duration">10.108</span>
+  <span class="lead-duration duration">2.127</span>
 
 </div>
 
@@ -2402,7 +2466,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click On Do Not Save Button</span>
 
-  <span class="lead-duration duration">15.153</span>
+  <span class="lead-duration duration">6.221</span>
 
 </div>
 
@@ -2429,7 +2493,467 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Industry Filter</span>
 
-  <span class="lead-duration duration">2.087</span>
+  <span class="lead-duration duration">2.112</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on NAICS or SIC Code page</span>
+
+  <span class="lead-duration duration">3.152</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">CLick on NAICS Code input box</span>
+
+  <span class="lead-duration duration">5.125</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter NAICS Code</span>
+
+  <span class="lead-duration duration">2.220</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Search Button</span>
+
+  <span class="lead-duration duration">7.122</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on the First Contact in Search Result</span>
+
+  <span class="lead-duration duration">5.157</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check Industry for NAICS code in Search Result</span>
+
+  <span class="lead-duration duration">5.128</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-38">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-38" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief failed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-39">
+          <a>Error message</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details ">
+        <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:247)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.453</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-40" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_124565002.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-40" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_124565002.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4047637071.html">@First</a>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+</div>
+
+
+  <span class="lead-duration duration">36.386</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-41">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To Validate search by SIC Codes in Industry Filter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-41" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-42">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-42" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.beforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-43">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-43" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Click On Clear Button</span>
+
+  <span class="lead-duration duration">2.114</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click On Do Not Save Button</span>
+
+  <span class="lead-duration duration">6.175</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Industry Filter</span>
+
+  <span class="lead-duration duration">2.154</span>
 
 </div>
 
@@ -2481,9 +3005,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">CLick on NAICS Code input box</span>
+  <span class="name">Click on SIC Radio button</span>
 
-  <span class="lead-duration duration">5.127</span>
+  <span class="lead-duration duration">0.138</span>
 
 </div>
 
@@ -2508,9 +3032,36 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Enter NAICS Code</span>
+  <span class="name">CLick on NAICS Code input box</span>
 
-  <span class="lead-duration duration">2.159</span>
+  <span class="lead-duration duration">5.123</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter SIC Code</span>
+
+  <span class="lead-duration duration">2.143</span>
 
 </div>
 
@@ -2537,7 +3088,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Search Button</span>
 
-  <span class="lead-duration duration">10.107</span>
+  <span class="lead-duration duration">7.144</span>
 
 </div>
 
@@ -2564,7 +3115,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on the First Contact in Search Result</span>
 
-  <span class="lead-duration duration">2.092</span>
+  <span class="lead-duration duration">5.188</span>
 
 </div>
 
@@ -2589,9 +3140,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check Industry for NAICS code in Search Result</span>
+  <span class="name">Check Industry for SIC code in Search Result</span>
 
-  <span class="lead-duration duration">5.053</span>
+  <span class="lead-duration duration">3.099</span>
 
 </div>
 
@@ -2618,7 +3169,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-36">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-44">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -2630,7 +3181,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-36" class="inner-level collapse collapsable-details  in ">
+    <div id="after-44" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
@@ -2644,10 +3195,10 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-37">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-45">
           <a>Error message</a>
       </div>
-      <div id="msg-37" class="collapse collapsable-details ">
+      <div id="msg-45" class="collapse collapsable-details ">
         <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at org.base.Global.generateTestReport(Global.java:247)
 	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
@@ -2701,7 +3252,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.324</span>
+  <span class="lead-duration duration">0.495</span>
 
           </div>
 
@@ -2712,15 +3263,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-38" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-46" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-835229937.png" download target="_blank">
+      <a href="embeddings/embedding_1209576421.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-38" class="collapse collapsable-details ">
+    <div id="embedding-46" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-835229937.png">
+        <img src="embeddings/embedding_1209576421.png">
       </div>
     </div>
   </div>
@@ -2744,14 +3295,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">25.081</span>
+  <span class="lead-duration duration">6.449</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-39">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-47">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">To Validate search by SIC Codes in Industry Filter</span>
+  <span class="name">Logout the application</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -2760,11 +3311,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-39" class="collapse collapsable-details  in ">
+  <div id="element-47" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-40">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-48">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2776,7 +3327,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-40" class="inner-level collapse collapsable-details ">
+    <div id="before-48" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -2815,533 +3366,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-41">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-41" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-When failed">
-  <span class="keyword indention">When</span>
-  <span class="name">Click On Clear Button</span>
-
-  <span class="lead-duration duration">25.081</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-42">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-42" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[contains(text(),'Clear')])[2]&quot;}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65343}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2576224a11fb8c6b284eed9582eedada
-*** Element info: {Using=xpath, value=(//*[contains(text(),'Clear')])[2]}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at org.base.Global.clickButton(Global.java:75)
-	at org.stepdefinition.Steps.I_Click_clear_Button(Steps.java:1540)
-	at &#10045;.Click On Clear Button(file:/D:/Automation/New_Revdriver/SalesIntel_QA_Automation-master/src/test/resources/Features/New_UI_View/TC_13_Search_By_Industry.feature:71)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click On Do Not Save Button</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click on Industry Filter</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click on NAICS or SIC Code page</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click on SIC Radio button</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">CLick on NAICS Code input box</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Enter SIC Code</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click on Search Button</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click on the First Contact in Search Result</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Check Industry for SIC code in Search Result</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-43">
-
-<div class="brief failed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-43" class="inner-level collapse collapsable-details  in ">
-        <div class="hook">
-          <div class="brief failed">
-            <span class="keyword indention">After</span>
-              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-44">
-          <a>Error message</a>
-      </div>
-      <div id="msg-44" class="collapse collapsable-details  in ">
-        <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at org.base.Global.generateTestReport(Global.java:253)
-	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
-	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.TestCase.run(TestCase.java:50)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-        </div>
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
-
-  <span class="lead-duration duration">0.320</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-45" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-835229937.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-45" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-835229937.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_4047637071.html">@First</a>
-       <a href="report-tag_1287359789.html">@Sanity</a>
-</div>
-
-
-  <span class="lead-duration duration">6.253</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-46">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Logout the application</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-46" class="collapse collapsable-details  in ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-47">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-47" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">BeforeExection.beforeExecutedClass(Scenario)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-48">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-49">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -3353,7 +3378,7 @@ Session ID: 2576224a11fb8c6b284eed9582eedada
 
   </div>
 
-  <div id="steps-48" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-49" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -3361,7 +3386,7 @@ Session ID: 2576224a11fb8c6b284eed9582eedada
   <span class="keyword indention">When</span>
   <span class="name">Click On Setting Options</span>
 
-  <span class="lead-duration duration">3.090</span>
+  <span class="lead-duration duration">3.168</span>
 
 </div>
 
@@ -3388,7 +3413,7 @@ Session ID: 2576224a11fb8c6b284eed9582eedada
   <span class="keyword indention">Then</span>
   <span class="name">Click On Logout Options</span>
 
-  <span class="lead-duration duration">3.162</span>
+  <span class="lead-duration duration">3.281</span>
 
 </div>
 
@@ -3415,7 +3440,7 @@ Session ID: 2576224a11fb8c6b284eed9582eedada
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-49">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-50">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -3427,7 +3452,7 @@ Session ID: 2576224a11fb8c6b284eed9582eedada
 
     </div>
 
-    <div id="after-49" class="inner-level collapse collapsable-details  in ">
+    <div id="after-50" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
@@ -3441,10 +3466,10 @@ Session ID: 2576224a11fb8c6b284eed9582eedada
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-50">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-51">
           <a>Error message</a>
       </div>
-      <div id="msg-50" class="collapse collapsable-details ">
+      <div id="msg-51" class="collapse collapsable-details ">
         <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at org.base.Global.generateTestReport(Global.java:247)
 	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
@@ -3498,7 +3523,7 @@ Session ID: 2576224a11fb8c6b284eed9582eedada
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.258</span>
+  <span class="lead-duration duration">0.427</span>
 
           </div>
 
@@ -3509,13 +3534,13 @@ Session ID: 2576224a11fb8c6b284eed9582eedada
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-51" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-52" class="collapsable-control">
       <a>Attachment 1 (png)</a>
       <a href="embeddings/embedding_-529690272.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-51" class="collapse collapsable-details ">
+    <div id="embedding-52" class="collapse collapsable-details ">
       <div class="embedding-content">
         <img src="embeddings/embedding_-529690272.png">
       </div>

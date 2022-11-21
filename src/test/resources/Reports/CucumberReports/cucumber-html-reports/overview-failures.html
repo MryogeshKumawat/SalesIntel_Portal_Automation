@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SalesIntel Site Automation</td>
-      <td>18 Nov 2022, 18:42</td>
+      <td>21 Nov 2022, 17:20</td>
     </tr>
   </tbody>
 </table>
@@ -115,7 +115,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_12_964538753.html">To validate Search by Industry</a>
+      <a href="report-feature_1_3484979501.html">Validate Search By Contact Name</a>
     </div>
 
 
@@ -126,14 +126,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">25.036</span>
+  <span class="lead-duration duration">25.075</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">To Validate search by SIC Codes in Industry Filter</span>
+  <span class="name">To validate application add multiple contact into Existing Contact List</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -213,11 +213,38 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When failed">
-  <span class="keyword indention">When</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
   <span class="name">Click On Clear Button</span>
 
-  <span class="lead-duration duration">25.036</span>
+  <span class="lead-duration duration">2.055</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click On Do Not Save Button</span>
+
+  <span class="lead-duration duration">23.019</span>
 
 </div>
 
@@ -232,15 +259,15 @@ $(document).ready(function() {
           <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[contains(text(),'Clear')])[2]&quot;}
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'Do Not Save')]&quot;}
   (Session info: chrome=107.0.5304.107)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f8d6e34d74bbeb70107e3660dd98252f
-*** Element info: {Using=xpath, value=(//*[contains(text(),'Clear')])[2]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5eb057ad1ba70b430cf90a3cc8cdba
+*** Element info: {Using=xpath, value=//*[contains(text(),'Do Not Save')]}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -258,8 +285,8 @@ Session ID: f8d6e34d74bbeb70107e3660dd98252f
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
 	at org.base.Global.clickButton(Global.java:75)
-	at org.stepdefinition.Steps.I_Click_clear_Button(Steps.java:1540)
-	at &#10045;.Click On Clear Button(file:TC_13_Search_By_Industry.feature:66)
+	at org.stepdefinition.Steps.I_Click_do_not_save_Button(Steps.java:1622)
+	at &#10045;.Click On Do Not Save Button(file:TC_02_Search_By_Contact_Name.feature:83)
 </pre>
       </div>
     </div>
@@ -279,9 +306,9 @@ Session ID: f8d6e34d74bbeb70107e3660dd98252f
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click On Do Not Save Button</span>
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">Click on Contact Name Button</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -308,115 +335,7 @@ Session ID: f8d6e34d74bbeb70107e3660dd98252f
 
 <div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">Click on Industry Filter</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click on NAICS or SIC Code page</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click on SIC Radio button</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">CLick on NAICS Code input box</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Enter SIC Code</span>
+  <span class="name">Enter the First Name to search</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -470,7 +389,7 @@ Session ID: f8d6e34d74bbeb70107e3660dd98252f
 
 <div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">Click on the First Contact in Search Result</span>
+  <span class="name">Validate Contact Search Result</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -495,9 +414,144 @@ Session ID: f8d6e34d74bbeb70107e3660dd98252f
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Check Industry for SIC code in Search Result</span>
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Select Multiple contact to Add Contact List</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Append Contact details into the List</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click On Add all to List</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click On Add all Contact to Existing List</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Contact List Drop Down Option</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click On Add Contact List Save Button</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -526,7 +580,2370 @@ Session ID: f8d6e34d74bbeb70107e3660dd98252f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-5" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.024</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.255</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1714594917.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1714594917.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_3484979501.html">Validate Search By Contact Name</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4047637071.html">@First</a>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+</div>
+
+
+  <span class="lead-duration duration">25.201</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To validate application Reveal Contact1 Search by Valid FirstName and LastName</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-8" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.beforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Click On SalesIntel Tab</span>
+
+  <span class="lead-duration duration">5.103</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Clear the Text in First Name Field</span>
+
+  <span class="lead-duration duration">20.097</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5eb057ad1ba70b430cf90a3cc8cdba
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.clear(Unknown Source)
+	at org.base.Global.clearText(Global.java:78)
+	at org.stepdefinition.Steps.i_clear_the_FirstName(Steps.java:476)
+	at &#10045;.Clear the Text in First Name Field(file:TC_02_Search_By_Contact_Name.feature:105)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Clear the Text in Last Name Field</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Search First Name1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Search Last Name1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Search Button</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click On Contact Search1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get the Total Reveal Count</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-11" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.034</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.311</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1953578939.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-12" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1953578939.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_3484979501.html">Validate Search By Contact Name</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4047637071.html">@First</a>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+</div>
+
+
+  <span class="lead-duration duration">20.062</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To validate application Reveal Contact2 Search by Valid FirstName and LastName</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-14" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.beforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">Clear the Text in First Name Field</span>
+
+  <span class="lead-duration duration">20.062</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
+          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5eb057ad1ba70b430cf90a3cc8cdba
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.clear(Unknown Source)
+	at org.base.Global.clearText(Global.java:78)
+	at org.stepdefinition.Steps.i_clear_the_FirstName(Steps.java:476)
+	at &#10045;.Clear the Text in First Name Field(file:TC_02_Search_By_Contact_Name.feature:117)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Clear the Text in Last Name Field</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Search First Name2</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Search Last Name2</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Search Button</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click On Contact Search2</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get the Total Reveal Count</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-17" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.044</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.329</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-18" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1953578939.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-18" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1953578939.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_3484979501.html">Validate Search By Contact Name</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4047637071.html">@First</a>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+</div>
+
+
+  <span class="lead-duration duration">20.069</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To validate application Reveal Contact3 Search by Valid FirstName and LastName</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-20" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.beforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-21">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">Clear the Text in First Name Field</span>
+
+  <span class="lead-duration duration">20.069</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-22">
+          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5eb057ad1ba70b430cf90a3cc8cdba
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.clear(Unknown Source)
+	at org.base.Global.clearText(Global.java:78)
+	at org.stepdefinition.Steps.i_clear_the_FirstName(Steps.java:476)
+	at &#10045;.Clear the Text in First Name Field(file:TC_02_Search_By_Contact_Name.feature:129)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Clear the Text in Last Name Field</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Search First Name3</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Search Last Name3</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Search Button</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click On Contact Search3</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get the Total Reveal Count</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-23" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.043</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.313</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-24" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1953578939.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-24" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1953578939.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_3484979501.html">Validate Search By Contact Name</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4047637071.html">@First</a>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+</div>
+
+
+  <span class="lead-duration duration">20.039</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To validate application Reveal Contact4 Search by Valid FirstName and LastName</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-26" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.beforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-27">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">Clear the Text in First Name Field</span>
+
+  <span class="lead-duration duration">20.039</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
+          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5eb057ad1ba70b430cf90a3cc8cdba
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.clear(Unknown Source)
+	at org.base.Global.clearText(Global.java:78)
+	at org.stepdefinition.Steps.i_clear_the_FirstName(Steps.java:476)
+	at &#10045;.Clear the Text in First Name Field(file:TC_02_Search_By_Contact_Name.feature:141)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Clear the Text in Last Name Field</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Search First Name4</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Search Last Name4</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Search Button</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click On Contact Search4</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get the Total Reveal Count</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-29">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-29" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.052</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.291</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-30" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1953578939.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-30" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1953578939.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_3484979501.html">Validate Search By Contact Name</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4047637071.html">@First</a>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+</div>
+
+
+  <span class="lead-duration duration">20.095</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To validate application Reveal Contact5 Search by Valid FirstName and LastName</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-32">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-32" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.beforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-33">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-33" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">Clear the Text in First Name Field</span>
+
+  <span class="lead-duration duration">20.095</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-34">
+          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bd5eb057ad1ba70b430cf90a3cc8cdba
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.clear(Unknown Source)
+	at org.base.Global.clearText(Global.java:78)
+	at org.stepdefinition.Steps.i_clear_the_FirstName(Steps.java:476)
+	at &#10045;.Clear the Text in First Name Field(file:TC_02_Search_By_Contact_Name.feature:153)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Clear the Text in Last Name Field</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Search First Name5</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Search Last Name5</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Search Button</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click On Contact Search5</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get the Total Reveal Count</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-35">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-35" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.056</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.274</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-36" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1953578939.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-36" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1953578939.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_14_2489270832.html">To validate Search by Employees or Size</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4047637071.html">@First</a>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+</div>
+
+
+  <span class="lead-duration duration">20.536</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-37">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To Validate Employees or Size Filter</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-37" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-38" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.beforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-39">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-39" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Click on Employee Size Filter</span>
+
+  <span class="lead-duration duration">2.051</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter Minimum Employee Size</span>
+
+  <span class="lead-duration duration">2.124</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter Maximum Employee Size</span>
+
+  <span class="lead-duration duration">2.123</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Search Button</span>
+
+  <span class="lead-duration duration">7.099</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on the First Contact in Search Result</span>
+
+  <span class="lead-duration duration">5.105</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">validate the Employee Size in Search Result</span>
+
+  <span class="lead-duration duration">2.032</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-40">
+          <a>java.lang.NumberFormatException:</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details  in ">
+        <pre>java.lang.NumberFormatException: For input string: &quot;1,901&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:784)
+	at org.stepdefinition.Steps.I_Check_Employee_Size_In_Result(Steps.java:1064)
+	at &#10045;.validate the Employee Size in Search Result(file:TC_15_Search_By_Employees_or_Size.feature:17)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-41">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -538,7 +2955,7 @@ Session ID: f8d6e34d74bbeb70107e3660dd98252f
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details  in ">
+    <div id="after-41" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
@@ -552,10 +2969,10 @@ Session ID: f8d6e34d74bbeb70107e3660dd98252f
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-42">
           <a>Error message</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
+      <div id="msg-42" class="collapse collapsable-details  in ">
         <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at org.base.Global.generateTestReport(Global.java:253)
 	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
@@ -609,7 +3026,7 @@ Session ID: f8d6e34d74bbeb70107e3660dd98252f
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.290</span>
+  <span class="lead-duration duration">0.292</span>
 
           </div>
 
@@ -620,15 +3037,15 @@ Session ID: f8d6e34d74bbeb70107e3660dd98252f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-7" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-43" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-835229937.png" download target="_blank">
+      <a href="embeddings/embedding_681358925.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-7" class="collapse collapsable-details ">
+    <div id="embedding-43" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-835229937.png">
+        <img src="embeddings/embedding_681358925.png">
       </div>
     </div>
   </div>

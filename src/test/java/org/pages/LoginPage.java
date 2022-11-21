@@ -308,6 +308,28 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//div[contains(text(),'Company Size')]/..)/span")
 	private WebElement	EmpSizeInSearchResult;
 
+	@FindBy(xpath = "//div[contains(text(),'Technographics')]")
+	private WebElement Technographics;
+
+	@FindBy(xpath = "//span[contains(text(),'Products')]")
+	private WebElement ProductFilter;
+
+	@FindBy(xpath = "(//input[@type='text'])[10]")
+	private WebElement ProductTestBox;
+
+	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]")
+	private WebElement CompanyNameInResult;
+
+	@FindBy(xpath = "//th[contains(text(),'Products')]//..//..//../tbody/tr[2]/td[2]/table/tr/td[2]/div/div")
+	private WebElement ProductInResult;
+
+	@FindBy(xpath = "//label[contains(text(),'All')]")
+	private WebElement AllButton;
+
+	@FindBy(xpath = "//input[@type='search']")
+	private WebElement SearchInputBox;
+
+
 	@FindBy(xpath = "//input[@placeholder='Enter Industry Name']")
 	private WebElement IndustryNameInputBox;
 
@@ -387,7 +409,7 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//*[@class='list-inline-item px-4 font-weight-light credit-values border-right']")
 	private WebElement UpdatedReveal;
 
-	@FindBy(xpath = "(//*[contains(text(),'Clear')])[2]")
+	@FindBy(xpath = "//button[contains(text(),'Clear')]")
 	private WebElement Clearbutton;
 
 	@FindBy(xpath = "//*[contains(text(),'Do Not Save')]")
@@ -774,6 +796,35 @@ public class LoginPage extends Global {
 	public WebElement getEmpSizeInSearchResult(){
 		return EmpSizeInSearchResult;
 	}
+
+	public WebElement getTechnographics(){
+		return Technographics;
+	}
+
+	public WebElement getProductFilter(){
+		return ProductFilter;
+	}
+
+	public WebElement getProductTextBox(){
+		return ProductTestBox;
+	}
+
+	public WebElement getCompanyNameInResult(){
+		return CompanyNameInResult;
+	}
+
+	public WebElement getProductInResult(){
+		return ProductInResult;
+	}
+
+	public WebElement getAllButton(){
+		return AllButton;
+	}
+
+	public WebElement getSearchInputBox(){
+		return SearchInputBox;
+	}
+
 
 //	@Override
 //	public String toString() {

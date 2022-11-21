@@ -3,12 +3,14 @@ package org.stepdefinition;
 import com.github.dockerjava.api.model.HealthCheck;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en_scouse.An;
+import net.bytebuddy.asm.Advice;
 import org.apache.log4j.Logger;
 import org.apache.log4j.spi.ThrowableInformation;
 import org.apache.velocity.runtime.directive.contrib.For;
 import org.base.Global;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.pagemanager.PageObjectManager;
 import org.testng.Assert;
@@ -180,6 +182,7 @@ public class Steps extends Global {
 
 	@And("Click on the First Contact in Search Result")
 	public void I_Click_Searched_Contact() throws Throwable{
+		Thread.sleep(3000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstSearchedContact());
 		log.info("User Click on the First Contact in Search Result");
 		Thread.sleep(2000);
@@ -1072,6 +1075,78 @@ public class Steps extends Global {
 		Thread.sleep(3000);
 	}
 
+	@When("Validate TECHNOGRAPHICS is displayed")
+	public void I_Check_Technographics() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getTechnographics().isDisplayed());
+		log.info("Technographics is Displayed");
+	}
+
+	@And("Click on Products Filter")
+	public void I_Click_On_Producet() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getProductFilter());
+		log.info("User Click on Products Filter");
+		Thread.sleep(20002);
+	}
+
+	@And("Click on Technographic product text box")
+	public void I_Click_On_Product_Text_Box() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getProductTextBox());
+		log.info("Click on Technographic product text box");
+		Thread.sleep(2000);
+	}
+
+	@And("Enter the product name")
+	public void I_Enter_The_Product_Name() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getProductTextBox(), ReadDatafromJson("Contact_Name", "Product Name"));
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		log.info("User Enter the product name");
+		Thread.sleep(2000);
+	}
+
+	@And("Click on company name")
+	public void I_Click_On_Company_Name() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getCompanyNameInResult());
+		log.info("User Click on company name");
+		Thread.sleep(3000);
+	}
+
+	@And("Click on All")
+	public void I_Click_On_All() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
+		log.info("User Click on All");
+		Thread.sleep(3000);
+	}
+
+	@And("Enter the product name in Search textbox")
+	public void I_Enter_Product_Name() throws Throwable{
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name"));
+		log.info("Enter the product name in Search textbox");
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+	}
+
+	@Then("Check the technographic product in Company detail page")
+	public void I_Check_Product_In_Result() throws Throwable{
+		String EnteredProduct=ReadDatafromJson("Contact_Name", "Product Name");
+		Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),\'" + EnteredProduct + "\')])[2]")).isDisplayed());
+		log.info("User Check the technographic product in Company detail page");
+		Thread.sleep(3000);
+	}
+//		String CopyProductFromResult=PageObjectManager.getInstance().getLoginPage().getProductInResult().getText();
+//		String EnteredProduct=ReadDatafromJson("Contact_Name", "Product Name");
+//		if (CopyProductFromResult==EnteredProduct){
+//			System.out.println(EnteredProduct);
+//		}
+//		else {
+//			System.out.println("Fail"+EnteredProduct);
+//
+//		}
+//	}
+
 	@And("Click on Industry Name Input box")
 	public void I_Click_On_Industry_Name_Input_Box() throws Throwable{
 		clickButton(PageObjectManager.getInstance().getLoginPage().getIndustryNameInputBox());
@@ -1123,7 +1198,7 @@ public class Steps extends Global {
 		String SICIndustryInResult = ReadDatafromJson("Contact_Name" , "SIC Code Industry");
 		Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),\'" + SICIndustryInResult + "\')])[1]")).isDisplayed());
 		log.info("USer Check Industry for SIC code in Search Result");
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 	}
 
 	@And("CLick on NAICS Code input box")
@@ -1536,17 +1611,16 @@ public class Steps extends Global {
 
 	@And("Click On Clear Button")
 	public void I_Click_clear_Button() throws Throwable {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getClearbutton());
-		Thread.sleep(5000);
 		log.info("User click on Clear Button");
 	}
 
 	@And("Click On Do Not Save Button")
 	public void I_Click_do_not_save_Button() throws Throwable {
-		Thread.sleep(10000);
-		clickButton(PageObjectManager.getInstance().getLoginPage().getDonotsavebutton());
 		Thread.sleep(5000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getDonotsavebutton());
+		Thread.sleep(3000);
 		log.info("User click on Clear Button");
 	}
 
