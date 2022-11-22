@@ -329,6 +329,21 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//input[@type='search']")
 	private WebElement SearchInputBox;
 
+	@FindBy(xpath = "//div[contains(text(),'Intent')]")
+	private WebElement INTENT;
+
+	@FindBy(xpath = "//span[contains(text(),'Score Threshold')]")
+	private WebElement ScoreThresHold;
+
+	@FindBy(xpath = "(//span[contains(text(),'Topic')])[1]")
+	private WebElement TopicFilter;
+
+	@FindBy(xpath = "//span[contains(text(),'Netflix')]")
+	private WebElement NetflixTopic;
+
+	@FindBy(xpath = "(//span[contains(text(),'Netflix')])[2]")
+	private WebElement NetflixTopicInResult;
+
 
 	@FindBy(xpath = "//input[@placeholder='Enter Industry Name']")
 	private WebElement IndustryNameInputBox;
@@ -823,6 +838,25 @@ public class LoginPage extends Global {
 
 	public WebElement getSearchInputBox(){
 		return SearchInputBox;
+	}
+
+	public WebElement getINTENT(){
+		return INTENT;
+	}
+
+	public WebElement getScoreThresHold(){
+		return ScoreThresHold;
+	}
+
+	public WebElement getTopicFilter(){
+		return TopicFilter;
+	}
+
+	public WebElement getNetflixTopic(){
+		return NetflixTopic;
+	}
+	public WebElement getNetflixTopicInResult(){
+		return NetflixTopicInResult;
 	}
 
 

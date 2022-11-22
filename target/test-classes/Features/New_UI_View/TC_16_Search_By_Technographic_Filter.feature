@@ -1,4 +1,4 @@
-Feature: To validate Search by Employees or Size
+Feature: To validate Search by Technographics
 
   @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
@@ -7,7 +7,7 @@ Feature: To validate Search by Employees or Size
     Then Click On Login Button
 
   @First @Sanity
-  Scenario: To validate Search by Technographics filter in Products
+  Scenario: To validate Search by Technographics filter in Products with Any
     When Validate TECHNOGRAPHICS is displayed
     And Click on Products Filter
     And Click on Technographic product text box

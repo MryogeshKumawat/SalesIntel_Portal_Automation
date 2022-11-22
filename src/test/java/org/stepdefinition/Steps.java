@@ -1097,12 +1097,19 @@ public class Steps extends Global {
 
 	@And("Enter the product name")
 	public void I_Enter_The_Product_Name() throws Throwable{
-		enterData(PageObjectManager.getInstance().getLoginPage().getProductTextBox(), ReadDatafromJson("Contact_Name", "Product Name"));
+		enterData(PageObjectManager.getInstance().getLoginPage().getProductTextBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
 		Robot robot=new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		log.info("User Enter the product name");
+		Thread.sleep(1000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getProductTextBox(), ReadDatafromJson("Contact_Name", "Product Name2"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getProductTextBox(), ReadDatafromJson("Contact_Name", "Product Name3"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(5000);
 	}
 
 	@And("Click on company name")
@@ -1121,7 +1128,7 @@ public class Steps extends Global {
 
 	@And("Enter the product name in Search textbox")
 	public void I_Enter_Product_Name() throws Throwable{
-		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name"));
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
 		log.info("Enter the product name in Search textbox");
 		Robot robot=new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
@@ -1131,10 +1138,24 @@ public class Steps extends Global {
 
 	@Then("Check the technographic product in Company detail page")
 	public void I_Check_Product_In_Result() throws Throwable{
-		String EnteredProduct=ReadDatafromJson("Contact_Name", "Product Name");
-		Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),\'" + EnteredProduct + "\')])[2]")).isDisplayed());
-		log.info("User Check the technographic product in Company detail page");
-		Thread.sleep(3000);
+		String EnteredProduct1=ReadDatafromJson("Contact_Name", "Product Name1");
+		String EnteredProduct2=ReadDatafromJson("Contact_Name", "Product Name2");
+		String EnteredProduct3=ReadDatafromJson("Contact_Name", "Product Name3");
+		WebElement FirstProductInResult=driver.findElement(By.xpath("(//*[contains(text(),\'" + EnteredProduct1 + "\')])[2]"));
+		WebElement SecondProductInResult=driver.findElement(By.xpath("(//*[contains(text(),\'" + EnteredProduct2 + "\')])[2]"));
+		WebElement ThirdProductInResult=driver.findElement(By.xpath("(//*[contains(text(),\'" + EnteredProduct3 + "\')])[2]"));
+		if (FirstProductInResult.isDisplayed()|| SecondProductInResult.isDisplayed()|| ThirdProductInResult.isDisplayed()){
+			log.info("Validated that the technographic product is Displayed in Company detail page");
+		} else if (SecondProductInResult.isDisplayed()) {
+			log.info("Validated that the technographic product is Displayed in Company detail page");
+		} else if (ThirdProductInResult.isDisplayed()) {
+			log.info("Validated that the technographic product is Displayed in Company detail page");
+		}
+		else {
+			Assert.fail();
+			log.info("Any of Searched Product is not displayed in the Company Detail page");
+		}
+
 	}
 //		String CopyProductFromResult=PageObjectManager.getInstance().getLoginPage().getProductInResult().getText();
 //		String EnteredProduct=ReadDatafromJson("Contact_Name", "Product Name");
@@ -1146,6 +1167,48 @@ public class Steps extends Global {
 //
 //		}
 //	}
+
+	@When("Check INTENT is displayed")
+	public void I_Check_Intent() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getINTENT().isDisplayed());
+		log.info("User Check INTENT is displayed");
+		Thread.sleep(1000);
+	}
+
+	@And("Click on Score Threshold Filter")
+	public void I_Click_On_Score_Threshold_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getScoreThresHold());
+		log.info("User Click on Score Threshold Filter");
+		Thread.sleep(2000);
+	}
+
+	@And("Select Minimum Score")
+	public void I_Select_Score_Threshold() throws Throwable{
+		Thread.sleep(3000);
+		rangeSlidePointer("(//input[@type='range'])[1]", 0, 0);
+		Thread.sleep(5000);
+	}
+
+	@And("Click on Topics")
+	public void I_Click_On_Topics() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getTopicFilter());
+		log.info("USer Click on Topics");
+		Thread.sleep(1000);
+	}
+
+	@And("Select Netflix Topic")
+	public void I_Select_Netflix_Topic() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNetflixTopic());
+		log.info("User Select Netflix Topic");
+		Thread.sleep(2000);
+	}
+
+	@Then("Check Searched Topic in Search Result")
+	public void I_Check_Netflix_Topic_In_Result() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getNetflixTopicInResult().isDisplayed());
+		log.info("USer Check Searched Topic in Search Result");
+		Thread.sleep(3000);
+	}
 
 	@And("Click on Industry Name Input box")
 	public void I_Click_On_Industry_Name_Input_Box() throws Throwable{

@@ -23,6 +23,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,7 +43,12 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.w3c.dom.Text;
+
+import javax.swing.*;
 
 public class Global {
 
@@ -277,6 +283,17 @@ public class Global {
 		Object object = jsonObject.get(arg1);
 		JSONObject jsonObject1=(JSONObject) object;
 		return jsonObject1.get(arg2).toString();
+	}
+
+	protected void rangeSlidePointer(String locator, int xOffset, int yOffset) {
+		WebDriverWait explicitWait = new WebDriverWait( driver, 1000 * 60 * 2 );
+		By findBy = By.xpath( locator );
+		WebElement sliderElement = explicitWait.until(ExpectedConditions.elementToBeClickable( findBy ));
+		Actions moveSlider = new Actions(driver);
+//		Actions action = moveSlider.dragAndDropBy(sliderElement,xOffset,yOffset).release()
+//		Actions action = moveSlider.dragAndDropBy(sliderElement, xOffset, yOffset).release().build();
+		 Actions action = moveSlider.moveToElement(sliderElement).clickAndHold().moveByOffset(xOffset,yOffset).release();
+		action.perform();
 	}
 
 
