@@ -433,7 +433,7 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//*[contains(text(),'100 Fastest Growing')])[4]")
 	private WebElement FastgrowingContact;
 
-	@FindBy(xpath = "(//*[contains(text(),'Add')])[2]")
+	@FindBy(xpath = "(//span[contains(text(),'Add')])[3]")
 	private WebElement Addalltolistbutton;
 
 	@FindBy(xpath = "//*[contains(text(),'Create new contact list')]")

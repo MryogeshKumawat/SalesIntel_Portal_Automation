@@ -55,6 +55,7 @@ Feature: Validate Search By Contact Name
     When Clear the Text in First Name Field
     And Clear the Text in Last Name Field
 
+
   @First @Sanity
   Scenario: To validate application add multiple contact into New Contact List
     And Click On Clear Button
@@ -78,7 +79,7 @@ Feature: Validate Search By Contact Name
 
   @First @Sanity
   Scenario: To validate application add multiple contact into Existing Contact List
-#    When Click On List Tab
+    When Click On SalesIntel Tab
     And Click On Clear Button
     And Click On Do Not Save Button
     When Click on Contact Name Button

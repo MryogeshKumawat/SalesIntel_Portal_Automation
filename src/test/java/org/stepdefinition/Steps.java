@@ -1695,7 +1695,7 @@ public class Steps extends Global {
 
 	@And("Click On Add all to List")
 	public void I_Click_add_all_list() throws Throwable {
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getAddalltolistbutton());
 		log.info("User click on Add All to List");
 	}
@@ -1764,7 +1764,7 @@ public class Steps extends Global {
 
 	@And("Select Multiple Company to Add Company List")
 	public void I_select_multiple_Company() {
-		for (int i = 1; i < 6; i++) {
+		for (int i = 1; i < 4; i++) {
 			driver.findElements(By.xpath("(//input[@type='checkbox' and @title='Select'])[" + i + "]")).get(0).click();
 			//System.out.println(driver.findElements(By.xpath("(//input[@type='checkbox' and @title='Select'])["+i+"]")).size());
 		}
@@ -1778,7 +1778,7 @@ public class Steps extends Global {
 			//System.out.println(driver.findElements(By.xpath("(//input[@type='checkbox' and @title='Select'])["+i+"]")).size());
 			Contactlist.add(Contactname);
 		}
-		log.info("Select Multiple contact to Add Contact List");
+		log.info("Append Contact details into the List");
 	}
 
 	@And("Append Company details into the List")
@@ -1829,7 +1829,9 @@ public class Steps extends Global {
 	}
 
 	@And("Delete Company List")
-	public void I_Delete_Company_List() throws Throwable {
+	public void
+
+	I_Delete_Company_List() throws Throwable {
 		Thread.sleep(5000);
 		Actions Clickpreview = new Actions(driver);
 		String contactlistnamesearch = ReadDatafromJson("Contact_Name", "Companylist");
@@ -1936,7 +1938,11 @@ public class Steps extends Global {
 	public void i_enter_the_company_name() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getCompanyInput(),
 				ReadDatafromJson("Contact_Name", "Company_name"));
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
 		log.info("User Enter Valid Company Name");
+		Thread.sleep(2000);
 	}
 
 	@And("Click On Company Input Text Field")
