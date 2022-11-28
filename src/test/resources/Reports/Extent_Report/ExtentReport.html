@@ -52,7 +52,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 23, 2022 03:08:58 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 28, 2022 05:56:20 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -68,6 +68,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -110,10 +111,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -147,16 +148,16 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='177'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>Valid User Username and Valid Password</span>
-						<span class='test-time'>Nov 23, 2022 03:09:08 pm</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Tapping only Login Button</span>
+						<span class='test-time'>Nov 28, 2022 05:56:20 pm</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 23, 2022 03:09:08 pm</span>
-	<span class='label end-time'>Nov 23, 2022 03:09:08 pm</span>
+	<span class='label start-time'>Nov 28, 2022 05:56:20 pm</span>
+	<span class='label end-time'>Nov 28, 2022 05:56:20 pm</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 <div class='test-steps'>
@@ -169,22 +170,38 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:09:08 pm</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>5:56:20 pm</td>
 				<td class='step-details'>
-						To validate SalesIntel application Valid User Username and Valid Password
+						To validate SalesIntel application Tapping only Login Button
 					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>5:56:20 pm</td>
+				<td class='step-details'>
+						Failure Screenshot
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:56:20 pm</td>
+				<td class='step-details'>
+						Screenshot
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\Automation\New_Revdriver\SalesIntel_QA_Automation-master\src\test\resources\Reports\Extent_Report\ExtentReport.html' src='D:\Automation\New_Revdriver\SalesIntel_QA_Automation-master\src\test\resources\Reports\Extent_Report\ExtentReport.html'>
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
 <ul class='collapsible node-list' data-collapsible='accordion'>
-	<li class='node level-1 leaf pass' status='pass' test-id='178'>
+	<li class='node level-1 leaf pass' status='pass' test-id='6'>
 		<div class='collapsible-header'>
-			<div class='node-name'>To validate SalesIntel application Valid User Username and Valid Password</div>
-			<span class='node-time'>Nov 23, 2022 03:09:08 pm</span>
+			<div class='node-name'>To validate SalesIntel application Tapping only Login Button</div>
+			<span class='node-time'>Nov 28, 2022 05:56:20 pm</span>
 			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
 			<span class='test-status right pass'>pass</span>
 		</div>
@@ -232,19 +249,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 23, 2022 03:08:58 pm</div>
+					<div class='panel-lead'>Nov 28, 2022 05:56:20 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 23, 2022 03:09:08 pm</div>
+			 		<div class='panel-lead'>Nov 28, 2022 05:56:20 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 10s+238ms</div>
+					<div class='panel-lead'>0h 0m 0s+0ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -280,13 +297,13 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 1,
 				passChild: 1,
 				failChild: 0,
@@ -311,7 +328,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Valid User Username and Valid Password":0
+			        "Tapping only Login Button":0
 			};
 		</script>
 	

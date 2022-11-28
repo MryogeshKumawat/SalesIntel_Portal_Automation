@@ -118,12 +118,14 @@ public class Steps extends Global {
 		log.info("User Click on Contact Radio Buttonn");
 		Thread.sleep(5000);
 	}
+
 	@Then("Click on Company Radio Button")
 	public void I_Click_Company_Button() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getnewCompanyradiobutton());
 		log.info("User Click on Company Radio Button");
 		Thread.sleep(5000);
 	}
+
 	@Then("Click on Contact Email Button")
 	public void I_Click_Contact_Email() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getContactEmail());
@@ -181,7 +183,7 @@ public class Steps extends Global {
 	}
 
 	@And("Click on the First Contact in Search Result")
-	public void I_Click_Searched_Contact() throws Throwable{
+	public void I_Click_Searched_Contact() throws Throwable {
 		Thread.sleep(3000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstSearchedContact());
 		log.info("User Click on the First Contact in Search Result");
@@ -298,7 +300,7 @@ public class Steps extends Global {
 
 	@When("Enter Invalid Password")
 	public void i_enter_invalid_password() throws Throwable {
-		enterData(PageObjectManager.getInstance().getLoginPage().getPassword(),ReadDatafromJson("Contact_Name","InvalidPassword"));
+		enterData(PageObjectManager.getInstance().getLoginPage().getPassword(), ReadDatafromJson("Contact_Name", "InvalidPassword"));
 		log.info("User enter Enter Invalid Password");
 	}
 
@@ -503,7 +505,7 @@ public class Steps extends Global {
 	}
 
 	@And("Verify Job Department is displayed")
-	public void I_verify_Job_Department() throws Throwable{
+	public void I_verify_Job_Department() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getDepartmentFilter().isDisplayed());
 		log.info("Verify Department Filter is Displayed");
 	}
@@ -517,123 +519,125 @@ public class Steps extends Global {
 	}
 
 	@Then("Click on Finance Department Filter")
-	public void I_Click_Finance_Department_Filter() throws Throwable{
+	public void I_Click_Finance_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getFinanceDepartmentFilter());
 		Thread.sleep(2000);
 		log.info("User Click on Finance Department Filter");
 	}
 
 	@Then("Check Finance Department in Search Result")
-	public void I_Check_Finance_Department_In_Result() throws Throwable{
+	public void I_Check_Finance_Department_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getFinanceDepartmentInResult().isDisplayed());
 		log.info("User Check Finance Department in Search Result");
 	}
 
 	@Then("Click on HR Department Filter")
-	public void I_Click_HR_Department_Filter() throws Throwable{
-	clickButton(PageObjectManager.getInstance().getLoginPage().getHrDepartmentFilter());
-	Thread.sleep(2000);
-	log.info("User Click on HR Department Filter");
+	public void I_Click_HR_Department_Filter() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().getHrDepartmentFilter());
+		Thread.sleep(2000);
+		log.info("User Click on HR Department Filter");
 	}
 
 	@Then("Check HR Department in Search Result")
-	public void I_Check_Hr_Department_In_Result() throws Throwable{
+	public void I_Check_Hr_Department_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHrDepartmentInResult().isDisplayed());
 		log.info("User Check HR Department in Search Result");
 	}
 
 	@Then("Click on IT Department Filter")
-	public void I_Click_IT_Department_Filter() throws Throwable{
+	public void I_Click_IT_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getITDepartmentFilter());
 		Thread.sleep(2000);
 		log.info("User Click on IT Department Filter");
 	}
 
 	@Then("Check IT Department in Search Result")
-	public void I_Check_IT_Department_In_Result() throws Throwable{
+	public void I_Check_IT_Department_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getITDepartmentInResult().isDisplayed());
 		log.info("User Check IT Department in Search Result");
 	}
 
 	@Then("Click on Legal Department Filter")
-	public void I_Click_Legal_Department_Filter() throws Throwable{
+	public void I_Click_Legal_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLegalDepartmentFilter());
 		log.info("Click on Legal Department Filter");
 	}
 
 	@Then("Check Legal Department in Search Result")
-	public void I_Check_Legal_Department_In_Result() throws Throwable{
+	public void I_Check_Legal_Department_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getLegalDepartmentInResult().isDisplayed());
 		log.info("User Check Legal Department in Search Result");
 	}
 
 	@Then("Click on Marketing Department Filter")
-	public void I_Click_Marketing_Department_Filter() throws Throwable{
+	public void I_Click_Marketing_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getMarketingDepartmentFilter());
 		log.info("Click on Marketing Department Filter");
 	}
 
 	@Then("Check Marketing Department in Search Result")
-	public void I_Check_Marketing_Department_In_Result() throws Throwable{
+	public void I_Check_Marketing_Department_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getMarketingDepartmentInResult().isDisplayed());
 		log.info("User Check Marketing Department in Search Result");
 	}
 
 
 	@Then("Click on Operations Department Filter")
-	public void I_Click_Operations_Department_Filter() throws Throwable{
+	public void I_Click_Operations_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getOperationsDepartmentFilter());
 		log.info("Click on Operations Department Filter");
 	}
 
 	@Then("Check Operations Department in Search Result")
-	public void I_Check_Operations_Department_Result() throws Throwable{
+	public void I_Check_Operations_Department_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOperationsDepartmentInResult().isDisplayed());
 		log.info("User Check Operations Department in Search Result");
 	}
 
 	@Then("Click on Procurement Department Filter")
-	public void I_Click_Procurement_Department_Filter() throws Throwable{
+	public void I_Click_Procurement_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getProcurementDepartmentFilter());
 		log.info("Click on Procurement Department Filter");
 	}
 
 	@Then("Check Procurement Department in Search Result")
-	public void I_Check_Procurement_Department_Result() throws Throwable{
+	public void I_Check_Procurement_Department_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getProcurementDepartmentInResult().isDisplayed());
 		log.info("User Check Procurement Department in Search Result");
 	}
 
 	@Then("Click on R&D Department Filter")
-	public void I_Click_RnD_Department_Filter() throws Throwable{
+	public void I_Click_RnD_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getRndDepartmentFilter());
 		log.info("Click on R&D Department Filter");
 	}
 
 	@Then("Check R&D Department in Search Result")
-	public void I_Check_RnD_Department_In_Result() throws Throwable{
+	public void I_Check_RnD_Department_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getRndDepartmentInResult().isDisplayed());
 		log.info("User Check R&D Department in Search Result");
 	}
 
 	@Then("Click on Sales Department Filter")
-	public void I_Click_Sales_Department_Filter() throws Throwable{
+	public void I_Click_Sales_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesDepartmentFilter());
 		log.info("User Click on Sales Department Filter");
 	}
 
 	@Then("Check Sales Department in Search Result")
-	public void I_Check_Sales_Department_In_Search_Result() throws Throwable{
+	public void I_Check_Sales_Department_In_Search_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getSalesDepartmentIn_Result().isDisplayed());
 		log.info("User Check Sales Department in Search Result");
 	}
+
 	@Then("Click on Cross Functional Department Filter")
-	public void I_Click_Cross_Functional_Department_Filter() throws Throwable{
+	public void I_Click_Cross_Functional_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getCrossFunctionalDepartmentFilter());
 		log.info("User Click on Cross Functional Department Filter");
 	}
+
 	@Then("Check Cross Functional Department in Search Result")
-	public void I_Check_Cross_Functional_Department_In_Result() throws Throwable{
+	public void I_Check_Cross_Functional_Department_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getCrossFunctionalDepartmentInResult().isDisplayed());
 		log.info("User Check Cross Functional Department in Search Result");
 	}
@@ -652,14 +656,14 @@ public class Steps extends Global {
 	}
 
 	@Then("Click on Board Member Job Level Filter")
-	public void I_Click_Board_Member_Job_Level_Filter() throws Throwable{
+	public void I_Click_Board_Member_Job_Level_Filter() throws Throwable {
 		Thread.sleep(5000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getBoardMemberJobLevelFilter());
 		log.info("User Click on Board Member Job Level Filter");
 	}
 
 	@Then("Check Board Member Job Level in Result")
-	public void I_Check_BoardMember_Job_Level_In_Result() throws Throwable{
+	public void I_Check_BoardMember_Job_Level_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getBoardMemberJobLevelInResult().isDisplayed());
 		log.info("User Check Board Member Job Level in Result");
 	}
@@ -706,46 +710,47 @@ public class Steps extends Global {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getJobclevelexecutiveFilter());
 		log.info("User Click On C-Level Executive Job Level Filter");
 	}
+
 	@And("Click On Vice Presidents Job Level Filter")
-	public void I_Click_Voice_Precident_Job_Level_Filter() throws Throwable{
+	public void I_Click_Voice_Precident_Job_Level_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getVicePrecidentsJobLevelFilter());
 		log.info("Click On Vice Presidents Job Level Filter");
 	}
 
 	@And("Click On Directors Job Level Filter")
-	public void I_Click_Directors_Job_Level_Filter() throws Throwable{
+	public void I_Click_Directors_Job_Level_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getDirectorsJobLevelFilter());
 		log.info("User Click On Directors Job Level Filter");
 	}
 
 	@And("Click On Managers Job Level Filter")
-	public void I_Click_Managers_Job_Level_Filter() throws Throwable{
+	public void I_Click_Managers_Job_Level_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getManagersJobLevelFilter());
 		log.info("User Click On Managers Job Level Filter");
 	}
 
 	@And("Click On Key Influencers Job Level Filter")
-	public void I_Click_Key_Influencers_Job_Level_Filter() throws Throwable{
+	public void I_Click_Key_Influencers_Job_Level_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getKeyInfluencersJobLevelFilter());
 		log.info("User Click On Key Influencers Job Level Filter");
 	}
 
 
 	@And("Verify Title filter is Displayed")
-	public void I_Verify_Title_Filter() throws Throwable{
+	public void I_Verify_Title_Filter() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getTitleFilter().isDisplayed());
 		log.info("User Verify Title filter is Displayed");
 	}
 
 	@And("Click on Title Filter")
-	public void I_Click_On_Title_Filter() throws Throwable{
+	public void I_Click_On_Title_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getTitleFilter());
 		Thread.sleep(2000);
 		log.info("User click on Title Filter");
 	}
 
 	@And("Enter Title in Title filter")
-	public void I_Enter_Job_Title() throws Throwable{
+	public void I_Enter_Job_Title() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getTitleTextField(),
 				ReadDatafromJson("Contact_Name", "Job_Title"));
 		log.info("User enter Job Title in Tile text field");
@@ -753,40 +758,40 @@ public class Steps extends Global {
 	}
 
 	@Then("Check searched title is displayed in Search Result")
-	public void I_Check_Title_In_Result() throws Throwable{
+	public void I_Check_Title_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getTitleInResult().isDisplayed());
 		Thread.sleep(3000);
 		log.info("User Check searched title is displayed in Search Result");
 	}
 
 	@When("Verify Location filter is Displayed")
-	public void I_Verify_Location_Filter() throws Throwable{
+	public void I_Verify_Location_Filter() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getLocationFilter().isDisplayed());
 		log.info("User verify Location filter is Displayed");
 	}
 
 	@And("Click on Location Filter")
-	public void I_Click_Location_Filter() throws Throwable{
+	public void I_Click_Location_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLocationFilter());
 		Thread.sleep(5000);
 		log.info("User Click on Location Filter");
 	}
 
 	@And("Click on State Page")
-	public void I_Click_On_State_Page() throws Throwable{
+	public void I_Click_On_State_Page() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getStatePage());
 		log.info("User Click on State Page");
 	}
 
 	@And("Click on States Filter")
-	public void I_Click_State_Filter() throws Throwable{
+	public void I_Click_State_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getStateField());
 		Thread.sleep(2000);
 		log.info("User click on States Filter");
 	}
 
 	@And("Enter California State")
-	public void I_Enter_California_State() throws Throwable{
+	public void I_Enter_California_State() throws Throwable {
 		Thread.sleep(5000);
 		enterData(PageObjectManager.getInstance().getLoginPage().getStateField(),
 				ReadDatafromJson("Contact_Name", "StateName"));
@@ -812,7 +817,7 @@ public class Steps extends Global {
 		enterData(PageObjectManager.getInstance().getLoginPage().Statevalueselection(), ReadDatafromJson("Contact_Name", "Stateselection"));
 //		enterData(PageObjectManager.getInstance().getLoginPage().getFirstName(),readData(0,1));
 		log.info("Enter the Data in State Combobox");
-		Robot robot=new Robot();
+		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
@@ -820,21 +825,21 @@ public class Steps extends Global {
 
 
 	@And("Click on California State")
-	public void I_Click_On_California_State() throws Throwable{
+	public void I_Click_On_California_State() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getCaliforniaState());
 		Thread.sleep(3000);
 		log.info("User Click on California State");
 	}
 
 	@Then("Check CA for California State in Search Result")
-	public void I_Check_California_In_Result() throws Throwable{
+	public void I_Check_California_In_Result() throws Throwable {
 		Thread.sleep(2000);
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getCaliforniaInResult().isDisplayed());
 		log.info("User Check CA for California State in Search Result");
 	}
 
 	@And("Click on Zip code under USA")
-	public void I_Click_On_Zip_Code_Page() throws Throwable{
+	public void I_Click_On_Zip_Code_Page() throws Throwable {
 		Thread.sleep(2000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getZipCodePage());
 		log.info("User click on Zip code page under USA");
@@ -842,14 +847,14 @@ public class Steps extends Global {
 	}
 
 	@And("Enter Zip Code in the text field")
-	public void I_Enter_Zip_Code() throws Throwable{
+	public void I_Enter_Zip_Code() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getZipCodeTextField(),
 				ReadDatafromJson("Contact_Name", "Zip_Code"));
 		log.info("User Enter the Zip Code");
 	}
 
 	@And("Select 100 Miles in the dropdown")
-	public void I_Select_100_Miles_Under_Zip_Code() throws Throwable{
+	public void I_Select_100_Miles_Under_Zip_Code() throws Throwable {
 		Thread.sleep(2000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getMilesSelectBox());
 		Thread.sleep(2000);
@@ -860,38 +865,39 @@ public class Steps extends Global {
 	}
 
 	@And("Click on Metro Areas under USA")
-	public void I_Click_On_Metro_Area_Page() throws Throwable{
+	public void I_Click_On_Metro_Area_Page() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getMetroAreaPage());
 		Thread.sleep(2000);
 		log.info("User click on Metro Areas under USA");
 	}
 
 	@And("Click on Metro Areas Text Field")
-	public void I_Click_on_Metro_Area_Text_Field() throws Throwable{
+	public void I_Click_on_Metro_Area_Text_Field() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getMetroAreaTextField());
 		Thread.sleep(1000);
 		log.info("User Click on Metro Areas Text Field");
 	}
 
 	@And("Click on Albany GA Metro Area")
-	public void I_Click_On_Albany_GA_Metro_Area() throws Throwable{
+	public void I_Click_On_Albany_GA_Metro_Area() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getAlbanyORMetroArea());
 		Thread.sleep(2000);
 		log.info("Click on Albany GA Metro Area");
 	}
 
 	@And("Enter Albany GA Metro Area")
-	public void I_Enter_Albany_GA_Metro_Area() throws Throwable{
+	public void I_Enter_Albany_GA_Metro_Area() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getMetroAreaTextField(), ReadDatafromJson("Contact_Name", "Metro Area"));
 //		enterData(PageObjectManager.getInstance().getLoginPage().getFirstName(),readData(0,1));
 		log.info("Enter Albany GA Metro Area");
-		Robot robot=new Robot();
+		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
 	}
+
 	@And("Click on Non USA Radio Button")
-	public void I_Click_on_Non_USA_Radio_Button() throws Throwable{
+	public void I_Click_on_Non_USA_Radio_Button() throws Throwable {
 		Thread.sleep(5000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getNonUsaRadioButton());
 		log.info("User Click on Non USA Radio Button");
@@ -899,7 +905,7 @@ public class Steps extends Global {
 	}
 
 	@And("Click on Global Radio Button")
-	public void I_Click_on_Global_Radio_Button() throws Throwable{
+	public void I_Click_on_Global_Radio_Button() throws Throwable {
 		Thread.sleep(5000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getGlobalRadioButton());
 		log.info("User Click on Global Radio Button");
@@ -907,36 +913,36 @@ public class Steps extends Global {
 	}
 
 	@And("Click on Country Input Box")
-	public void I_Click_On_Country_Box() throws Throwable{
+	public void I_Click_On_Country_Box() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getCountryBox());
 		log.info("User click on Country Input Box");
 		Thread.sleep(2000);
 	}
 
 	@And("Enter Non USA Country Name")
-	public void I_Enter_Non_USA_Country_Name() throws Throwable{
+	public void I_Enter_Non_USA_Country_Name() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getCountryBox(), ReadDatafromJson("Contact_Name", "Non-USA Country"));
 //		enterData(PageObjectManager.getInstance().getLoginPage().getFirstName(),readData(0,1));
 		log.info("User enter Non USA Country Name");
-		Robot robot=new Robot();
+		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
 	}
 
 	@And("Enter Global Country Name")
-	public void I_Enter_Global_Country_Name() throws Throwable{
+	public void I_Enter_Global_Country_Name() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getCountryBox(), ReadDatafromJson("Contact_Name", "Global Country"));
 //		enterData(PageObjectManager.getInstance().getLoginPage().getFirstName(),readData(0,1));
 		log.info("User enter Global Country Name");
-		Robot robot=new Robot();
+		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
 	}
 
 	@Then("Check Country in Location in Search Result")
-	public void I_Check_Country_Location_In_Result() throws Throwable{
+	public void I_Check_Country_Location_In_Result() throws Throwable {
 		String NonUSACountry = ReadDatafromJson("Contact_Name", "Non-USA Country");
 		Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(),\'" + NonUSACountry + "\')]")).isDisplayed());
 		log.info("Non USA Country is displayed under Location in Search Result");
@@ -944,7 +950,7 @@ public class Steps extends Global {
 	}
 
 	@Then("Check Global Country in Location in Search Result")
-	public void I_Check_Global_Country_Location_In_Result() throws Throwable{
+	public void I_Check_Global_Country_Location_In_Result() throws Throwable {
 		String GlobalCountryName = ReadDatafromJson("Contact_Name", "Global Country");
 		Assert.assertTrue(driver.findElement(By.xpath("//*[contains(text(),\'" + GlobalCountryName + "\')]")).isDisplayed());
 		log.info("Global Country is displayed under Location in Search Result");
@@ -952,111 +958,112 @@ public class Steps extends Global {
 	}
 
 	@When("Click on Keywords Filter")
-	public void I_Click_On_Keywords_Filter() throws Throwable{
+	public void I_Click_On_Keywords_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getKeywordsFilter());
 		log.info("User click on Keywords Filter");
 	}
 
 	@And("Click on Keywords Input box")
-	public void I_Click_On_Keywords_Input_Box() throws Throwable{
+	public void I_Click_On_Keywords_Input_Box() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getKeywordsInputBox());
 		log.info("User click on Keywords Input Box");
 	}
 
 	@And("Enter the Keyword")
-	public void I_Enter_Keyword_In_Input_Box() throws Throwable{
+	public void I_Enter_Keyword_In_Input_Box() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getKeywordsInputBox(), ReadDatafromJson("Contact_Name", "Keyword"));
 		Thread.sleep(3000);
 //		enterData(PageObjectManager.getInstance().getLoginPage().getFirstName(),readData(0,1));
 		log.info("User Enter the Keyword");
-		Robot robot=new Robot();
+		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(3000);
 	}
 
 	@When("Click on Industry Filter")
-	public void I_Click_On_Industry_Filter() throws Throwable{
+	public void I_Click_On_Industry_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getIndustryFilter());
 		log.info("Click on Industry Filter");
 		Thread.sleep(2000);
 	}
 
 	@And("Click on NAICS or SIC Code page")
-	public void I_Click_NAICSorSIC_Code_page() throws Throwable{
+	public void I_Click_NAICSorSIC_Code_page() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getNAICSorSICpage());
 		log.info("User Click on NAICS or SIC Code page");
 		Thread.sleep(3000);
 	}
 
 	@And("Click on SIC Radio button")
-	public void I_Click_SIC_Code_Radio_Button() throws Throwable{
+	public void I_Click_SIC_Code_Radio_Button() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getSICcodeRadioButton());
 		log.info("User Click on SIC Radio button");
 	}
 
 	@When("Click on Revenue Filter")
-	public void I_Click_On_Revenue_Filter() throws Throwable{
+	public void I_Click_On_Revenue_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getRevenueFilter());
 		log.info("USer Click on Revenue Filter");
 		Thread.sleep(2000);
 	}
 
 	@When("Click on Employee Size Filter")
-	public void I_Click_On_Employee_Size_Filter() throws Throwable{
+	public void I_Click_On_Employee_Size_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getEmployeeSizeFilter());
 		log.info("USer Click on Employee Size Filter");
 		Thread.sleep(2000);
 	}
+
 	@And("Enter Minimum Revenue")
-	public void I_Enter_Minimum_Revenue() throws Throwable{
+	public void I_Enter_Minimum_Revenue() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getMinRevenueInputBox(), ReadDatafromJson("Contact_Name", "Minimum Revenue"));
 		log.info("User Enter Minimum Revenue");
 		Thread.sleep(2000);
 	}
 
 	@And("Enter Minimum Employee Size")
-	public void I_Enter_Minimum_Employee_Size() throws Throwable{
+	public void I_Enter_Minimum_Employee_Size() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getMinEmpSizeInputBox(), ReadDatafromJson("Contact_Name", "Minimum Employee Size"));
 		log.info("User Enter Minimum Employee Size");
 		Thread.sleep(2000);
 	}
+
 	@And("Enter Maximum Revenue")
-	public void I_Enter_Maximum_Revenue() throws Throwable{
+	public void I_Enter_Maximum_Revenue() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getMaxRevenueInputBox(), ReadDatafromJson("Contact_Name", "Maximum Revenue"));
 		log.info("User Enter Maximum Revenue");
 		Thread.sleep(2000);
 	}
 
 	@And("Enter Maximum Employee Size")
-	public void I_Enter_Maximum_Employee_Size() throws Throwable{
+	public void I_Enter_Maximum_Employee_Size() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getMaxEmpSizeInputBox(), ReadDatafromJson("Contact_Name", "Maximum Employee Size"));
 		log.info("User Enter Maximum Employee Size");
 		Thread.sleep(2000);
 	}
 
 	@Then("validate the Revenue in Search Result")
-	public void I_Check_Revenue_In_Result() throws Throwable{
+	public void I_Check_Revenue_In_Result() throws Throwable {
 		Thread.sleep(2000);
 		String RevenueInResult = PageObjectManager.getInstance().getLoginPage().getRevenueInSearchResult().getText();
 		String RevenueCleaned = RevenueInResult.replaceAll("[A-Z]", "");
 		double RevenueDouble = Double.parseDouble(RevenueCleaned);
-		int RevenueInteger = (int)RevenueDouble;
+		int RevenueInteger = (int) RevenueDouble;
 		int MinimumRevenue = Integer.parseInt(ReadDatafromJson("Contact_Name", "Minimum Revenue"));
 		int MaximumRevenue = Integer.parseInt(ReadDatafromJson("Contact_Name", "Maximum Revenue"));
-		if (RevenueInteger>=MinimumRevenue && RevenueInteger<=MaximumRevenue){
-			System.out.println("Revenue Range is From "+MinimumRevenue+" To "+MaximumRevenue+" and Revenue in Searched Result is "+RevenueInteger+"");
+		if (RevenueInteger >= MinimumRevenue && RevenueInteger <= MaximumRevenue) {
+			System.out.println("Revenue Range is From " + MinimumRevenue + " To " + MaximumRevenue + " and Revenue in Searched Result is " + RevenueInteger + "");
 			log.info("User Validated that Searched Revenue is Between the Input Range");
-		}
-		else {
-			System.out.println("Revenue Range is From "+MinimumRevenue+" To "+MaximumRevenue+" and Revenue in Searched Result is "+RevenueInteger+"");
+		} else {
+			System.out.println("Revenue Range is From " + MinimumRevenue + " To " + MaximumRevenue + " and Revenue in Searched Result is " + RevenueInteger + "");
 			log.info("User Validated that Searched Revenue is Out of the Input Range");
 		}
 		Thread.sleep(3000);
 	}
 
 	@Then("validate the Employee Size in Search Result")
-	public void I_Check_Employee_Size_In_Result() throws Throwable{
+	public void I_Check_Employee_Size_In_Result() throws Throwable {
 		Thread.sleep(2000);
 		String EmpSizeInResult = PageObjectManager.getInstance().getLoginPage().getEmpSizeInSearchResult().getText();
 //		String RevenueCleaned = RevenueInResult.replaceAll("[A-Z]", "");
@@ -1064,41 +1071,40 @@ public class Steps extends Global {
 		int EmpSizeInteger = Integer.parseInt(EmpSizeInResult);
 		int MinimumEmpSize = Integer.parseInt(ReadDatafromJson("Contact_Name", "Minimum Employee Size"));
 		int MaximumEmpSize = Integer.parseInt(ReadDatafromJson("Contact_Name", "Maximum Employee Size"));
-		if (EmpSizeInteger>=MinimumEmpSize && EmpSizeInteger<=MaximumEmpSize){
-			System.out.println("Employees / Size Range is From "+MinimumEmpSize+" To "+MaximumEmpSize+" and Company Size in Searched Result is "+EmpSizeInteger+"");
+		if (EmpSizeInteger >= MinimumEmpSize && EmpSizeInteger <= MaximumEmpSize) {
+			System.out.println("Employees / Size Range is From " + MinimumEmpSize + " To " + MaximumEmpSize + " and Company Size in Searched Result is " + EmpSizeInteger + "");
 			log.info("User Validated that Searched Company size is Between the Input Range");
-		}
-		else {
-			System.out.println("Employees / size Range is From "+MinimumEmpSize+" To "+MaximumEmpSize+" and Company size in Searched Result is "+EmpSizeInResult+"");
+		} else {
+			System.out.println("Employees / size Range is From " + MinimumEmpSize + " To " + MaximumEmpSize + " and Company size in Searched Result is " + EmpSizeInResult + "");
 			log.info("User Validated that Searched Company Size is Out of the Input Range");
 		}
 		Thread.sleep(3000);
 	}
 
 	@When("Validate TECHNOGRAPHICS is displayed")
-	public void I_Check_Technographics() throws Throwable{
+	public void I_Check_Technographics() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getTechnographics().isDisplayed());
 		log.info("Technographics is Displayed");
 	}
 
 	@And("Click on Products Filter")
-	public void I_Click_On_Producet() throws Throwable{
+	public void I_Click_On_Producet() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getProductFilter());
 		log.info("User Click on Products Filter");
 		Thread.sleep(20002);
 	}
 
 	@And("Click on Technographic product text box")
-	public void I_Click_On_Product_Text_Box() throws Throwable{
+	public void I_Click_On_Product_Text_Box() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getProductTextBox());
 		log.info("Click on Technographic product text box");
 		Thread.sleep(2000);
 	}
 
 	@And("Enter the product name")
-	public void I_Enter_The_Product_Name() throws Throwable{
+	public void I_Enter_The_Product_Name() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getProductTextBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
-		Robot robot=new Robot();
+		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(1000);
@@ -1113,60 +1119,46 @@ public class Steps extends Global {
 	}
 
 	@And("Click on company name")
-	public void I_Click_On_Company_Name() throws Throwable{
+	public void I_Click_On_Company_Name() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getCompanyNameInResult());
 		log.info("User Click on company name");
 		Thread.sleep(3000);
 	}
 
 	@And("Click on All")
-	public void I_Click_On_All() throws Throwable{
+	public void I_Click_On_All() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
 		log.info("User Click on All");
 		Thread.sleep(3000);
 	}
 
 	@And("Enter the product name in Search textbox")
-	public void I_Enter_Product_Name() throws Throwable{
+	public void I_Enter_Product_Name() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
 		log.info("Enter the product name in Search textbox");
-		Robot robot=new Robot();
+		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(2000);
 	}
 
 	@Then("Check the technographic product in Company detail page")
-	public void I_Check_Product_In_Result() throws Throwable{
-		String EnteredProduct1=ReadDatafromJson("Contact_Name", "Product Name1");
-		String EnteredProduct2=ReadDatafromJson("Contact_Name", "Product Name2");
-		String EnteredProduct3=ReadDatafromJson("Contact_Name", "Product Name3");
-		WebElement FirstProductInResult=driver.findElement(By.xpath("(//*[contains(text(),\'" + EnteredProduct1 + "\')])[2]"));
-		WebElement SecondProductInResult=driver.findElement(By.xpath("(//*[contains(text(),\'" + EnteredProduct2 + "\')])[2]"));
-		WebElement ThirdProductInResult=driver.findElement(By.xpath("(//*[contains(text(),\'" + EnteredProduct3 + "\')])[2]"));
-		if (FirstProductInResult.isDisplayed()|| SecondProductInResult.isDisplayed()|| ThirdProductInResult.isDisplayed()){
-			log.info("Validated that the technographic product is Displayed in Company detail page");
-		} else if (SecondProductInResult.isDisplayed()) {
-			log.info("Validated that the technographic product is Displayed in Company detail page");
-		} else if (ThirdProductInResult.isDisplayed()) {
-			log.info("Validated that the technographic product is Displayed in Company detail page");
-		}
-		else {
-			Assert.fail();
-			log.info("Any of Searched Product is not displayed in the Company Detail page");
-		}
+	public void I_Check_Product_In_Result() throws Throwable {
+	String CopyProductFromResult = PageObjectManager.getInstance().getLoginPage().getProductInResult().getText();
+	String EnteredProduct = ReadDatafromJson("Contact_Name", "Product Name1");
+		if(CopyProductFromResult.contentEquals(EnteredProduct))
 
+	{
+		System.out.println("Searched Product is Displayed in Search Result");
+		log.info("Check the technographic product in Company detail page");
 	}
-//		String CopyProductFromResult=PageObjectManager.getInstance().getLoginPage().getProductInResult().getText();
-//		String EnteredProduct=ReadDatafromJson("Contact_Name", "Product Name");
-//		if (CopyProductFromResult==EnteredProduct){
-//			System.out.println(EnteredProduct);
-//		}
-//		else {
-//			System.out.println("Fail"+EnteredProduct);
-//
-//		}
-//	}
+		else
+		{
+		System.out.println("Searched Product is not Displayed in Search Result");
+		log.info("Check the technographic product in Company detail page and it's Failed");
+	    }
+
+}
 
 	@When("Check INTENT is displayed")
 	public void I_Check_Intent() throws Throwable{
@@ -1177,16 +1169,59 @@ public class Steps extends Global {
 
 	@And("Click on Score Threshold Filter")
 	public void I_Click_On_Score_Threshold_Filter() throws Throwable{
-		clickButton(PageObjectManager.getInstance().getLoginPage().getScoreThresHold());
+		clickButton(PageObjectManager.getInstance().getLoginPage().getScoreThresHoldFilter());
 		log.info("User Click on Score Threshold Filter");
 		Thread.sleep(2000);
 	}
 
-	@And("Select Minimum Score")
+	@And("Click On Topic Threshold")
+	public void I_Click_On_Topic_Threshold_Filter() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getTopicThresHoldFilter());
+		log.info("User Click on Topic Threshold Filter");
+		Thread.sleep(2000);
+	}
+
+	@And("Select Minimum Score as 86")
 	public void I_Select_Score_Threshold() throws Throwable{
 		Thread.sleep(3000);
-		rangeSlidePointer("(//input[@type='range'])[1]", 0, 0);
-		Thread.sleep(5000);
+		Actions actions=new Actions(driver);
+		//actions.dragAndDropBy(Webelement, 0, 0).perform();
+		actions.clickAndHold(PageObjectManager.getInstance().getLoginPage().ScoreThresholdMover()).moveToElement(PageObjectManager.getInstance().getLoginPage().ScoreThresholdMover(), 30, 0).release().
+				perform();
+		Thread.sleep(2000);
+	}
+
+	@And("Select Minimum Topic Threshold")
+	public void I_Select_Topic_Threshold() throws Throwable{
+		Thread.sleep(3000);
+		Actions actions=new Actions(driver);
+		//actions.dragAndDropBy(Webelement, 0, 0).perform();
+		actions.clickAndHold(PageObjectManager.getInstance().getLoginPage().TopicThresholdMover()).moveToElement(PageObjectManager.getInstance().getLoginPage().TopicThresholdMover(), -95, 0).release().
+				perform();
+		Thread.sleep(2000);
+	}
+
+	@Then("Check Search result for Topic Threshold")
+	public void I_Check_Topic_Threshold_In_Result() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getTopicThresholdInResult().isDisplayed());
+		log.info("Check Search result for Topic Threshold");
+		Thread.sleep(2000);
+	}
+
+	@Then("Check Score in Result")
+	public void I_Check_Score_In_Result() throws Throwable{
+	String ScoreInResult =PageObjectManager.getInstance().getLoginPage().getNetflixTopicInResult().getText();
+	String ScoreCleaned =ScoreInResult.replaceAll("[A-Z,a-z,(),\\s]", "");
+	int ScoreINT = Integer.parseInt(ScoreCleaned);
+	if (ScoreINT>=86 && ScoreINT<=100){
+		System.out.println("Score in Result is between 86 and 100");
+		log.info("User Check Score in Result");
+	}
+	else {
+		System.out.println("Score in Result is not as Expected");
+		log.info("User Check Score in Result and It's Failed");
+	}
 	}
 
 	@And("Click on Topics")
@@ -1200,6 +1235,13 @@ public class Steps extends Global {
 	public void I_Select_Netflix_Topic() throws Throwable{
 		clickButton(PageObjectManager.getInstance().getLoginPage().getNetflixTopic());
 		log.info("User Select Netflix Topic");
+		Thread.sleep(2000);
+	}
+
+	@And("Select Hulu Topic")
+	public void I_Select_Hulu_Topic() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getHuluTopic());
+		log.info("User Select Hulu Topic");
 		Thread.sleep(2000);
 	}
 
@@ -1859,7 +1901,7 @@ public class Steps extends Global {
 	public void I_click_welcome_Logout() throws Throwable {
 		Thread.sleep(3000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getWelcomeTextforLogout());
-		log.info("Click On Delete Contact List");
+		log.info("User Click On Setting Options");
 	}
 
 	@And("Click On Logout Options")

@@ -333,13 +333,28 @@ public class LoginPage extends Global {
 	private WebElement INTENT;
 
 	@FindBy(xpath = "//span[contains(text(),'Score Threshold')]")
-	private WebElement ScoreThresHold;
+	private WebElement ScoreThresHoldFilter;
+
+	@FindBy(xpath = "//span[contains(text(),'Topic Threshold')]")
+	private WebElement TopicThresHoldFilter;
+
+	@FindBy(xpath = "(//span[contains(text(),'Netflix') and contains(text(),'Hulu')])[1]")
+	private WebElement TopicThresholdInResult;
+
+	@FindBy(xpath = "//input[@type='range' and @name='score']")
+	private WebElement ScoreThresholdMover;
+
+	@FindBy(xpath = "//input[@type='range' and @name='threshold']")
+	private WebElement TopicThresholdMover;
 
 	@FindBy(xpath = "(//span[contains(text(),'Topic')])[1]")
 	private WebElement TopicFilter;
 
 	@FindBy(xpath = "//span[contains(text(),'Netflix')]")
 	private WebElement NetflixTopic;
+
+	@FindBy(xpath = "//span[contains(text(),'Hulu')]")
+	private WebElement HuluTopic;
 
 	@FindBy(xpath = "(//span[contains(text(),'Netflix')])[2]")
 	private WebElement NetflixTopicInResult;
@@ -844,8 +859,24 @@ public class LoginPage extends Global {
 		return INTENT;
 	}
 
-	public WebElement getScoreThresHold(){
-		return ScoreThresHold;
+	public WebElement getScoreThresHoldFilter(){
+		return ScoreThresHoldFilter;
+	}
+
+	public WebElement getTopicThresHoldFilter(){
+		return TopicThresHoldFilter;
+	}
+
+	public WebElement getTopicThresholdInResult(){
+		return TopicThresholdInResult;
+	}
+
+	public WebElement ScoreThresholdMover() {
+		return ScoreThresholdMover;
+	}
+
+	public WebElement TopicThresholdMover() {
+		return TopicThresholdMover;
 	}
 
 	public WebElement getTopicFilter(){
@@ -854,6 +885,10 @@ public class LoginPage extends Global {
 
 	public WebElement getNetflixTopic(){
 		return NetflixTopic;
+	}
+
+	public WebElement getHuluTopic(){
+		return HuluTopic;
 	}
 	public WebElement getNetflixTopicInResult(){
 		return NetflixTopicInResult;

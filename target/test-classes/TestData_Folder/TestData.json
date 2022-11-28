@@ -52,8 +52,8 @@
     "SIC Code Industry": "Real Estate",
     "Minimum Revenue": "100",
     "Maximum Revenue": "500",
-    "Minimum Employee Size": "500",
-    "Maximum Employee Size": "5000",
+    "Minimum Employee Size": "100",
+    "Maximum Employee Size": "500",
     "Product Name1": "1010data",
     "Product Name2": "123Signup",
     "Product Name3": "140 proof"

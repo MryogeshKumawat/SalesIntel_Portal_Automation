@@ -285,16 +285,16 @@ public class Global {
 		return jsonObject1.get(arg2).toString();
 	}
 
-	protected void rangeSlidePointer(String locator, int xOffset, int yOffset) {
-		WebDriverWait explicitWait = new WebDriverWait( driver, 1000 * 60 * 2 );
-		By findBy = By.xpath( locator );
-		WebElement sliderElement = explicitWait.until(ExpectedConditions.elementToBeClickable( findBy ));
-		Actions moveSlider = new Actions(driver);
-//		Actions action = moveSlider.dragAndDropBy(sliderElement,xOffset,yOffset).release()
-//		Actions action = moveSlider.dragAndDropBy(sliderElement, xOffset, yOffset).release().build();
-		 Actions action = moveSlider.moveToElement(sliderElement).clickAndHold().moveByOffset(xOffset,yOffset).release();
-		action.perform();
-	}
+//	protected void rangeSlidePointer(String locator, int xOffset, int yOffset) {
+//		WebDriverWait explicitWait = new WebDriverWait( driver, 1000 * 60 * 2 );
+//		By findBy = By.xpath( locator );
+//		WebElement sliderElement = explicitWait.until(ExpectedConditions.elementToBeClickable( findBy ));
+//		Actions moveSlider = new Actions(driver);
+////		Actions action = moveSlider.dragAndDropBy(sliderElement,xOffset,yOffset).release()
+////		Actions action = moveSlider.dragAndDropBy(sliderElement, xOffset, yOffset).release().build();
+//		 Actions action = moveSlider.moveToElement(sliderElement).clickAndHold().moveByOffset(xOffset,yOffset).release();
+//		action.perform();
+//	}
 
 
 }
