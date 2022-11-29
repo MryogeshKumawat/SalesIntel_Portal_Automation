@@ -1091,7 +1091,15 @@ public class Steps extends Global {
 	public void I_Click_On_Producet() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getProductFilter());
 		log.info("User Click on Products Filter");
-		Thread.sleep(20002);
+		Thread.sleep(2000);
+	}
+
+
+	@And("Click on Provider Filter")
+	public void I_Click_On_Provider() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().getProviderFilter());
+		log.info("User Click on Provider Filter");
+		Thread.sleep(2000);
 	}
 
 	@And("Click on Technographic product text box")
@@ -1100,6 +1108,14 @@ public class Steps extends Global {
 		log.info("Click on Technographic product text box");
 		Thread.sleep(2000);
 	}
+
+	@And("Click on Technographic Provider text box")
+	public void I_Click_On_Provider_Text_Box() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().getProviderTextBox());
+		log.info("Click on Technographic Provider text box");
+		Thread.sleep(2000);
+	}
+
 
 	@And("Enter the product name")
 	public void I_Enter_The_Product_Name() throws Throwable {
@@ -1115,7 +1131,27 @@ public class Steps extends Global {
 		enterData(PageObjectManager.getInstance().getLoginPage().getProductTextBox(), ReadDatafromJson("Contact_Name", "Product Name3"));
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
+		log.info("User Enter the product name");
 		Thread.sleep(5000);
+	}
+
+	@And("Enter the Provider name")
+	public void I_Enter_The_Provider_Name() throws Throwable {
+		enterData(PageObjectManager.getInstance().getLoginPage().getProviderTextBox(), ReadDatafromJson("Contact_Name", "Provider Name1"));
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getProviderTextBox(), ReadDatafromJson("Contact_Name", "Provider Name2"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getProviderTextBox(), ReadDatafromJson("Contact_Name", "Provider Name3"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		log.info("User Enter the Provider name");
+		Thread.sleep(5000);
+
 	}
 
 	@And("Click on company name")
@@ -1125,11 +1161,61 @@ public class Steps extends Global {
 		Thread.sleep(3000);
 	}
 
-	@And("Click on All")
+	@And("Click on All in Company detail page")
 	public void I_Click_On_All() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
-		log.info("User Click on All");
+		log.info("User Click on All in Company detail page");
 		Thread.sleep(3000);
+	}
+
+	@And("Click on All Button in Products")
+	public void I_Click_On_All_Button_In_Products() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getALLButtonInProduct());
+		log.info("User Click on All Button in Products");
+		Thread.sleep(1000);
+	}
+
+	@And("Click on All Button in Provider")
+	public void I_Click_On_All_Button_In_Provider() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getALLButtonInProvider());
+		log.info("User Click on All Button in Providers");
+		Thread.sleep(1000);
+	}
+
+	@And("Click on None Button in Products")
+	public void I_Click_On_None_Button_In_Products() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNoneButtonInProduct());
+		log.info("User Click on None Button in Products");
+		Thread.sleep(1000);
+	}
+
+	@And("Click on None Button in Provider")
+	public void I_Click_On_None_Button_In_Providers() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNoneButtonInProvider());
+		log.info("User Click on None Button in Providers");
+		Thread.sleep(1000);
+	}
+
+	@And("Click on SalesIntel Logo")
+	public void I_Click_On_SalesIntel_Logo() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelLogo());
+		log.info("User Click on SalesIntel Logo");
+		Thread.sleep(2000);
+	}
+
+	@When("Click on Back to search results")
+	public void I_Click_On_Back_To_Search_Results() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getBackToSearchResults());
+		log.info("USer Click on Back to search results");
+		Thread.sleep(2000);
+	}
+
+	@And("Validate Back to Search button is displayed")
+	public void I_Validate_Back_To_Search_Button() throws Throwable{
+		Thread.sleep(2000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getBackToSearchResults().isDisplayed());
+		log.info("User Validate Back to Search button is displayed");
 	}
 
 	@And("Enter the product name in Search textbox")
@@ -1142,23 +1228,388 @@ public class Steps extends Global {
 		Thread.sleep(2000);
 	}
 
-	@Then("Check the technographic product in Company detail page")
-	public void I_Check_Product_In_Result() throws Throwable {
-	String CopyProductFromResult = PageObjectManager.getInstance().getLoginPage().getProductInResult().getText();
-	String EnteredProduct = ReadDatafromJson("Contact_Name", "Product Name1");
-		if(CopyProductFromResult.contentEquals(EnteredProduct))
+//	@Then("Check the technographic product in Company detail page")
+//	public void I_Check_Product_In_Result() throws Throwable {
+//	String CopyProductFromResult = PageObjectManager.getInstance().getLoginPage().getProductInResult().getText();
+//	String EnteredProduct = ReadDatafromJson("Contact_Name", "Product Name1");
+//		if(CopyProductFromResult.contentEquals(EnteredProduct))
+//
+//	{
+//		System.out.println("Searched Product is Displayed in Search Result");
+//		log.info("Check the technographic product in Company detail page");
+//	}
+//		else
+//		{
+//		System.out.println("Searched Product is not Displayed in Search Result");
+//		log.info("Check the technographic product in Company detail page and it's Failed");
+//	    }
+//
+//}
 
-	{
-		System.out.println("Searched Product is Displayed in Search Result");
-		log.info("Check the technographic product in Company detail page");
+		@Then("Check Any technographic product in Company detail page")
+	public void I_Check_Any_Product_In_Result() throws Throwable {
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean FirstProductForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					FirstProductForAny = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+				System.out.println("First product is not displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name2"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean SecondProductForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					SecondProductForAny = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e) {
+				System.out.println("Second product is not Displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name3"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean ThirdProductForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					ThirdProductForAny = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+				System.out.println("Third product is not displayed in Results");
+			}
+			Thread.sleep(2000);
+			if (FirstProductForAny || SecondProductForAny || ThirdProductForAny){
+				log.info("User Validated Any one technographic product in Company detail page");
+			}
+			else {
+				log.info("Not even one Searched product is displayed in Company Detail page TC - Failed");
+			}
+
+		}
+
+	@And("Check Any technographic Provider in Company detail page")
+	public void I_Check_Any_Provider_In_Result() throws Throwable {
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name1"));
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean FirstProviderForAny = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+				FirstProviderForAny = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+			}
+		}
+		catch (Exception e){
+			System.out.println("First Provider is not displayed in Results");
+		}
+
+		Thread.sleep(2000);
+		clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name2"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean SecondProviderForAny = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+				SecondProviderForAny = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+			}
+		}
+		catch (Exception e) {
+			System.out.println("Second Provider is not Displayed in Results");
+		}
+
+		Thread.sleep(2000);
+		clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name3"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean ThirdProviderForAny = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+				ThirdProviderForAny = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+			}
+		}
+		catch (Exception e){
+			System.out.println("Third Provider is not displayed in Results");
+		}
+		Thread.sleep(2000);
+		if (FirstProviderForAny || SecondProviderForAny || ThirdProviderForAny){
+			log.info("User Validated Any one technographic Provider in Company detail page");
+		}
+		else {
+			log.info("Not even one Searched Provider is displayed in Company Detail page TC - Failed");
+		}
+
 	}
-		else
-		{
-		System.out.println("Searched Product is not Displayed in Search Result");
-		log.info("Check the technographic product in Company detail page and it's Failed");
-	    }
 
-}
+	@Then("Check All technographic products in Company detail page")
+	public void I_Check_All_Products_In_Result() throws Throwable {
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean FirstProductForAll = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+				FirstProductForAll = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+			}
+		}
+		catch (Exception e){
+			System.out.println("First product is not displayed in Results");
+		}
+
+		Thread.sleep(2000);
+		clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name2"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean SecondProductForAll = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+				SecondProductForAll = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+			}
+		}
+		catch (Exception e) {
+			System.out.println("Second product is not Displayed in Results");
+		}
+
+		Thread.sleep(2000);
+		clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name3"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean ThirdProductForAll = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+				ThirdProductForAll = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+			}
+		}
+		catch (Exception e){
+			System.out.println("Third product is not displayed in Results");
+		}
+		Thread.sleep(2000);
+		if (FirstProductForAll && SecondProductForAll && ThirdProductForAll){
+			log.info("User Validated All technographic products in Company detail page");
+		}
+		else {
+			log.info("All Searched product are not displayed in Company Detail page TC - Failed");
+		}
+
+	}
+
+	@Then("Check All technographic Providers in Company detail page")
+	public void I_Check_All_Providers_In_Result() throws Throwable {
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name1"));
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean FirstProviderForAll = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+				FirstProviderForAll = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+			}
+		}
+		catch (Exception e){
+			System.out.println("First Provider is not displayed in Results");
+		}
+
+		Thread.sleep(2000);
+		clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name2"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean SecondProviderForAll = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+				SecondProviderForAll = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+			}
+		}
+		catch (Exception e) {
+			System.out.println("Second Provider is not Displayed in Results");
+		}
+
+		Thread.sleep(2000);
+		clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name3"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean ThirdProviderForAll = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+				ThirdProviderForAll = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+			}
+		}
+		catch (Exception e){
+			System.out.println("Third Provider is not displayed in Results");
+		}
+		Thread.sleep(2000);
+		if (FirstProviderForAll && SecondProviderForAll && ThirdProviderForAll){
+			log.info("User Validated All technographic Providers in Company detail page");
+		}
+		else {
+			log.info("All Searched Provider are not displayed in Company Detail page TC - Failed");
+		}
+
+	}
+
+
+
+	@Then("Check None of the technographic product is displayed in Company detail page")
+	public void I_Check_None_Products_In_Result() throws Throwable {
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean FirstProductForNone = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+				FirstProductForNone = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+			}
+		}
+		catch (Exception e){
+			System.out.println("First product is not displayed in Results");
+		}
+
+		Thread.sleep(2000);
+		clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name2"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean SecondProductForNone = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+				SecondProductForNone = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+			}
+		}
+		catch (Exception e) {
+			System.out.println("Second product is not Displayed in Results");
+		}
+
+		Thread.sleep(2000);
+		clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name3"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean ThirdProductForNone = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+				ThirdProductForNone = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+			}
+		}
+		catch (Exception e){
+			System.out.println("Third product is not displayed in Results");
+		}
+		Thread.sleep(2000);
+		if (!FirstProductForNone && !SecondProductForNone && !ThirdProductForNone){
+			log.info("User Validated None of the technographic products is displayed in Company detail page");
+		}
+		else {
+			log.info("Any one product is displayed in Company Detail page TC - Failed");
+		}
+
+	}
+
+
+	@Then("Check None of the technographic Provider is displayed in Company detail page")
+	public void I_Check_None_Providers_In_Result() throws Throwable {
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name1"));
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean FirstProviderForNone = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+				FirstProviderForNone = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+			}
+		}
+		catch (Exception e){
+			System.out.println("First Provider is not displayed in Results");
+		}
+
+		Thread.sleep(2000);
+		clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name2"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean SecondProviderForNone = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+				SecondProviderForNone = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+			}
+		}
+		catch (Exception e) {
+			System.out.println("Second Provider is not Displayed in Results");
+		}
+
+		Thread.sleep(2000);
+		clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name3"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		boolean ThirdProviderForNone = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+				ThirdProviderForNone = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+			}
+		}
+		catch (Exception e){
+			System.out.println("Third Provider is not displayed in Results");
+		}
+		Thread.sleep(2000);
+		if (!FirstProviderForNone && !SecondProviderForNone && !ThirdProviderForNone){
+			log.info("User Validated None of the technographic Providers is displayed in Company detail page");
+		}
+		else {
+			log.info("Any one Provider is displayed in Company Detail page TC - Failed");
+		}
+
+	}
+
+
 
 	@When("Check INTENT is displayed")
 	public void I_Check_Intent() throws Throwable{
@@ -1726,7 +2177,7 @@ public class Steps extends Global {
 		Thread.sleep(5000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getDonotsavebutton());
 		Thread.sleep(3000);
-		log.info("User click on Clear Button");
+		log.info("User click on Do Not save button");
 	}
 
 	@And("Click On Fast Growing Contact List")

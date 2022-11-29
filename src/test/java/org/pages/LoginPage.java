@@ -314,20 +314,50 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//span[contains(text(),'Products')]")
 	private WebElement ProductFilter;
 
+	@FindBy(xpath = "//span[contains(text(),'Providers')]")
+	private WebElement ProviderFilter;
+
 	@FindBy(xpath = "(//input[@type='text'])[10]")
 	private WebElement ProductTestBox;
 
-	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]")
+	@FindBy(xpath = "(//input[@type='text'])[11]")
+	private WebElement ProviderTestBox;
+
+	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]/a")
 	private WebElement CompanyNameInResult;
 
 	@FindBy(xpath = "//th[contains(text(),'Products')]//..//..//../tbody/tr[2]/td[2]/table/tr/td[2]/div/div")
 	private WebElement ProductInResult;
+
+	@FindBy(xpath = "//th[contains(text(),'Products')]//..//..//../tbody/tr[2]/td[2]/table/tr/td[1]")
+	private WebElement ProviderInResult;
+
+	@FindBy(xpath = "//div[contains(text(),' There are no technographics matching your search')]")
+	private WebElement NoTechnographyIsMatching;
+
+	@FindBy(xpath = "(//button[@type='button' and contains(text(),'ALL')])[1]")
+	private WebElement ALLButtonInProduct;
+
+	@FindBy(xpath = "(//button[@type='button' and contains(text(),'ALL')])[2]")
+	private WebElement ALLButtonInProvider;
+
+	@FindBy(xpath = "(//button[@type='button' and contains(text(),'NONE')])[1]")
+	private WebElement NoneButtonInProduct;
+
+	@FindBy(xpath = "(//button[@type='button' and contains(text(),'NONE')])[2]")
+	private WebElement NoneButtonInProvider;
+
+	@FindBy(xpath = "//a[contains(text(),'« Back to search results')]")
+	private WebElement BackToSearchResults;
 
 	@FindBy(xpath = "//label[contains(text(),'All')]")
 	private WebElement AllButton;
 
 	@FindBy(xpath = "//input[@type='search']")
 	private WebElement SearchInputBox;
+
+	@FindBy(xpath = "//a[@id='brand-logo']")
+	private WebElement SalesIntelLogo;
 
 	@FindBy(xpath = "//div[contains(text(),'Intent')]")
 	private WebElement INTENT;
@@ -835,8 +865,15 @@ public class LoginPage extends Global {
 		return ProductFilter;
 	}
 
+	public WebElement getProviderFilter(){
+		return ProviderFilter;
+	}
+
 	public WebElement getProductTextBox(){
 		return ProductTestBox;
+	}
+	public WebElement getProviderTextBox(){
+		return ProviderTestBox;
 	}
 
 	public WebElement getCompanyNameInResult(){
@@ -847,12 +884,44 @@ public class LoginPage extends Global {
 		return ProductInResult;
 	}
 
+	public WebElement getProviderInResult(){
+		return ProviderInResult;
+	}
+
+	public WebElement getNoTechnographyIsMatching(){
+		return NoTechnographyIsMatching;
+	}
+
+	public WebElement getALLButtonInProduct(){
+		return ALLButtonInProduct;
+	}
+
+	public WebElement getALLButtonInProvider(){
+		return ALLButtonInProvider;
+	}
+
+	public WebElement getNoneButtonInProduct(){
+		return NoneButtonInProduct;
+	}
+
+	public WebElement getNoneButtonInProvider(){
+		return NoneButtonInProvider;
+	}
+
+	public WebElement getBackToSearchResults(){
+		return BackToSearchResults;
+	}
+
 	public WebElement getAllButton(){
 		return AllButton;
 	}
 
 	public WebElement getSearchInputBox(){
 		return SearchInputBox;
+	}
+
+	public WebElement getSalesIntelLogo(){
+		return SalesIntelLogo;
 	}
 
 	public WebElement getINTENT(){

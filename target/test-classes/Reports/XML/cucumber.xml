@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="299.280182">
+    <testcase classname="To validate Search by Technographics" name="Launch website" time="10.444833">
+        <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:253)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Launch the url.........................................................passed
+
+StackTrace:
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:253)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Search by Technographics" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.897404">
+        <system-out><![CDATA[When Enter Valid Username...................................................passed
+And Enter Valid Password....................................................passed
+Then Click On Login Button..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate Search by Technographics" name="To validate Search by Any Products in Technographics filter" time="93.255323">
+        <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:253)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Validate TECHNOGRAPHICS is displayed...................................passed
+And Click on Products Filter................................................passed
+And Click on Technographic product text box.................................passed
+And Enter the product name..................................................passed
+And Click on Company Radio Button...........................................passed
+And Click on Search Button..................................................passed
+And Click on company name...................................................passed
+And Click on All in Company detail page.....................................passed
+Then Check Any technographic product in Company detail page.................passed
+
+StackTrace:
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:253)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Search by Technographics" name="To validate Search by All Provider in Technographics filter" time="62.507248">
+        <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:253)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click on SalesIntel Logo...............................................passed
+And Click On Clear Button...................................................passed
+And Click On Do Not Save Button.............................................passed
+And Validate TECHNOGRAPHICS is displayed....................................passed
+And Click on Provider Filter................................................passed
+And Click on All Button in Provider.........................................passed
+And Click on Technographic Provider text box................................passed
+And Enter the Provider name.................................................passed
+And Click on Search Button..................................................passed
+And Click on company name...................................................passed
+And Click on All in Company detail page.....................................passed
+Then Check All technographic Providers in Company detail page...............passed
+
+StackTrace:
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:253)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]></failure>
+    </testcase>
+    <testcase classname="To validate Search by Technographics" name="To validate Search by None Provider in Technographics filter" time="122.175374">
+        <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1&#13;&#10;&#9;at org.base.Global.generateTestReport(Global.java:253)&#13;&#10;&#9;at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)&#13;&#10;&#9;at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:50)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)&#13;&#10;&#9;at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;&#10;&#9;at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)&#13;&#10;&#9;at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)&#13;&#10;&#9;at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)&#13;&#10;&#9;at org.testng.TestRunner.privateRun(TestRunner.java:648)&#13;&#10;&#9;at org.testng.TestRunner.run(TestRunner.java:505)&#13;&#10;&#9;at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)&#13;&#10;&#9;at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)&#13;&#10;&#9;at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)&#13;&#10;&#9;at org.testng.SuiteRunner.run(SuiteRunner.java:364)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)&#13;&#10;&#9;at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)&#13;&#10;&#9;at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)&#13;&#10;&#9;at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)&#13;&#10;&#9;at org.testng.TestNG.runSuites(TestNG.java:1049)&#13;&#10;&#9;at org.testng.TestNG.run(TestNG.java:1017)&#13;&#10;&#9;at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)&#13;&#10;&#9;at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)&#13;&#10;"><![CDATA[When Click on SalesIntel Logo...............................................passed
+And Click On Clear Button...................................................passed
+And Click On Do Not Save Button.............................................passed
+And Validate TECHNOGRAPHICS is displayed....................................passed
+And Click on Provider Filter................................................passed
+And Click on None Button in Provider........................................passed
+And Click on Technographic Provider text box................................passed
+And Enter the Provider name.................................................passed
+And Click on Search Button..................................................passed
+And Click on company name...................................................passed
+And Click on All in Company detail page.....................................passed
+Then Check None of the technographic Provider is displayed in Company detail page.passed
+
+StackTrace:
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:253)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]></failure>
+    </testcase>
+</testsuite>
