@@ -59,6 +59,9 @@
     "Product Name3": "HAProxy",
     "Provider Name1": "1010data, Inc.",
     "Provider Name2": "Clear C2, Inc.",
-    "Provider Name3": "New Relic, Inc."
+    "Provider Name3": "New Relic, Inc.",
+    "Category Name1": "Content Management",
+    "Category Name2": "Communication",
+    "Category Name3": "Commerce"
   }
 }

@@ -1,8 +1,7 @@
 Feature: To validate Search by Technographics
 
-
   @First @Sanity
-  Scenario: Launch website
+  Scenario: Open Website
     When Launch the url
 
   @First @Sanity
@@ -98,7 +97,63 @@ Feature: To validate Search by Technographics
     And Click on All in Company detail page
     Then Check None of the technographic Provider is displayed in Company detail page
 
-#  @First @Sanity
-#  Scenario: Logout the application
-#    When Click On Setting Options
-#    Then Click On Logout Options
+  @First @Sanity
+  Scenario: To validate Select All Checkbox where Search by Any Provide in Technographics filter
+    When Click on SalesIntel Logo
+    And Click On Clear Button
+    And Click On Do Not Save Button
+    And Validate TECHNOGRAPHICS is displayed
+    And Click on Categories Filter
+    And Select All Check box for Categories
+    And Click on Search Button
+    And Click on company name
+    And Click on All in Company detail page
+    Then Check Any technographic Category in Company detail page to Validate Select ALL
+
+
+  @First @Sanity
+  Scenario: To validate Search by Any Provide in Technographics filter
+    When Click on SalesIntel Logo
+    And Click On Clear Button
+    And Click On Do Not Save Button
+    And Validate TECHNOGRAPHICS is displayed
+    And Click on Categories Filter
+    And Enter the Category name
+    And Click on Search Button
+    And Click on company name
+    And Click on All in Company detail page
+    Then Check Any technographic Category in Company detail page
+
+  @First @Sanity
+  Scenario: To validate Search by All Provide in Technographics filter
+    When Click on SalesIntel Logo
+    And Click On Clear Button
+    And Click On Do Not Save Button
+    And Validate TECHNOGRAPHICS is displayed
+    And Click on Categories Filter
+    And Click on All Button in Category
+    And Enter the Category name
+    And Click on Search Button
+    And Click on company name
+    And Click on All in Company detail page
+    Then Check All technographic Category in Company detail page
+
+  @First @Sanity
+  Scenario: To validate Search by None Provide in Technographics filter
+    When Click on SalesIntel Logo
+    And Click On Clear Button
+    And Click On Do Not Save Button
+    And Validate TECHNOGRAPHICS is displayed
+    And Click on Categories Filter
+    And Click on None Button in Category
+    And Enter the Category name
+    And Click on Search Button
+    And Click on company name
+    And Click on All in Company detail page
+    Then Check None of the technographic Category is displayed in Company detail page
+
+
+  @First @Sanity
+  Scenario: Logout the application
+    When Click On Setting Options
+    Then Click On Logout Options

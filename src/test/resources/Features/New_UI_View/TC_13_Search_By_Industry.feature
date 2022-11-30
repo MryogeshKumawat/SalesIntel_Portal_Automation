@@ -1,6 +1,10 @@
 Feature: To validate Search by Industry
 
   @First @Sanity
+  Scenario: Open Application
+    When Launch the url
+
+  @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
     When Enter Valid Username
     And Enter Valid Password

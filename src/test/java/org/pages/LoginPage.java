@@ -317,11 +317,20 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//span[contains(text(),'Providers')]")
 	private WebElement ProviderFilter;
 
+	@FindBy(xpath = "(//label[contains(text(),'Select All')])[3]")
+	private WebElement SelectAllCheckBoxForCategories;
+
+	@FindBy(xpath = "//span[contains(text(),'Categories')]")
+	private WebElement CategoriesFilter;
+
 	@FindBy(xpath = "(//input[@type='text'])[10]")
 	private WebElement ProductTestBox;
 
 	@FindBy(xpath = "(//input[@type='text'])[11]")
-	private WebElement ProviderTestBox;
+	private WebElement ProviderTextBox;
+
+	@FindBy(xpath = "(//input[@type='text'])[12]")
+	private WebElement CategoryTextBox;
 
 	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]/a")
 	private WebElement CompanyNameInResult;
@@ -332,6 +341,9 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//th[contains(text(),'Products')]//..//..//../tbody/tr[2]/td[2]/table/tr/td[1]")
 	private WebElement ProviderInResult;
 
+	@FindBy(xpath = "//th[contains(text(),'Categories')]//..//..//../tbody/tr[2]/td/span[2]")
+	private WebElement CategoryInResult;
+
 	@FindBy(xpath = "//div[contains(text(),' There are no technographics matching your search')]")
 	private WebElement NoTechnographyIsMatching;
 
@@ -341,11 +353,17 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//button[@type='button' and contains(text(),'ALL')])[2]")
 	private WebElement ALLButtonInProvider;
 
+	@FindBy(xpath = "(//button[@type='button' and contains(text(),'ALL')])[3]")
+	private WebElement ALLButtonInCategory;
+
 	@FindBy(xpath = "(//button[@type='button' and contains(text(),'NONE')])[1]")
 	private WebElement NoneButtonInProduct;
 
 	@FindBy(xpath = "(//button[@type='button' and contains(text(),'NONE')])[2]")
 	private WebElement NoneButtonInProvider;
+
+	@FindBy(xpath = "(//button[@type='button' and contains(text(),'NONE')])[3]")
+	private WebElement NoneButtonInCategory;
 
 	@FindBy(xpath = "//a[contains(text(),'« Back to search results')]")
 	private WebElement BackToSearchResults;
@@ -418,6 +436,9 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//span[contains(text(),'Job Level')]//following::input[@type='checkbox'])[6]")
 	private WebElement JobManagers;
+
+	@FindBy(xpath = "//span[contains(text(),'Rankings')]")
+	private WebElement RankingFilter;
 
 	@FindBy(xpath = "(//span[contains(text(),'Job Level')]//following::input[@type='checkbox'])[7]")
 	private WebElement JobKeyinfluence;
@@ -869,11 +890,23 @@ public class LoginPage extends Global {
 		return ProviderFilter;
 	}
 
+	public WebElement getSelectAllCheckBoxForCategories(){
+		return SelectAllCheckBoxForCategories;
+	}
+
+	public WebElement getCategoriesFilter(){
+		return CategoriesFilter;
+	}
+
 	public WebElement getProductTextBox(){
 		return ProductTestBox;
 	}
 	public WebElement getProviderTextBox(){
-		return ProviderTestBox;
+		return ProviderTextBox;
+	}
+
+	public WebElement getCategoryTextBox(){
+		return CategoryTextBox;
 	}
 
 	public WebElement getCompanyNameInResult(){
@@ -888,6 +921,10 @@ public class LoginPage extends Global {
 		return ProviderInResult;
 	}
 
+	public WebElement getCategoryInResult(){
+		return CategoryInResult;
+	}
+
 	public WebElement getNoTechnographyIsMatching(){
 		return NoTechnographyIsMatching;
 	}
@@ -900,12 +937,20 @@ public class LoginPage extends Global {
 		return ALLButtonInProvider;
 	}
 
+	public WebElement getALLButtonInCategory(){
+		return ALLButtonInCategory;
+	}
+
 	public WebElement getNoneButtonInProduct(){
 		return NoneButtonInProduct;
 	}
 
 	public WebElement getNoneButtonInProvider(){
 		return NoneButtonInProvider;
+	}
+
+	public WebElement getNoneButtonInCategory(){
+		return NoneButtonInCategory;
 	}
 
 	public WebElement getBackToSearchResults(){
@@ -1013,6 +1058,11 @@ public class LoginPage extends Global {
 	public WebElement getJobManagers() {
 		return JobManagers;
 	}
+
+	public WebElement getRankingFilter() {
+		return RankingFilter;
+	}
+
 	public WebElement getJobLevelSelectAll() {
 		return JobLevelSelectAll;
 	}
