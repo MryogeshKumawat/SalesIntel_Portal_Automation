@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                540,
-                28,
-                88,
+                21,
+                0,
+                0,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 656) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 21) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                61,
-                64
+                1,
+                4
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 125) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   6,
-                   11
+                   0,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 17) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SalesIntel Site Automation</td>
-      <td>30 Nov 2022, 19:43</td>
+      <td>07 Dec 2022, 17:10</td>
     </tr>
   </tbody>
 </table>
@@ -341,292 +341,20 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_2700143182.html">Validate application login Page</a></td>
+        <td class="tagname"><a href="report-feature_3103529760.html">To validate Search by Your Lists Filter</a></td>
 
-        <td      class="passed"    >40</td>
+        <td      class="passed"    >21</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">40</td>
-
-        <td  class="passed"    >10</td>
-        <td >0</td>
-        <td class="total">10</td>
-
-        <td class="duration" data-value="84078114300">1:24.078</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_1_3484979501.html">Validate Search By Contact Name</a></td>
-
-        <td      class="passed"    >93</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">93</td>
-
-        <td  class="passed"    >15</td>
-        <td >0</td>
-        <td class="total">15</td>
-
-        <td class="duration" data-value="326050497700">5:26.050</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_2_1262914825.html">Validate Search By Company</a></td>
-
-        <td      class="passed"    >41</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">41</td>
-
-        <td  class="passed"    >7</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td class="duration" data-value="245691399200">4:5.691</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_3_3740632958.html">Validate Contact by Sort Option</a></td>
-
-        <td      class="passed"    >32</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">32</td>
-
-        <td  class="passed"    >8</td>
-        <td >0</td>
-        <td class="total">8</td>
-
-        <td class="duration" data-value="331888037500">5:31.888</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_4_2890281820.html">Validate Contact by Sort Option</a></td>
-
-        <td      class="passed"    >18</td>
-        <td      class="failed"    >3</td>
-        <td     class="skipped"   >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">24</td>
-
-        <td  class="passed"    >5</td>
-        <td  class="failed"    >3</td>
-        <td class="total">8</td>
-
-        <td class="duration" data-value="254210737900">4:14.210</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_5_2758553608.html">Validate RoD Contacts Verification</a></td>
-
-        <td      class="passed"    >14</td>
-        <td      class="failed"    >5</td>
-        <td     class="skipped"   >2</td>
         <td >0</td>
         <td >0</td>
         <td class="total">21</td>
 
         <td  class="passed"    >1</td>
-        <td  class="failed"    >5</td>
-        <td class="total">6</td>
-
-        <td class="duration" data-value="199135875100">3:19.135</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_6_3023943314.html">Validate Search By Job Department</a></td>
-
-        <td >0</td>
-        <td      class="failed"    >13</td>
-        <td     class="skipped"   >53</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">66</td>
-
-        <td >0</td>
-        <td  class="failed"    >13</td>
-        <td class="total">13</td>
-
-        <td class="duration" data-value="260987141500">4:20.987</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_7_3087445299.html">Validate Search By Job Level</a></td>
-
-        <td      class="passed"    >2</td>
-        <td      class="failed"    >7</td>
-        <td     class="skipped"   >30</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">39</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >7</td>
-        <td class="total">8</td>
-
-        <td class="duration" data-value="158943860600">2:38.943</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_8_3935241352.html">Validate Search By Job Title</a></td>
-
-        <td      class="passed"    >11</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">11</td>
-
-        <td  class="passed"    >3</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="34859820700">34.859</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_9_2733527941.html">Validate Search By Contact Email</a></td>
-
-        <td      class="passed"    >15</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">15</td>
-
-        <td  class="passed"    >4</td>
-        <td >0</td>
-        <td class="total">4</td>
-
-        <td class="duration" data-value="40431585000">40.431</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_10_946026906.html">Validate Search by Location</a></td>
-
-        <td      class="passed"    >44</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">44</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >6</td>
-        <td class="total">7</td>
-
-        <td class="duration" data-value="198266969100">3:18.266</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_11_690125806.html">To validate search by Keywords</a></td>
-
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >2</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="33595068300">33.595</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_12_964538753.html">To validate Search by Industry</a></td>
-
-        <td      class="passed"    >54</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">54</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >8</td>
-        <td class="total">9</td>
-
-        <td class="duration" data-value="252550309400">4:12.550</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_13_2631507400.html">To validate Search by Revenue</a></td>
-
-        <td      class="passed"    >11</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">11</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >2</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="45701096600">45.701</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_14_2489270832.html">To validate Search by Employees or Size</a></td>
-
-        <td      class="passed"    >11</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">11</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >2</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="45639023100">45.639</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_15_2192661414.html">To validate Search by Technographics</a></td>
-
-        <td      class="passed"    >116</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">116</td>
-
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >12</td>
-        <td class="total">13</td>
-
-        <td class="duration" data-value="934708233000">15:34.708</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_16_2456712091.html">To validate Search by INTENT</a></td>
-
-        <td      class="passed"    >29</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">29</td>
-
-        <td  class="passed"    >1</td>
         <td  class="failed"    >4</td>
         <td class="total">5</td>
 
-        <td class="duration" data-value="107639697800">1:47.639</td>
+        <td class="duration" data-value="84588440700">1:24.588</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -634,33 +362,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>540</td>
-      <td>28</td>
-      <td>88</td>
+      <td>21</td>
       <td>0</td>
       <td>0</td>
-      <td>656</td>
+      <td>0</td>
+      <td>0</td>
+      <td>21</td>
 
-      <td>61</td>
-      <td>64</td>
-      <td>125</td>
+      <td>1</td>
+      <td>4</td>
+      <td>5</td>
 
-      <td class="duration">59:14.377</td>
-      <td>17</td>
+      <td class="duration">1:24.588</td>
+      <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>82.32%</td>
-      <td>4.27%</td>
-      <td>13.41%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>48.80%</td>
-      <td>51.20%</td>
+      <td>20.00%</td>
+      <td>80.00%</td>
       <td></td>
       <td></td>
-      <td>35.29%</td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

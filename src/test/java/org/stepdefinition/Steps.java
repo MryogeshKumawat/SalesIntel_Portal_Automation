@@ -23,6 +23,7 @@ import io.cucumber.java.en.When;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.LinkedList;
@@ -109,6 +110,15 @@ public class Steps extends Global {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getnewContactradiobutton());
 		log.info("User Click on Contact Radio Button");
 		Thread.sleep(5000);
+	}
+
+	@Then("Check Search Results of Ranking Filter")
+	public void I_Check_Search_Results_For_Rankings_All() throws Throwable{
+		String TotalContacts =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		System.out.println("Total Human Verified Contacts for All Rankings are : "+TotalContacts);
+		log.info("USer Check Search Results of Ranking Filter");
+		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstSearchedContact());
+		Thread.sleep(2000);
 	}
 
 	@Then("Click on Contact Radio Button for Universal User")
@@ -1362,6 +1372,22 @@ public class Steps extends Global {
 
 		}
 
+
+		@Then("Check Any technographic product in Company detail page for All Search Results")
+		public void I_Check_Any_Tech_Product_for_All_Search_Results() throws Throwable{
+//		Get Count of Searched Companies
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().isDisplayed());
+		String HvCompanyCountNotTrimmed =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HvCompanyCountNotTrimmed.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("Total Searched Human Verified Companies are "+HvCompanyCount);
+		Scrollpup(PageObjectManager.getInstance().getLoginPage().getScrolldown());
+//		int i=5;
+//		driver.findElement(By.xpath("(//input[@type='checkbox' and @title])[" + i + "]//..//..//../div[3]/div[1]/a"));
+//		System.out.println("i value is"+i);
+
+		}
+
 	@And("Check Any technographic Provider in Company detail page")
 	public void I_Check_Any_Provider_In_Result() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name1"));
@@ -2122,6 +2148,71 @@ public class Steps extends Global {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getRankingFilter().isDisplayed());
 		log.info("User Check Ranking filter is displayed");
 		Thread.sleep(3000);
+	}
+
+	@And("Click on Ranking Filter")
+	public void I_Click_On_Rankings_Finter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getRankingFilter());
+		log.info("User Click on Ranking Filter");
+		Thread.sleep(1000);
+	}
+
+	@And("Click on Select All Check Box for Rankings")
+	public void I_Select_All_CheckBox_For_Rankings() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSelectAllForRankings());
+		log.info("User Click on Select All Check Box for Rankings");
+		Thread.sleep(2000);
+	}
+
+	@And("Click on Select first Check Box for Rankings")
+	public void I_Click_On_first_CheckBox_For_Rankings() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSelectFirstCheckBoxForRankings());
+		log.info("User Click on Select first Check Box for Rankings");
+		Thread.sleep(2000);
+	}
+
+	@When("Check Your Lists Filter is displayed")
+	public void I_Check_YourLists_Filter() throws Throwable{
+		Thread.sleep(2000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getYourListsFilter().isDisplayed());
+		log.info("User Check Your Lists Filter is displayed");
+	}
+
+	@When("Click on Your Lists Filter")
+	public void I_Click_Your_Lists_Filter() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getYourListsFilter());
+		log.info("User Click on Your Lists Filter");
+		Thread.sleep(3000);
+	}
+
+	@And("Select All Companies List")
+	public void I_Select_All_Company_Lists() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAllCompanyList());
+		log.info("User Select All Companies Lists");
+		Thread.sleep(1000);
+	}
+
+	@And("Check One Company list is displayed")
+	public void I_Check_One_Company_List() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOneCompanyList().isDisplayed());
+		log.info("User Check One Company list is displayed");
+		Thread.sleep(1000);
+	}
+	@And("Select One Company List")
+	public void I_Select_One_Company_List() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().getOneCompanyList());
+		log.info("User Select one Company List");
+		Thread.sleep(1000);
+	}
+
+
+	@Then("Check the search results of Company lists")
+	public void I_Check_Search_results_For_Company_Lists() throws Throwable{
+		String AllListCompanyCount =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstCompanyInResult());
+		Thread.sleep(2000);
+		System.out.println("There are Total "+AllListCompanyCount+" Companies for the list filter");
+		log.info("User Check the search results of Company lists");
 	}
 
 

@@ -386,6 +386,26 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//span[contains(text(),'Topic Threshold')]")
 	private WebElement TopicThresHoldFilter;
 
+	@FindBy(xpath = "//span[contains(text(),'Rankings')]")
+	private WebElement RankingFilter;
+
+	@FindBy(xpath = "(//label[contains(text(),'Select All')])[5]")
+	private WebElement SelectAllForRankings;
+
+	@FindBy(xpath = "//label[contains(text(),' 100 Fastest Growing')]")
+	private WebElement SelectFirstCheckBoxForRankings;
+
+	@FindBy(xpath = "//span[contains(text(),'Your Lists')]")
+	private WebElement YourListsFilter;
+
+	@FindBy(xpath = "(//input[@type='checkbox'])[84]")
+	private WebElement AllCompanyList;
+
+	@FindBy(xpath = "(//span[contains(text(),'3 company')])[1]")
+	private WebElement OneCompanyList;
+
+	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]")
+	private WebElement FirstCompanyInResult;
 	@FindBy(xpath = "(//span[contains(text(),'Netflix') and contains(text(),'Hulu')])[1]")
 	private WebElement TopicThresholdInResult;
 
@@ -437,8 +457,6 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//span[contains(text(),'Job Level')]//following::input[@type='checkbox'])[6]")
 	private WebElement JobManagers;
 
-	@FindBy(xpath = "//span[contains(text(),'Rankings')]")
-	private WebElement RankingFilter;
 
 	@FindBy(xpath = "(//span[contains(text(),'Job Level')]//following::input[@type='checkbox'])[7]")
 	private WebElement JobKeyinfluence;
@@ -550,6 +568,14 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//input[@type='text'])[2]")
 	private WebElement Statevalueselection;
+
+	@FindBy(xpath = "(//span[contains(text(),'Human Verifie')])[1]")
+	private WebElement HumanVerifiedCompaniesCount;
+
+	@FindBy(xpath = "(//span[contains(text(),'Human Verifie')])[1]")
+	private WebElement HumanVerifiedContactsCount;
+
+
 
 	public LoginPage() throws Throwable {
 		PageFactory.initElements(driver, this);
@@ -981,6 +1007,8 @@ public class LoginPage extends Global {
 		return TopicThresHoldFilter;
 	}
 
+
+
 	public WebElement getTopicThresholdInResult(){
 		return TopicThresholdInResult;
 	}
@@ -1062,6 +1090,30 @@ public class LoginPage extends Global {
 	public WebElement getRankingFilter() {
 		return RankingFilter;
 	}
+
+	public WebElement getSelectAllForRankings() {
+		return SelectAllForRankings;
+	}
+
+	public WebElement getSelectFirstCheckBoxForRankings() {
+		return SelectFirstCheckBoxForRankings;
+	}
+
+	public WebElement getYourListsFilter() {
+		return YourListsFilter;
+	}
+
+	public WebElement getAllCompanyList() {
+		return AllCompanyList;
+	}
+	public WebElement getOneCompanyList() {
+		return OneCompanyList;
+	}
+
+	public WebElement getFirstCompanyInResult() {
+		return FirstCompanyInResult;
+	}
+
 
 	public WebElement getJobLevelSelectAll() {
 		return JobLevelSelectAll;
@@ -1213,6 +1265,14 @@ public class LoginPage extends Global {
 
 	public WebElement Statevalueselection() {
 		return Statevalueselection;
+	}
+
+	public WebElement getHumanVerifiedCompaniesCount(){
+		return HumanVerifiedCompaniesCount;
+	}
+
+	public WebElement getHumanVerifiedContactsCount(){
+		return HumanVerifiedContactsCount;
 	}
 
 
