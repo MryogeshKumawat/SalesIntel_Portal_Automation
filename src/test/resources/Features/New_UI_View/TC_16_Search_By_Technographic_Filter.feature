@@ -17,7 +17,6 @@ Feature: To validate Search by Technographics
     And Click on company name
     And Click on All in Company detail page
     Then Check Any technographic product in Company detail page
-#    Then Check Any technographic product in Company detail page for All Search Results
 
   @First @Sanity
   Scenario: To validate Search by All Products in Technographics filter

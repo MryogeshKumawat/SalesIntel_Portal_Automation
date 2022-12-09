@@ -1,4 +1,8 @@
 Feature: Validate Contact by Sort Option
+#
+#  @First @Sanity
+#  Scenario: To validate SalesIntel application Launching application
+#    Given Launch the url
 
   @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password

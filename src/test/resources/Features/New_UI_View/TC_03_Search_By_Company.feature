@@ -1,5 +1,5 @@
 Feature: Validate Search By Company
-#
+
 #  @First @Sanity
 #  Scenario: To validate SalesIntel application Launching application
 #    Given Launch the url

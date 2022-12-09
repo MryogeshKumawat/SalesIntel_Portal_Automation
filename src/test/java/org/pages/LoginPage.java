@@ -398,11 +398,20 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//span[contains(text(),'Your Lists')]")
 	private WebElement YourListsFilter;
 
+	@FindBy(xpath = "//strong[contains(text(),'Contact List')]")
+	private WebElement ContactListFilter;
+
 	@FindBy(xpath = "(//input[@type='checkbox'])[84]")
 	private WebElement AllCompanyList;
 
+	@FindBy(xpath = "(//input[@type='checkbox'])[113]")
+	private WebElement AllContactList;
+
 	@FindBy(xpath = "(//span[contains(text(),'3 company')])[1]")
 	private WebElement OneCompanyList;
+
+	@FindBy(xpath = "(//span[contains(text(),'Contact Export in CRM')])[1]")
+	private WebElement OneContactList;
 
 	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]")
 	private WebElement FirstCompanyInResult;
@@ -1103,11 +1112,23 @@ public class LoginPage extends Global {
 		return YourListsFilter;
 	}
 
+	public WebElement getContactListFilter() {
+		return ContactListFilter;
+	}
+
 	public WebElement getAllCompanyList() {
 		return AllCompanyList;
 	}
+
+	public WebElement getAllContactList() {
+		return AllContactList;
+	}
 	public WebElement getOneCompanyList() {
 		return OneCompanyList;
+	}
+
+	public WebElement getOneContactList() {
+		return OneContactList;
 	}
 
 	public WebElement getFirstCompanyInResult() {

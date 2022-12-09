@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="104.217484">
+    <testcase classname="To validate Search by Your Lists Filter" name="Launch Website" time="6.900562">
+        <system-out><![CDATA[When Launch the url.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.652071">
+        <system-out><![CDATA[When Enter Valid Username...................................................passed
+And Enter Valid Password....................................................passed
+Then Click On Login Button..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By All Contact Lists" time="43.408285">
+        <system-out><![CDATA[And Check Your Lists Filter is displayed....................................passed
+And Click on Your Lists Filter..............................................passed
+And Check Contact list is displayed.........................................passed
+And Select All Contact List.................................................passed
+And Click on Contact Radio Button...........................................passed
+And Click on Search Button..................................................passed
+And Check the search results of Contact lists...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By one Contact List" time="34.773747">
+        <system-out><![CDATA[When Click On Clear Button..................................................passed
+And Click On Do Not Save Button.............................................passed
+And Check Your Lists Filter is displayed....................................passed
+And Click on Your Lists Filter..............................................passed
+And Check Contact list is displayed.........................................passed
+And Check One Contact list is displayed.....................................passed
+And Select One Contact List.................................................passed
+And Click on Search Button..................................................passed
+And Check the search results of Contact lists...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate Search by Your Lists Filter" name="Logout the application" time="8.482819">
+        <system-out><![CDATA[When Click On Setting Options...............................................passed
+Then Click On Logout Options................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

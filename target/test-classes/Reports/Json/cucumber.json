@@ -1,0 +1,482 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-09T07:11:15.958Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1511400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeExection.beforeExecutedClass(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Launch Website",
+        "description": "",
+        "id": "to-validate-search-by-your-lists-filter;launch-website",
+        "after": [
+          {
+            "result": {
+              "duration": 2048800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeExection.afterExecutedClass(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6876969600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch the url",
+            "match": {
+              "location": "Steps.launch_the_url()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@First"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-09T07:11:22.866Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1175000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeExection.beforeExecutedClass(Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "To validate SalesIntel application Valid User Username and Valid Password",
+        "description": "",
+        "id": "to-validate-search-by-your-lists-filter;to-validate-salesintel-application-valid-user-username-and-valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 807300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeExection.afterExecutedClass(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 405081600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter Valid Username",
+            "match": {
+              "location": "Steps.i_enter_the_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131620900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter Valid Password",
+            "match": {
+              "location": "Steps.i_enter_the_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10109221300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click On Login Button",
+            "match": {
+              "location": "Steps.I_Click_Login_Button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@First"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-09T07:11:33.521Z",
+        "before": [
+          {
+            "result": {
+              "duration": 782200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeExection.beforeExecutedClass(Scenario)"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "To validate Search By All Contact Lists",
+        "description": "",
+        "id": "to-validate-search-by-your-lists-filter;to-validate-search-by-all-contact-lists",
+        "after": [
+          {
+            "result": {
+              "duration": 996000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeExection.afterExecutedClass(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2121140100,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Check Your Lists Filter is displayed",
+            "match": {
+              "location": "Steps.I_Check_YourLists_Filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5207039000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Click on Your Lists Filter",
+            "match": {
+              "location": "Steps.I_Click_Your_Lists_Filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2096032800,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Check Contact list is displayed",
+            "match": {
+              "location": "Steps.I_Check_Contact_List_Filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1195689300,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Select All Contact List",
+            "match": {
+              "location": "Steps.I_Select_All_Contact_Lists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20280342300,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Click on Contact Radio Button",
+            "match": {
+              "location": "Steps.I_Click_Contact_Radio_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10194280500,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Click on Search Button",
+            "match": {
+              "location": "Steps.I_Click_Search_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2307307500,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Check the search results of Contact lists",
+            "match": {
+              "location": "Steps.I_Check_Search_results_For_Contact_Lists()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@First"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-09T07:12:16.933Z",
+        "before": [
+          {
+            "result": {
+              "duration": 975100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeExection.beforeExecutedClass(Scenario)"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "To validate Search By one Contact List",
+        "description": "",
+        "id": "to-validate-search-by-your-lists-filter;to-validate-search-by-one-contact-list",
+        "after": [
+          {
+            "result": {
+              "duration": 522700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeExection.afterExecutedClass(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2195906600,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Click On Clear Button",
+            "match": {
+              "location": "Steps.I_Click_clear_Button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8281678600,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Click On Do Not Save Button",
+            "match": {
+              "location": "Steps.I_Click_do_not_save_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2077293400,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Check Your Lists Filter is displayed",
+            "match": {
+              "location": "Steps.I_Check_YourLists_Filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5177762400,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Click on Your Lists Filter",
+            "match": {
+              "location": "Steps.I_Click_Your_Lists_Filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2073070100,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Check Contact list is displayed",
+            "match": {
+              "location": "Steps.I_Check_Contact_List_Filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1072679100,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "Check One Contact list is displayed",
+            "match": {
+              "location": "Steps.I_Check_One_Contact_List()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1351100900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "Select One Contact List",
+            "match": {
+              "location": "Steps.I_Select_One_Contact_List()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10272453300,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Click on Search Button",
+            "match": {
+              "location": "Steps.I_Click_Search_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2264681300,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Check the search results of Contact lists",
+            "match": {
+              "location": "Steps.I_Check_Search_results_For_Contact_Lists()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@First"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-09T07:12:51.709Z",
+        "before": [
+          {
+            "result": {
+              "duration": 559000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeExection.beforeExecutedClass(Scenario)"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "Logout the application",
+        "description": "",
+        "id": "to-validate-search-by-your-lists-filter;logout-the-application",
+        "after": [
+          {
+            "result": {
+              "duration": 448200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeExection.afterExecutedClass(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5223927200,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "Click On Setting Options",
+            "match": {
+              "location": "Steps.I_click_welcome_Logout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3256048500,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Click On Logout Options",
+            "match": {
+              "location": "Steps.I_click_Logout()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@First"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "To validate Search by Your Lists Filter",
+    "description": "",
+    "id": "to-validate-search-by-your-lists-filter",
+    "keyword": "Feature",
+    "uri": "file:/D:/Automation/New_Revdriver/SalesIntel_QA_Automation-master/src/test/resources/Features/New_UI_View/TC_19_Search_By_Your_Lists.feature%20",
+    "tags": []
+  }
+]

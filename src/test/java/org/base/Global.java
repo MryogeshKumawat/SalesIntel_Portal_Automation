@@ -32,11 +32,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import cucumber.api.Result;
-import cucumber.api.Scenario;
+import io.cucumber.core.api.Scenario;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 
@@ -60,9 +59,6 @@ public class Global {
 	public static Row row;
 	public static Cell cell;
 	public static Logger logger;
-	public static ExtentHtmlReporter extentHtmlReporter;
-	public static ExtentReports extentReports;
-	public static ExtentTest test;
 	public static File file;
 
 	public static WebDriver getDriver() {
@@ -218,61 +214,6 @@ public class Global {
 		ReportBuilder builder = new ReportBuilder(jsonFiles, configuration);
 		builder.generateReports();
 
-	}
-
-	public static void generateReport(String fileLoc) {
-		try {
-			file = new File(fileLoc);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		extentHtmlReporter = new ExtentHtmlReporter(fileLoc);
-		extentHtmlReporter.config().setDocumentTitle("Sales force site Automation Testing");
-		extentHtmlReporter.config().setReportName("Sales force site Automation Test Report");
-		extentHtmlReporter.config().setTheme(Theme.DARK);
-		extentReports = new ExtentReports();
-		extentReports.attachReporter(extentHtmlReporter);
-		extentReports.setSystemInfo("Browser_Name", "Chrome");
-		extentReports.setSystemInfo("OS_Name", System.getProperty("os.name"));
-		try {
-			extentReports.setSystemInfo("Host_Name", InetAddress.getLocalHost().getHostName());
-		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-	}
-
-	public void generateTestReport(Scenario scenario) throws IOException {
-		String scenarioName = null;
-		Result.Type status = scenario.getStatus();
-		switch (status) {
-		case PASSED:
-			scenarioName = scenario.getName();
-			test = extentReports.createTest(scenarioName.split("application")[1]);
-			test.createNode(scenarioName);
-			test.log(Status.PASS, scenario.getName());
-			break;
-		case FAILED:
-			scenarioName = scenario.getName();
-			test = extentReports.createTest(scenarioName.split("application")[1]);
-			test.createNode(scenarioName);
-			test.log(Status.FAIL, scenario.getName());
-			test.fail("Failure Screenshot").log(Status.INFO, "Screenshot",
-					MediaEntityBuilder.createScreenCaptureFromPath(file.getAbsolutePath()).build());
-			break;
-		default:
-			test = extentReports.createTest(scenarioName.split("application")[1]);
-			test.createNode(scenarioName);
-			test.log(Status.SKIP, scenario.getName());
-			break;
-		}
-
-	}
-
-	public void tearDown() {
-		extentReports.flush();
 	}
 
 	public static String ReadDatafromJson(String arg1, String arg2) throws Throwable {

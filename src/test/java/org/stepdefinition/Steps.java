@@ -2178,8 +2178,17 @@ public class Steps extends Global {
 		log.info("User Check Your Lists Filter is displayed");
 	}
 
+	@And("Check Contact list is displayed")
+	public void I_Check_Contact_List_Filter() throws Throwable{
+		Thread.sleep(2000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getContactListFilter().isDisplayed());
+		log.info("User Check Contact list is displayed");
+	}
+
+
 	@When("Click on Your Lists Filter")
 	public void I_Click_Your_Lists_Filter() throws Throwable{
+		Thread.sleep(2000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getYourListsFilter());
 		log.info("User Click on Your Lists Filter");
 		Thread.sleep(3000);
@@ -2192,16 +2201,38 @@ public class Steps extends Global {
 		Thread.sleep(1000);
 	}
 
+	@And("Select All Contact List")
+	public void I_Select_All_Contact_Lists() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAllContactList());
+		log.info("User Select All Contact Lists");
+		Thread.sleep(1000);
+	}
+
 	@And("Check One Company list is displayed")
 	public void I_Check_One_Company_List() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOneCompanyList().isDisplayed());
 		log.info("User Check One Company list is displayed");
 		Thread.sleep(1000);
 	}
+
+	@And("Check One Contact list is displayed")
+	public void I_Check_One_Contact_List() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOneContactList().isDisplayed());
+		log.info("User Check One Contact list is displayed");
+		Thread.sleep(1000);
+	}
+
 	@And("Select One Company List")
 	public void I_Select_One_Company_List() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getOneCompanyList());
 		log.info("User Select one Company List");
+		Thread.sleep(1000);
+	}
+
+	@And("Select One Contact List")
+	public void I_Select_One_Contact_List() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().getOneContactList());
+		log.info("User Select one Contact List");
 		Thread.sleep(1000);
 	}
 
@@ -2213,6 +2244,15 @@ public class Steps extends Global {
 		Thread.sleep(2000);
 		System.out.println("There are Total "+AllListCompanyCount+" Companies for the list filter");
 		log.info("User Check the search results of Company lists");
+	}
+
+	@Then("Check the search results of Contact lists")
+	public void I_Check_Search_results_For_Contact_Lists() throws Throwable{
+		String AllListContactCount =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstSearchedContact());
+		Thread.sleep(2000);
+		System.out.println("There are Total "+AllListContactCount+" Contacts for the list filter");
+		log.info("User Check the search results of Contact lists");
 	}
 
 
@@ -2587,7 +2627,8 @@ public class Steps extends Global {
 	public void I_Click_SalesIntel_Tab() throws Throwable {
 		Thread.sleep(5000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelTab());
-		log.info("User click on List Tab");
+		log.info("User click on SalesIntel Tab");
+		Thread.sleep(5000);
 	}
 
 	@And("Select Multiple contact to Add Contact List")
@@ -2666,15 +2707,13 @@ public class Steps extends Global {
 	}
 
 	@And("Delete Company List")
-	public void
-
-	I_Delete_Company_List() throws Throwable {
+	public void I_Delete_Company_List() throws Throwable {
 		Thread.sleep(5000);
 		Actions Clickpreview = new Actions(driver);
 		String contactlistnamesearch = ReadDatafromJson("Contact_Name", "Companylist");
 		Clickpreview.doubleClick(driver.findElement(By.xpath("(//*[contains(text(),'" + contactlistnamesearch + "')])[2]//following::button[@title='Delete']"))).build().perform();
 		//driver.findElement(By.xpath("(//*[contains(text(),'"+contactlistnamesearch+"')])[2]//following::button[@title='Preview']"))
-		log.info("Select Multiple contact to Add Contact List");
+		log.info("Delete Company List");
 	}
 
 	@And("Click On Delete Contact List")
@@ -2694,7 +2733,7 @@ public class Steps extends Global {
 
 	@When("Click On Setting Options")
 	public void I_click_welcome_Logout() throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getWelcomeTextforLogout());
 		log.info("User Click On Setting Options");
 	}

@@ -1,10 +1,6 @@
 Feature: To validate Search by Your Lists Filter
 
   @First @Sanity
-  Scenario: Launch Website
-    When Launch the url
-
-  @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
     When Enter Valid Username
     And Enter Valid Password
@@ -28,9 +24,33 @@ Feature: To validate Search by Your Lists Filter
     And Click on Your Lists Filter
     And Check One Company list is displayed
     And Select One Company List
-    And Click on Company Radio Button
     And Click on Search Button
     And Check the search results of Company lists
+
+
+  @First @Sanity
+  Scenario: To validate Search By All Contact Lists
+    When Click On Clear Button
+    And Click On Do Not Save Button
+    And Check Your Lists Filter is displayed
+    And Click on Your Lists Filter
+    And Check Contact list is displayed
+    And Select All Contact List
+    And Click on Contact Radio Button
+    And Click on Search Button
+    And Check the search results of Contact lists
+
+  @First @Sanity
+  Scenario: To validate Search By one Contact List
+    When Click On Clear Button
+    And Click On Do Not Save Button
+    And Check Your Lists Filter is displayed
+    And Click on Your Lists Filter
+    And Check Contact list is displayed
+    And Check One Contact list is displayed
+    And Select One Contact List
+    And Click on Search Button
+    And Check the search results of Contact lists
 
 
   @First @Sanity
