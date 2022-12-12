@@ -407,6 +407,9 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//input[@type='checkbox'])[113]")
 	private WebElement AllContactList;
 
+	@FindBy(xpath = "(//input[@type='checkbox'])[159]")
+	private WebElement AllSuppressionList;
+
 	@FindBy(xpath = "(//span[contains(text(),'3 company')])[1]")
 	private WebElement OneCompanyList;
 
@@ -1122,6 +1125,10 @@ public class LoginPage extends Global {
 
 	public WebElement getAllContactList() {
 		return AllContactList;
+	}
+
+	public WebElement getAllSuppressionList() {
+		return AllSuppressionList;
 	}
 	public WebElement getOneCompanyList() {
 		return OneCompanyList;

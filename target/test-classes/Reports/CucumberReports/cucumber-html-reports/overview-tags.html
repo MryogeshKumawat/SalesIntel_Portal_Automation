@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@First",  "@Sanity", ] ,
+        labels:  [ "@First",  "@Reg",  "@Sanity",  "@Smoke", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00, ] 
+                data:  [ 100.00,  100.00,  100.00,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -133,7 +133,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SalesIntel Site Automation</td>
-      <td>09 Dec 2022, 12:43</td>
+      <td>09 Dec 2022, 13:52</td>
     </tr>
   </tbody>
 </table>
@@ -197,35 +197,69 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-tag_4047637071.html">@First</a></td>
 
-        <td      class="passed"    >22</td>
+        <td      class="passed"    >678</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">22</td>
+        <td class="total">678</td>
+
+        <td  class="passed"    >130</td>
+        <td >0</td>
+        <td class="total">130</td>
+
+        <td class="duration" data-value="3479959968100">57:59.959</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_2149472307.html">@Reg</a></td>
+
+        <td      class="passed"    >23</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">23</td>
 
         <td  class="passed"    >5</td>
         <td >0</td>
         <td class="total">5</td>
 
-        <td class="duration" data-value="104171326300">1:44.171</td>
+        <td class="duration" data-value="118710349300">1:58.710</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_1287359789.html">@Sanity</a></td>
 
-        <td      class="passed"    >22</td>
+        <td      class="passed"    >672</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">22</td>
+        <td class="total">672</td>
+
+        <td  class="passed"    >129</td>
+        <td >0</td>
+        <td class="total">129</td>
+
+        <td class="duration" data-value="3462075854700">57:42.075</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_4059758862.html">@Smoke</a></td>
+
+        <td      class="passed"    >23</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">23</td>
 
         <td  class="passed"    >5</td>
         <td >0</td>
         <td class="total">5</td>
 
-        <td class="duration" data-value="104171326300">1:44.171</td>
+        <td class="duration" data-value="118710349300">1:58.710</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -233,19 +267,19 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>44</td>
+      <td>1396</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>44</td>
+      <td>1396</td>
 
-      <td>10</td>
+      <td>269</td>
       <td>0</td>
-      <td>10</td>
+      <td>269</td>
 
-      <td class="duration">3:28.342</td>
-      <td>2</td>
+      <td class="duration">1:59:39.456</td>
+      <td>4</td>
     </tr>
     <tr>
       <td></td>

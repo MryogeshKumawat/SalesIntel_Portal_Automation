@@ -111,4 +111,7 @@ Feature: Validate Search By Job Department
     And Click on Search Button
     Then Check Cross Functional Department in Search Result
 
-
+  @First @Sanity
+  Scenario: To validate application Logout
+    When Click On Setting Options
+    And Click On Logout Options

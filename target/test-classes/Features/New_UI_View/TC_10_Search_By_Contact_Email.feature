@@ -6,18 +6,6 @@ Feature: Validate Search By Contact Email
     And Enter Valid Password
     And Click On Login Button
 
-#
-#  @First @Sanity
-#  Scenario: To validate application Search By Contact Email
-#    Then Click on Contact Radio Button
-#    When Click on Search Button
-##    When Verify Individual section is displayed
-#    When Verify Contact Email is displayed
-#
-#  @First @Sanity
-#  Scenario: To validate application Search without Contact Email Address
-#    Then Click on Search Button
-#
   @First @Sanity
   Scenario: To validate application Search by Invalid Email Address
     Then Click on Contact Email Button

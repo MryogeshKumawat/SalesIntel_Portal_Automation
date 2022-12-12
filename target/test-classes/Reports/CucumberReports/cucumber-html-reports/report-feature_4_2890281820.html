@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SalesIntel Site Automation</td>
-      <td>07 Dec 2022, 19:28</td>
+      <td>09 Dec 2022, 13:52</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Validate Contact by Sort Option</td>
-          <td      class="passed"    >22</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >1</td>
+          <td      class="passed"    >24</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">24</td>
 
-          <td  class="passed"    >7</td>
-          <td  class="failed"    >1</td>
+          <td  class="passed"    >8</td>
+          <td >0</td>
           <td class="total">8</td>
 
-          <td class="duration" data-value="291406403300">4:51.406</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="277745553000">4:37.745</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Validate Contact by Sort Option</span>
 
@@ -192,12 +192,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">21.416</span>
+  <span class="lead-duration duration">10.426</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">To validate SalesIntel application Valid User Username and Valid Password</span>
 
@@ -208,7 +208,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -247,9 +247,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -259,7 +259,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -267,7 +267,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Enter Valid Username</span>
 
-  <span class="lead-duration duration">1.339</span>
+  <span class="lead-duration duration">0.159</span>
 
 </div>
 
@@ -290,11 +290,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">Enter Valid Password</span>
 
-  <span class="lead-duration duration">20.076</span>
+  <span class="lead-duration duration">0.139</span>
 
 </div>
 
@@ -302,45 +302,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type='password']&quot;}
-  (Session info: chrome=107.0.5304.123)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-T5IACJ8', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.123, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59131}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 30d5f5db3fa00e273d9aaff2a9919122
-*** Element info: {Using=xpath, value=//input[@type='password']}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
-	at org.base.Global.enterData(Global.java:73)
-	at org.stepdefinition.Steps.i_enter_the_password(Steps.java:87)
-	at &#10045;.Enter Valid Password(file:TC_05_Company_Sort_List.feature:6)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -356,11 +317,11 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">Click On Login Button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">10.128</span>
 
 </div>
 
@@ -387,7 +348,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -399,13 +360,13 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.323</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -414,21 +375,6 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_2081881549.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_2081881549.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -448,10 +394,10 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 </div>
 
 
-  <span class="lead-duration duration">46.423</span>
+  <span class="lead-duration duration">45.801</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -464,11 +410,11 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-5" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -480,7 +426,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details ">
+    <div id="before-6" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -503,7 +449,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -515,7 +461,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -523,7 +469,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">Then</span>
   <span class="name">Click on Company Radio Button</span>
 
-  <span class="lead-duration duration">5.119</span>
+  <span class="lead-duration duration">5.182</span>
 
 </div>
 
@@ -550,7 +496,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">When</span>
   <span class="name">Click on Search Button</span>
 
-  <span class="lead-duration duration">10.961</span>
+  <span class="lead-duration duration">10.195</span>
 
 </div>
 
@@ -577,7 +523,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Contact Name</span>
 
-  <span class="lead-duration duration">15.187</span>
+  <span class="lead-duration duration">15.212</span>
 
 </div>
 
@@ -604,7 +550,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Contact Name</span>
 
-  <span class="lead-duration duration">15.155</span>
+  <span class="lead-duration duration">15.210</span>
 
 </div>
 
@@ -631,7 +577,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -643,7 +589,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="after-10" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -677,10 +623,10 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 </div>
 
 
-  <span class="lead-duration duration">41.355</span>
+  <span class="lead-duration duration">40.610</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -693,11 +639,11 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details ">
+  <div id="element-9" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -709,7 +655,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="before-12" class="inner-level collapse collapsable-details ">
+    <div id="before-10" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -732,7 +678,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -744,7 +690,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
   </div>
 
-  <div id="steps-13" class="inner-level collapse collapsable-details ">
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -752,7 +698,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click on Search Button</span>
 
-  <span class="lead-duration duration">10.946</span>
+  <span class="lead-duration duration">10.198</span>
 
 </div>
 
@@ -779,7 +725,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Job Title</span>
 
-  <span class="lead-duration duration">15.181</span>
+  <span class="lead-duration duration">15.216</span>
 
 </div>
 
@@ -806,7 +752,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Job Title</span>
 
-  <span class="lead-duration duration">15.227</span>
+  <span class="lead-duration duration">15.194</span>
 
 </div>
 
@@ -833,7 +779,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-14">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -845,7 +791,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="after-14" class="inner-level collapse collapsable-details ">
+    <div id="after-12" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -879,10 +825,10 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 </div>
 
 
-  <span class="lead-duration duration">41.472</span>
+  <span class="lead-duration duration">40.557</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -895,11 +841,11 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   </span>
   <div class="description indention"></div>
 
-  <div id="element-15" class="collapse collapsable-details ">
+  <div id="element-13" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -911,7 +857,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="before-16" class="inner-level collapse collapsable-details ">
+    <div id="before-14" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -934,7 +880,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -946,7 +892,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details ">
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -954,7 +900,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click on Search Button</span>
 
-  <span class="lead-duration duration">11.146</span>
+  <span class="lead-duration duration">10.166</span>
 
 </div>
 
@@ -981,7 +927,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Job Level</span>
 
-  <span class="lead-duration duration">15.176</span>
+  <span class="lead-duration duration">15.219</span>
 
 </div>
 
@@ -1008,7 +954,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Job Level</span>
 
-  <span class="lead-duration duration">15.149</span>
+  <span class="lead-duration duration">15.171</span>
 
 </div>
 
@@ -1035,7 +981,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1047,7 +993,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="after-18" class="inner-level collapse collapsable-details ">
+    <div id="after-16" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -1081,10 +1027,10 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 </div>
 
 
-  <span class="lead-duration duration">51.310</span>
+  <span class="lead-duration duration">50.591</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -1097,11 +1043,11 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details ">
+  <div id="element-17" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1113,7 +1059,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="before-20" class="inner-level collapse collapsable-details ">
+    <div id="before-18" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1136,7 +1082,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1148,7 +1094,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
   </div>
 
-  <div id="steps-21" class="inner-level collapse collapsable-details ">
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1156,7 +1102,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click on Search Button</span>
 
-  <span class="lead-duration duration">10.921</span>
+  <span class="lead-duration duration">10.201</span>
 
 </div>
 
@@ -1183,7 +1129,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Dept</span>
 
-  <span class="lead-duration duration">20.217</span>
+  <span class="lead-duration duration">20.204</span>
 
 </div>
 
@@ -1210,7 +1156,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Dept</span>
 
-  <span class="lead-duration duration">20.171</span>
+  <span class="lead-duration duration">20.186</span>
 
 </div>
 
@@ -1237,7 +1183,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-22">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1249,7 +1195,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="after-22" class="inner-level collapse collapsable-details ">
+    <div id="after-20" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -1283,10 +1229,10 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 </div>
 
 
-  <span class="lead-duration duration">41.356</span>
+  <span class="lead-duration duration">40.585</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -1299,11 +1245,11 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   </span>
   <div class="description indention"></div>
 
-  <div id="element-23" class="collapse collapsable-details ">
+  <div id="element-21" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-24">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1315,7 +1261,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="before-24" class="inner-level collapse collapsable-details ">
+    <div id="before-22" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1338,7 +1284,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-25">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1350,7 +1296,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
   </div>
 
-  <div id="steps-25" class="inner-level collapse collapsable-details ">
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1358,7 +1304,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click on Search Button</span>
 
-  <span class="lead-duration duration">10.964</span>
+  <span class="lead-duration duration">10.175</span>
 
 </div>
 
@@ -1385,7 +1331,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Comp</span>
 
-  <span class="lead-duration duration">15.193</span>
+  <span class="lead-duration duration">15.241</span>
 
 </div>
 
@@ -1412,7 +1358,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Comp</span>
 
-  <span class="lead-duration duration">15.198</span>
+  <span class="lead-duration duration">15.168</span>
 
 </div>
 
@@ -1439,7 +1385,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-26">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1451,7 +1397,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="after-26" class="inner-level collapse collapsable-details ">
+    <div id="after-24" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -1485,10 +1431,10 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 </div>
 
 
-  <span class="lead-duration duration">41.399</span>
+  <span class="lead-duration duration">40.584</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -1501,11 +1447,11 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   </span>
   <div class="description indention"></div>
 
-  <div id="element-27" class="collapse collapsable-details ">
+  <div id="element-25" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-28">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1517,7 +1463,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="before-28" class="inner-level collapse collapsable-details ">
+    <div id="before-26" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1540,7 +1486,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1552,7 +1498,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
   </div>
 
-  <div id="steps-29" class="inner-level collapse collapsable-details ">
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1560,7 +1506,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click on Search Button</span>
 
-  <span class="lead-duration duration">10.988</span>
+  <span class="lead-duration duration">10.187</span>
 
 </div>
 
@@ -1587,7 +1533,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Location</span>
 
-  <span class="lead-duration duration">15.205</span>
+  <span class="lead-duration duration">15.216</span>
 
 </div>
 
@@ -1614,7 +1560,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Sort Icon For Display Contact based on Location</span>
 
-  <span class="lead-duration duration">15.205</span>
+  <span class="lead-duration duration">15.180</span>
 
 </div>
 
@@ -1641,7 +1587,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-30">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-28">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1653,7 +1599,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="after-30" class="inner-level collapse collapsable-details ">
+    <div id="after-28" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -1687,10 +1633,10 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 </div>
 
 
-  <span class="lead-duration duration">6.671</span>
+  <span class="lead-duration duration">8.587</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -1703,11 +1649,11 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   </span>
   <div class="description indention"></div>
 
-  <div id="element-31" class="collapse collapsable-details ">
+  <div id="element-29" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-32">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-30">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1719,7 +1665,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="before-32" class="inner-level collapse collapsable-details ">
+    <div id="before-30" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1742,7 +1688,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-33">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-31">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1754,7 +1700,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
   </div>
 
-  <div id="steps-33" class="inner-level collapse collapsable-details ">
+  <div id="steps-31" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1762,7 +1708,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">When</span>
   <span class="name">Click On Setting Options</span>
 
-  <span class="lead-duration duration">3.142</span>
+  <span class="lead-duration duration">5.303</span>
 
 </div>
 
@@ -1789,7 +1735,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
   <span class="keyword indention">And</span>
   <span class="name">Click On Logout Options</span>
 
-  <span class="lead-duration duration">3.528</span>
+  <span class="lead-duration duration">3.284</span>
 
 </div>
 
@@ -1816,7 +1762,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-34">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-32">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1828,7 +1774,7 @@ Session ID: 30d5f5db3fa00e273d9aaff2a9919122
 
     </div>
 
-    <div id="after-34" class="inner-level collapse collapsable-details ">
+    <div id="after-32" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>

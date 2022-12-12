@@ -2208,6 +2208,20 @@ public class Steps extends Global {
 		Thread.sleep(1000);
 	}
 
+	@And("Select All Suppression List")
+	public void I_Select_All_Suppression_Lists() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAllSuppressionList());
+		log.info("User Select All Suppression Lists");
+		Thread.sleep(1000);
+	}
+
+	@And("Check Suppression list is displayed")
+	public void I_Check_All_Suppression_Lists() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getAllSuppressionList().isDisplayed());
+		log.info("User Check All Suppression Lists");
+		Thread.sleep(1000);
+	}
+
 	@And("Check One Company list is displayed")
 	public void I_Check_One_Company_List() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOneCompanyList().isDisplayed());
@@ -2253,6 +2267,15 @@ public class Steps extends Global {
 		Thread.sleep(2000);
 		System.out.println("There are Total "+AllListContactCount+" Contacts for the list filter");
 		log.info("User Check the search results of Contact lists");
+	}
+
+	@Then("Check the search results of Suppression lists")
+	public void I_Check_Search_results_For_Suppression_Lists() throws Throwable{
+		String AllSuppressionListContactCount =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstSearchedContact());
+		Thread.sleep(2000);
+		System.out.println("There are Total "+AllSuppressionListContactCount+" Contacts After applying Suppression filter");
+		log.info("User Check the search results of Suppression lists");
 	}
 
 

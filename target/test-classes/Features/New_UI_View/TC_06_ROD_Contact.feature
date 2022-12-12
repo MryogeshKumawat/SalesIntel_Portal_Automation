@@ -1,8 +1,5 @@
 Feature: Validate RoD Contacts Verification
 
-#  @First @Sanity
-#  Scenario: To validate SalesIntel application Launching application
-#    Given Launch the url
 
   @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
@@ -41,13 +38,9 @@ Feature: Validate RoD Contacts Verification
      Then Verify RoD Tab is displayed
      And Click On RoD Tab
     And Verify Requested ROD is Displayed in ROD tab
-     When Click On Setting Options
 
-#  @First @Smoke @Reg
-#  @Sanity
-#  Scenario: To validate application Share and Send the Request
 
   @First @Sanity
   Scenario: To validate application Logout
-#    When Click On Setting Options
+    When Click On Setting Options
     And Click On Logout Options

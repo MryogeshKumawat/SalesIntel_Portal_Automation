@@ -13,3 +13,9 @@ Feature: To validate Search by Rankings
     And Click on Select All Check Box for Rankings
     And Click on Search Button
     And Check Search Results of Ranking Filter
+
+
+  @First @Sanity
+  Scenario: Logout the application
+    When Click On Setting Options
+    Then Click On Logout Options
