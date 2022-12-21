@@ -1,31 +1,29 @@
 package org.stepdefinition;
 
-import com.github.dockerjava.api.model.HealthCheck;
+import io.cucumber.java.af.Dan;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en_scouse.An;
-import net.bytebuddy.asm.Advice;
 import org.apache.log4j.Logger;
-import org.apache.log4j.spi.ThrowableInformation;
-import org.apache.velocity.runtime.directive.contrib.For;
 import org.base.Global;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.pagemanager.PageObjectManager;
 import org.testng.Assert;
-
-import com.aventstack.extentreports.GherkinKeyword;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -33,6 +31,9 @@ public class Steps extends Global {
 	public static Logger log;
 	public static WebDriver driver;
 	public static List<String> Contactlist, Comparelist;
+
+	public String WorkEmail;
+	public Date DateToBeUsed;
 
 
 	//	@Given("Launch the url")
@@ -49,6 +50,14 @@ public class Steps extends Global {
 		implicitWait();
 		launchURL(ReadDatafromJson("Contact_Name", "url"));
 	}
+
+	@Given("Launch Research Portal")
+	public void launch_the_Research_Portal_url() throws Throwable {
+		driver = getDriver();
+		maximizeWindow();
+		implicitWait();
+		launchURL(ReadDatafromJson("Contact_Name", "Research url"));
+	}
 //
 //	@When("Enter Valid Username")
 //	public void i_enter_the_username() throws Throwable {
@@ -58,11 +67,37 @@ public class Steps extends Global {
 //				readPropertyFileData().getProperty("UserName"));
 //		log.info("User enter the correct username");
 //	}
+	@And("Search Contact With Email")
+	public void I_Search_With_Email() throws Throwable{
+		System.out.println("Contact Work Email is: "+WorkEmail);
+		enterData(PageObjectManager.getInstance().getLoginPage().getEmailInputBoxInResearch(),WorkEmail);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSearchButtonForResearch());
+		Thread.sleep(1000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSearchedContactInResearch());
+		log.info("User Search Contact With Email in Research");
+	}
+
+	@And("Login To Research Portal")
+	public void i_Login_To_Research() throws Throwable {
+		log = readLog4jData();
+		log.info("User is navigate to Research Portal");
+		Thread.sleep(3000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getUserName(),
+				ReadDatafromJson("Contact_Name", "Research Username"));
+		System.out.println("User enter the correct username");
+		enterData(PageObjectManager.getInstance().getLoginPage().getPassword(),
+				ReadDatafromJson("Contact_Name", "Research Password"));
+		System.out.println("User enter the correct password");
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLoginButtonRes());
+		log.info("User click Click On Login Button");
+		Thread.sleep(5000);
+	}
 
 	@When("Enter Valid Username")
 	public void i_enter_the_username() throws Throwable {
 		log = readLog4jData();
 		log.info("User is navigate to SalesIntel site");
+		Thread.sleep(2000);
 		enterData(PageObjectManager.getInstance().getLoginPage().getUserName(),
 				ReadDatafromJson("Contact_Name", "UserName"));
 		log.info("User enter the correct username");
@@ -243,6 +278,13 @@ public class Steps extends Global {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLoginButton());
 		log.info("User click Click On Login Button");
 		Thread.sleep(10000);
+	}
+
+	@And("Logout the Research Portal")
+	public void I_Click_Logout_Button_In_Research() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLogoutButtonInResearch());
+		log.info("User click Click On Login Button in research Portal");
+		Thread.sleep(5000);
 	}
 
 	@Then("Validate Email Field is displayed")
@@ -2178,6 +2220,153 @@ public class Steps extends Global {
 		log.info("User Check Your Lists Filter is displayed");
 	}
 
+	@When("Check Result include Filter is displayed")
+	public void I_Check_Result_Include_Filter() throws Throwable{
+		Thread.sleep(2000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getResultIncludeFilter().isDisplayed());
+		log.info("User Check Result include Filter is displayed");
+	}
+
+	@When("Check Whether Last Modified Filter is Displayed")
+	public void I_Check_Last_Modified_Filter() throws Throwable{
+		Thread.sleep(2000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getLastModifiedFilter().isDisplayed());
+		log.info("User Check Last Modified Filter is displayed");
+	}
+
+
+	@And("Click on Result Include Filter")
+	public void I_Click_Result_Include_Filter() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getResultIncludeFilter());
+		log.info("User Click Result include Filter");
+	}
+
+	@And("Click on Last Modified Date Filter")
+	public void I_Click_Last_Modified_Filter() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedFilter());
+		log.info("User Click Result Last Modified");
+	}
+
+	@And("Click on Last Modified Dropdown")
+	public void I_Click_Last_Modified_Dropdown() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedDropDown());
+		log.info("User Click Result Last Modified Dropdown");
+		Thread.sleep(2000);
+	}
+
+	@And("Check particular date is displayed")
+	public void I_Check_Custom_Date_Is_Displayed() throws Throwable{
+		Thread.sleep(2000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getCustomDateForLastModified().isDisplayed());
+		log.info("User Check particular date is displayed");
+		Thread.sleep(2000);
+	}
+
+	@And("Click on Particular Date")
+	public void I_Click_Custom_Date_Is_Displayed() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getCustomDateForLastModified());
+		log.info("User Click on Particular Date");
+		Thread.sleep(2000);
+	}
+
+	@And("get The Selected Date and Store it")
+	public void I_Get_The_Selected_Date_And_Store_It() throws Throwable{
+		Thread.sleep(2000);
+		String Day=PageObjectManager.getInstance().getLoginPage().getCustomDateForLastModified().getText();
+		String Month=PageObjectManager.getInstance().getLoginPage().getMonthFromCustomDate().getText();
+		String Year=PageObjectManager.getInstance().getLoginPage().getYearFromCustomDate().getText();
+		String Date =Day+"/"+Month+"/"+Year;
+		DateFormat format = new SimpleDateFormat("dd/MMMM/yyyy");
+		DateToBeUsed = format.parse(Date);
+	}
+
+	@And("Select Within Last 21 Days")
+	public void I_Click_Last_Modified_Within_21_Days() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedWithin21Days());
+		log.info("User Select Within Last 21 Days");
+	}
+
+	@And("Select Within Last 30 Days")
+	public void I_Click_Last_Modified_Within_30_Days() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedWithin30Days());
+		log.info("User Select Within Last 30 Days");
+	}
+
+	@And("Select Within Last 7 Days")
+	public void I_Click_Last_Modified_Within_7_Days() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedWithin7Days());
+		log.info("User Select Within Last 7 Days");
+	}
+
+	@And("Select Within Last 14 Days")
+	public void I_Click_Last_Modified_Within_14_Days() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedWithin14Days());
+		log.info("User Select Within Last 14 Days");
+	}
+
+	@And("Select Custom filter")
+	public void I_Click_Last_Modified_Custom() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getCustomForLastModified());
+		log.info("User  Select Custom filter");
+	}
+
+	@And("Select Address CheckBox")
+	public void I_Select_Address_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAddressCheckBox());
+		log.info("User Select Address CheckBox");
+		Thread.sleep(1000);
+	}
+	@And("Select Any Phone CheckBox")
+	public void I_Select_Any_Phone_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAnyPhoneCheckBox());
+		log.info("User Select Any Phone CheckBox");
+		Thread.sleep(1000);
+	}
+
+	@And("Select Any Direct Phone CheckBox")
+	public void I_Select_Any_Direct_Phone_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAnyDirectPhoneCheckBox());
+		log.info("User Select Any Direct Phone CheckBox");
+		Thread.sleep(1000);
+	}
+
+	@And("Select Any Mobile Phone CheckBox")
+	public void I_Select_Any_Mobile_Phone_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAnyMobilePhoneCheckBox());
+		log.info("User Select Any Mobile Phone CheckBox");
+		Thread.sleep(1000);
+	}
+
+	@And("Select Personal Email CheckBox")
+	public void I_Select_Personal_Email_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getPersonalEmailCheckBox());
+		log.info("User Select Personal Email CheckBox");
+		Thread.sleep(1000);
+	}
+
+	@And("Select LinkedIn Url CheckBox")
+	public void I_Select_LinkedIn_Url_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLinkedInUrlCheckBox());
+		log.info("User Select LinkedIn Url CheckBox");
+		Thread.sleep(1000);
+	}
+
+	@And("Select Title CheckBox")
+	public void I_Select_Title_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getTitleCheckBox());
+		log.info("User Select Title CheckBox");
+		Thread.sleep(1000);
+	}
+
 	@And("Check Contact list is displayed")
 	public void I_Check_Contact_List_Filter() throws Throwable{
 		Thread.sleep(2000);
@@ -2222,6 +2411,27 @@ public class Steps extends Global {
 		Thread.sleep(1000);
 	}
 
+	@And("Check ROD list is displayed")
+	public void I_Check_ROD_Lists() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getRODList().isDisplayed());
+		log.info("User Check All ROD Lists");
+		Thread.sleep(1000);
+	}
+
+	@And("Select All ROD List")
+	public void I_Select_All_ROD_Lists() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAllRODList());
+		log.info("User Select All ROD List");
+		Thread.sleep(1000);
+	}
+
+	@And("Select One ROD List")
+	public void I_Check_One_ROD_Lists() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getOneRODList());
+		log.info("User Select One ROD List");
+		Thread.sleep(1000);
+	}
+
 	@And("Check One Company list is displayed")
 	public void I_Check_One_Company_List() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOneCompanyList().isDisplayed());
@@ -2236,6 +2446,13 @@ public class Steps extends Global {
 		Thread.sleep(1000);
 	}
 
+	@And("Check One Suppression list is displayed")
+	public void I_Check_One_Suppression_List() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOneSuppressionList().isDisplayed());
+		log.info("User Check One Suppression list is displayed");
+		Thread.sleep(1000);
+	}
+
 	@And("Select One Company List")
 	public void I_Select_One_Company_List() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getOneCompanyList());
@@ -2247,6 +2464,13 @@ public class Steps extends Global {
 	public void I_Select_One_Contact_List() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getOneContactList());
 		log.info("User Select one Contact List");
+		Thread.sleep(1000);
+	}
+
+	@And("Select One Suppression List")
+	public void I_Select_One_Suppression_List() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().getOneSuppressionList());
+		log.info("User Select one Suppression List");
 		Thread.sleep(1000);
 	}
 
@@ -2278,6 +2502,274 @@ public class Steps extends Global {
 		log.info("User Check the search results of Suppression lists");
 	}
 
+	@Then("Check the search results of ROD lists")
+	public void I_Check_Search_results_For_ROD_Lists() throws Throwable{
+		String AllSuppressionListContactCount =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstSearchedContact());
+		Thread.sleep(2000);
+		System.out.println("There are Total "+AllSuppressionListContactCount+" Contacts After applying ROD filter");
+		log.info("User Check the search results of ROD lists");
+	}
+
+	@Then("Check Whether Results include Address")
+	public void I_Check_Whether_Result_Include_Address() throws Throwable{
+	Thread.sleep(5000);
+	Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getFirstSearchedContactLocation().isDisplayed());
+	log.info("USer Check Whether Results include Address");
+	}
+
+	@Then("Check Whether Results include Personal Email")
+	public void I_Check_Whether_Result_Include_Personal_Email() throws Throwable{
+		Thread.sleep(5000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getPersonalEmailInResult().isDisplayed());
+		log.info("USer Check Whether Results include Personal Email");
+	}
+
+	@Then("Check Whether Results include LinkedIn Url")
+	public void I_Check_Whether_Result_Include_LinkedIn_Url() throws Throwable{
+		Thread.sleep(5000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getLinkedInUrlInResult().isDisplayed());
+		log.info("USer Check Whether Results include  LinkedIn Url");
+	}
+
+	@Then("Check Whether Results include Title")
+	public void I_Check_Whether_Result_Include_Title() throws Throwable{
+		Thread.sleep(5000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getTitleInSearchResult().isDisplayed());
+		log.info("USer Check Whether Results include  Title");
+	}
+
+	@Then("Validate the Last modified Date In Research Portal Where updated within 21 Days")
+	public void I_Validate_Last_Modified_Date_In_Research_Portal_21_Days() throws Throwable{
+		Thread.sleep(5000);
+		String LastUpdatedDate=PageObjectManager.getInstance().getLoginPage().getLastUpdatedDateFromRes().getText();
+		DateFormat format = new SimpleDateFormat("dd/MMM/yyyy");
+		Date LastModifiedInResearch = format.parse(LastUpdatedDate);
+		LocalDate currentDate = LocalDate.now();
+		DateFormat format1 =  new SimpleDateFormat("yyyy-MM-dd");
+		Date CurrentDateToUse = format1.parse(currentDate.toString());
+		long time_difference = CurrentDateToUse.getTime() - LastModifiedInResearch.getTime();
+		long DaysDifference=(time_difference / (1000*60*60*24)) % 365;
+		if (DaysDifference<=21){
+			System.out.println("Searched Contact is Recently Modified Within 21 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is Modified Within 21 Days");
+		}
+		else {
+			System.out.println("Searched Contact is not Updated Within 21 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is not Within 21 Days");
+		}
+	}
+
+	@Then("Validate the Last modified Date In Research Portal Where updated within 30 Days")
+	public void I_Validate_Last_Modified_Date_In_Research_Portal_30_Days() throws Throwable{
+		Thread.sleep(5000);
+		String LastUpdatedDate=PageObjectManager.getInstance().getLoginPage().getLastUpdatedDateFromRes().getText();
+		DateFormat format = new SimpleDateFormat("dd/MMM/yyyy");
+		Date LastModifiedInResearch = format.parse(LastUpdatedDate);
+		LocalDate currentDate = LocalDate.now();
+		DateFormat format1 =  new SimpleDateFormat("yyyy-MM-dd");
+		Date CurrentDateToUse = format1.parse(currentDate.toString());
+		long time_difference = CurrentDateToUse.getTime() - LastModifiedInResearch.getTime();
+		long DaysDifference=(time_difference / (1000*60*60*24)) % 365;
+		if (DaysDifference<=30){
+			System.out.println("Searched Contact is Recently Modified Within 30 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is Modified Within 30 Days");
+		}
+		else {
+			System.out.println("Searched Contact is not Updated Within 30 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is not Within 30 Days");
+		}
+	}
+
+	@Then("Validate the Last modified Date In Research Portal Where updated within the Selected Date")
+	public void I_Validate_Last_Modified_Date_In_Research_Portal_For_Custom_Date() throws Throwable{
+		Thread.sleep(5000);
+		String LastUpdatedDate=PageObjectManager.getInstance().getLoginPage().getLastUpdatedDateFromRes().getText();
+		DateFormat format = new SimpleDateFormat("dd/MMM/yyyy");
+		Date LastModifiedInResearch = format.parse(LastUpdatedDate);
+		LocalDate currentDate = LocalDate.now();
+		DateFormat format1 =  new SimpleDateFormat("yyyy-MM-dd");
+		Date CurrentDateToUse = format1.parse(currentDate.toString());
+		long ActualDifferenceFromResearch = CurrentDateToUse.getTime() - LastModifiedInResearch.getTime();
+		long ActualResDifferenceInDays=(ActualDifferenceFromResearch / (1000*60*60*24)) % 365;
+		long ActualDifferenceFromSI = CurrentDateToUse.getTime() - DateToBeUsed.getTime();
+		long ActualResDifferenceInDaysFromSI=(ActualDifferenceFromSI / (1000*60*60*24)) % 365;
+		if (ActualResDifferenceInDays<=ActualResDifferenceInDaysFromSI){
+			System.out.println("Searched Contact is Recently Modified Within "+ActualResDifferenceInDaysFromSI+" Days, Where Last modified Date is "+LastModifiedInResearch+"");
+			log.info("User Validated that Contact is Modified Within "+ActualResDifferenceInDaysFromSI+" Days");
+		}
+		else {
+			System.out.println("Searched Contact is not Updated Within the Selected Custom Date, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+ActualResDifferenceInDaysFromSI+ "Days");
+			log.info("User Validated that Contact is not Within the Selected Custom Date");
+		}
+	}
+
+	@Then("Validate the Last modified Date In Research Portal Where modified within 7 Days")
+	public void I_Validate_Last_Modified_Date_In_Research_Portal_7_Days() throws Throwable{
+		Thread.sleep(5000);
+		String LastUpdatedDate=PageObjectManager.getInstance().getLoginPage().getLastUpdatedDateFromRes().getText();
+		DateFormat format = new SimpleDateFormat("dd/MMM/yyyy");
+		Date LastModifiedInResearch = format.parse(LastUpdatedDate);
+		LocalDate currentDate = LocalDate.now();
+		DateFormat format1 =  new SimpleDateFormat("yyyy-MM-dd");
+		Date CurrentDateToUse = format1.parse(currentDate.toString());
+		long time_difference = CurrentDateToUse.getTime() - LastModifiedInResearch.getTime();
+		long DaysDifference=(time_difference / (1000*60*60*24)) % 365;
+		if (DaysDifference<=7){
+			System.out.println("Searched Contact is Recently Modified Within 7 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is Modified Within 7 Days");
+		}
+		else {
+			System.out.println("Searched Contact is not Updated Within 7 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is not Within 7 Days");
+		}
+	}
+
+	@Then("Validate the Last modified Date In Research Portal Where modified within 14 Days")
+	public void I_Validate_Last_Modified_Date_In_Research_Portal_14_Days() throws Throwable{
+		Thread.sleep(5000);
+		String LastUpdatedDate=PageObjectManager.getInstance().getLoginPage().getLastUpdatedDateFromRes().getText();
+		DateFormat format = new SimpleDateFormat("dd/MMM/yyyy");
+		Date LastModifiedInResearch = format.parse(LastUpdatedDate);
+		LocalDate currentDate = LocalDate.now();
+		DateFormat format1 =  new SimpleDateFormat("yyyy-MM-dd");
+		Date CurrentDateToUse = format1.parse(currentDate.toString());
+		long time_difference = CurrentDateToUse.getTime() - LastModifiedInResearch.getTime();
+		long DaysDifference=(time_difference / (1000*60*60*24)) % 365;
+		if (DaysDifference<=14){
+			System.out.println("Searched Contact is Recently Modified Within 14 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is Modified Within 14 Days");
+		}
+		else {
+			System.out.println("Searched Contact is not Updated Within 14 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is not Within 14 Days");
+		}
+	}
+
+	@And("get the Contact Work Email and store it")
+	public void I_Copy_And_Store_The_Work_Email() throws Throwable{
+		Thread.sleep(5000);
+		WorkEmail = PageObjectManager.getInstance().getLoginPage().getWorkEmailInResult().getText();
+		System.out.println("Work Email is "+WorkEmail);
+		log.info("User get the Work Email and store it");
+	}
+
+
+	@Then("Check Whether Results include Any Phone")
+	public void I_Check_Whether_Results_Include_Any_Phone() throws Throwable {
+		Thread.sleep(5000);
+		boolean MobileIsDisplayed = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed()) {
+				MobileIsDisplayed = PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed();
+				System.out.println("Mobile Number is Displayed");
+			}
+			else {
+				System.out.println("Mobile number is not Displayed");
+			}
+		}
+		catch (Exception e){
+			System.out.println("Mobile Number in Result is not Displayed");
+		}
+
+		boolean DirectPhoneIsDisplayed = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed()) {
+				DirectPhoneIsDisplayed = PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed();
+				System.out.println("Direct Phone Number is Displayed");
+			}
+			else {
+				System.out.println("Direct Phone number is not Displayed");
+			}
+		}
+		catch (Exception e){
+			System.out.println("Direct Phone Number in Result is not Displayed");
+		}
+		if (DirectPhoneIsDisplayed || MobileIsDisplayed){
+			log.info("User Validated that Results include Any Phone");
+		}
+		else {
+			log.info("User Validated that Both Any Mobile number or Direct phone is not displayed");
+			System.out.println("Test Manually");
+		}
+	}
+
+	@Then("Check Whether Results include Any Direct Phone")
+	public void I_Check_Whether_Results_Include_Any_Direct_Phone() throws Throwable {
+		Thread.sleep(5000);
+		boolean MobileIsDisplayed = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed()) {
+				MobileIsDisplayed = PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed();
+				System.out.println("Mobile Number is Displayed");
+			}
+			else {
+				System.out.println("Mobile number is not Displayed");
+			}
+		}
+		catch (Exception e){
+			System.out.println("Mobile Number in Result is not Displayed");
+		}
+
+		boolean DirectPhoneIsDisplayed = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed()) {
+				DirectPhoneIsDisplayed = PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed();
+				System.out.println("Direct Phone Number is Displayed");
+			}
+			else {
+				System.out.println("Direct Phone number is not Displayed");
+			}
+		}
+		catch (Exception e){
+			System.out.println("Direct Phone Number in Result is not Displayed");
+		}
+		if (DirectPhoneIsDisplayed || MobileIsDisplayed){
+			log.info("User Validated that Results include Any Direct Phone");
+		}
+		else {
+			log.info("User Validated that Both Any Mobile number or Direct phone is not displayed");
+			System.out.println("Test Manually");
+		}
+	}
+
+	@Then("Check Whether Results include Any Mobile Phone")
+	public void I_Check_Whether_Results_Include_Any_Mobile_Phone() throws Throwable {
+		Thread.sleep(5000);
+		boolean MobileIsDisplayed = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed()) {
+				MobileIsDisplayed = PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed();
+				System.out.println("Mobile Number is Displayed");
+			}
+			else {
+				System.out.println("Mobile number is not Displayed");
+			}
+		}
+		catch (Exception e){
+			System.out.println("Mobile Number in Result is not Displayed");
+		}
+
+		boolean DirectPhoneIsDisplayed = false;
+			if (PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed()) {
+				DirectPhoneIsDisplayed = PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed();
+				System.out.println("Direct Phone Number is Displayed");
+			}
+			else {
+				System.out.println("Direct Phone number is Not Displayed");
+			}
+
+		if (DirectPhoneIsDisplayed && MobileIsDisplayed){
+			log.info("User Validated that Results include Both Direct Phone and Mobile Phone");
+			System.out.println("TC-Failed, Test Manually");
+		} else if (!MobileIsDisplayed && DirectPhoneIsDisplayed) {
+			log.info("User Validated that Any Mobile phone is not displayed");
+			System.out.println("TC-Failed, Test Manually");
+		}
+		if (!DirectPhoneIsDisplayed && MobileIsDisplayed) {
+			log.info("User Validated that Any Mobile phone is displayed");
+		}
+	}
 
 	@And("Validate Search Result")
 	public void I_Validate_Search_Result() throws Throwable {
@@ -2404,9 +2896,16 @@ public class Steps extends Global {
 
 	@And("Click On Reveal Contact Search Button")
 	public void I_Click_Reveal_Contact_search() throws Throwable {
-		clickButton(PageObjectManager.getInstance().getLoginPage().getContactSearchReveal());
-		log.info("Click On Reveal Contact Search Button");
-		Thread.sleep(3000);
+		try{
+			if (PageObjectManager.getInstance().getLoginPage().getContactSearchReveal().isDisplayed()) {
+				clickButton(PageObjectManager.getInstance().getLoginPage().getContactSearchReveal());
+				log.info("Click On Reveal Contact Search Button");
+			}
+		}
+		catch (Exception e){
+			log.info("The Contact is already Revealed");
+			Thread.sleep(3000);
+		}
 	}
 
 	@And("Get the Total Reveal Count")

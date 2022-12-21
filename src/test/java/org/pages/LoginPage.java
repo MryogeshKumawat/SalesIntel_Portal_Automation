@@ -15,6 +15,9 @@ public class LoginPage extends Global {
 //	public static String name = Readuserdata();
 //
 //	public static String usernamexpath = "//*[contains(text(),"\"name\"")]";
+
+	@FindBy(xpath = "//input[@placeholder='Search by Email Address']")
+	private WebElement EmailInputBoxInResearch;
 	@FindBy(xpath = "//input[@type='text']")
 	private WebElement userName;
 
@@ -41,6 +44,12 @@ public class LoginPage extends Global {
 	private WebElement contactemail;
 	@FindBy(xpath = "//*[@type='submit' and @class='btn btn-primary btn-search']")
 	private WebElement SearchButton;
+
+	@FindBy(xpath = "//button[@type='submit']")
+	private WebElement SearchButtonForResearch;
+
+	@FindBy(xpath = "//th[contains(text(),'Contact Id')]/../../../tbody/tr/td[2]/a")
+	private WebElement SearchedContactInResearch;
 
 	@FindBy(xpath = "(//*[@type='submit' and @class='btn btn-primary btn-search'])[1]")
 	private WebElement CompanySearchButton;
@@ -74,6 +83,12 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//*[@type='submit' and contains(text(),'Login')]")
 	private WebElement LoginButton;
+
+	@FindBy(xpath = "//a[contains(text(),'Logout')]")
+	private WebElement LogoutButtonInResearch;
+
+	@FindBy(xpath = "//*[@type='submit' and contains(text(),'LOGIN')]")
+	private WebElement LoginButtonRes;
 
 	@FindBy(xpath = "(//input[@type='radio'])[8]")
 	private WebElement newContactradiobutton;
@@ -398,6 +413,59 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//span[contains(text(),'Your Lists')]")
 	private WebElement YourListsFilter;
 
+	@FindBy(xpath = "//span[contains(text(),'Results Include')]")
+	private WebElement ResultIncludeFilter;
+
+	@FindBy(xpath = "//span[contains(text(),'Last Modified')]")
+	private WebElement LastModifiedFilter;
+
+	@FindBy(xpath = "//Select[@name='lastModified']")
+	private WebElement LastModifiedDropDown;
+
+	@FindBy(xpath = "//table[@role='grid']/tbody/tr[2]/td[2]")
+	private WebElement CustomDateForLastModified;
+	@FindBy(xpath = "//table[@role='grid']/tbody/tr[2]/td[2]/../../../../../div[1]/bs-datepicker-navigation-view/button[2]/span")
+	private WebElement MonthFromCustomDate;
+
+	@FindBy(xpath = "//table[@role='grid']/tbody/tr[2]/td[2]/../../../../../div[1]/bs-datepicker-navigation-view/button[3]/span")
+	private WebElement YearFromCustomDate;
+
+	@FindBy(xpath = "//option[contains(text(),'Within last 21 days')]")
+	private WebElement LastModifiedWithin21Days;
+
+	@FindBy(xpath = "//option[contains(text(),'Within last 30 days')]")
+	private WebElement LastModifiedWithin30Days;
+
+	@FindBy(xpath = "//option[contains(text(),'Within last 7 days')]")
+	private WebElement LastModifiedWithin7Days;
+
+	@FindBy(xpath = "//option[contains(text(),'Within last 14 days')]")
+	private WebElement LastModifiedWithin14Days;
+
+	@FindBy(xpath = "//option[contains(text(),'Custom')]")
+	private WebElement CustomForLastModified;
+
+	@FindBy(xpath = "//label[contains(text(),'Address')]")
+	private WebElement AddressCheckBox;
+
+	@FindBy(xpath = "//label[contains(text(),'Any Phone')]")
+	private WebElement AnyPhoneCheckBox;
+
+	@FindBy(xpath = "//label[contains(text(),'Any Direct Phone')]")
+	private WebElement AnyDirectPhoneCheckBox;
+
+	@FindBy(xpath = "//label[contains(text(),'Any Mobile Phone')]")
+	private WebElement AnyMobilePhoneCheckBox;
+
+	@FindBy(xpath = "//label[contains(text(),'Personal Email')]")
+	private WebElement PersonalEmailCheckBox;
+
+	@FindBy(xpath = "//label[contains(text(),'Linkedin Url')]")
+	private WebElement LinkedInUrlCheckBox;
+
+	@FindBy(xpath = "//label[contains(text(),'Title')]")
+	private WebElement TitleCheckBox;
+
 	@FindBy(xpath = "//strong[contains(text(),'Contact List')]")
 	private WebElement ContactListFilter;
 
@@ -410,13 +478,25 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//input[@type='checkbox'])[159]")
 	private WebElement AllSuppressionList;
 
+	@FindBy(xpath = "(//input[@type='checkbox'])[168]")
+	private WebElement AllRODList;
+
+	@FindBy(xpath = "(//input[@type='checkbox'])[169]")
+	private WebElement OneRODList;
+
+	@FindBy(xpath = "//strong[contains(text(),'RoD List')]")
+	private WebElement RODList;
+
 	@FindBy(xpath = "(//span[contains(text(),'3 company')])[1]")
 	private WebElement OneCompanyList;
 
 	@FindBy(xpath = "(//span[contains(text(),'Contact Export in CRM')])[1]")
 	private WebElement OneContactList;
 
-	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]")
+	@FindBy(xpath = "(//span[contains(text(),'46K_Supp_QA1')])[1]")
+	private WebElement OneSuppressionList;
+
+	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]/..")
 	private WebElement FirstCompanyInResult;
 	@FindBy(xpath = "(//span[contains(text(),'Netflix') and contains(text(),'Hulu')])[1]")
 	private WebElement TopicThresholdInResult;
@@ -443,8 +523,32 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//input[@placeholder='Enter Industry Name']")
 	private WebElement IndustryNameInputBox;
 
-	@FindBy(xpath = "(//div[@class='tbody'])[1]")
+	@FindBy(xpath = "//strong[contains(text(),'Name')]/../../../../../article/div[1]/div/div/div/div[1]/div/div[2]")
 	private WebElement FirstSearchedContact;
+
+	@FindBy(xpath = "//strong[contains(text(),'Location')]/../../../article/div[1]/div/div/div/div[5]/div")
+	private WebElement FirstSearchedContactLocation;
+
+	@FindBy(xpath = "//strong[contains(text(),'Location')]/../../../article/div[1]/div/div[2]/app-contact-overview/section/article/div/div[2]/div[2]/div[contains(text(),'Personal Email')]")
+	private WebElement PersonalEmailInResult;
+
+	@FindBy(xpath = "//strong[contains(text(),'Location')]/../../../article/div[1]/div/div[2]/app-contact-overview/section/article/div/div[2]/div[1]/span")
+	private WebElement WorkEmailInResult;
+
+	@FindBy(xpath = "//strong[contains(text(),'Location')]/../../../article/div[1]/div/div[1]/div/div[1]/div/div/div/a[1]")
+	private WebElement LinkedInUrlInResult;
+
+	@FindBy(xpath = "//strong[contains(text(),'Location')]/../../../article/div[1]/div/div[1]/div/div[2]/span/span")
+	private WebElement TitleInSearchResult;
+
+	@FindBy(xpath = "//label[contains(text(),'Last Updated')]/../div/p")
+	private WebElement LastUpdatedDateFromRes;
+
+	@FindBy(xpath = "//strong[contains(text(),'Location')]/../../../article/div[1]/div/div[2]/app-contact-overview/section/article/div/div[1]/div/div/span[contains(text(),'Mobile')]")
+	private WebElement MobilePhoneInResult;
+
+	@FindBy(xpath = "//strong[contains(text(),'Location')]/../../../article/div[1]/div/div[2]/app-contact-overview/section/article/div/div[1]/div/div/span[contains(text(),'Direct Phone')]")
+	private WebElement DirectPhoneInResult;
 
 	@FindBy(xpath = "(//label[contains(text(),' Select All ')])[1]")
 	private WebElement SelectAllCheckBox;
@@ -587,6 +691,10 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//span[contains(text(),'Human Verifie')])[1]")
 	private WebElement HumanVerifiedContactsCount;
 
+	public WebElement getEmailInputBoxInResearch() {
+		return EmailInputBoxInResearch;
+	}
+
 
 
 	public LoginPage() throws Throwable {
@@ -596,6 +704,7 @@ public class LoginPage extends Global {
 	public WebElement getUserName() {
 		return userName;
 	}
+
 
 	public WebElement getPassword() {
 		return password;
@@ -618,6 +727,12 @@ public class LoginPage extends Global {
 	}
 	public WebElement getSearchButton() {
 		return SearchButton;
+	}
+	public WebElement getSearchButtonForResearch() {
+		return SearchButtonForResearch;
+	}
+	public WebElement getSearchedContactInResearch() {
+		return SearchedContactInResearch;
 	}
 
 	public WebElement getCompanySearchButton() {
@@ -646,6 +761,14 @@ public class LoginPage extends Global {
 
 	public WebElement getLoginButton() {
 		return LoginButton;
+	}
+
+	public WebElement getLogoutButtonInResearch() {
+		return LogoutButtonInResearch;
+	}
+
+	public WebElement getLoginButtonRes() {
+		return LoginButtonRes;
 	}
 
 	public WebElement getForgotPassword() {
@@ -1065,6 +1188,36 @@ public class LoginPage extends Global {
 		return FirstSearchedContact;
 	}
 
+	public WebElement getFirstSearchedContactLocation(){
+		return FirstSearchedContactLocation;
+	}
+
+	public WebElement getPersonalEmailInResult(){
+		return PersonalEmailInResult;
+	}
+
+	public WebElement getWorkEmailInResult(){
+		return WorkEmailInResult;
+	}
+
+	public WebElement getLinkedInUrlInResult(){
+		return LinkedInUrlInResult;
+	}
+
+	public WebElement getTitleInSearchResult(){
+		return TitleInSearchResult;
+	}
+
+	public WebElement getLastUpdatedDateFromRes(){
+		return LastUpdatedDateFromRes;
+	}
+
+	public WebElement getMobilePhoneInResult(){
+		return MobilePhoneInResult;
+	}
+	public WebElement getDirectPhoneInResult(){
+		return DirectPhoneInResult;
+	}
 	public WebElement getSelectAllCheckBox(){
 		return SelectAllCheckBox;
 	}
@@ -1088,6 +1241,7 @@ public class LoginPage extends Global {
 	public WebElement getEmailInResult(){
 		return EmailInResult;
 	}
+
 
 	public WebElement getJobVicepresident() {
 		return JobVicepresident;
@@ -1115,6 +1269,77 @@ public class LoginPage extends Global {
 		return YourListsFilter;
 	}
 
+	public WebElement getResultIncludeFilter() {
+		return ResultIncludeFilter;
+	}
+
+	public WebElement getLastModifiedFilter() {
+		return LastModifiedFilter;
+	}
+
+	public WebElement getLastModifiedDropDown() {
+		return LastModifiedDropDown;
+	}
+
+	public WebElement getCustomDateForLastModified() {
+		return CustomDateForLastModified;
+	}
+
+	public WebElement getMonthFromCustomDate() {
+		return MonthFromCustomDate;
+	}
+
+	public WebElement getYearFromCustomDate() {
+		return YearFromCustomDate;
+	}
+
+	public WebElement getLastModifiedWithin21Days() {
+		return LastModifiedWithin21Days;
+	}
+
+	public WebElement getLastModifiedWithin30Days() {
+		return LastModifiedWithin30Days;
+	}
+
+	public WebElement getLastModifiedWithin7Days() {
+		return LastModifiedWithin7Days;
+	}
+
+	public WebElement getLastModifiedWithin14Days() {
+		return LastModifiedWithin14Days;
+	}
+
+	public WebElement getCustomForLastModified() {
+		return CustomForLastModified;
+	}
+
+	public WebElement getAddressCheckBox() {
+		return AddressCheckBox;
+	}
+
+	public WebElement getAnyPhoneCheckBox() {
+		return AnyPhoneCheckBox;
+	}
+	public WebElement getAnyDirectPhoneCheckBox() {
+		return AnyDirectPhoneCheckBox;
+	}
+
+	public WebElement getAnyMobilePhoneCheckBox() {
+		return AnyMobilePhoneCheckBox;
+	}
+
+	public WebElement getPersonalEmailCheckBox() {
+		return PersonalEmailCheckBox;
+	}
+
+	public WebElement getLinkedInUrlCheckBox() {
+		return LinkedInUrlCheckBox;
+	}
+
+	public WebElement getTitleCheckBox() {
+		return TitleCheckBox;
+	}
+
 	public WebElement getContactListFilter() {
 		return ContactListFilter;
 	}
@@ -1130,12 +1355,26 @@ public class LoginPage extends Global {
 	public WebElement getAllSuppressionList() {
 		return AllSuppressionList;
 	}
+
+	public WebElement getAllRODList() {
+		return AllRODList;
+	}
+
+	public WebElement getOneRODList() {
+		return OneRODList;
+	}
+	public WebElement getRODList() {
+		return RODList;
+	}
 	public WebElement getOneCompanyList() {
 		return OneCompanyList;
 	}
 
 	public WebElement getOneContactList() {
 		return OneContactList;
+	}
+	public WebElement getOneSuppressionList() {
+		return OneSuppressionList;
 	}
 
 	public WebElement getFirstCompanyInResult() {

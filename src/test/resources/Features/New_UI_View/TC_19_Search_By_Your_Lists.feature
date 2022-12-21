@@ -1,10 +1,6 @@
 Feature: To validate Search by Your Lists Filter
 
   @First @Sanity
-  Scenario: To validate SalesIntel application Launching application
-    Given Launch the url
-
-  @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
     When Enter Valid Username
     And Enter Valid Password
@@ -69,7 +65,39 @@ Feature: To validate Search by Your Lists Filter
     And Click on Search Button
     And Check the search results of Suppression lists
 
+  @First @Sanity
+  Scenario: To validate Search By one Suppression List
+    When Click On Clear Button
+    And Click On Do Not Save Button
+    And Check Your Lists Filter is displayed
+    And Click on Your Lists Filter
+    And Check Suppression list is displayed
+    And Check One Suppression list is displayed
+    And Select One Suppression List
+    And Click on Search Button
+    And Check the search results of Suppression lists
 
+  @First @Sanity
+  Scenario: To validate Search By All ROD Lists
+    When Click On Clear Button
+    And Click On Do Not Save Button
+    And Check Your Lists Filter is displayed
+    And Click on Your Lists Filter
+    And Check ROD list is displayed
+    And Select All ROD List
+    And Click on Search Button
+    And Check the search results of ROD lists
+
+  @First @Sanity
+  Scenario: To validate Search By All ROD Lists
+    When Click On Clear Button
+    And Click On Do Not Save Button
+    And Check Your Lists Filter is displayed
+    And Click on Your Lists Filter
+    And Check ROD list is displayed
+    And Select One ROD List
+    And Click on Search Button
+    And Check the search results of ROD lists
 
 
   @First @Sanity

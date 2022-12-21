@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:/D:/Automation/New_Revdriver/SalesIntel_QA_Automation-master/src/test/resources/Features/New_UI_View/TC_19_Search_By_Your_Lists.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:/D:/Automation/SalesIntel_Portal_Automation-master/SalesIntel_Portal_Automation-master/src/test/resources/Features/New_UI_View/TC_21_Search_By_Last_Modified.feature");
 formatter.feature({
-  "name": "To validate Search by Your Lists Filter",
+  "name": "To validate Search by Last Modified Filter",
   "description": "",
   "keyword": "Feature"
 });
@@ -83,7 +83,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate Search By All Company Lists",
+  "name": "To validate Last Modified using Custom filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -99,239 +99,71 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Check Your Lists Filter is displayed",
+  "name": "Check Whether Last Modified Filter is Displayed",
   "keyword": "When "
 });
 formatter.match({
-  "location": "Steps.I_Check_YourLists_Filter()"
+  "location": "Steps.I_Check_Last_Modified_Filter()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on Your Lists Filter",
+  "name": "Click on Last Modified Date Filter",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Click_Your_Lists_Filter()"
+  "location": "Steps.I_Click_Last_Modified_Filter()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Select All Companies List",
+  "name": "Click on Last Modified Dropdown",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Select_All_Company_Lists()"
+  "location": "Steps.I_Click_Last_Modified_Dropdown()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on Company Radio Button",
+  "name": "Select Custom filter",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Click_Company_Button()"
+  "location": "Steps.I_Click_Last_Modified_Custom()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on Search Button",
+  "name": "Check particular date is displayed",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Click_Search_Button()"
+  "location": "Steps.I_Check_Custom_Date_Is_Displayed()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Check the search results of Company lists",
+  "name": "Click on Particular Date",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Check_Search_results_For_Company_Lists()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "To validate Search By one Company List",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@First"
-    },
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click On Clear Button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "Steps.I_Click_clear_Button()"
+  "location": "Steps.I_Click_Custom_Date_Is_Displayed()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Do Not Save Button",
+  "name": "get The Selected Date and Store it",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Click_do_not_save_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Check Your Lists Filter is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Check_YourLists_Filter()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Your Lists Filter",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Click_Your_Lists_Filter()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Check One Company list is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Check_One_Company_List()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Select One Company List",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Select_One_Company_List()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Search Button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Click_Search_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Check the search results of Company lists",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Check_Search_results_For_Company_Lists()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "To validate Search By All Contact Lists",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@First"
-    },
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click On Clear Button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "Steps.I_Click_clear_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click On Do Not Save Button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Click_do_not_save_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Check Your Lists Filter is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Check_YourLists_Filter()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Your Lists Filter",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Click_Your_Lists_Filter()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Check Contact list is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Check_Contact_List_Filter()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Select All Contact List",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Select_All_Contact_Lists()"
+  "location": "Steps.I_Get_The_Selected_Date_And_Store_It()"
 });
 formatter.result({
   "status": "passed"
@@ -357,268 +189,71 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Check the search results of Contact lists",
+  "name": "Click On Reveal Contact Search Button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Check_Search_results_For_Contact_Lists()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "To validate Search By one Contact List",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@First"
-    },
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click On Clear Button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "Steps.I_Click_clear_Button()"
+  "location": "Steps.I_Click_Reveal_Contact_search()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Do Not Save Button",
+  "name": "Click on the First Contact in Search Result",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Click_do_not_save_Button()"
+  "location": "Steps.I_Click_Searched_Contact()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Check Your Lists Filter is displayed",
+  "name": "get the Contact Work Email and store it",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Check_YourLists_Filter()"
+  "location": "Steps.I_Copy_And_Store_The_Work_Email()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on Your Lists Filter",
+  "name": "Launch Research Portal",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Click_Your_Lists_Filter()"
+  "location": "Steps.launch_the_Research_Portal_url()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Check Contact list is displayed",
+  "name": "Login To Research Portal",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Check_Contact_List_Filter()"
+  "location": "Steps.i_Login_To_Research()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Check One Contact list is displayed",
+  "name": "Search Contact With Email",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.I_Check_One_Contact_List()"
+  "location": "Steps.I_Search_With_Email()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Select One Contact List",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Select_One_Contact_List()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Search Button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Click_Search_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Check the search results of Contact lists",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Check_Search_results_For_Contact_Lists()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "To validate Search By All Suppression Lists",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@First"
-    },
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click On Clear Button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "Steps.I_Click_clear_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click On Do Not Save Button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Click_do_not_save_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Check Your Lists Filter is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Check_YourLists_Filter()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Your Lists Filter",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Click_Your_Lists_Filter()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Check Suppression list is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Check_All_Suppression_Lists()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Select All Suppression List",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Select_All_Suppression_Lists()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Contact Radio Button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Click_Contact_Radio_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Search Button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Click_Search_Button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Check the search results of Suppression lists",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Steps.I_Check_Search_results_For_Suppression_Lists()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Logout the application",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@First"
-    },
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click On Setting Options",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "Steps.I_click_welcome_Logout()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click On Logout Options",
+  "name": "Validate the Last modified Date In Research Portal Where updated within the Selected Date",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_click_Logout()"
+  "location": "Steps.I_Validate_Last_Modified_Date_In_Research_Portal_For_Custom_Date()"
 });
 formatter.result({
   "status": "passed"

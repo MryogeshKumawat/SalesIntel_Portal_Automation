@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-12-09T13:43:36.324Z",
+        "start_timestamp": "2022-12-15T12:03:54.612Z",
         "before": [
           {
             "result": {
-              "duration": 1068800,
+              "duration": 1048747,
               "status": "passed"
             },
             "match": {
@@ -18,11 +18,11 @@
         "line": 4,
         "name": "To validate SalesIntel application Launching application",
         "description": "",
-        "id": "to-validate-search-by-your-lists-filter;to-validate-salesintel-application-launching-application",
+        "id": "to-validate-search-by-last-modified-filter;to-validate-salesintel-application-launching-application",
         "after": [
           {
             "result": {
-              "duration": 460000,
+              "duration": 680391,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7984457800,
+              "duration": 8425825685,
               "status": "passed"
             },
             "line": 5,
@@ -56,11 +56,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-12-09T13:43:44.340Z",
+        "start_timestamp": "2022-12-15T12:04:03.063Z",
         "before": [
           {
             "result": {
-              "duration": 446400,
+              "duration": 262542,
               "status": "passed"
             },
             "match": {
@@ -71,11 +71,11 @@
         "line": 8,
         "name": "To validate SalesIntel application Valid User Username and Valid Password",
         "description": "",
-        "id": "to-validate-search-by-your-lists-filter;to-validate-salesintel-application-valid-user-username-and-valid-password",
+        "id": "to-validate-search-by-last-modified-filter;to-validate-salesintel-application-valid-user-username-and-valid-password",
         "after": [
           {
             "result": {
-              "duration": 450400,
+              "duration": 463360,
               "status": "passed"
             },
             "match": {
@@ -88,7 +88,7 @@
         "steps": [
           {
             "result": {
-              "duration": 152172600,
+              "duration": 2163424189,
               "status": "passed"
             },
             "line": 9,
@@ -100,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 73571800,
+              "duration": 56005704,
               "status": "passed"
             },
             "line": 10,
@@ -112,7 +112,7 @@
           },
           {
             "result": {
-              "duration": 10062659700,
+              "duration": 10044395249,
               "status": "passed"
             },
             "line": 11,
@@ -133,11 +133,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-12-09T13:43:54.630Z",
+        "start_timestamp": "2022-12-15T12:04:15.335Z",
         "before": [
           {
             "result": {
-              "duration": 248600,
+              "duration": 559502,
               "status": "passed"
             },
             "match": {
@@ -145,14 +145,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "To validate Search By All Company Lists",
+        "line": 92,
+        "name": "To validate Last Modified using Custom filter",
         "description": "",
-        "id": "to-validate-search-by-your-lists-filter;to-validate-search-by-all-company-lists",
+        "id": "to-validate-search-by-last-modified-filter;to-validate-last-modified-using-custom-filter",
         "after": [
           {
             "result": {
-              "duration": 334200,
+              "duration": 224427,
               "status": "passed"
             },
             "match": {
@@ -165,332 +165,94 @@
         "steps": [
           {
             "result": {
-              "duration": 2082655400,
+              "duration": 2049738254,
               "status": "passed"
             },
-            "line": 16,
-            "name": "Check Your Lists Filter is displayed",
+            "line": 93,
+            "name": "Check Whether Last Modified Filter is Displayed",
             "match": {
-              "location": "Steps.I_Check_YourLists_Filter()"
+              "location": "Steps.I_Check_Last_Modified_Filter()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5152561100,
+              "duration": 2101674980,
               "status": "passed"
             },
-            "line": 17,
-            "name": "Click on Your Lists Filter",
+            "line": 94,
+            "name": "Click on Last Modified Date Filter",
             "match": {
-              "location": "Steps.I_Click_Your_Lists_Filter()"
+              "location": "Steps.I_Click_Last_Modified_Filter()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1144187600,
+              "duration": 4095725254,
               "status": "passed"
             },
-            "line": 18,
-            "name": "Select All Companies List",
+            "line": 95,
+            "name": "Click on Last Modified Dropdown",
             "match": {
-              "location": "Steps.I_Select_All_Company_Lists()"
+              "location": "Steps.I_Click_Last_Modified_Dropdown()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5112930400,
+              "duration": 2186834542,
               "status": "passed"
             },
-            "line": 19,
-            "name": "Click on Company Radio Button",
+            "line": 96,
+            "name": "Select Custom filter",
             "match": {
-              "location": "Steps.I_Click_Company_Button()"
+              "location": "Steps.I_Click_Last_Modified_Custom()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 10162389500,
+              "duration": 4055741172,
               "status": "passed"
             },
-            "line": 20,
-            "name": "Click on Search Button",
+            "line": 97,
+            "name": "Check particular date is displayed",
             "match": {
-              "location": "Steps.I_Click_Search_Button()"
+              "location": "Steps.I_Check_Custom_Date_Is_Displayed()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2211930700,
+              "duration": 4203426476,
               "status": "passed"
             },
-            "line": 21,
-            "name": "Check the search results of Company lists",
+            "line": 98,
+            "name": "Click on Particular Date",
             "match": {
-              "location": "Steps.I_Check_Search_results_For_Company_Lists()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@First"
-          },
-          {
-            "name": "@Sanity"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-12-09T13:44:20.504Z",
-        "before": [
-          {
-            "result": {
-              "duration": 492100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeExection.beforeExecutedClass(Scenario)"
-            }
-          }
-        ],
-        "line": 24,
-        "name": "To validate Search By one Company List",
-        "description": "",
-        "id": "to-validate-search-by-your-lists-filter;to-validate-search-by-one-company-list",
-        "after": [
-          {
-            "result": {
-              "duration": 400400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeExection.afterExecutedClass(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2139723800,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "Click On Clear Button",
-            "match": {
-              "location": "Steps.I_Click_clear_Button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 8236135000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "Click On Do Not Save Button",
-            "match": {
-              "location": "Steps.I_Click_do_not_save_Button()"
+              "location": "Steps.I_Click_Custom_Date_Is_Displayed()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2069516000,
+              "duration": 2079971009,
               "status": "passed"
             },
-            "line": 27,
-            "name": "Check Your Lists Filter is displayed",
+            "line": 99,
+            "name": "get The Selected Date and Store it",
             "match": {
-              "location": "Steps.I_Check_YourLists_Filter()"
+              "location": "Steps.I_Get_The_Selected_Date_And_Store_It()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5130891200,
+              "duration": 20134503007,
               "status": "passed"
             },
-            "line": 28,
-            "name": "Click on Your Lists Filter",
-            "match": {
-              "location": "Steps.I_Click_Your_Lists_Filter()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1054712000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Check One Company list is displayed",
-            "match": {
-              "location": "Steps.I_Check_One_Company_List()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1212043500,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Select One Company List",
-            "match": {
-              "location": "Steps.I_Select_One_Company_List()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10149472700,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "Click on Search Button",
-            "match": {
-              "location": "Steps.I_Click_Search_Button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2158189900,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "Check the search results of Company lists",
-            "match": {
-              "location": "Steps.I_Check_Search_results_For_Company_Lists()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@First"
-          },
-          {
-            "name": "@Sanity"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-12-09T13:44:52.662Z",
-        "before": [
-          {
-            "result": {
-              "duration": 495200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeExection.beforeExecutedClass(Scenario)"
-            }
-          }
-        ],
-        "line": 36,
-        "name": "To validate Search By All Contact Lists",
-        "description": "",
-        "id": "to-validate-search-by-your-lists-filter;to-validate-search-by-all-contact-lists",
-        "after": [
-          {
-            "result": {
-              "duration": 193500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeExection.afterExecutedClass(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2136175500,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "Click On Clear Button",
-            "match": {
-              "location": "Steps.I_Click_clear_Button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 8149630500,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "Click On Do Not Save Button",
-            "match": {
-              "location": "Steps.I_Click_do_not_save_Button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2068368500,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "Check Your Lists Filter is displayed",
-            "match": {
-              "location": "Steps.I_Check_YourLists_Filter()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5126107800,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "Click on Your Lists Filter",
-            "match": {
-              "location": "Steps.I_Click_Your_Lists_Filter()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2070646700,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "Check Contact list is displayed",
-            "match": {
-              "location": "Steps.I_Check_Contact_List_Filter()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1154405000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "Select All Contact List",
-            "match": {
-              "location": "Steps.I_Select_All_Contact_Lists()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 20187185000,
-              "status": "passed"
-            },
-            "line": 43,
+            "line": 100,
             "name": "Click on Contact Radio Button",
             "match": {
               "location": "Steps.I_Click_Contact_Radio_Button()"
@@ -499,10 +261,10 @@
           },
           {
             "result": {
-              "duration": 10215881500,
+              "duration": 10172162040,
               "status": "passed"
             },
-            "line": 44,
+            "line": 101,
             "name": "Click on Search Button",
             "match": {
               "location": "Steps.I_Click_Search_Button()"
@@ -511,376 +273,85 @@
           },
           {
             "result": {
-              "duration": 2416577700,
+              "duration": 23038411673,
               "status": "passed"
             },
-            "line": 45,
-            "name": "Check the search results of Contact lists",
+            "line": 102,
+            "name": "Click On Reveal Contact Search Button",
             "match": {
-              "location": "Steps.I_Check_Search_results_For_Contact_Lists()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@First"
-          },
-          {
-            "name": "@Sanity"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-12-09T13:45:46.194Z",
-        "before": [
-          {
-            "result": {
-              "duration": 161200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeExection.beforeExecutedClass(Scenario)"
-            }
-          }
-        ],
-        "line": 48,
-        "name": "To validate Search By one Contact List",
-        "description": "",
-        "id": "to-validate-search-by-your-lists-filter;to-validate-search-by-one-contact-list",
-        "after": [
-          {
-            "result": {
-              "duration": 704400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeExection.afterExecutedClass(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2198479200,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "Click On Clear Button",
-            "match": {
-              "location": "Steps.I_Click_clear_Button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 8307940900,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "Click On Do Not Save Button",
-            "match": {
-              "location": "Steps.I_Click_do_not_save_Button()"
+              "location": "Steps.I_Click_Reveal_Contact_search()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2044378300,
+              "duration": 7191907610,
               "status": "passed"
             },
-            "line": 51,
-            "name": "Check Your Lists Filter is displayed",
+            "line": 103,
+            "name": "Click on the First Contact in Search Result",
             "match": {
-              "location": "Steps.I_Check_YourLists_Filter()"
+              "location": "Steps.I_Click_Searched_Contact()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5227960700,
+              "duration": 5066255664,
               "status": "passed"
             },
-            "line": 52,
-            "name": "Click on Your Lists Filter",
+            "line": 104,
+            "name": "get the Contact Work Email and store it",
             "match": {
-              "location": "Steps.I_Click_Your_Lists_Filter()"
+              "location": "Steps.I_Copy_And_Store_The_Work_Email()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2051780700,
+              "duration": 5106472421,
               "status": "passed"
             },
-            "line": 53,
-            "name": "Check Contact list is displayed",
+            "line": 105,
+            "name": "Launch Research Portal",
             "match": {
-              "location": "Steps.I_Check_Contact_List_Filter()"
+              "location": "Steps.launch_the_Research_Portal_url()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1063617400,
+              "duration": 8280896364,
               "status": "passed"
             },
-            "line": 54,
-            "name": "Check One Contact list is displayed",
+            "line": 106,
+            "name": "Login To Research Portal",
             "match": {
-              "location": "Steps.I_Check_One_Contact_List()"
+              "location": "Steps.i_Login_To_Research()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1276956000,
+              "duration": 2527636062,
               "status": "passed"
             },
-            "line": 55,
-            "name": "Select One Contact List",
+            "line": 107,
+            "name": "Search Contact With Email",
             "match": {
-              "location": "Steps.I_Select_One_Contact_List()"
+              "location": "Steps.I_Search_With_Email()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 10262977800,
+              "duration": 5044411746,
               "status": "passed"
             },
-            "line": 56,
-            "name": "Click on Search Button",
+            "line": 108,
+            "name": "Validate the Last modified Date In Research Portal Where updated within the Selected Date",
             "match": {
-              "location": "Steps.I_Click_Search_Button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2216523400,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "Check the search results of Contact lists",
-            "match": {
-              "location": "Steps.I_Check_Search_results_For_Contact_Lists()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@First"
-          },
-          {
-            "name": "@Sanity"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-12-09T13:46:20.854Z",
-        "before": [
-          {
-            "result": {
-              "duration": 300500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeExection.beforeExecutedClass(Scenario)"
-            }
-          }
-        ],
-        "line": 61,
-        "name": "To validate Search By All Suppression Lists",
-        "description": "",
-        "id": "to-validate-search-by-your-lists-filter;to-validate-search-by-all-suppression-lists",
-        "after": [
-          {
-            "result": {
-              "duration": 189100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeExection.afterExecutedClass(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2124780500,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "Click On Clear Button",
-            "match": {
-              "location": "Steps.I_Click_clear_Button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 8284019500,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "Click On Do Not Save Button",
-            "match": {
-              "location": "Steps.I_Click_do_not_save_Button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2048883900,
-              "status": "passed"
-            },
-            "line": 64,
-            "name": "Check Your Lists Filter is displayed",
-            "match": {
-              "location": "Steps.I_Check_YourLists_Filter()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5179698700,
-              "status": "passed"
-            },
-            "line": 65,
-            "name": "Click on Your Lists Filter",
-            "match": {
-              "location": "Steps.I_Click_Your_Lists_Filter()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1056001800,
-              "status": "passed"
-            },
-            "line": 66,
-            "name": "Check Suppression list is displayed",
-            "match": {
-              "location": "Steps.I_Check_All_Suppression_Lists()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1249800800,
-              "status": "passed"
-            },
-            "line": 67,
-            "name": "Select All Suppression List",
-            "match": {
-              "location": "Steps.I_Select_All_Suppression_Lists()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 20156807500,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "Click on Contact Radio Button",
-            "match": {
-              "location": "Steps.I_Click_Contact_Radio_Button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10221467300,
-              "status": "passed"
-            },
-            "line": 69,
-            "name": "Click on Search Button",
-            "match": {
-              "location": "Steps.I_Click_Search_Button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7389958000,
-              "status": "passed"
-            },
-            "line": 70,
-            "name": "Check the search results of Suppression lists",
-            "match": {
-              "location": "Steps.I_Check_Search_results_For_Suppression_Lists()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@First"
-          },
-          {
-            "name": "@Sanity"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-12-09T13:47:18.571Z",
-        "before": [
-          {
-            "result": {
-              "duration": 160500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeExection.beforeExecutedClass(Scenario)"
-            }
-          }
-        ],
-        "line": 76,
-        "name": "Logout the application",
-        "description": "",
-        "id": "to-validate-search-by-your-lists-filter;logout-the-application",
-        "after": [
-          {
-            "result": {
-              "duration": 210000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BeforeExection.afterExecutedClass(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 5208947500,
-              "status": "passed"
-            },
-            "line": 77,
-            "name": "Click On Setting Options",
-            "match": {
-              "location": "Steps.I_click_welcome_Logout()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3397718000,
-              "status": "passed"
-            },
-            "line": 78,
-            "name": "Click On Logout Options",
-            "match": {
-              "location": "Steps.I_click_Logout()"
+              "location": "Steps.I_Validate_Last_Modified_Date_In_Research_Portal_For_Custom_Date()"
             },
             "keyword": "Then "
           }
@@ -895,11 +366,11 @@
         ]
       }
     ],
-    "name": "To validate Search by Your Lists Filter",
+    "name": "To validate Search by Last Modified Filter",
     "description": "",
-    "id": "to-validate-search-by-your-lists-filter",
+    "id": "to-validate-search-by-last-modified-filter",
     "keyword": "Feature",
-    "uri": "file:/D:/Automation/New_Revdriver/SalesIntel_QA_Automation-master/src/test/resources/Features/New_UI_View/TC_19_Search_By_Your_Lists.feature",
+    "uri": "file:/D:/Automation/SalesIntel_Portal_Automation-master/SalesIntel_Portal_Automation-master/src/test/resources/Features/New_UI_View/TC_21_Search_By_Last_Modified.feature",
     "tags": []
   }
 ]
