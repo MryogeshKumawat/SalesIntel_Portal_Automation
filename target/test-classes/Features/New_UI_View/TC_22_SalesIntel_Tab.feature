@@ -38,10 +38,15 @@ Feature: To validate SalesIntel Tab
     Then Validate Search Results for Recommended List
 
 
+#  @First @Sanity
+#  Scenario: To Validate Saved Searches in SalesIntel Tab
+#    When Click On Clear Button
+#    And Click On Do Not Save Button
+#    And Check Saved Searches are displayed in SalesIntel Tab
+#    And Click on the First Saved Search
+#    Then Validate Search Result for Saved Searches
+
+
   @First @Sanity
-  Scenario: To Validate Saved Searches in SalesIntel Tab
-    When Click On Clear Button
-    And Click On Do Not Save Button
-    And Check Saved Searches are displayed in SalesIntel Tab
-    And Click on the First Saved Search
-    Then Validate Search Result for Saved Searches
+  Scenario: To Logout the Research Portal
+    When Logout the Research Portal
