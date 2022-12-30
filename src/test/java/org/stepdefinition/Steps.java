@@ -1,31 +1,24 @@
 package org.stepdefinition;
 
-import com.github.dockerjava.api.model.HealthCheck;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en_scouse.An;
-import net.bytebuddy.asm.Advice;
 import org.apache.log4j.Logger;
-import org.apache.log4j.spi.ThrowableInformation;
-import org.apache.velocity.runtime.directive.contrib.For;
 import org.base.Global;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.pagemanager.PageObjectManager;
 import org.testng.Assert;
-
-import com.aventstack.extentreports.GherkinKeyword;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -33,6 +26,9 @@ public class Steps extends Global {
 	public static Logger log;
 	public static WebDriver driver;
 	public static List<String> Contactlist, Comparelist;
+
+	public String WorkEmail;
+	public Date DateToBeUsed;
 
 
 	//	@Given("Launch the url")
@@ -49,6 +45,14 @@ public class Steps extends Global {
 		implicitWait();
 		launchURL(ReadDatafromJson("Contact_Name", "url"));
 	}
+
+	@Given("Launch Research Portal")
+	public void launch_the_Research_Portal_url() throws Throwable {
+		driver = getDriver();
+		maximizeWindow();
+		implicitWait();
+		launchURL(ReadDatafromJson("Contact_Name", "Research url"));
+	}
 //
 //	@When("Enter Valid Username")
 //	public void i_enter_the_username() throws Throwable {
@@ -58,11 +62,37 @@ public class Steps extends Global {
 //				readPropertyFileData().getProperty("UserName"));
 //		log.info("User enter the correct username");
 //	}
+	@And("Search Contact With Email")
+	public void I_Search_With_Email() throws Throwable{
+		System.out.println("Contact Work Email is: "+WorkEmail);
+		enterData(PageObjectManager.getInstance().getLoginPage().getEmailInputBoxInResearch(),WorkEmail);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSearchButtonForResearch());
+		Thread.sleep(1000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSearchedContactInResearch());
+		log.info("User Search Contact With Email in Research");
+	}
+
+	@And("Login To Research Portal")
+	public void i_Login_To_Research() throws Throwable {
+		log = readLog4jData();
+		log.info("User is navigate to Research Portal");
+		Thread.sleep(3000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getUserName(),
+				ReadDatafromJson("Contact_Name", "Research Username"));
+		System.out.println("User enter the correct username");
+		enterData(PageObjectManager.getInstance().getLoginPage().getPassword(),
+				ReadDatafromJson("Contact_Name", "Research Password"));
+		System.out.println("User enter the correct password");
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLoginButtonRes());
+		log.info("User click Click On Login Button");
+		Thread.sleep(5000);
+	}
 
 	@When("Enter Valid Username")
 	public void i_enter_the_username() throws Throwable {
 		log = readLog4jData();
 		log.info("User is navigate to SalesIntel site");
+		Thread.sleep(2000);
 		enterData(PageObjectManager.getInstance().getLoginPage().getUserName(),
 				ReadDatafromJson("Contact_Name", "UserName"));
 		log.info("User enter the correct username");
@@ -106,10 +136,8 @@ public class Steps extends Global {
 
 	@Then("Click on Contact Radio Button")
 	public void I_Click_Contact_Radio_Button() throws Throwable {
-		Thread.sleep(15000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getnewContactradiobutton());
 		log.info("User Click on Contact Radio Button");
-		Thread.sleep(5000);
 	}
 
 	@Then("Check Search Results of Ranking Filter")
@@ -243,6 +271,13 @@ public class Steps extends Global {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLoginButton());
 		log.info("User click Click On Login Button");
 		Thread.sleep(10000);
+	}
+
+	@And("Logout the Research Portal")
+	public void I_Click_Logout_Button_In_Research() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLogoutButtonInResearch());
+		log.info("User click Click On Login Button in research Portal");
+		Thread.sleep(5000);
 	}
 
 	@Then("Validate Email Field is displayed")
@@ -541,6 +576,22 @@ public class Steps extends Global {
 		log.info("User Check Finance Department in Search Result");
 	}
 
+	@Then("Check Finance Department in All Searched Results")
+	public void I_Check_Finance_Department_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Finance department in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Finance')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Finance')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". "+ContactName+" is working in Finance department");
+		}
+
+		log.info("User Check Finance Department in All Searched Results");
+	}
+
 	@Then("Click on HR Department Filter")
 	public void I_Click_HR_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getHrDepartmentFilter());
@@ -552,6 +603,22 @@ public class Steps extends Global {
 	public void I_Check_Hr_Department_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHrDepartmentInResult().isDisplayed());
 		log.info("User Check HR Department in Search Result");
+	}
+
+	@Then("Check HR Department in All Searched Results")
+	public void I_Check_HR_Department_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the HR department in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'HR')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'HR')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". "+ContactName+" is working in HR department");
+		}
+
+		log.info("User Check HR Department in All Searched Results");
 	}
 
 	@Then("Click on IT Department Filter")
@@ -567,6 +634,21 @@ public class Steps extends Global {
 		log.info("User Check IT Department in Search Result");
 	}
 
+	@Then("Check IT Department in All Searched Results")
+	public void I_Check_IT_Department_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the IT department in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("((//div[contains(text(),'IT')])["+i+"])[1]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("((//div[contains(text(),'IT')])["+i+"])[1]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". "+ContactName+" is working in IT department");
+		}
+
+		log.info("User Check IT Department in All Searched Results");
+	}
 	@Then("Click on Legal Department Filter")
 	public void I_Click_Legal_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLegalDepartmentFilter());
@@ -577,6 +659,22 @@ public class Steps extends Global {
 	public void I_Check_Legal_Department_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getLegalDepartmentInResult().isDisplayed());
 		log.info("User Check Legal Department in Search Result");
+	}
+
+	@Then("Check Legal Department in All Searched Results")
+	public void I_Check_Legal_Department_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Legal department in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Legal')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Legal')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". "+ContactName+" is working in Legal department");
+		}
+
+		log.info("User Check Legal Department in All Searched Results");
 	}
 
 	@Then("Click on Marketing Department Filter")
@@ -590,7 +688,21 @@ public class Steps extends Global {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getMarketingDepartmentInResult().isDisplayed());
 		log.info("User Check Marketing Department in Search Result");
 	}
+	@Then("Check Marketing Department in All Searched Results")
+	public void I_Check_Marketing_Department_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Marketing department in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Marketing')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Marketing')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". "+ContactName+" is working in Marketing department");
+		}
 
+		log.info("User Check Marketing Department in All Searched Results");
+	}
 
 	@Then("Click on Operations Department Filter")
 	public void I_Click_Operations_Department_Filter() throws Throwable {
@@ -602,6 +714,22 @@ public class Steps extends Global {
 	public void I_Check_Operations_Department_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOperationsDepartmentInResult().isDisplayed());
 		log.info("User Check Operations Department in Search Result");
+	}
+
+	@Then("Check Operations Department in All Searched Results")
+	public void I_Check_Operations_Department_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Operations department in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Operations')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Operations')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". "+ContactName+" is working in Operations department");
+		}
+
+		log.info("User Check Operations Department in All Searched Results");
 	}
 
 	@Then("Click on Procurement Department Filter")
@@ -616,6 +744,22 @@ public class Steps extends Global {
 		log.info("User Check Procurement Department in Search Result");
 	}
 
+	@Then("Check Procurement Department in All Searched Results")
+	public void I_Check_Procurement_Department_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Procurement department in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Procurement')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Procurement')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". "+ContactName+" is working in Procurement department");
+		}
+
+		log.info("User Check Procurement Department in All Searched Results");
+	}
+
 	@Then("Click on R&D Department Filter")
 	public void I_Click_RnD_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getRndDepartmentFilter());
@@ -626,6 +770,22 @@ public class Steps extends Global {
 	public void I_Check_RnD_Department_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getRndDepartmentInResult().isDisplayed());
 		log.info("User Check R&D Department in Search Result");
+	}
+
+	@Then("Check R&D Department in All Searched Results")
+	public void I_Check_RandD_Department_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the R&D department in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'R&D')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'R&D')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". "+ContactName+" is working in R&D department");
+		}
+
+		log.info("User Check R&D Department in All Searched Results");
 	}
 
 	@Then("Click on Sales Department Filter")
@@ -640,6 +800,22 @@ public class Steps extends Global {
 		log.info("User Check Sales Department in Search Result");
 	}
 
+	@Then("Check Sales Department in All Searched Results")
+	public void I_Check_Sales_Department_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Sales department in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Sales')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Sales')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". "+ContactName+" is working in Sales department");
+		}
+
+		log.info("User Check Sales Department in All Searched Results");
+	}
+
 	@Then("Click on Cross Functional Department Filter")
 	public void I_Click_Cross_Functional_Department_Filter() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getCrossFunctionalDepartmentFilter());
@@ -650,6 +826,22 @@ public class Steps extends Global {
 	public void I_Check_Cross_Functional_Department_In_Result() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getCrossFunctionalDepartmentInResult().isDisplayed());
 		log.info("User Check Cross Functional Department in Search Result");
+	}
+
+	@Then("Check Cross Functional Department in All Searched Results")
+	public void I_Check_Cross_Functional_Department_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Cross Functional department in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Cross Functional')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Cross Functional')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". "+ContactName+" is working in Cross Functional department");
+		}
+
+		log.info("User Check Cross Functional Department in All Searched Results");
 	}
 
 	@When("Verify Job Level Filter is displayed")
@@ -678,10 +870,26 @@ public class Steps extends Global {
 		log.info("User Check Board Member Job Level in Result");
 	}
 
+	@Then("Check Board Member Job Level in All Searched Results")
+	public void I_Check_Board_Member_Job_Level_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Board Member Job Level in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Board Member')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Board Member')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". Job Level of "+ContactName+" is Board Member");
+		}
+
+		log.info("Check Board Member Job Level in All Searched Results");
+	}
+
 	@When("Verify Role Section is displayed")
 	public void I_verify_Role_Section() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getRolesection().isDisplayed());
-		log.info("Verify Contact Name is displayed");
+		log.info("User Verify Role Section is displayed");
 	}
 
 	@When("Verify Job Level Select All Option is displayed")
@@ -754,6 +962,7 @@ public class Steps extends Global {
 
 	@And("Click on Title Filter")
 	public void I_Click_On_Title_Filter() throws Throwable {
+		Thread.sleep(2000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getTitleFilter());
 		Thread.sleep(2000);
 		log.info("User click on Title Filter");
@@ -769,9 +978,30 @@ public class Steps extends Global {
 
 	@Then("Check searched title is displayed in Search Result")
 	public void I_Check_Title_In_Result() throws Throwable {
-		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getTitleInResult().isDisplayed());
+		String JobTitle=ReadDatafromJson("Contact_Name", "Job_Title");
+		Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'"+JobTitle+"')])[1]")).isDisplayed());
+//		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getTitleInResult().isDisplayed());
+		String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div[1]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+		System.out.println(ContactName+" is working as "+JobTitle);
 		Thread.sleep(3000);
 		log.info("User Check searched title is displayed in Search Result");
+	}
+
+	@Then("Check Job Title in All Searched Results")
+	public void I_Check_Job_Level_In_All_Searched_Results() throws Throwable {
+		String JobTitle=ReadDatafromJson("Contact_Name", "Job_Title");
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Job Title in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'"+JobTitle+"')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'"+JobTitle+"')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". "+ContactName+" is working as "+JobTitle+"");
+		}
+
+		log.info("Check Job Title in All Searched Results");
 	}
 
 	@When("Verify Location filter is Displayed")
@@ -2082,16 +2312,64 @@ public class Steps extends Global {
 		log.info("User Check Vice Presidents Job level in Result");
 	}
 
+	@Then("Check Vice Presidents Job Level in All Searched Results")
+	public void I_Check_Vice_Presidents_Job_Level_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Vice Presidents Job Level in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Vice President')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Vice President')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". Job Level of "+ContactName+" is Vice Presidents");
+		}
+
+		log.info("Check Vice Presidents Job Level in All Searched Results");
+	}
+
 	@Then("Check Directors Job level in Result")
 	public void I_Check_Directors_Job_Level_IN_Result() throws Throwable{
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getDirectorsJobLevelInResult().isDisplayed());
 		log.info("User Check Directors Job level in Result");
 	}
 
+	@Then("Check Directors Job Level in All Searched Results")
+	public void I_Check_Directors_Job_Level_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Directors Job Level in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Director')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Director')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". Job Level of "+ContactName+" is Directors");
+		}
+
+		log.info("Check Directors Job Level in All Searched Results");
+	}
+
 	@Then("Check Managers Job level in Result")
 	public void I_Check_Managers_Job_Level_IN_Result() throws Throwable{
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getManagersJobLevelInResult().isDisplayed());
 		log.info("User Check Managers Job level in Result");
+	}
+
+	@Then("Check Managers Job Level in All Searched Results")
+	public void I_Check_Managers_Job_Level_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Managers Job Level in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Manager')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Manager')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". Job Level of "+ContactName+" is Managers");
+		}
+
+		log.info("Check Managers Job Level in All Searched Results");
 	}
 
 	@Then("Check Key Influencers Job level in Result")
@@ -2101,9 +2379,41 @@ public class Steps extends Global {
 		log.info("User Check Key Influencers Job level in Result");
 	}
 
+	@Then("Check Key Influencers Job Level in All Searched Results")
+	public void I_Check_Key_Influencers_Job_Level_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Key Influencers Job Level in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Key Influencer')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Key Influencer')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". Job Level of "+ContactName+" is Key Influencers");
+		}
+
+		log.info("Check Key Influencers Job Level in All Searched Results");
+	}
+
 	@Then("Check C-level Executive Job level in Result")
 	public void I_Check_Clevel_Executive_Job_Level_Result() throws Throwable{
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getClevelExecutiveJobLevelInResult().isDisplayed());
+	}
+
+	@Then("Check C-level Executive Job Level in All Searched Results")
+	public void I_Check_C_level_Executive_Job_Level_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the C-level Executive Job Level in All searched Results");
+		for (int i=1;i<=HvContactCount;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'C-level Executive')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'C-level Executive')])["+i+"]")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". Job Level of "+ContactName+" is C-level Executive");
+		}
+
+		log.info("Check C-level Executive Job Level in All Searched Results");
 	}
 
 
@@ -2178,6 +2488,153 @@ public class Steps extends Global {
 		log.info("User Check Your Lists Filter is displayed");
 	}
 
+	@When("Check Result include Filter is displayed")
+	public void I_Check_Result_Include_Filter() throws Throwable{
+		Thread.sleep(2000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getResultIncludeFilter().isDisplayed());
+		log.info("User Check Result include Filter is displayed");
+	}
+
+	@When("Check Whether Last Modified Filter is Displayed")
+	public void I_Check_Last_Modified_Filter() throws Throwable{
+		Thread.sleep(2000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getLastModifiedFilter().isDisplayed());
+		log.info("User Check Last Modified Filter is displayed");
+	}
+
+
+	@And("Click on Result Include Filter")
+	public void I_Click_Result_Include_Filter() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getResultIncludeFilter());
+		log.info("User Click Result include Filter");
+	}
+
+	@And("Click on Last Modified Date Filter")
+	public void I_Click_Last_Modified_Filter() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedFilter());
+		log.info("User Click Result Last Modified");
+	}
+
+	@And("Click on Last Modified Dropdown")
+	public void I_Click_Last_Modified_Dropdown() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedDropDown());
+		log.info("User Click Result Last Modified Dropdown");
+		Thread.sleep(2000);
+	}
+
+	@And("Check particular date is displayed")
+	public void I_Check_Custom_Date_Is_Displayed() throws Throwable{
+		Thread.sleep(2000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getCustomDateForLastModified().isDisplayed());
+		log.info("User Check particular date is displayed");
+		Thread.sleep(2000);
+	}
+
+	@And("Click on Particular Date")
+	public void I_Click_Custom_Date_Is_Displayed() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getCustomDateForLastModified());
+		log.info("User Click on Particular Date");
+		Thread.sleep(2000);
+	}
+
+	@And("get The Selected Date and Store it")
+	public void I_Get_The_Selected_Date_And_Store_It() throws Throwable{
+		Thread.sleep(2000);
+		String Day=PageObjectManager.getInstance().getLoginPage().getCustomDateForLastModified().getText();
+		String Month=PageObjectManager.getInstance().getLoginPage().getMonthFromCustomDate().getText();
+		String Year=PageObjectManager.getInstance().getLoginPage().getYearFromCustomDate().getText();
+		String Date =Day+"/"+Month+"/"+Year;
+		DateFormat format = new SimpleDateFormat("dd/MMMM/yyyy");
+		DateToBeUsed = format.parse(Date);
+	}
+
+	@And("Select Within Last 21 Days")
+	public void I_Click_Last_Modified_Within_21_Days() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedWithin21Days());
+		log.info("User Select Within Last 21 Days");
+	}
+
+	@And("Select Within Last 30 Days")
+	public void I_Click_Last_Modified_Within_30_Days() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedWithin30Days());
+		log.info("User Select Within Last 30 Days");
+	}
+
+	@And("Select Within Last 7 Days")
+	public void I_Click_Last_Modified_Within_7_Days() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedWithin7Days());
+		log.info("User Select Within Last 7 Days");
+	}
+
+	@And("Select Within Last 14 Days")
+	public void I_Click_Last_Modified_Within_14_Days() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedWithin14Days());
+		log.info("User Select Within Last 14 Days");
+	}
+
+	@And("Select Custom filter")
+	public void I_Click_Last_Modified_Custom() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getCustomForLastModified());
+		log.info("User  Select Custom filter");
+	}
+
+	@And("Select Address CheckBox")
+	public void I_Select_Address_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAddressCheckBox());
+		log.info("User Select Address CheckBox");
+		Thread.sleep(1000);
+	}
+	@And("Select Any Phone CheckBox")
+	public void I_Select_Any_Phone_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAnyPhoneCheckBox());
+		log.info("User Select Any Phone CheckBox");
+		Thread.sleep(1000);
+	}
+
+	@And("Select Any Direct Phone CheckBox")
+	public void I_Select_Any_Direct_Phone_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAnyDirectPhoneCheckBox());
+		log.info("User Select Any Direct Phone CheckBox");
+		Thread.sleep(1000);
+	}
+
+	@And("Select Any Mobile Phone CheckBox")
+	public void I_Select_Any_Mobile_Phone_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAnyMobilePhoneCheckBox());
+		log.info("User Select Any Mobile Phone CheckBox");
+		Thread.sleep(1000);
+	}
+
+	@And("Select Personal Email CheckBox")
+	public void I_Select_Personal_Email_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getPersonalEmailCheckBox());
+		log.info("User Select Personal Email CheckBox");
+		Thread.sleep(1000);
+	}
+
+	@And("Select LinkedIn Url CheckBox")
+	public void I_Select_LinkedIn_Url_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getLinkedInUrlCheckBox());
+		log.info("User Select LinkedIn Url CheckBox");
+		Thread.sleep(1000);
+	}
+
+	@And("Select Title CheckBox")
+	public void I_Select_Title_CheckBox() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getTitleCheckBox());
+		log.info("User Select Title CheckBox");
+		Thread.sleep(1000);
+	}
+
 	@And("Check Contact list is displayed")
 	public void I_Check_Contact_List_Filter() throws Throwable{
 		Thread.sleep(2000);
@@ -2222,6 +2679,27 @@ public class Steps extends Global {
 		Thread.sleep(1000);
 	}
 
+	@And("Check ROD list is displayed")
+	public void I_Check_ROD_Lists() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getRODList().isDisplayed());
+		log.info("User Check All ROD Lists");
+		Thread.sleep(1000);
+	}
+
+	@And("Select All ROD List")
+	public void I_Select_All_ROD_Lists() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getAllRODList());
+		log.info("User Select All ROD List");
+		Thread.sleep(1000);
+	}
+
+	@And("Select One ROD List")
+	public void I_Check_One_ROD_Lists() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getOneRODList());
+		log.info("User Select One ROD List");
+		Thread.sleep(1000);
+	}
+
 	@And("Check One Company list is displayed")
 	public void I_Check_One_Company_List() throws Throwable {
 		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOneCompanyList().isDisplayed());
@@ -2236,6 +2714,13 @@ public class Steps extends Global {
 		Thread.sleep(1000);
 	}
 
+	@And("Check One Suppression list is displayed")
+	public void I_Check_One_Suppression_List() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getOneSuppressionList().isDisplayed());
+		log.info("User Check One Suppression list is displayed");
+		Thread.sleep(1000);
+	}
+
 	@And("Select One Company List")
 	public void I_Select_One_Company_List() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getOneCompanyList());
@@ -2247,6 +2732,13 @@ public class Steps extends Global {
 	public void I_Select_One_Contact_List() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getOneContactList());
 		log.info("User Select one Contact List");
+		Thread.sleep(1000);
+	}
+
+	@And("Select One Suppression List")
+	public void I_Select_One_Suppression_List() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().getOneSuppressionList());
+		log.info("User Select one Suppression List");
 		Thread.sleep(1000);
 	}
 
@@ -2278,6 +2770,274 @@ public class Steps extends Global {
 		log.info("User Check the search results of Suppression lists");
 	}
 
+	@Then("Check the search results of ROD lists")
+	public void I_Check_Search_results_For_ROD_Lists() throws Throwable{
+		String AllSuppressionListContactCount =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstSearchedContact());
+		Thread.sleep(2000);
+		System.out.println("There are Total "+AllSuppressionListContactCount+" Contacts After applying ROD filter");
+		log.info("User Check the search results of ROD lists");
+	}
+
+	@Then("Check Whether Results include Address")
+	public void I_Check_Whether_Result_Include_Address() throws Throwable{
+	Thread.sleep(5000);
+	Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getFirstSearchedContactLocation().isDisplayed());
+	log.info("USer Check Whether Results include Address");
+	}
+
+	@Then("Check Whether Results include Personal Email")
+	public void I_Check_Whether_Result_Include_Personal_Email() throws Throwable{
+		Thread.sleep(5000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getPersonalEmailInResult().isDisplayed());
+		log.info("USer Check Whether Results include Personal Email");
+	}
+
+	@Then("Check Whether Results include LinkedIn Url")
+	public void I_Check_Whether_Result_Include_LinkedIn_Url() throws Throwable{
+		Thread.sleep(5000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getLinkedInUrlInResult().isDisplayed());
+		log.info("USer Check Whether Results include  LinkedIn Url");
+	}
+
+	@Then("Check Whether Results include Title")
+	public void I_Check_Whether_Result_Include_Title() throws Throwable{
+		Thread.sleep(5000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getTitleInSearchResult().isDisplayed());
+		log.info("USer Check Whether Results include  Title");
+	}
+
+	@Then("Validate the Last modified Date In Research Portal Where updated within 21 Days")
+	public void I_Validate_Last_Modified_Date_In_Research_Portal_21_Days() throws Throwable{
+		Thread.sleep(5000);
+		String LastUpdatedDate=PageObjectManager.getInstance().getLoginPage().getLastUpdatedDateFromRes().getText();
+		DateFormat format = new SimpleDateFormat("dd/MMM/yyyy");
+		Date LastModifiedInResearch = format.parse(LastUpdatedDate);
+		LocalDate currentDate = LocalDate.now();
+		DateFormat format1 =  new SimpleDateFormat("yyyy-MM-dd");
+		Date CurrentDateToUse = format1.parse(currentDate.toString());
+		long time_difference = CurrentDateToUse.getTime() - LastModifiedInResearch.getTime();
+		long DaysDifference=(time_difference / (1000*60*60*24)) % 365;
+		if (DaysDifference<=21){
+			System.out.println("Searched Contact is Recently Modified Within 21 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is Modified Within 21 Days");
+		}
+		else {
+			System.out.println("Searched Contact is not Updated Within 21 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is not Within 21 Days");
+		}
+	}
+
+	@Then("Validate the Last modified Date In Research Portal Where updated within 30 Days")
+	public void I_Validate_Last_Modified_Date_In_Research_Portal_30_Days() throws Throwable{
+		Thread.sleep(5000);
+		String LastUpdatedDate=PageObjectManager.getInstance().getLoginPage().getLastUpdatedDateFromRes().getText();
+		DateFormat format = new SimpleDateFormat("dd/MMM/yyyy");
+		Date LastModifiedInResearch = format.parse(LastUpdatedDate);
+		LocalDate currentDate = LocalDate.now();
+		DateFormat format1 =  new SimpleDateFormat("yyyy-MM-dd");
+		Date CurrentDateToUse = format1.parse(currentDate.toString());
+		long time_difference = CurrentDateToUse.getTime() - LastModifiedInResearch.getTime();
+		long DaysDifference=(time_difference / (1000*60*60*24)) % 365;
+		if (DaysDifference<=30){
+			System.out.println("Searched Contact is Recently Modified Within 30 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is Modified Within 30 Days");
+		}
+		else {
+			System.out.println("Searched Contact is not Updated Within 30 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is not Within 30 Days");
+		}
+	}
+
+	@Then("Validate the Last modified Date In Research Portal Where updated within the Selected Date")
+	public void I_Validate_Last_Modified_Date_In_Research_Portal_For_Custom_Date() throws Throwable{
+		Thread.sleep(5000);
+		String LastUpdatedDate=PageObjectManager.getInstance().getLoginPage().getLastUpdatedDateFromRes().getText();
+		DateFormat format = new SimpleDateFormat("dd/MMM/yyyy");
+		Date LastModifiedInResearch = format.parse(LastUpdatedDate);
+		LocalDate currentDate = LocalDate.now();
+		DateFormat format1 =  new SimpleDateFormat("yyyy-MM-dd");
+		Date CurrentDateToUse = format1.parse(currentDate.toString());
+		long ActualDifferenceFromResearch = CurrentDateToUse.getTime() - LastModifiedInResearch.getTime();
+		long ActualResDifferenceInDays=(ActualDifferenceFromResearch / (1000*60*60*24)) % 365;
+		long ActualDifferenceFromSI = CurrentDateToUse.getTime() - DateToBeUsed.getTime();
+		long ActualResDifferenceInDaysFromSI=(ActualDifferenceFromSI / (1000*60*60*24)) % 365;
+		if (ActualResDifferenceInDays<=ActualResDifferenceInDaysFromSI){
+			System.out.println("Searched Contact is Recently Modified Within "+ActualResDifferenceInDaysFromSI+" Days, Where Last modified Date is "+LastModifiedInResearch+"");
+			log.info("User Validated that Contact is Modified Within "+ActualResDifferenceInDaysFromSI+" Days");
+		}
+		else {
+			System.out.println("Searched Contact is not Updated Within the Selected Custom Date, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+ActualResDifferenceInDaysFromSI+ "Days");
+			log.info("User Validated that Contact is not Within the Selected Custom Date");
+		}
+	}
+
+	@Then("Validate the Last modified Date In Research Portal Where modified within 7 Days")
+	public void I_Validate_Last_Modified_Date_In_Research_Portal_7_Days() throws Throwable{
+		Thread.sleep(5000);
+		String LastUpdatedDate=PageObjectManager.getInstance().getLoginPage().getLastUpdatedDateFromRes().getText();
+		DateFormat format = new SimpleDateFormat("dd/MMM/yyyy");
+		Date LastModifiedInResearch = format.parse(LastUpdatedDate);
+		LocalDate currentDate = LocalDate.now();
+		DateFormat format1 =  new SimpleDateFormat("yyyy-MM-dd");
+		Date CurrentDateToUse = format1.parse(currentDate.toString());
+		long time_difference = CurrentDateToUse.getTime() - LastModifiedInResearch.getTime();
+		long DaysDifference=(time_difference / (1000*60*60*24)) % 365;
+		if (DaysDifference<=7){
+			System.out.println("Searched Contact is Recently Modified Within 7 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is Modified Within 7 Days");
+		}
+		else {
+			System.out.println("Searched Contact is not Updated Within 7 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is not Within 7 Days");
+		}
+	}
+
+	@Then("Validate the Last modified Date In Research Portal Where modified within 14 Days")
+	public void I_Validate_Last_Modified_Date_In_Research_Portal_14_Days() throws Throwable{
+		Thread.sleep(5000);
+		String LastUpdatedDate=PageObjectManager.getInstance().getLoginPage().getLastUpdatedDateFromRes().getText();
+		DateFormat format = new SimpleDateFormat("dd/MMM/yyyy");
+		Date LastModifiedInResearch = format.parse(LastUpdatedDate);
+		LocalDate currentDate = LocalDate.now();
+		DateFormat format1 =  new SimpleDateFormat("yyyy-MM-dd");
+		Date CurrentDateToUse = format1.parse(currentDate.toString());
+		long time_difference = CurrentDateToUse.getTime() - LastModifiedInResearch.getTime();
+		long DaysDifference=(time_difference / (1000*60*60*24)) % 365;
+		if (DaysDifference<=14){
+			System.out.println("Searched Contact is Recently Modified Within 14 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is Modified Within 14 Days");
+		}
+		else {
+			System.out.println("Searched Contact is not Updated Within 14 Days, Where Last modified Date is "+LastModifiedInResearch+" And it is updated before "+DaysDifference+ "Days");
+			log.info("User Validated that Contact is not Within 14 Days");
+		}
+	}
+
+	@And("get the Contact Work Email and store it")
+	public void I_Copy_And_Store_The_Work_Email() throws Throwable{
+		Thread.sleep(5000);
+		WorkEmail = PageObjectManager.getInstance().getLoginPage().getWorkEmailInResult().getText();
+		System.out.println("Work Email is "+WorkEmail);
+		log.info("User get the Work Email and store it");
+	}
+
+
+	@Then("Check Whether Results include Any Phone")
+	public void I_Check_Whether_Results_Include_Any_Phone() throws Throwable {
+		Thread.sleep(5000);
+		boolean MobileIsDisplayed = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed()) {
+				MobileIsDisplayed = PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed();
+				System.out.println("Mobile Number is Displayed");
+			}
+			else {
+				System.out.println("Mobile number is not Displayed");
+			}
+		}
+		catch (Exception e){
+			System.out.println("Mobile Number in Result is not Displayed");
+		}
+
+		boolean DirectPhoneIsDisplayed = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed()) {
+				DirectPhoneIsDisplayed = PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed();
+				System.out.println("Direct Phone Number is Displayed");
+			}
+			else {
+				System.out.println("Direct Phone number is not Displayed");
+			}
+		}
+		catch (Exception e){
+			System.out.println("Direct Phone Number in Result is not Displayed");
+		}
+		if (DirectPhoneIsDisplayed || MobileIsDisplayed){
+			log.info("User Validated that Results include Any Phone");
+		}
+		else {
+			log.info("User Validated that Both Any Mobile number or Direct phone is not displayed");
+			System.out.println("Test Manually");
+		}
+	}
+
+	@Then("Check Whether Results include Any Direct Phone")
+	public void I_Check_Whether_Results_Include_Any_Direct_Phone() throws Throwable {
+		Thread.sleep(5000);
+		boolean MobileIsDisplayed = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed()) {
+				MobileIsDisplayed = PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed();
+				System.out.println("Mobile Number is Displayed");
+			}
+			else {
+				System.out.println("Mobile number is not Displayed");
+			}
+		}
+		catch (Exception e){
+			System.out.println("Mobile Number in Result is not Displayed");
+		}
+
+		boolean DirectPhoneIsDisplayed = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed()) {
+				DirectPhoneIsDisplayed = PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed();
+				System.out.println("Direct Phone Number is Displayed");
+			}
+			else {
+				System.out.println("Direct Phone number is not Displayed");
+			}
+		}
+		catch (Exception e){
+			System.out.println("Direct Phone Number in Result is not Displayed");
+		}
+		if (DirectPhoneIsDisplayed || MobileIsDisplayed){
+			log.info("User Validated that Results include Any Direct Phone");
+		}
+		else {
+			log.info("User Validated that Both Any Mobile number or Direct phone is not displayed");
+			System.out.println("Test Manually");
+		}
+	}
+
+	@Then("Check Whether Results include Any Mobile Phone")
+	public void I_Check_Whether_Results_Include_Any_Mobile_Phone() throws Throwable {
+		Thread.sleep(5000);
+		boolean MobileIsDisplayed = false;
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed()) {
+				MobileIsDisplayed = PageObjectManager.getInstance().getLoginPage().getMobilePhoneInResult().isDisplayed();
+				System.out.println("Mobile Number is Displayed");
+			}
+			else {
+				System.out.println("Mobile number is not Displayed");
+			}
+		}
+		catch (Exception e){
+			System.out.println("Mobile Number in Result is not Displayed");
+		}
+
+		boolean DirectPhoneIsDisplayed = false;
+			if (PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed()) {
+				DirectPhoneIsDisplayed = PageObjectManager.getInstance().getLoginPage().getDirectPhoneInResult().isDisplayed();
+				System.out.println("Direct Phone Number is Displayed");
+			}
+			else {
+				System.out.println("Direct Phone number is Not Displayed");
+			}
+
+		if (DirectPhoneIsDisplayed && MobileIsDisplayed){
+			log.info("User Validated that Results include Both Direct Phone and Mobile Phone");
+			System.out.println("TC-Failed, Test Manually");
+		} else if (!MobileIsDisplayed && DirectPhoneIsDisplayed) {
+			log.info("User Validated that Any Mobile phone is not displayed");
+			System.out.println("TC-Failed, Test Manually");
+		}
+		if (!DirectPhoneIsDisplayed && MobileIsDisplayed) {
+			log.info("User Validated that Any Mobile phone is displayed");
+		}
+	}
 
 	@And("Validate Search Result")
 	public void I_Validate_Search_Result() throws Throwable {
@@ -2404,9 +3164,16 @@ public class Steps extends Global {
 
 	@And("Click On Reveal Contact Search Button")
 	public void I_Click_Reveal_Contact_search() throws Throwable {
-		clickButton(PageObjectManager.getInstance().getLoginPage().getContactSearchReveal());
-		log.info("Click On Reveal Contact Search Button");
-		Thread.sleep(3000);
+		try{
+			if (PageObjectManager.getInstance().getLoginPage().getContactSearchReveal().isDisplayed()) {
+				clickButton(PageObjectManager.getInstance().getLoginPage().getContactSearchReveal());
+				log.info("Click On Reveal Contact Search Button");
+			}
+		}
+		catch (Exception e){
+			log.info("The Contact is already Revealed");
+			Thread.sleep(3000);
+		}
 	}
 
 	@And("Get the Total Reveal Count")
@@ -2652,6 +3419,146 @@ public class Steps extends Global {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelTab());
 		log.info("User click on SalesIntel Tab");
 		Thread.sleep(5000);
+	}
+
+	@When("Check Search Box is displayed in SalesIntel Tab")
+	public void I_Check_SearchBox_In_SalesIntel_Tab() throws Throwable{
+		Thread.sleep(5000);
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getSearchBoxInSalesIntalTab().isDisplayed());
+		log.info("User Check Search Box is displayed in SalesIntel Tab");
+	}
+
+	@And("Check Recommended List is displayed in SalesIntel Tab")
+	public void I_Check_Recommended_List_is_displayed_in_SalesIntel_Tab() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getRecommendedList().isDisplayed());
+		log.info("User Check Recommended List is displayed in SalesIntel Tab");
+	}
+
+	@And("Check Saved Searches are displayed in SalesIntel Tab")
+	public void I_Check_Saved_Searches_are_displayed_in_SalesIntel_Tab() throws Throwable{
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getSavedSearchesInSiTab().isDisplayed());
+		log.info("User Check Saved Searches are displayed in SalesIntel Tab");
+	}
+	@And("Click on the First Saved Search")
+	public void I_Click_on_the_First_Saved_Search() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstSavedSearchInSiTab());
+		log.info("User Click on the First Saved Search");
+	}
+
+	@And("Click on first Recommended List")
+	public void I_Click_on_first_Recommended_List() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstRecommendedList());
+		Thread.sleep(5000);
+		log.info("User Click on first Recommended List");
+	}
+
+	@Then("Scroll Down the Page with Human Verified Contacts")
+	public void I_Scroll_Down_Human_Verified() throws Throwable {
+		String ActualRefValue = PageObjectManager.getInstance().getLoginPage().HumanVerified().getText();
+		String[] Split = ActualRefValue.split("Human Verified");
+		String ExpectedRefValue = Split[0].replaceAll(",","").trim();
+		System.out.println(ExpectedRefValue);
+		int Scroltillrange = Integer.parseInt(ExpectedRefValue);
+		JavascriptExecutor javascriptExecutor=(JavascriptExecutor) driver;
+		for (int i = 0; i < Scroltillrange; i++) {
+			javascriptExecutor.executeScript("document.querySelector('.result-scrollabel').scrollBy(0,100)");
+//			Thread.sleep(100);
+		}
+	}
+
+	@When("Validate Search Results for Recommended List")
+	public void I_Validate_Search_Results_for_Recommended_List() throws Throwable{
+		boolean FirstRecommendedListCheckBox= PageObjectManager.getInstance().getLoginPage().getFirstRecommendedListInRankings().isEnabled();
+		if (FirstRecommendedListCheckBox){
+			log.info("First Recommended CheckBox is Clicked in Search Filter");
+		}
+		else {
+			log.info("First Recommended CheckBox is not Clicked in Search Filter");
+		}
+		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstCompanyInResult());
+		String HumanVerifiedCompanies= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HumanVerifiedCompanies.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("Total Human Verified Companies are "+HvCompanyCount);
+		log.info("Validated Search Results for Recommended List");
+	}
+
+	@And("Click on Search Box in SalesIntel Tab")
+	public void I_Click_On_SearchBox_In_SalesIntel_Tab() throws Throwable{
+		Thread.sleep(1000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSearchBoxInSalesIntalTab());
+		log.info("User Click on Search Box is displayed in SalesIntel Tab");
+	}
+
+	@And("Enter Company Name in the Search Box")
+	public void I_Enter_Company_Name_In_The_Search_Box_Of_SalesIntel_Tab() throws Throwable{
+		Thread.sleep(1000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchBoxInSalesIntalTab(), ReadDatafromJson("Contact_Name","Company_domain"));
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		log.info("User Enter Company Name in the Search Box");
+	}
+
+	@And("Enter Company Domain in the Search Box")
+	public void I_Enter_Company_Domain_In_The_Search_Box_Of_SalesIntel_Tab() throws Throwable{
+		Thread.sleep(1000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSearchBoxInSalesIntalTab(), ReadDatafromJson("Contact_Name","Company_domain"));
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		log.info("User Enter Company Domain in the Search Box");
+	}
+
+	@And("Click on Search Button in The SalesIntel Tab")
+	public void I_Click_on_Search_Button_in_The_SalesIntel_Tab() throws Throwable{
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSearchButtonInSalesIntelTab());
+		log.info("User Click on Search Button in The SalesIntel Tab");
+	}
+
+	@And("Click on Companies Tab")
+	public void I_Click_on_Companies_Tab() throws Throwable{
+		clickButton(PageObjectManager.getInstance().getLoginPage().getCompaniesTab());
+		log.info("User Click on Companies Tab");
+		Thread.sleep(2000);
+	}
+
+	@Then("Validate the Searched Company Name In Search Result")
+	public void I_Validate_the_Searched_Company_Name_In_Search_Result() throws Throwable{
+		Thread.sleep(5000);
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getNoCompanyFound().isDisplayed()){
+				log.info("No Company Results found for this Company");
+			}
+			else{
+				String CompanyName=ReadDatafromJson("Contact_Name","Company_name");
+				driver.findElement(By.xpath("(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]/a[contains(text(),'" + CompanyName +"')]")).isDisplayed();
+				log.info("Searched Company is displayed in Company Results");
+			}
+		}
+		catch (Exception e){
+			System.out.println("TC-Failed, Test Manually");
+		}
+	}
+
+	@Then("Validate the Searched Company Domain In Search Result")
+	public void I_Validate_the_Searched_Company_Domain_In_Search_Result() throws Throwable{
+		Thread.sleep(5000);
+		try {
+			if (PageObjectManager.getInstance().getLoginPage().getNoCompanyFound().isDisplayed()){
+				log.info("No Company Results found for this Company");
+			}
+			else{
+				String CompanyName1=ReadDatafromJson("Contact_Name","Company_name");
+				driver.findElement(By.xpath("(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]/a[contains(text(),'" + CompanyName1 +"')]")).isDisplayed();
+				log.info("Searched Domain/Name is displayed in Company Results");
+			}
+		}
+		catch (Exception e){
+			System.out.println("TC-Failed, Test Manually");
+		}
 	}
 
 	@And("Select Multiple contact to Add Contact List")

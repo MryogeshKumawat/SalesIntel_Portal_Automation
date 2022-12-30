@@ -14,6 +14,7 @@ Feature: Validate Search By Contact Name
 #    Then Click On Browse Button
 #    And Upload File From Local Directory
 
+
   @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
     And Enter Valid Username
@@ -24,7 +25,8 @@ Feature: Validate Search By Contact Name
   Scenario: To validate application Search Page Content is displayed
     Then Click on Contact Radio Button
     When Click on Search Button
-    #Then Verify Individual section is displayed
+#    Then Scroll Down the Page with Human Verified Contacts
+    Then Verify Individual section is displayed
     And Verify Contact Name is displayed
     And Click On Clear Button
     And Click On Do Not Save Button
