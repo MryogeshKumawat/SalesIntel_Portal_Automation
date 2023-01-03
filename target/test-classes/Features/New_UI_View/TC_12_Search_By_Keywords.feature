@@ -11,7 +11,12 @@ Feature: To validate search by Keywords
     When Click on Keywords Filter
     And Click on Keywords Input box
     And Enter the Keyword
+    And Click on Company Radio Button
     And Click on Search Button
+    And Click on First Company Link in Result page
+    Then Check searched Keyboard in company detail page
+    And Click on SalesIntel Logo
+
 
   @First @Sanity
   Scenario: Logout the application

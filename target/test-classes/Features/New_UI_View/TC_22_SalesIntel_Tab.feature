@@ -48,5 +48,6 @@ Feature: To validate SalesIntel Tab
 
 
   @First @Sanity
-  Scenario: To Logout the Research Portal
-    When Logout the Research Portal
+  Scenario: Logout the application
+    When Click On Setting Options
+    Then Click On Logout Options

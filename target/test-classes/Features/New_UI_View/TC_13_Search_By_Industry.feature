@@ -14,6 +14,7 @@ Feature: To validate Search by Industry
   Scenario: To Validate search by Any of Industry Names Filter where Selected All
     When Click on Industry Filter
     And Click on Select All Check Box
+    And Click on Contact Radio Button
     Then Click on Search Button
     And Click on the First Contact in Search Result
 

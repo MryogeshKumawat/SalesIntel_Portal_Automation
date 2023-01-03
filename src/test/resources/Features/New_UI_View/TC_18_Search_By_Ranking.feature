@@ -12,6 +12,7 @@ Feature: To validate Search by Rankings
     And Click on Ranking Filter
     And Click on Select All Check Box for Rankings
     And Click on Search Button
+    And Click on Contact Radio Button
     And Check Search Results of Ranking Filter
 
 

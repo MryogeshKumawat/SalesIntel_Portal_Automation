@@ -26,7 +26,7 @@ Feature: Validate Search By Contact Name
     Then Click on Contact Radio Button
     When Click on Search Button
 #    Then Scroll Down the Page with Human Verified Contacts
-    Then Verify Individual section is displayed
+    Then Verify Contact section is displayed
     And Verify Contact Name is displayed
     And Click On Clear Button
     And Click On Do Not Save Button

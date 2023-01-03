@@ -15,6 +15,10 @@ Feature: Validate Search by Location
     And Click on Search Button
     Then Check CA for California State in Search Result
 
+  @Reg
+  Scenario: To validate All Searched Results of California State
+    Then Check California State in All Searched Results
+
   @First @Sanity
   Scenario: To validate Search by Zip Code in USA Location
     When Click On Clear Button
@@ -24,7 +28,12 @@ Feature: Validate Search by Location
     And Click on Zip code under USA
     And Enter Zip Code in the text field
 #    And Select 100 Miles in the dropdown
-    Then Click on Search Button
+    And Click on Search Button
+    Then Check CA for California State in Search Result
+
+  @Reg
+  Scenario: To validate All Searched Results of California State
+    Then Check California State in All Searched Results
 
   @First @Sanity
   Scenario: To validate Search by Metro Areas in USA Location
@@ -36,7 +45,11 @@ Feature: Validate Search by Location
     And Click on Metro Areas Text Field
     And Enter Albany GA Metro Area
     Then Click on Search Button
+    Then Check Metro Area in Search Result
 
+  @Reg
+  Scenario: To validate All Searched Results of Metro Areas in USA Location
+  Then Check Albany GA Metro Area in All Searched Results
 
   @First @Sanity
   Scenario: To validate Search by Non-USA Location
@@ -50,6 +63,10 @@ Feature: Validate Search by Location
     And Click on Search Button
     Then Check Country in Location in Search Result
 
+  @Reg
+  Scenario: To validate All Search results of Non-USA Location
+    Then Check Non-USA Location in All Searched Results
+
   @First @Sanity
   Scenario: To validate Search by Global Location
     When Click On Clear Button
@@ -61,6 +78,10 @@ Feature: Validate Search by Location
     And Enter Global Country Name
     And Click on Search Button
     Then Check Global Country in Location in Search Result
+
+  @First @Sanity
+  Scenario: To validate All Search Results of Global Location
+    Then Check Global Location in All Searched Results
 
   @First @Sanity
   Scenario: Logout the application

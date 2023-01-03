@@ -11,6 +11,7 @@ Feature: To validate Search by Revenue
     When Click on Revenue Filter
     And Enter Minimum Revenue
     And Enter Maximum Revenue
+    And Click on Contact Radio Button
     And Click on Search Button
     And Click on the First Contact in Search Result
     Then validate the Revenue in Search Result

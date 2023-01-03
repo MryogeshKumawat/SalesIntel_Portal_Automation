@@ -22,6 +22,7 @@ Feature: Validate Search By Contact Email
     And Click on Searched Contact
     Then Check email in Search Result
 
+
   @First @Sanity
   Scenario: To validate application Logout
     When Click On Setting Options

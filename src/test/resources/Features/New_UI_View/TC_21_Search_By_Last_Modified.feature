@@ -86,6 +86,10 @@ Feature: To validate Search by Last Modified Filter
     Then Validate the Last modified Date In Research Portal Where updated within 30 Days
 
   @First @Sanity
+  Scenario: To validate SalesIntel application Launching application
+    Given Launch the url
+
+  @First @Sanity
   Scenario: To validate Last Modified using Custom filter
     When Check Whether Last Modified Filter is Displayed
     And Click on Last Modified Date Filter

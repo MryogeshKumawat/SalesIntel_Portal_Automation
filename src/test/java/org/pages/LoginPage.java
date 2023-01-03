@@ -111,8 +111,8 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//*[contains(text(),'Password is')]")
 	private WebElement InvalidpasswordUsernameResult;
 
-	@FindBy(xpath = "//*[contains(text(),'Individual')]")
-	private WebElement Individualsection;
+	@FindBy(xpath = "(//div[contains(text(),'Contact')])[2]")
+	private WebElement Contactsection;
 
 	@FindBy(xpath = "//*[contains(text(),'No Contacts Found')]")
 	private WebElement ContactSearchwithInteger;
@@ -274,7 +274,8 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//input[@type='text'])[2]")
 	private WebElement MetroAreaTextField;
-
+	@FindBy(xpath = "(//span[contains(text(),'Albany, GA')])[2]")
+	private WebElement MetroAreatInSearchResult;
 	@FindBy(xpath = "(//input[@type='radio'])[2]")
 	private WebElement NonUsaRadioButton;
 
@@ -498,6 +499,8 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]/..")
 	private WebElement FirstCompanyInResult;
+	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]/a")
+	private WebElement FirstCompanyLinkInResult;
 	@FindBy(xpath = "(//span[contains(text(),'Netflix') and contains(text(),'Hulu')])[1]")
 	private WebElement TopicThresholdInResult;
 
@@ -817,8 +820,8 @@ public class LoginPage extends Global {
 	public WebElement getInvalidpasswordUsernameResult() {
 		return InvalidpasswordUsernameResult;
 	}
-	public WebElement getIndividualsection() {
-		return Individualsection;
+	public WebElement getContactsection() {
+		return Contactsection;
 	}
 	public WebElement getContactSearchwithInteger() {
 		return ContactSearchwithInteger;
@@ -1011,6 +1014,9 @@ public class LoginPage extends Global {
 
 	public WebElement getMetroAreaTextField(){
 		return MetroAreaTextField;
+	}
+	public WebElement getMetroAreatInSearchResult(){
+		return MetroAreatInSearchResult;
 	}
 
 	public WebElement getNonUsaRadioButton(){
@@ -1416,6 +1422,10 @@ public class LoginPage extends Global {
 
 	public WebElement getFirstCompanyInResult() {
 		return FirstCompanyInResult;
+	}
+
+	public WebElement getFirstCompanyLinkInResult() {
+		return FirstCompanyLinkInResult;
 	}
 
 
