@@ -19,6 +19,11 @@ Feature: To validate search by Keywords
 
 
   @First @Sanity
+  Scenario: To validate All Search Results of Keywords
+    Then Check Keyword in All Searched Results
+
+
+  @First @Sanity
   Scenario: Logout the application
     When Click On Setting Options
     Then Click On Logout Options

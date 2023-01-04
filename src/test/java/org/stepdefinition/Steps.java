@@ -1164,14 +1164,13 @@ public class Steps extends Global {
 		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
 		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
 		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Albany, GA Metro Area in All searched Results");
-		for (int i=2;i<=HvContactCount;i++){
+		for (int i=2;i<=HvContactCount+1;i++){
 			Assert.assertTrue(driver.findElement(By.xpath("(//span[contains(text(),'Albany, GA')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//span[contains(text(),'Albany, GA')])["+i+"]")));
-			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
 			int j=i-1;
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+j+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
 			System.out.println("Sn "+j+". "+ContactName+" is working in Albany, GA Metro Area");
 		}
-
 		log.info("User Check Albany, GA Metro Area in All Searched Results");
 	}
 
@@ -1235,11 +1234,11 @@ public class Steps extends Global {
 		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
 		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Non-USA Location in All searched Results");
 		String NonUSACountry = ReadDatafromJson("Contact_Name", "Non-USA Country");
-		for (int i=3;i<=HvContactCount;i++){
+		for (int i=3;i<=HvContactCount+2;i++){
 			Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),'"+NonUSACountry+"')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//*[contains(text(),'"+NonUSACountry+"')])["+i+"]")));
-			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
 			int j=i-2;
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
 			System.out.println("Sn "+j+". "+ContactName+" is working in "+NonUSACountry+" Location");
 			j=0;
 		}
@@ -1263,12 +1262,12 @@ public class Steps extends Global {
 		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
 		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Validate the Global Location in All searched Results");
 		String GlobalCountryName = ReadDatafromJson("Contact_Name", "Global Country");
-		for (int i=3;i<=HvContactCount;i++){
-			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'"+GlobalCountryName+"')])["+i+"]")).isDisplayed());
-			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'"+GlobalCountryName+"')])["+i+"]")));
-			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+		for (int i=3;i<=HvContactCount+2;i++){
+			Assert.assertTrue(driver.findElement(By.xpath("(//span[contains(text(),'"+GlobalCountryName+"')])["+i+"]")).isDisplayed());
+			clickButton(driver.findElement(By.xpath("(//span[contains(text(),'"+GlobalCountryName+"')])["+i+"]")));
 			int j=i-2;
-			System.out.println("Sn "+j+". "+ContactName+" is working in Global Location");
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+j+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+j+". "+ContactName+" is working in "+GlobalCountryName+" Location");
 			j=0;
 		}
 
@@ -1312,6 +1311,27 @@ public class Steps extends Global {
 		String Keyword=ReadDatafromJson("Contact_Name", "Keyword");
 		Assert.assertTrue(driver.findElement(By.xpath("//p[contains(text(),'"+Keyword+"')]")).isDisplayed());
 		log.info("User validated searched Keyboard in company detail page");
+	}
+
+	@Then("Check Keyword in All Searched Results")
+	public void I_Check_Keyword_In_All_Searched_Results() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().isDisplayed());
+		String HvCompanyCountNotTrimmed =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HvCompanyCountNotTrimmed.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("There are total "+HvCompanyCount+" Human Verified Companies, Validate the  Keyword in All searched Results");
+		String Keyword=ReadDatafromJson("Contact_Name", "Keyword");
+		for (int i=2;i<=HvCompanyCount+1;i++){
+			String CompanyName=driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a/..")).getText();
+			clickButton(driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a")));
+			Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),'"+Keyword+"')])")).isDisplayed());
+			int j=i-1;
+			System.out.println("Sn "+j+". "+CompanyName+" Company contains "+Keyword+" Keyword");
+			j=0;
+			clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelLogo());
+		}
+
+		log.info("User Check Keyword in All Searched Results");
 	}
 
 	@When("Click on Industry Filter")
@@ -1527,9 +1547,7 @@ public class Steps extends Global {
 	}
 
 	@And("Click on company name")
-	public void
-
-	I_Click_On_Company_Name() throws Throwable {
+	public void I_Click_On_Company_Name() throws Throwable {
 		Thread.sleep(5000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstCompanyLinkInResult());
 		log.info("User Click on company name");
@@ -1591,6 +1609,7 @@ public class Steps extends Global {
 		log.info("User Click on SalesIntel Logo");
 		Thread.sleep(2000);
 	}
+
 
 	@When("Click on Back to search results")
 	public void I_Click_On_Back_To_Search_Results() throws Throwable{
@@ -2633,6 +2652,7 @@ public class Steps extends Global {
 	@And("Click on Particular Date")
 	public void I_Click_Custom_Date_Is_Displayed() throws Throwable{
 		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getPreviousMonthInCalndar());
 		clickButton(PageObjectManager.getInstance().getLoginPage().getCustomDateForLastModified());
 		log.info("User Click on Particular Date");
 		Thread.sleep(2000);

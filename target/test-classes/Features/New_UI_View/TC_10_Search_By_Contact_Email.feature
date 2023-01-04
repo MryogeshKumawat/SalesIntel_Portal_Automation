@@ -10,6 +10,7 @@ Feature: Validate Search By Contact Email
   Scenario: To validate application Search by Invalid Email Address
     Then Click on Contact Email Button
     When Enter Invalid Contact Email Address
+    And Click on Contact Radio Button
     Then Click on Search Button
     And Verify Error Message is displayed When search with Invalid Email Address
 

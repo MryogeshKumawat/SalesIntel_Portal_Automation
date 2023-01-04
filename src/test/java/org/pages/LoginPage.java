@@ -423,6 +423,9 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//Select[@name='lastModified']")
 	private WebElement LastModifiedDropDown;
 
+	@FindBy(xpath = "//button[@class='previous']")
+	private WebElement PreviousMonthInCalndar;
+
 	@FindBy(xpath = "//table[@role='grid']/tbody/tr[2]/td[2]")
 	private WebElement CustomDateForLastModified;
 	@FindBy(xpath = "//table[@role='grid']/tbody/tr[2]/td[2]/../../../../../div[1]/bs-datepicker-navigation-view/button[2]/span")
@@ -1322,6 +1325,10 @@ public class LoginPage extends Global {
 
 	public WebElement getLastModifiedDropDown() {
 		return LastModifiedDropDown;
+	}
+
+	public WebElement getPreviousMonthInCalndar() {
+		return PreviousMonthInCalndar;
 	}
 
 	public WebElement getCustomDateForLastModified() {

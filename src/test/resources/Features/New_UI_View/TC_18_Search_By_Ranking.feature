@@ -11,8 +11,8 @@ Feature: To validate Search by Rankings
     When Check Ranking filter is displayed
     And Click on Ranking Filter
     And Click on Select All Check Box for Rankings
-    And Click on Search Button
     And Click on Contact Radio Button
+    And Click on Search Button
     And Check Search Results of Ranking Filter
 
 

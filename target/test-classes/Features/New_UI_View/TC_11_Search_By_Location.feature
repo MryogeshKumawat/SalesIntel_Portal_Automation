@@ -12,6 +12,7 @@ Feature: Validate Search by Location
     Then Click on Location Tab
     Then Click on State Combobox
     Then Enter the Data in State Combobox
+    And Click on Contact Radio Button
     And Click on Search Button
     Then Check CA for California State in Search Result
 
@@ -79,7 +80,7 @@ Feature: Validate Search by Location
     And Click on Search Button
     Then Check Global Country in Location in Search Result
 
-  @First @Sanity
+  @Reg
   Scenario: To validate All Search Results of Global Location
     Then Check Global Location in All Searched Results
 
