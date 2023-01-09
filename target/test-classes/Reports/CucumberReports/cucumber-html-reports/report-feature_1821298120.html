@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SalesIntel Site Automation</td>
-      <td>04 Jan 2023, 15:45</td>
+      <td>16 Nov 2022, 17:47</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">To validate search by Keywords</td>
-          <td >0</td>
-          <td      class="failed"    >4</td>
-          <td     class="skipped"   >10</td>
+          <td      class="passed"    >11</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">14</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">11</td>
 
-          <td >0</td>
-          <td  class="failed"    >4</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >3</td>
           <td class="total">4</td>
 
-          <td class="duration" data-value="7080381400">7.080</td>
+          <td class="duration" data-value="60744766600">1:0.744</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -192,14 +192,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.077</span>
+  <span class="lead-duration duration">7.422</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">To validate SalesIntel application Valid User Username and Valid Password</span>
+  <span class="name">Launch URL</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -241,6 +241,22 @@ $(document).ready(function() {
 
 
         </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.106</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
     </div>
   </div>
 
@@ -249,7 +265,7 @@ $(document).ready(function() {
 <div class="steps inner-level">
   <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -263,83 +279,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When failed">
-  <span class="keyword indention">When</span>
-  <span class="name">Enter Valid Username</span>
-
-  <span class="lead-duration duration">2.076</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.NullPointerException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
-	at org.base.Global.enterData(Global.java:73)
-	at org.stepdefinition.Steps.i_enter_the_username(Steps.java:96)
-	at &#10045;.Enter Valid Username(file:/D:/Automation/New_Revdriver/SalesIntel_QA_Automation-master/src/test/resources/Features/New_UI_View/TC_12_Search_By_Keywords.feature:5)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Enter Valid Password</span>
+  <span class="name">Launch the url</span>
 
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Click On Login Button</span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.422</span>
 
 </div>
 
@@ -366,7 +310,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-4">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -378,13 +322,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details  in ">
+    <div id="after-4" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -392,12 +336,13 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-5">
           <a>Error message</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;screenshot&quot; is null
-	at org.runner.BeforeExection.afterExecutedClass(BeforeExection.java:41)
+      <div id="msg-5" class="collapse collapsable-details ">
+        <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:250)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at cucumber.runtime.Utils$1.call(Utils.java:26)
@@ -443,6 +388,37 @@ $(document).ready(function() {
 
 
         </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.303</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-529690272.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-529690272.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
     </div>
   </div>
 
@@ -460,14 +436,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">10.293</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">To validate Search by Keywords</span>
+  <span class="name">To validate SalesIntel application Valid User Username and Valid Password</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -476,7 +452,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details  in ">
+  <div id="element-7" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -509,15 +485,31 @@ $(document).ready(function() {
 
 
         </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
     </div>
   </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -527,15 +519,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">Click on Keywords Filter</span>
+  <span class="name">Enter Valid Username</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.165</span>
 
 </div>
 
@@ -543,24 +535,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
-          <a>java.lang.NullPointerException:</a>
-      </div>
-      <div id="msg-10" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at org.base.Global.clickButton(Global.java:77)
-	at org.stepdefinition.Steps.I_Click_On_Keywords_Filter(Steps.java:1280)
-	at &#10045;.Click on Keywords Filter(file:/D:/Automation/New_Revdriver/SalesIntel_QA_Automation-master/src/test/resources/Features/New_UI_View/TC_12_Search_By_Keywords.feature:11)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -576,38 +550,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Click on Keywords Input box</span>
+  <span class="name">Enter Valid Password</span>
 
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Enter the Keyword</span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.066</span>
 
 </div>
 
@@ -630,119 +577,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click on Company Radio Button</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click on Search Button</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click on First Company Link in Result page</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check searched Keyboard in company detail page</span>
+  <span class="name">Click On Login Button</span>
 
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Click on SalesIntel Logo</span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">10.062</span>
 
 </div>
 
@@ -769,9 +608,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-11">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -781,65 +620,33 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-11" class="inner-level collapse collapsable-details  in ">
+    <div id="after-10" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.382</span>
 
           </div>
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
-          <a>Error message</a>
-      </div>
-      <div id="msg-12" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;screenshot&quot; is null
-	at org.runner.BeforeExection.afterExecutedClass(BeforeExection.java:41)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
-	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.TestCase.run(TestCase.java:50)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre>
-      </div>
-    </div>
-  </div>
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.168</span>
+
+          </div>
+
+
 
 
 
@@ -863,14 +670,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">36.715</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">To validate All Search Results of Keywords</span>
+  <span class="name">To validate Search by Keywords</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -879,11 +686,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details  in ">
+  <div id="element-11" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -895,7 +702,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-14" class="inner-level collapse collapsable-details ">
+    <div id="before-12" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -912,15 +719,31 @@ $(document).ready(function() {
 
 
         </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
     </div>
   </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -930,15 +753,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Check Keyword in All Searched Results</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Contact Radio Button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">20.112</span>
 
 </div>
 
@@ -947,22 +770,113 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
-          <a>java.lang.NullPointerException:</a>
+
+
+
+
+
+
+
+
+
+
       </div>
-      <div id="msg-16" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
-	at org.stepdefinition.Steps.I_Check_Keyword_In_All_Searched_Results(Steps.java:1318)
-	at &#10045;.Check Keyword in All Searched Results(file:/D:/Automation/New_Revdriver/SalesIntel_QA_Automation-master/src/test/resources/Features/New_UI_View/TC_12_Search_By_Keywords.feature:23)
-</pre>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Click on Keywords Filter</span>
+
+  <span class="lead-duration duration">0.081</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-    </div>
-  </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Keywords Input box</span>
+
+  <span class="lead-duration duration">0.088</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Keyword</span>
+
+  <span class="lead-duration duration">6.306</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Search Button</span>
+
+  <span class="lead-duration duration">10.125</span>
+
+</div>
+
+
+
+
+
 
 
 
@@ -982,7 +896,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-17">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-14">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -994,11 +908,11 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-17" class="inner-level collapse collapsable-details  in ">
+    <div id="after-14" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1008,12 +922,13 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-15">
           <a>Error message</a>
       </div>
-      <div id="msg-18" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;screenshot&quot; is null
-	at org.runner.BeforeExection.afterExecutedClass(BeforeExection.java:41)
+      <div id="msg-15" class="collapse collapsable-details ">
+        <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:250)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at cucumber.runtime.Utils$1.call(Utils.java:26)
@@ -1059,6 +974,37 @@ $(document).ready(function() {
 
 
         </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.327</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-669920007.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-16" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-669920007.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
     </div>
   </div>
 
@@ -1076,10 +1022,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">5.001</span>
+  <span class="lead-duration duration">6.312</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -1092,11 +1038,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details  in ">
+  <div id="element-17" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1108,7 +1054,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-20" class="inner-level collapse collapsable-details ">
+    <div id="before-18" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1125,15 +1071,31 @@ $(document).ready(function() {
 
 
         </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">BeforeExection.extentReportBeforeExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
     </div>
   </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-21">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1143,15 +1105,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-21" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">Click On Setting Options</span>
 
-  <span class="lead-duration duration">5.001</span>
+  <span class="lead-duration duration">3.120</span>
 
 </div>
 
@@ -1160,24 +1122,6 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-22">
-          <a>java.lang.NullPointerException:</a>
-      </div>
-      <div id="msg-22" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at org.base.Global.clickButton(Global.java:77)
-	at org.stepdefinition.Steps.I_click_welcome_Logout(Steps.java:3784)
-	at &#10045;.Click On Setting Options(file:/D:/Automation/New_Revdriver/SalesIntel_QA_Automation-master/src/test/resources/Features/New_UI_View/TC_12_Search_By_Keywords.feature:28)
-</pre>
-      </div>
-    </div>
-  </div>
-
 
 
 
@@ -1192,11 +1136,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">Click On Logout Options</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.192</span>
 
 </div>
 
@@ -1223,7 +1167,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-23">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-20">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -1235,11 +1179,11 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-23" class="inner-level collapse collapsable-details  in ">
+    <div id="after-20" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
-              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+              <span class="location name">BeforeExection.extentReportAfterExecutedClass(Scenario)</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1249,12 +1193,13 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-24">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-21">
           <a>Error message</a>
       </div>
-      <div id="msg-24" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;screenshot&quot; is null
-	at org.runner.BeforeExection.afterExecutedClass(BeforeExection.java:41)
+      <div id="msg-21" class="collapse collapsable-details ">
+        <pre>java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.base.Global.generateTestReport(Global.java:250)
+	at org.runner.BeforeExection.extentReportAfterExecutedClass(BeforeExection.java:55)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at cucumber.runtime.Utils$1.call(Utils.java:26)
@@ -1298,6 +1243,37 @@ $(document).ready(function() {
 
 
 
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">BeforeExection.afterExecutedClass(Scenario)</span>
+
+  <span class="lead-duration duration">0.259</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-22" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-529690272.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-22" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-529690272.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>

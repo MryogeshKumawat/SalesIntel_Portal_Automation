@@ -586,7 +586,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Finance')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Finance')])["+i+"]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working in Finance department");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working in Finance department");
 		}
 
 		log.info("User Check Finance Department in All Searched Results");
@@ -615,7 +615,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'HR')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'HR')])["+i+"]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working in HR department");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working in HR department");
 		}
 
 		log.info("User Check HR Department in All Searched Results");
@@ -644,7 +644,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("((//div[contains(text(),'IT')])["+i+"])[1]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("((//div[contains(text(),'IT')])["+i+"])[1]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working in IT department");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working in IT department");
 		}
 
 		log.info("User Check IT Department in All Searched Results");
@@ -671,7 +671,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Legal')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Legal')])["+i+"]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working in Legal department");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working in Legal department");
 		}
 
 		log.info("User Check Legal Department in All Searched Results");
@@ -698,7 +698,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Marketing')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Marketing')])["+i+"]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working in Marketing department");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working in Marketing department");
 		}
 
 		log.info("User Check Marketing Department in All Searched Results");
@@ -726,7 +726,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Operations')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Operations')])["+i+"]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working in Operations department");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working in Operations department");
 		}
 
 		log.info("User Check Operations Department in All Searched Results");
@@ -754,7 +754,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Procurement')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Procurement')])["+i+"]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working in Procurement department");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working in Procurement department");
 		}
 
 		log.info("User Check Procurement Department in All Searched Results");
@@ -782,7 +782,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'R&D')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'R&D')])["+i+"]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working in R&D department");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working in R&D department");
 		}
 
 		log.info("User Check R&D Department in All Searched Results");
@@ -810,7 +810,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Sales')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Sales')])["+i+"]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working in Sales department");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working in Sales department");
 		}
 
 		log.info("User Check Sales Department in All Searched Results");
@@ -838,7 +838,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'Cross Functional')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'Cross Functional')])["+i+"]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working in Cross Functional department");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working in Cross Functional department");
 		}
 
 		log.info("User Check Cross Functional Department in All Searched Results");
@@ -998,7 +998,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(text(),'"+JobTitle+"')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//div[contains(text(),'"+JobTitle+"')])["+i+"]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working as "+JobTitle+"");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working as "+JobTitle+"");
 		}
 
 		log.info("Check Job Title in All Searched Results");
@@ -1088,7 +1088,7 @@ public class Steps extends Global {
 			Assert.assertTrue(driver.findElement(By.xpath("(//span[contains(text(),'CA')])["+i+"]")).isDisplayed());
 			clickButton(driver.findElement(By.xpath("(//span[contains(text(),'CA')])["+i+"]")));
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+i+". "+ContactName+" is working in California State");
+			System.out.println("Sn "+i+". ["+ContactName+"] is working in California State");
 		}
 
 		log.info("User Check California State in All Searched Results");
@@ -1169,7 +1169,7 @@ public class Steps extends Global {
 			clickButton(driver.findElement(By.xpath("(//span[contains(text(),'Albany, GA')])["+i+"]")));
 			int j=i-1;
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+j+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+j+". "+ContactName+" is working in Albany, GA Metro Area");
+			System.out.println("Sn "+j+". ["+ContactName+"] is working in Albany, GA Metro Area");
 		}
 		log.info("User Check Albany, GA Metro Area in All Searched Results");
 	}
@@ -1239,7 +1239,7 @@ public class Steps extends Global {
 			clickButton(driver.findElement(By.xpath("(//*[contains(text(),'"+NonUSACountry+"')])["+i+"]")));
 			int j=i-2;
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+j+". "+ContactName+" is working in "+NonUSACountry+" Location");
+			System.out.println("Sn "+j+". ["+ContactName+"] is working in "+NonUSACountry+" Location");
 			j=0;
 		}
 
@@ -1267,7 +1267,7 @@ public class Steps extends Global {
 			clickButton(driver.findElement(By.xpath("(//span[contains(text(),'"+GlobalCountryName+"')])["+i+"]")));
 			int j=i-2;
 			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+j+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
-			System.out.println("Sn "+j+". "+ContactName+" is working in "+GlobalCountryName+" Location");
+			System.out.println("Sn "+j+". ["+ContactName+"] is working in "+GlobalCountryName+" Location");
 			j=0;
 		}
 
@@ -1415,6 +1415,31 @@ public class Steps extends Global {
 		Thread.sleep(3000);
 	}
 
+	@Then("Check Revenue in All Searched Results")
+	public void I_Check_Revenue_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Let's Validate the Revenue in All searched Results");
+		int MinimumRevenue = Integer.parseInt(ReadDatafromJson("Contact_Name", "Minimum Revenue"));
+		int MaximumRevenue = Integer.parseInt(ReadDatafromJson("Contact_Name", "Maximum Revenue"));
+		for (int i=1;i<=HvContactCount;i++){
+			clickButton(driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span")));
+			String RevenueInResult = driver.findElement(By.xpath("(//div[contains(text(),'Company Revenue:')])["+i+"]/../span")).getText();
+			String RevenueCleaned = RevenueInResult.replaceAll("[A-Z]", "");
+			double RevenueDouble = Double.parseDouble(RevenueCleaned);
+			int RevenueInteger = (int) RevenueDouble;
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			if (RevenueInteger >= MinimumRevenue && RevenueInteger <= MaximumRevenue) {
+				System.out.println("Sn "+i+". Contact Name = ["+ContactName+"] and his Company Revenue is ["+RevenueInResult+"] Where Revenue range is [" +MinimumRevenue+" - "+MaximumRevenue+"]");
+			} else {
+				System.out.println("Sn "+i+". Contact Name = ["+ContactName+"] and his Company Revenue is ["+RevenueInResult+"] Where Revenue range is [" +MinimumRevenue+" - "+MaximumRevenue+"] - TC Failed");
+			}
+		}
+
+		log.info("User Check Revenue  in All Searched Results");
+	}
+
 	@Then("validate the Employee Size in Search Result")
 	public void I_Check_Employee_Size_In_Result() throws Throwable {
 		Thread.sleep(2000);
@@ -1432,6 +1457,31 @@ public class Steps extends Global {
 			log.info("User Validated that Searched Company Size is Out of the Input Range");
 		}
 		Thread.sleep(3000);
+	}
+
+	@Then("Check Employee or Size in All Searched Results")
+	public void I_Check_Employee_Or_Size_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Let's Validate the Employees or Size in All searched Results");
+		int MinimumEmployeeSize = Integer.parseInt(ReadDatafromJson("Contact_Name", "Minimum Employee Size"));
+		int MaximumEmployeeSize = Integer.parseInt(ReadDatafromJson("Contact_Name", "Maximum Employee Size"));
+		for (int i=1;i<=HvContactCount;i++){
+			clickButton(driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span")));
+			String EmployeeSizeInResult = driver.findElement(By.xpath("(//div[contains(text(),'Company Size:')])["+i+"]/../span")).getText();
+			String EmployeeSizeCleaned = EmployeeSizeInResult.replaceAll("[A-Z]", "");
+			double EmployeeSizeDouble = Double.parseDouble(EmployeeSizeCleaned);
+			int EmployeeSizeInteger = (int) EmployeeSizeDouble;
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			if (EmployeeSizeInteger >= MinimumEmployeeSize && EmployeeSizeInteger <= MaximumEmployeeSize) {
+				System.out.println("Sn "+i+". Contact Name = ["+ContactName+"] and his Company Employee Size is ["+EmployeeSizeInResult+"] Where Employee Size range is [" +MinimumEmployeeSize+" - "+MaximumEmployeeSize+"]");
+			} else {
+				System.out.println("Sn "+i+". Contact Name = ["+ContactName+"] and his Company Employee Size is ["+EmployeeSizeInResult+"] Where Employee Size range is [" +MinimumEmployeeSize+" - "+MaximumEmployeeSize+"] - TC Failed");
+			}
+		}
+
+		log.info("User Check Employees/Size  in All Searched Results");
 	}
 
 	@When("Validate TECHNOGRAPHICS is displayed")
@@ -1657,7 +1707,7 @@ public class Steps extends Global {
 //}
 
 		@Then("Check Any technographic product in Company detail page")
-	public void I_Check_Any_Product_In_Result() throws Throwable {
+		public void I_Check_Any_Product_In_Result() throws Throwable {
 			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
 			Robot robot = new Robot();
 			robot.keyPress(KeyEvent.VK_ENTER);
@@ -1715,6 +1765,82 @@ public class Steps extends Global {
 			}
 
 		}
+
+	@Then("Check Any technographic product in Company detail page of All Searched Results")
+	public void I_Check_Any_technographic_product_in_Company_detail_page_of_All_Searched_Results() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().isDisplayed());
+		String HvCompanyCountNotTrimmed =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HvCompanyCountNotTrimmed.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("There are total "+HvCompanyCount+" Human Verified Companies, Validate the  Keyword in All searched Results");
+		String Keyword=ReadDatafromJson("Contact_Name", "Keyword");
+		for (int i=2;i<=HvCompanyCount+1;i++){
+			String CompanyName=driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a/..")).getText();
+			clickButton(driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a")));
+			int j=i-1;
+			clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean FirstProductForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					FirstProductForAny = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("First product is not displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name2"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean SecondProductForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					SecondProductForAny = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e) {
+//				System.out.println("Second product is not Displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name3"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean ThirdProductForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					ThirdProductForAny = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("Third product is not displayed in Results");
+			}
+			Thread.sleep(2000);
+			if (FirstProductForAny || SecondProductForAny || ThirdProductForAny){
+//				log.info("User Validated Any one technographic product in Company detail page");
+			}
+			else {
+//				log.info("Not even one Searched product is displayed For "+CompanyName+" Company TC - Failed");
+			}
+			System.out.println("Sn "+j+". ["+CompanyName+"] Company contains Any one of the searched product");
+			clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelLogo());
+		}
+
+		log.info("User Check Any product in All Searched Results");
+	}
+
 
 
 		@Then("Check Any technographic product in Company detail page for All Search Results")
@@ -1793,6 +1919,82 @@ public class Steps extends Global {
 	}
 
 
+	@Then("Check Any technographic Provider in Company detail page of All Searched Results")
+	public void I_Check_Any_technographic_Provider_in_Company_detail_page_of_All_Searched_Results() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().isDisplayed());
+		String HvCompanyCountNotTrimmed =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HvCompanyCountNotTrimmed.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("There are total "+HvCompanyCount+" Human Verified Companies, Validate the  Keyword in All searched Results");
+		String Keyword=ReadDatafromJson("Contact_Name", "Keyword");
+		for (int i=2;i<=HvCompanyCount+1;i++){
+			String CompanyName=driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a/..")).getText();
+			clickButton(driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a")));
+			int j=i-1;
+			clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name1"));
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean FirstProviderForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+					FirstProviderForAny = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("First Provider is not displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name2"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean SecondProviderForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+					SecondProviderForAny = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+				}
+			}
+			catch (Exception e) {
+//				System.out.println("Second Provider is not Displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name3"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean ThirdProviderForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+					ThirdProviderForAny = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("Third Provider is not displayed in Results");
+			}
+			Thread.sleep(2000);
+			if (FirstProviderForAny || SecondProviderForAny || ThirdProviderForAny){
+//				log.info("User Validated Any one technographic Provider in Company detail page");
+			}
+			else {
+//				log.info("Not even one Searched Provider is displayed For "+CompanyName+" Company TC - Failed");
+			}
+			System.out.println("Sn "+j+". ["+CompanyName+"] Company contains Any one of the searched Provider");
+			clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelLogo());
+		}
+
+		log.info("User Check Any Provider in All Searched Results");
+	}
+
+
 	@And("Check Any technographic Category in Company detail page")
 	public void I_Check_Any_Category_In_Result() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Category Name1"));
@@ -1854,13 +2056,6 @@ public class Steps extends Global {
 	}
 
 
-
-	@Then("Check Any technographic Category in Company detail page to Validate Select ALL")
-	public void I_Check_Any_Categories_In_Company_Detail_To_Validate_Select_ALL() throws Throwable{
-		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed());
-		log.info("User Check Any technographic Category in Company detail page to Validate Select ALL");
-	}
-
 	@Then("Check All technographic products in Company detail page")
 	public void I_Check_All_Products_In_Result() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
@@ -1921,6 +2116,83 @@ public class Steps extends Global {
 
 	}
 
+	@Then("Check All technographic products in Company detail page of All Searched Results")
+	public void I_Check_All_technographic_products_in_Company_detail_page_of_All_Searched_Results() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().isDisplayed());
+		String HvCompanyCountNotTrimmed =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HvCompanyCountNotTrimmed.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("There are total "+HvCompanyCount+" Human Verified Companies, Validate the  Keyword in All searched Results");
+		String Keyword=ReadDatafromJson("Contact_Name", "Keyword");
+		for (int i=2;i<=HvCompanyCount+1;i++){
+			String CompanyName=driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a/..")).getText();
+			clickButton(driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a")));
+			int j=i-1;
+			clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean FirstProductForAll = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					FirstProductForAll = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("First product is not displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name2"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean SecondProductForAll = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					SecondProductForAll = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e) {
+//				System.out.println("Second product is not Displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name3"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean ThirdProductForAll = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					ThirdProductForAll = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("Third product is not displayed in Results");
+			}
+			Thread.sleep(2000);
+			if (FirstProductForAll && SecondProductForAll && ThirdProductForAll){
+//				log.info("User Validated All technographic products in Company detail page");
+			}
+			else {
+//				log.info("Not even one Searched product is displayed For "+CompanyName+" Company TC - Failed");
+			}
+			System.out.println("Sn "+j+". ["+CompanyName+"] Company contains All of the searched products");
+			clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelLogo());
+		}
+
+		log.info("User Check All products in All Searched Results");
+	}
+
+
+
 	@Then("Check All technographic Providers in Company detail page")
 	public void I_Check_All_Providers_In_Result() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name1"));
@@ -1979,6 +2251,81 @@ public class Steps extends Global {
 			log.info("All Searched Provider are not displayed in Company Detail page TC - Failed");
 		}
 
+	}
+
+	@Then("Check All technographic Providers in Company detail page of All Searched Results")
+	public void I_Check_All_technographic_Providers_in_Company_detail_page_of_All_Searched_Results() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().isDisplayed());
+		String HvCompanyCountNotTrimmed =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HvCompanyCountNotTrimmed.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("There are total "+HvCompanyCount+" Human Verified Companies, Validate the  Keyword in All searched Results");
+		String Keyword=ReadDatafromJson("Contact_Name", "Keyword");
+		for (int i=2;i<=HvCompanyCount+1;i++){
+			String CompanyName=driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a/..")).getText();
+			clickButton(driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a")));
+			int j=i-1;
+			clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name1"));
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean FirstProviderForAll = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+					FirstProviderForAll = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("First Provider is not displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name2"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean SecondProviderForAll = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+					SecondProviderForAll = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+				}
+			}
+			catch (Exception e) {
+//				System.out.println("Second Provider is not Displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name3"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean ThirdProviderForAll = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+					ThirdProviderForAll = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("Third Provider is not displayed in Results");
+			}
+			Thread.sleep(2000);
+			if (FirstProviderForAll && SecondProviderForAll && ThirdProviderForAll){
+//				log.info("User Validated All technographic Providers in Company detail page");
+			}
+			else {
+//				log.info("Not even one Searched Provider is displayed For "+CompanyName+" Company TC - Failed");
+			}
+			System.out.println("Sn "+j+". ["+CompanyName+"] Company contains All of the searched Providers");
+			clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelLogo());
+		}
+
+		log.info("User Check All Providers in All Searched Results");
 	}
 
 	@Then("Check All technographic Category in Company detail page")
@@ -2104,6 +2451,84 @@ public class Steps extends Global {
 	}
 
 
+	@Then("Check None of the technographic products in Company detail page of All Searched Results")
+	public void I_Check_None_Of_The_technographic_products_in_Company_detail_page_of_All_Searched_Results() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().isDisplayed());
+		String HvCompanyCountNotTrimmed =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HvCompanyCountNotTrimmed.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("There are total "+HvCompanyCount+" Human Verified Companies, Validate the  Keyword in All searched Results");
+		String Keyword=ReadDatafromJson("Contact_Name", "Keyword");
+		for (int i=2;i<=HvCompanyCount+1;i++){
+			String CompanyName=driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a/..")).getText();
+			clickButton(driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a")));
+			int j=i-1;
+			clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name1"));
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean FirstProductForNone = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					FirstProductForNone = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("First product is not displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name2"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean SecondProductForNone = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					SecondProductForNone = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e) {
+//				System.out.println("Second product is not Displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Product Name3"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean ThirdProductForNone = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed()) {
+					ThirdProductForNone = PageObjectManager.getInstance().getLoginPage().getProductInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("Third product is not displayed in Results");
+			}
+			Thread.sleep(2000);
+			if (!FirstProductForNone && !SecondProductForNone && !ThirdProductForNone){
+//				log.info("User Validated None of the technographic products in Company detail page");
+			}
+			else {
+//				log.info("Not even one Searched product is displayed For "+CompanyName+" Company TC - Failed");
+			}
+			System.out.println("Sn "+j+". ["+CompanyName+"] Company does not contain the searched products");
+			clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelLogo());
+		}
+
+		log.info("User Check None of the product is displayed in All Searched Results");
+	}
+
+
+
+
 	@Then("Check None of the technographic Provider is displayed in Company detail page")
 	public void I_Check_None_Providers_In_Result() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name1"));
@@ -2164,6 +2589,81 @@ public class Steps extends Global {
 
 	}
 
+
+	@Then("Check None of the technographic Providers in Company detail page of All Searched Results")
+	public void I_Check_None_Of_The_technographic_Providers_in_Company_detail_page_of_All_Searched_Results() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().isDisplayed());
+		String HvCompanyCountNotTrimmed =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HvCompanyCountNotTrimmed.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("There are total "+HvCompanyCount+" Human Verified Companies, Validate the  Keyword in All searched Results");
+		String Keyword=ReadDatafromJson("Contact_Name", "Keyword");
+		for (int i=2;i<=HvCompanyCount+1;i++){
+			String CompanyName=driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a/..")).getText();
+			clickButton(driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a")));
+			int j=i-1;
+			clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name1"));
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean FirstProviderForNone = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+					FirstProviderForNone = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("First Provider is not displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name2"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean SecondProviderForNone = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+					SecondProviderForNone = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+				}
+			}
+			catch (Exception e) {
+//				System.out.println("Second Provider is not Displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Provider Name3"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean ThirdProviderForNone = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed()) {
+					ThirdProviderForNone = PageObjectManager.getInstance().getLoginPage().getProviderInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("Third Provider is not displayed in Results");
+			}
+			Thread.sleep(2000);
+			if (!FirstProviderForNone && !SecondProviderForNone && !ThirdProviderForNone){
+//				log.info("User Validated None of the technographic Providers in Company detail page");
+			}
+			else {
+//				log.info("Not even one Searched Provider is displayed For "+CompanyName+" Company TC - Failed");
+			}
+			System.out.println("Sn "+j+". ["+CompanyName+"] Company does not contain the searched Providers");
+			clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelLogo());
+		}
+
+		log.info("User Check None of the Provider is displayed in All Searched Results");
+	}
 
 	@Then("Check None of the technographic Category is displayed in Company detail page")
 	public void I_Check_None_Category_In_Result() throws Throwable {
@@ -2346,7 +2846,64 @@ public class Steps extends Global {
 		String IndustryInResult = ReadDatafromJson("Contact_Name" , "Industry Name");
 		Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),\'" + IndustryInResult + "\')])[2]")).isDisplayed());
 		log.info("User check the Industry in Search Result");
-		Thread.sleep(5000);
+	}
+
+	@Then("Check Industry Name in All Searched Results")
+	public void I_Check_Industry_Name_In_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Let's Validate the Industry Name in All searched Results");
+		String IndustryName = ReadDatafromJson("Contact_Name" , "Industry Name");
+		for (int i=1;i<=HvContactCount;i++){
+			clickButton(driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span")));
+			Assert.assertTrue(driver.findElement(By.xpath("(//strong[contains(text(),'Name')]/../../../../../article/div)["+i+"]/div/div[2]/app-contact-overview/section/article/div/div[3]/div/span[contains(text(),'"+IndustryName+"')]")).isDisplayed());
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			System.out.println("Sn "+i+". ["+ContactName+"] Contains "+IndustryName+" Industry in Contact details");
+		}
+
+		log.info("User Check Industry Name  in All Searched Results");
+	}
+
+
+	@Then("Check search results that None of the contact should contain the Industry")
+	public void I_Check_search_results_that_None_of_the_contact_should_contain_the_Industry() throws Throwable{
+		String IndustryName = ReadDatafromJson("Contact_Name" , "Industry Name");
+		try
+		{
+			WebElement IndustryInResult=driver.findElement(By.xpath("(//strong[contains(text(),'Name')]/../../../../../article/div)[1]/div/div[2]/app-contact-overview/section/article/div/div[3]/div/span[contains(text(),'"+IndustryName+"')]"));
+			if (IndustryInResult.isDisplayed()){
+				log.info("User validated that this contact contains the Industry in it - TC Failed");
+		}
+
+		}catch (Exception e){
+			log.info("User validated that this contact does not contain the Industry");
+		}
+	}
+
+	@Then("Check None of the Industry Name is displayed in All Searched Results")
+	public void I_Check_None_of_the_Industry_Name_is_displayed_in_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Let's Validate the Industry Name in All searched Results");
+		String IndustryName = ReadDatafromJson("Contact_Name" , "Industry Name");
+		for (int i=1;i<=HvContactCount;i++){
+			clickButton(driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span")));
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			try
+			{
+				WebElement IndustryInResult=driver.findElement(By.xpath("(//strong[contains(text(),'Name')]/../../../../../article/div)["+i+"]/div/div[2]/app-contact-overview/section/article/div/div[3]/div/span[contains(text(),'"+IndustryName+"')]"));
+				if (IndustryInResult.isDisplayed()){
+					System.out.println("Sn "+i+". "+ContactName+"Contains "+IndustryName+" Industry in Contact details  -- TC Failed");
+				}
+
+			}catch (Exception e){
+				System.out.println("Sn "+i+". ["+ContactName+"] Does not Contain "+IndustryName+" Industry in Contact details");
+			}
+		}
+
+		log.info("User Check Industry Name  in All Searched Results");
 	}
 
 //	@Then("Check the Industry is not in Search Result")
@@ -2365,12 +2922,49 @@ public class Steps extends Global {
 		Thread.sleep(5000);
 	}
 
+
+	@Then("Check Industry for NAICS code in All Searched Results")
+	public void I_Check_Industry_for_NAICS_code_in_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Let's Validate the Industry Name in All searched Results");
+		String IndustryName = ReadDatafromJson("Contact_Name" , "NAICS Code Industry");
+		for (int i=1;i<=HvContactCount;i++){
+			clickButton(driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span")));
+			Assert.assertTrue(driver.findElement(By.xpath("(//strong[contains(text(),'Name')]/../../../../../article/div)["+i+"]/div/div[2]/app-contact-overview/section/article/div/div[3]/div/span[contains(text(),'"+IndustryName+"')]")).isDisplayed());
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			String NAICScode=ReadDatafromJson("Contact_Name", "NAICS Code");
+			System.out.println("Sn "+i+". ["+ContactName+"] Contains "+IndustryName+" Industry for "+NAICScode+" NAICS code");
+		}
+
+		log.info("User Check Industry for NAICS code in All Searched Results");
+	}
+
 	@Then("Check Industry for SIC code in Search Result")
 	public void I_Check_Industry_For_SIC_In_Result() throws Throwable{
 		String SICIndustryInResult = ReadDatafromJson("Contact_Name" , "SIC Code Industry");
 		Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),\'" + SICIndustryInResult + "\')])[1]")).isDisplayed());
 		log.info("USer Check Industry for SIC code in Search Result");
 		Thread.sleep(3000);
+	}
+
+	@Then("Check Industry for SIC code in Search Result in All Searched Results")
+	public void I_Check_Industry_for_SIC_code_in_Search_Result_in_All_Searched_Results() throws Throwable {
+		String HumanVerifiedContact= PageObjectManager.getInstance().getLoginPage().getHumanVerifiedContactsCount().getText();
+		String HvContactCountTrimmed =HumanVerifiedContact.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvContactCount =Integer.parseInt(HvContactCountTrimmed);
+		System.out.println("There are total "+HvContactCount+" Human Verified Contacts, Let's Validate the Industry Name in All searched Results");
+		String IndustryName = ReadDatafromJson("Contact_Name" , "SIC Code Industry");
+		for (int i=1;i<=HvContactCount;i++){
+			clickButton(driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span")));
+			Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),'" + IndustryName + "')])[1]")).isDisplayed());
+			String ContactName=driver.findElement(By.xpath("//strong[contains(text(),'Name')]/../../../../../article/div["+i+"]/div/div/div/div[1]/div/div[2]/span/span")).getText();
+			String SICcode=ReadDatafromJson("Contact_Name", "SIC Code");
+			System.out.println("Sn "+i+". ["+ContactName+"] Contains "+IndustryName+" Industry for "+SICcode+" SIC code");
+		}
+
+		log.info("User Check Industry for SIC code in All Searched Results");
 	}
 
 	@And("CLick on NAICS Code input box")
@@ -2630,7 +3224,7 @@ public class Steps extends Global {
 	public void I_Click_Last_Modified_Filter() throws Throwable{
 		Thread.sleep(2000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedFilter());
-		log.info("User Click Result Last Modified");
+		log.info("User Click on Last Modified Filter");
 	}
 
 	@And("Click on Last Modified Dropdown")
@@ -3295,8 +3889,8 @@ public class Steps extends Global {
 
 	@And("Get the Total Reveal Count")
 	public void I_get_Total_Reveal_Count() throws Throwable {
-//		gettext(PageObjectManager.getInstance().getLoginPage().getUpdatedReveal());
-		System.out.println(PageObjectManager.getInstance().getLoginPage().getUpdatedReveal().getText());
+//		gettext(PageObjectManager.getInstance().getLoginPage().getTotalCredits());
+		System.out.println(PageObjectManager.getInstance().getLoginPage().getTotalCredits().getText());
 		log.info("Get the Total Reveal Count");
 		Thread.sleep(3000);
 	}
@@ -3833,14 +4427,19 @@ public class Steps extends Global {
 	}
 	@And("Click on Contact List Drop Down Option")
 	public void I_Click_Contact_List_Drop_Down() throws Throwable {
-		Select selectcontact = new Select(PageObjectManager.getInstance().getLoginPage().getContactListDropdown());
-		selectcontact.selectByVisibleText(ReadDatafromJson("Contact_Name", "Contactlist"));
+		clickButton(PageObjectManager.getInstance().getLoginPage().getContactListDropdown());
+		String ContactList=ReadDatafromJson("Contact_Name", "Contactlist");
+		Thread.sleep(2000);
+		Assert.assertTrue(driver.findElement(By.xpath("(//span[contains(text(),'"+ContactList+"')])[3]")).isDisplayed());
+		clickButton(driver.findElement(By.xpath("(//span[contains(text(),'"+ContactList+"')])[3]")));
 		log.info("User Click On Add all Contact to Existing List");
 	}
 	@And("Click on Company List Drop Down Option")
 	public void I_Click_Company_List_Drop_Down() throws Throwable {
-		Select selectcompany = new Select(PageObjectManager.getInstance().getLoginPage().getCompanyListDropdown());
-		selectcompany.selectByVisibleText(ReadDatafromJson("Contact_Name", "Companylist"));
+		clickButton(PageObjectManager.getInstance().getLoginPage().getCompanyListDropdown());
+		String CompanyList = ReadDatafromJson("Contact_Name", "Companylist");
+		Assert.assertTrue(driver.findElement(By.xpath("(//span[contains(text(),'"+CompanyList+"')])[3]")).isDisplayed());
+		clickButton(driver.findElement(By.xpath("(//span[contains(text(),'"+CompanyList+"')])[3]")));
 		log.info("User Click on Company List Drop Down Option");
 	}
 	@Then("Click On Company Tab")

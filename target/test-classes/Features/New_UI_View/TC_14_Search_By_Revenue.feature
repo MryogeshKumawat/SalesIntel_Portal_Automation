@@ -14,7 +14,11 @@ Feature: To validate Search by Revenue
     And Click on Search Button
     And Click on the First Contact in Search Result
     Then validate the Revenue in Search Result
+    And Click on the First Contact in Search Result
 
+  @Reg
+  Scenario: To Validate search by Million Revenue Filter
+    Then Check Revenue in All Searched Results
 
   @First @Sanity
   Scenario: Logout the application

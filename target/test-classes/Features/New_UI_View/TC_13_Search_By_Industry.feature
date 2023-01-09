@@ -1,6 +1,5 @@
 Feature: To validate Search by Industry
 
-
   @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
     When Enter Valid Username
@@ -26,6 +25,11 @@ Feature: To validate Search by Industry
     And Click on Search Button
     And Click on the First Contact in Search Result
     Then Check the Industry in Search Result
+    And Click on the First Contact in Search Result
+
+  @Reg
+  Scenario: To Validate All search results for Any Of Industry Name filter
+    Then Check Industry Name in All Searched Results
 
   @First @Sanity
   Scenario: To Validate search by None Of Industry Names Filter Where Selected All
@@ -48,6 +52,12 @@ Feature: To validate Search by Industry
     And Click on Particular Industry
     And Click on Search Button
     And Click on the First Contact in Search Result
+    Then Check search results that None of the contact should contain the Industry
+    And Click on the First Contact in Search Result
+
+  @Reg
+  Scenario: To Validate All search Results that None Of the contact contain Industry Name
+    Then Check None of the Industry Name is displayed in All Searched Results
 
 
   @First @Sanity
@@ -61,6 +71,11 @@ Feature: To validate Search by Industry
     And Click on Search Button
     And Click on the First Contact in Search Result
     Then Check Industry for NAICS code in Search Result
+    And Click on the First Contact in Search Result
+
+    @Reg
+  Scenario: To validate Industry for NAICS code in All Search Results
+    Then Check Industry for NAICS code in All Searched Results
 
 
   @First @Sanity
@@ -75,7 +90,11 @@ Feature: To validate Search by Industry
     And Click on Search Button
     And Click on the First Contact in Search Result
     Then Check Industry for SIC code in Search Result
+    And Click on the First Contact in Search Result
 
+      @Reg
+  Scenario: To validate Industry for SIC code in All Search Results
+    Then Check Industry for SIC code in Search Result in All Searched Results
 
 
   @First @Sanity

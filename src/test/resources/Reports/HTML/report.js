@@ -6342,35 +6342,6 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate All Search Results of Keywords",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@First"
-    },
-    {
-      "name": "@Sanity"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Check Keyword in All Searched Results",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Steps.I_Check_Keyword_In_All_Searched_Results()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
   "name": "Logout the application",
   "description": "",
   "keyword": "Scenario",
@@ -6639,6 +6610,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Click on the First Contact in Search Result",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Searched_Contact()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
@@ -6837,6 +6818,26 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Check search results that None of the contact should contain the Industry",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Steps.I_Check_search_results_that_None_of_the_contact_should_contain_the_Industry()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the First Contact in Search Result",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Searched_Contact()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
@@ -6942,6 +6943,16 @@ formatter.step({
 });
 formatter.match({
   "location": "Steps.I_Check_Industry_For_NAICS_In_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the First Contact in Search Result",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Searched_Contact()"
 });
 formatter.result({
   "status": "passed"
@@ -7061,6 +7072,16 @@ formatter.step({
 });
 formatter.match({
   "location": "Steps.I_Check_Industry_For_SIC_In_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the First Contact in Search Result",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Searched_Contact()"
 });
 formatter.result({
   "status": "passed"
@@ -7238,6 +7259,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Click on the First Contact in Search Result",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Searched_Contact()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
@@ -7382,6 +7413,16 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
+  "name": "Click on Contact Radio Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Contact_Radio_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "Click on Search Button",
   "keyword": "And "
 });
@@ -7407,6 +7448,16 @@ formatter.step({
 });
 formatter.match({
   "location": "Steps.I_Check_Employee_Size_In_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on the First Contact in Search Result",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_Searched_Contact()"
 });
 formatter.result({
   "status": "passed"
@@ -7614,6 +7665,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Click on SalesIntel Logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_SalesIntel_Logo()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
@@ -7749,6 +7810,16 @@ formatter.step({
 });
 formatter.match({
   "location": "Steps.I_Check_All_Products_In_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on SalesIntel Logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_SalesIntel_Logo()"
 });
 formatter.result({
   "status": "passed"
@@ -7892,6 +7963,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Click on SalesIntel Logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_SalesIntel_Logo()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
@@ -8017,6 +8098,16 @@ formatter.step({
 });
 formatter.match({
   "location": "Steps.I_Check_Any_Provider_In_Result()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on SalesIntel Logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_SalesIntel_Logo()"
 });
 formatter.result({
   "status": "passed"
@@ -8160,6 +8251,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Click on SalesIntel Logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_SalesIntel_Logo()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
@@ -8299,11 +8400,21 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Click on SalesIntel Logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.I_Click_On_SalesIntel_Logo()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate Select All Checkbox where Search by Any Provide in Technographics filter",
+  "name": "To validate Select All Checkbox where Search by Any Category in Technographics filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -8409,11 +8520,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Check Any technographic Category in Company detail page to Validate Select ALL",
+  "name": "Check Any technographic Category in Company detail page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_Check_Any_Categories_In_Company_Detail_To_Validate_Select_ALL()"
+  "location": "Steps.I_Check_Any_Category_In_Result()"
 });
 formatter.result({
   "status": "passed"
@@ -8422,7 +8533,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate Search by Any Provide in Technographics filter",
+  "name": "To validate Search by Any Category in Technographics filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -8528,11 +8639,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Check Any technographic Category in Company detail page",
+  "name": "Check Any technographic Provider in Company detail page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Steps.I_Check_Any_Category_In_Result()"
+  "location": "Steps.I_Check_Any_Provider_In_Result()"
 });
 formatter.result({
   "status": "passed"
@@ -8541,7 +8652,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate Search by All Provide in Technographics filter",
+  "name": "To validate Search by All Category in Technographics filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -8670,7 +8781,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate Search by None Provide in Technographics filter",
+  "name": "To validate Search by None Category in Technographics filter",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -10170,7 +10281,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "To validate Search By All ROD Lists",
+  "name": "To validate Search By one ROD Lists",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -11233,7 +11344,8 @@ formatter.match({
   "location": "Steps.I_Click_Last_Modified_Dropdown()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//Select[@name\u003d\u0027lastModified\u0027]\"}\n  (Session info: chrome\u003d108.0.5359.125)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.243\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dac405f3d7d947b358c37688406369d1\n*** Element info: {Using\u003dxpath, value\u003d//Select[@name\u003d\u0027lastModified\u0027]}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:77)\r\n\tat org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)\r\n\tat ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:14)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "Select Within Last 7 Days",
@@ -11243,7 +11355,7 @@ formatter.match({
   "location": "Steps.I_Click_Last_Modified_Within_7_Days()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Contact Radio Button",
@@ -11253,7 +11365,7 @@ formatter.match({
   "location": "Steps.I_Click_Contact_Radio_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Search Button",
@@ -11263,7 +11375,7 @@ formatter.match({
   "location": "Steps.I_Click_Search_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on the First Contact in Search Result",
@@ -11273,7 +11385,7 @@ formatter.match({
   "location": "Steps.I_Click_Searched_Contact()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click On Reveal Contact Search Button",
@@ -11283,7 +11395,7 @@ formatter.match({
   "location": "Steps.I_Click_Reveal_Contact_search()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "get the Contact Work Email and store it",
@@ -11293,7 +11405,7 @@ formatter.match({
   "location": "Steps.I_Copy_And_Store_The_Work_Email()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Launch Research Portal",
@@ -11303,7 +11415,7 @@ formatter.match({
   "location": "Steps.launch_the_Research_Portal_url()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Login To Research Portal",
@@ -11313,7 +11425,7 @@ formatter.match({
   "location": "Steps.i_Login_To_Research()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Search Contact With Email",
@@ -11323,7 +11435,7 @@ formatter.match({
   "location": "Steps.I_Search_With_Email()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate the Last modified Date In Research Portal Where modified within 7 Days",
@@ -11333,8 +11445,9 @@ formatter.match({
   "location": "Steps.I_Validate_Last_Modified_Date_In_Research_Portal_7_Days()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded0.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -11411,7 +11524,8 @@ formatter.match({
   "location": "Steps.I_Click_Last_Modified_Dropdown()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//Select[@name\u003d\u0027lastModified\u0027]\"}\n  (Session info: chrome\u003d108.0.5359.125)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.243\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dac405f3d7d947b358c37688406369d1\n*** Element info: {Using\u003dxpath, value\u003d//Select[@name\u003d\u0027lastModified\u0027]}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:77)\r\n\tat org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)\r\n\tat ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:34)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "Select Within Last 14 Days",
@@ -11421,7 +11535,7 @@ formatter.match({
   "location": "Steps.I_Click_Last_Modified_Within_14_Days()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Contact Radio Button",
@@ -11431,7 +11545,7 @@ formatter.match({
   "location": "Steps.I_Click_Contact_Radio_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Search Button",
@@ -11441,7 +11555,7 @@ formatter.match({
   "location": "Steps.I_Click_Search_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on the First Contact in Search Result",
@@ -11451,7 +11565,7 @@ formatter.match({
   "location": "Steps.I_Click_Searched_Contact()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click On Reveal Contact Search Button",
@@ -11461,7 +11575,7 @@ formatter.match({
   "location": "Steps.I_Click_Reveal_Contact_search()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "get the Contact Work Email and store it",
@@ -11471,7 +11585,7 @@ formatter.match({
   "location": "Steps.I_Copy_And_Store_The_Work_Email()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Launch Research Portal",
@@ -11481,7 +11595,7 @@ formatter.match({
   "location": "Steps.launch_the_Research_Portal_url()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Login To Research Portal",
@@ -11491,7 +11605,7 @@ formatter.match({
   "location": "Steps.i_Login_To_Research()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Search Contact With Email",
@@ -11501,7 +11615,7 @@ formatter.match({
   "location": "Steps.I_Search_With_Email()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate the Last modified Date In Research Portal Where modified within 14 Days",
@@ -11511,8 +11625,9 @@ formatter.match({
   "location": "Steps.I_Validate_Last_Modified_Date_In_Research_Portal_14_Days()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded1.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -11589,7 +11704,8 @@ formatter.match({
   "location": "Steps.I_Click_Last_Modified_Dropdown()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//Select[@name\u003d\u0027lastModified\u0027]\"}\n  (Session info: chrome\u003d108.0.5359.125)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.243\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dac405f3d7d947b358c37688406369d1\n*** Element info: {Using\u003dxpath, value\u003d//Select[@name\u003d\u0027lastModified\u0027]}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:77)\r\n\tat org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)\r\n\tat ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:55)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "Select Within Last 21 Days",
@@ -11599,7 +11715,7 @@ formatter.match({
   "location": "Steps.I_Click_Last_Modified_Within_21_Days()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Contact Radio Button",
@@ -11609,7 +11725,7 @@ formatter.match({
   "location": "Steps.I_Click_Contact_Radio_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Search Button",
@@ -11619,7 +11735,7 @@ formatter.match({
   "location": "Steps.I_Click_Search_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click On Reveal Contact Search Button",
@@ -11629,7 +11745,7 @@ formatter.match({
   "location": "Steps.I_Click_Reveal_Contact_search()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on the First Contact in Search Result",
@@ -11639,7 +11755,7 @@ formatter.match({
   "location": "Steps.I_Click_Searched_Contact()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "get the Contact Work Email and store it",
@@ -11649,7 +11765,7 @@ formatter.match({
   "location": "Steps.I_Copy_And_Store_The_Work_Email()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Launch Research Portal",
@@ -11659,7 +11775,7 @@ formatter.match({
   "location": "Steps.launch_the_Research_Portal_url()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Login To Research Portal",
@@ -11669,7 +11785,7 @@ formatter.match({
   "location": "Steps.i_Login_To_Research()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Search Contact With Email",
@@ -11679,7 +11795,7 @@ formatter.match({
   "location": "Steps.I_Search_With_Email()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate the Last modified Date In Research Portal Where updated within 21 Days",
@@ -11689,8 +11805,9 @@ formatter.match({
   "location": "Steps.I_Validate_Last_Modified_Date_In_Research_Portal_21_Days()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded2.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -11767,7 +11884,8 @@ formatter.match({
   "location": "Steps.I_Click_Last_Modified_Dropdown()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//Select[@name\u003d\u0027lastModified\u0027]\"}\n  (Session info: chrome\u003d108.0.5359.125)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.243\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dac405f3d7d947b358c37688406369d1\n*** Element info: {Using\u003dxpath, value\u003d//Select[@name\u003d\u0027lastModified\u0027]}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:77)\r\n\tat org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)\r\n\tat ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:76)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "Select Within Last 30 Days",
@@ -11777,7 +11895,7 @@ formatter.match({
   "location": "Steps.I_Click_Last_Modified_Within_30_Days()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Contact Radio Button",
@@ -11787,7 +11905,7 @@ formatter.match({
   "location": "Steps.I_Click_Contact_Radio_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Search Button",
@@ -11797,7 +11915,7 @@ formatter.match({
   "location": "Steps.I_Click_Search_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click On Reveal Contact Search Button",
@@ -11807,7 +11925,7 @@ formatter.match({
   "location": "Steps.I_Click_Reveal_Contact_search()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on the First Contact in Search Result",
@@ -11817,7 +11935,7 @@ formatter.match({
   "location": "Steps.I_Click_Searched_Contact()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "get the Contact Work Email and store it",
@@ -11827,7 +11945,7 @@ formatter.match({
   "location": "Steps.I_Copy_And_Store_The_Work_Email()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Launch Research Portal",
@@ -11837,7 +11955,7 @@ formatter.match({
   "location": "Steps.launch_the_Research_Portal_url()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Login To Research Portal",
@@ -11847,7 +11965,7 @@ formatter.match({
   "location": "Steps.i_Login_To_Research()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Search Contact With Email",
@@ -11857,7 +11975,7 @@ formatter.match({
   "location": "Steps.I_Search_With_Email()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate the Last modified Date In Research Portal Where updated within 30 Days",
@@ -11867,8 +11985,9 @@ formatter.match({
   "location": "Steps.I_Validate_Last_Modified_Date_In_Research_Portal_30_Days()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded3.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -11945,7 +12064,8 @@ formatter.match({
   "location": "Steps.I_Click_Last_Modified_Dropdown()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//Select[@name\u003d\u0027lastModified\u0027]\"}\n  (Session info: chrome\u003d108.0.5359.125)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.243\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dac405f3d7d947b358c37688406369d1\n*** Element info: {Using\u003dxpath, value\u003d//Select[@name\u003d\u0027lastModified\u0027]}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:77)\r\n\tat org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)\r\n\tat ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:96)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "Select Custom filter",
@@ -11955,7 +12075,7 @@ formatter.match({
   "location": "Steps.I_Click_Last_Modified_Custom()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Check particular date is displayed",
@@ -11965,7 +12085,7 @@ formatter.match({
   "location": "Steps.I_Check_Custom_Date_Is_Displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Particular Date",
@@ -11975,7 +12095,7 @@ formatter.match({
   "location": "Steps.I_Click_Custom_Date_Is_Displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "get The Selected Date and Store it",
@@ -11985,7 +12105,7 @@ formatter.match({
   "location": "Steps.I_Get_The_Selected_Date_And_Store_It()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Contact Radio Button",
@@ -11995,7 +12115,7 @@ formatter.match({
   "location": "Steps.I_Click_Contact_Radio_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Search Button",
@@ -12005,7 +12125,7 @@ formatter.match({
   "location": "Steps.I_Click_Search_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click On Reveal Contact Search Button",
@@ -12015,7 +12135,7 @@ formatter.match({
   "location": "Steps.I_Click_Reveal_Contact_search()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on the First Contact in Search Result",
@@ -12025,7 +12145,7 @@ formatter.match({
   "location": "Steps.I_Click_Searched_Contact()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "get the Contact Work Email and store it",
@@ -12035,7 +12155,7 @@ formatter.match({
   "location": "Steps.I_Copy_And_Store_The_Work_Email()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Launch Research Portal",
@@ -12045,7 +12165,7 @@ formatter.match({
   "location": "Steps.launch_the_Research_Portal_url()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Login To Research Portal",
@@ -12055,7 +12175,7 @@ formatter.match({
   "location": "Steps.i_Login_To_Research()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Search Contact With Email",
@@ -12065,7 +12185,7 @@ formatter.match({
   "location": "Steps.I_Search_With_Email()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Validate the Last modified Date In Research Portal Where updated within the Selected Date",
@@ -12075,8 +12195,9 @@ formatter.match({
   "location": "Steps.I_Validate_Last_Modified_Date_In_Research_Portal_For_Custom_Date()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.embedding("image/png", "embedded4.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -12104,8 +12225,10 @@ formatter.match({
   "location": "Steps.I_Click_Logout_Button_In_Research()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),\u0027Logout\u0027)]\"}\n  (Session info: chrome\u003d108.0.5359.125)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YOGESH\u0027, ip: \u0027172.16.17.243\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\Astegic\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dac405f3d7d947b358c37688406369d1\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(text(),\u0027Logout\u0027)]}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)\r\n\tat org.base.Global.clickButton(Global.java:77)\r\n\tat org.stepdefinition.Steps.I_Click_Logout_Button_In_Research(Steps.java:278)\r\n\tat ✽.Logout the Research Portal(file:TC_21_Search_By_Last_Modified.feature:113)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded5.png", null);
 formatter.after({
   "status": "passed"
 });

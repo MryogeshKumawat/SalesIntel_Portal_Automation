@@ -18,7 +18,7 @@ Feature: To validate search by Keywords
     And Click on SalesIntel Logo
 
 
-  @First @Sanity
+  @Reg
   Scenario: To validate All Search Results of Keywords
     Then Check Keyword in All Searched Results
 

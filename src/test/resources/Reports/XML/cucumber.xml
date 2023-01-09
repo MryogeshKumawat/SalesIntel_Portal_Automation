@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="164" time="5164.828844">
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Launching application" time="10.48061">
+<testsuite failures="6" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="163" time="4442.347728">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Launching application" time="7.653486">
         <system-out><![CDATA[Given Launch the url........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login Screen Content" time="0.337112">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login Screen Content" time="0.308547">
         <system-out><![CDATA[Then Validate Login Page Title is displayed.................................passed
 And Validate Email Field is displayed.......................................passed
 And Validate Password Field is displayed....................................passed
@@ -14,20 +14,20 @@ And Validate FAQ Link is displayed..........................................pass
 And Validate Login Button is displayed......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Tapping only Login Button" time="10.14394">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Tapping only Login Button" time="10.148321">
         <system-out><![CDATA[When Click On Login Button..................................................passed
 Then Validate Error Text when Tried with Invalid Username and Invalid Password.passed
 And Validate Error Text when Tried with Invalid Password and Invalid Username.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Valid Password" time="10.234136">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Valid Password" time="10.2378">
         <system-out><![CDATA[When Enter Invalid Username.................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 Then Validate Error Text when Tried with Invalid Username and Valid Password.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Valid Username and Invalid Password" time="12.250505">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Valid Username and Invalid Password" time="12.270952">
         <system-out><![CDATA[When Clear the Text in Username Field.......................................passed
 And Clear the Text in Password Field........................................passed
 And Enter Valid Username....................................................passed
@@ -35,7 +35,7 @@ And Enter Invalid Password..................................................pass
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Invalid Password" time="10.245051">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Login with Invalid Username and Invalid Password" time="10.222613">
         <system-out><![CDATA[When Clear the Text in Username Field.......................................passed
 And Clear the Text in Password Field........................................passed
 And Enter Invalid Username..................................................passed
@@ -44,7 +44,7 @@ And Click On Login Button...................................................pass
 Then Validate Error Text when Tried with Invalid Username and Valid Password.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Forget Password" time="16.309501">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Forget Password" time="16.382359">
         <system-out><![CDATA[When Click on Forget Password...............................................passed
 Then Verify Forget Email Address Field is displayed.........................passed
 When Enter Forget Email Address.............................................passed
@@ -52,11 +52,11 @@ Then Verify Reset Password Button is displayed..............................pass
 When Click On Reset Password Button.........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Remember Me" time="0.058126">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Remember Me" time="0.048722">
         <system-out><![CDATA[When Click on Remember Me...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.301453">
+    <testcase classname="Validate application login Page" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.301353">
         <system-out><![CDATA[When Click on Remember Me...................................................passed
 And Clear the Text in Username Field........................................passed
 And Clear the Text in Password Field........................................passed
@@ -65,18 +65,18 @@ And Enter Valid Password....................................................pass
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate application login Page" name="To validate application Logout" time="8.278388">
+    <testcase classname="Validate application login Page" name="To validate application Logout" time="8.317813">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.217898">
+    <testcase classname="Validate Search By Contact Name" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.21202">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search Page Content is displayed" time="40.776348">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search Page Content is displayed" time="40.759288">
         <system-out><![CDATA[Then Click on Contact Radio Button..........................................passed
 When Click on Search Button.................................................passed
 Then Verify Contact section is displayed....................................passed
@@ -88,11 +88,11 @@ Then Verify First Name is displayed.........................................pass
 And Verify Last Name is displayed...........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search without Firstname and LastName" time="10.091782">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search without Firstname and LastName" time="10.164249">
         <system-out><![CDATA[When Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search by FirstName and LastName using Integer Value" time="31.500069">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search by FirstName and LastName using Integer Value" time="31.522952">
         <system-out><![CDATA[When Click on Contact Name Button...........................................passed
 And Enter the First Name with Integer Value.................................passed
 And Enter the Last Name with Integer Value..................................passed
@@ -100,7 +100,7 @@ And Click on Search Button..................................................pass
 Then Verify Error Message is displayed When search with FirstName and LastName only Integer.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Search by Valid FirstName and LastName" time="30.551281">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Search by Valid FirstName and LastName" time="10.602042">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the First Name....................................................passed
@@ -111,7 +111,7 @@ When Clear the Text in First Name Field.....................................pass
 And Clear the Text in Last Name Field.......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into New Contact List" time="36.682158">
+    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into New Contact List" time="36.671777">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click on Contact Name Button...........................................passed
@@ -126,12 +126,12 @@ When Enter New Contact List.................................................pass
 And Click On Create New Contact List Save Button............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Contact into the Contact List" time="10.3671">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Contact into the Contact List" time="10.403152">
         <system-out><![CDATA[When Click On List Tab......................................................passed
 Then Select Preview Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into Existing Contact List" time="46.703244">
+    <testcase classname="Validate Search By Contact Name" name="To validate application add multiple contact into Existing Contact List" time="49.017808">
         <system-out><![CDATA[When Click On SalesIntel Tab................................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -147,13 +147,13 @@ And Click on Contact List Drop Down Option..................................pass
 And Click On Add Contact List Save Button...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Delete Contact List" time="15.426047">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Delete Contact List" time="15.48107">
         <system-out><![CDATA[And Click On List Tab.......................................................passed
 And Delete Contact List.....................................................passed
 And Click On Delete Contact List............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact1 Search by Valid FirstName and LastName" time="29.802443">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact1 Search by Valid FirstName and LastName" time="29.778672">
         <system-out><![CDATA[Then Click On SalesIntel Tab................................................passed
 And Clear the Text in First Name Field......................................passed
 And Clear the Text in Last Name Field.......................................passed
@@ -164,7 +164,7 @@ And Click On Contact Search1................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact2 Search by Valid FirstName and LastName" time="16.559197">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact2 Search by Valid FirstName and LastName" time="16.61843">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name2............................................passed
@@ -174,7 +174,7 @@ And Click On Contact Search2................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact3 Search by Valid FirstName and LastName" time="16.536958">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact3 Search by Valid FirstName and LastName" time="16.580551">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name3............................................passed
@@ -184,7 +184,7 @@ And Click On Contact Search3................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact4 Search by Valid FirstName and LastName" time="16.517339">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact4 Search by Valid FirstName and LastName" time="16.587783">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name4............................................passed
@@ -194,7 +194,7 @@ And Click On Contact Search4................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact5 Search by Valid FirstName and LastName" time="16.480857">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Reveal Contact5 Search by Valid FirstName and LastName" time="16.50979">
         <system-out><![CDATA[When Clear the Text in First Name Field.....................................passed
 And Clear the Text in Last Name Field.......................................passed
 And Enter the Search First Name5............................................passed
@@ -204,23 +204,23 @@ And Click On Contact Search5................................................pass
 And Get the Total Reveal Count..............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Name" name="To validate application Logout" time="8.233533">
+    <testcase classname="Validate Search By Contact Name" name="To validate application Logout" time="8.258668">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.251608">
+    <testcase classname="Validate Search By Company" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.225986">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Search without Company Name" time="15.217213">
+    <testcase classname="Validate Search By Company" name="To validate application Search without Company Name" time="15.2126">
         <system-out><![CDATA[Then Click on Company Radio Button..........................................passed
 When Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Search by Valid Company Name" time="52.767542">
+    <testcase classname="Validate Search By Company" name="To validate application Search by Valid Company Name" time="52.741328">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click On Company.......................................................passed
@@ -229,7 +229,7 @@ And Click on Search Button..................................................pass
 And Validate Company Search Result..........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into New Company List" time="63.544425">
+    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into New Company List" time="63.70759">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 When Click On Company.......................................................passed
@@ -244,7 +244,7 @@ When Enter New Company List.................................................pass
 And Click On Create New Company List Save Button............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into Existing Company List" time="73.610817">
+    <testcase classname="Validate Search By Company" name="To validate application add multiple Company into Existing Company List" time="73.674906">
         <system-out><![CDATA[Then Click On SalesIntel Tab................................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -260,31 +260,31 @@ And Click on Company List Drop Down Option..................................pass
 And Click On Add Company List Save Button...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Delete Company List" time="25.482053">
+    <testcase classname="Validate Search By Company" name="To validate application Delete Company List" time="25.450116">
         <system-out><![CDATA[And Click On List Tab.......................................................passed
 And Delete Company List.....................................................passed
 And Click On Delete Company List............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Company" name="To validate application Logout" time="8.231547">
+    <testcase classname="Validate Search By Company" name="To validate application Logout" time="8.288723">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.216643">
+    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.202478">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="40.442364">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="40.443047">
         <system-out><![CDATA[Then Click on Contact Radio Button..........................................passed
 When Click on Search Button.................................................passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="50.57605">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="50.60672">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Search Button..................................................passed
@@ -292,13 +292,13 @@ And Click On Sort Icon For Display Contact based on Job Title...............pass
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.351083">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.396823">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="60.600649">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="60.609249">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Search Button..................................................passed
@@ -306,7 +306,7 @@ And Click On Sort Icon For Display Contact based on Dept....................pass
 And Click On Sort Icon For Display Contact based on Dept....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="50.585893">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="50.618648">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Search Button..................................................passed
@@ -314,7 +314,7 @@ And Click On Sort Icon For Display Contact based on Comp....................pass
 And Click On Sort Icon For Display Contact based on Comp....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="50.573002">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="50.574355">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Search Button..................................................passed
@@ -322,66 +322,66 @@ And Click On Sort Icon For Display Contact based on Location................pass
 And Click On Sort Icon For Display Contact based on Location................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="8.243928">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="8.263108">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.200205">
+    <testcase classname="Validate Contact by Sort Option" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.22084">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="45.460165">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Name" time="45.513094">
         <system-out><![CDATA[Then Click on Company Radio Button..........................................passed
 When Click on Search Button.................................................passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 And Click On Sort Icon For Display Contact based on Contact Name............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="40.331681">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job" time="40.357606">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 And Click On Sort Icon For Display Contact based on Job Title...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.369652">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Job Level" time="40.37719">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 And Click On Sort Icon For Display Contact based on Job Level...............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="50.346974">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Dept" time="50.500989">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Dept....................passed
 And Click On Sort Icon For Display Contact based on Dept....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="40.358013">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Comp" time="40.391055">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Comp....................passed
 And Click On Sort Icon For Display Contact based on Comp....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="40.36037">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application to Sort the Contact Details by Location" time="40.366445">
         <system-out><![CDATA[And Click on Search Button..................................................passed
 And Click On Sort Icon For Display Contact based on Location................passed
 And Click On Sort Icon For Display Contact based on Location................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="8.247765">
+    <testcase classname="Validate Contact by Sort Option" name="To validate application Logout" time="8.250695">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.208646">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate SalesIntel application Valid User Username and Valid Password" time="10.202415">
         <system-out><![CDATA[And Enter Universal Valid Username..........................................passed
 And Enter Universal Valid Password..........................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Search Contact for ROD" time="59.14353">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Search Contact for ROD" time="59.205603">
         <system-out><![CDATA[Then Click on Contact Radio Button for Universal User.......................passed
 When Click on Search Button.................................................passed
 Then Verify Contact Name is displayed.......................................passed
@@ -394,43 +394,43 @@ And Click on Search Button..................................................pass
 And Click On Searched Contact...............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application &quot;Request Verification&quot;" time="9.124053">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application &quot;Request Verification&quot;" time="9.147552">
         <system-out><![CDATA[Then Verify Request Verification Button is displayed........................passed
 And Click On Request Verification Button....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application for Validate &quot;Requested Verification&quot;" time="10.044983">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application for Validate &quot;Requested Verification&quot;" time="10.052169">
         <system-out><![CDATA[Then Verify Requested Verification Status...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Contact Requested in ROD Section" time="16.451595">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Contact Requested in ROD Section" time="16.461946">
         <system-out><![CDATA[Then Verify RoD Tab is displayed............................................passed
 And Click On RoD Tab........................................................passed
 And Verify Requested ROD is Displayed in ROD tab............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate RoD Contacts Verification" name="To validate application Logout" time="8.292951">
+    <testcase classname="Validate RoD Contacts Verification" name="To validate application Logout" time="8.372324">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate SalesIntel application login Valid User Username and Valid Password" time="12.19326">
+    <testcase classname="Validate Search By Job Department" name="To validate SalesIntel application login Valid User Username and Valid Password" time="12.21186">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search By Job Department section contents" time="0.137597">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search By Job Department section contents" time="0.13844">
         <system-out><![CDATA[When Verify Role Section is displayed.......................................passed
 And Verify Job Department is displayed......................................passed
 And Click on Contact Radio Button...........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search without Job Department Filter" time="10.100583">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search without Job Department Filter" time="10.097154">
         <system-out><![CDATA[Then Click on Search Button.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Finance Job Department Filter" time="32.590468">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Finance Job Department Filter" time="32.610142">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -439,7 +439,7 @@ And Click on Search Button..................................................pass
 Then Check Finance Department in Search Result..............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by HR Job Department Filter" time="32.659456">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by HR Job Department Filter" time="32.596011">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -448,7 +448,7 @@ And Click on Search Button..................................................pass
 Then Check HR Department in Search Result...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by IT Job Department Filter" time="32.561418">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by IT Job Department Filter" time="32.784382">
         <system-out><![CDATA[And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -457,7 +457,7 @@ And Click on Search Button..................................................pass
 Then Check IT Department in Search Result...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Legal Job Department Filter" time="30.533219">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Legal Job Department Filter" time="31.36998">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -466,7 +466,7 @@ And Click on Search Button..................................................pass
 Then Check Legal Department in Search Result................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Marketing Job Department Filter" time="30.558997">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Marketing Job Department Filter" time="30.575199">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -475,7 +475,7 @@ And Click on Search Button..................................................pass
 Then Check Marketing Department in Search Result............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Operations Job Department Filter" time="30.510211">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Operations Job Department Filter" time="30.581097">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -484,7 +484,7 @@ And Click on Search Button..................................................pass
 Then Check Operations Department in Search Result...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Procurement Job Department Filter" time="30.541406">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Procurement Job Department Filter" time="30.511624">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -493,7 +493,7 @@ And Click on Search Button..................................................pass
 Then Check Procurement Department in Search Result..........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by R&amp;D Job Department Filter" time="30.509933">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by R&amp;D Job Department Filter" time="30.488208">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -502,7 +502,7 @@ And Click on Search Button..................................................pass
 Then Check R&D Department in Search Result..................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Sales Job Department Filter" time="30.525511">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Sales Job Department Filter" time="30.463922">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -511,7 +511,7 @@ And Click on Search Button..................................................pass
 Then Check Sales Department in Search Result................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Search by Cross Functional Job Department Filter" time="30.52891">
+    <testcase classname="Validate Search By Job Department" name="To validate application Search by Cross Functional Job Department Filter" time="30.557434">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Job Department Filter..........................................passed
@@ -520,22 +520,22 @@ And Click on Search Button..................................................pass
 Then Check Cross Functional Department in Search Result.....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Department" name="To validate application Logout" time="8.269121">
+    <testcase classname="Validate Search By Job Department" name="To validate application Logout" time="8.254867">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.189402">
+    <testcase classname="Validate Search By Job Level" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.183669">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Job Level is displayed" time="3.037846">
+    <testcase classname="Validate Search By Job Level" name="To validate application Job Level is displayed" time="3.049632">
         <system-out><![CDATA[And Verify Job Level Filter is displayed....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by Board Member Job Level Filter" time="15.309988">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Board Member Job Level Filter" time="15.299159">
         <system-out><![CDATA[When Click On Job Level Filter..............................................passed
 And Click on Board Member Job Level Filter..................................passed
 And Click on Contact Radio Button...........................................passed
@@ -543,7 +543,7 @@ And Click on Search Button..................................................pass
 Then Check Board Member Job Level in Result.................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by C-level Executive Job Level Filter" time="25.480219">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by C-level Executive Job Level Filter" time="25.44463">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click On Job Level Filter...............................................passed
@@ -552,7 +552,7 @@ And Click on Search Button..................................................pass
 And Check C-level Executive Job level in Result.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by Voice Presidents Job Level Filter" time="20.639961">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Voice Presidents Job Level Filter" time="20.409175">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click On Job Level Filter...............................................passed
@@ -561,7 +561,7 @@ And Click on Search Button..................................................pass
 And Check Vice Presidents Job level in Result...............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by Directors Job Level Filter" time="20.48471">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Directors Job Level Filter" time="20.433682">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click On Job Level Filter...............................................passed
@@ -570,7 +570,7 @@ And Click on Search Button..................................................pass
 And Check Directors Job level in Result.....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by Managers Job Level Filter" time="20.46069">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Managers Job Level Filter" time="20.421569">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click On Job Level Filter...............................................passed
@@ -579,7 +579,7 @@ And Click on Search Button..................................................pass
 And Check Managers Job level in Result......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Search by Key Influencers Job Level Filter" time="25.493124">
+    <testcase classname="Validate Search By Job Level" name="To validate application Search by Key Influencers Job Level Filter" time="25.727397">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click On Job Level Filter...............................................passed
@@ -588,18 +588,18 @@ And Click on Search Button..................................................pass
 And Check Key Influencers Job level in Result...............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Level" name="To validate application Logout" time="8.254278">
+    <testcase classname="Validate Search By Job Level" name="To validate application Logout" time="8.281584">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Title" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.205494">
+    <testcase classname="Validate Search By Job Title" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.190608">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Title" name="To validate application Search By Job Title Filter" time="19.66013">
+    <testcase classname="Validate Search By Job Title" name="To validate application Search By Job Title Filter" time="19.606028">
         <system-out><![CDATA[When Verify Role Section is displayed.......................................passed
 And Verify Title filter is Displayed........................................passed
 And Click on Title Filter...................................................passed
@@ -609,18 +609,18 @@ And Click on Search Button..................................................pass
 Then Check searched title is displayed in Search Result.....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Job Title" name="To validate application Logout" time="8.447511">
+    <testcase classname="Validate Search By Job Title" name="To validate application Logout" time="8.258938">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Email" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.178409">
+    <testcase classname="Validate Search By Contact Email" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.177388">
         <system-out><![CDATA[And Enter Valid Username....................................................passed
 And Enter Valid Password....................................................passed
 And Click On Login Button...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Email" name="To validate application Search by Invalid Email Address" time="10.460097">
+    <testcase classname="Validate Search By Contact Email" name="To validate application Search by Invalid Email Address" time="10.478489">
         <system-out><![CDATA[Then Click on Contact Email Button..........................................passed
 When Enter Invalid Contact Email Address....................................passed
 And Click on Contact Radio Button...........................................passed
@@ -628,7 +628,7 @@ Then Click on Search Button.................................................pass
 And Verify Error Message is displayed When search with Invalid Email Address.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Email" name="To validate application Search by Valid Contact Email Address" time="12.536746">
+    <testcase classname="Validate Search By Contact Email" name="To validate application Search by Valid Contact Email Address" time="12.528143">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click on Contact Email Button...........................................passed
 And Enter Contact Email Address.............................................passed
@@ -637,18 +637,18 @@ And Click on Searched Contact...............................................pass
 Then Check email in Search Result...........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search By Contact Email" name="To validate application Logout" time="8.223457">
+    <testcase classname="Validate Search By Contact Email" name="To validate application Logout" time="8.207657">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 And Click On Logout Options.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.172175">
+    <testcase classname="Validate Search by Location" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.175622">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate Search by States in USA Location" time="35.790136">
+    <testcase classname="Validate Search by Location" name="To validate Search by States in USA Location" time="35.618852">
         <system-out><![CDATA[When Verify Location filter is Displayed....................................passed
 Then Click on Location Tab..................................................passed
 Then Click on State Combobox................................................passed
@@ -658,7 +658,7 @@ And Click on Search Button..................................................pass
 Then Check CA for California State in Search Result.........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate Search by Zip Code in USA Location" time="31.743585">
+    <testcase classname="Validate Search by Location" name="To validate Search by Zip Code in USA Location" time="31.64829">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Verify Location filter is Displayed.....................................passed
@@ -669,7 +669,7 @@ And Click on Search Button..................................................pass
 Then Check CA for California State in Search Result.........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate Search by Metro Areas in USA Location" time="32.112822">
+    <testcase classname="Validate Search by Location" name="To validate Search by Metro Areas in USA Location" time="31.778249">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Verify Location filter is Displayed.....................................passed
@@ -681,7 +681,7 @@ Then Click on Search Button.................................................pass
 Then Check Metro Area in Search Result......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate Search by Non-USA Location" time="40.797058">
+    <testcase classname="Validate Search by Location" name="To validate Search by Non-USA Location" time="40.726773">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Verify Location filter is Displayed.....................................passed
@@ -693,7 +693,7 @@ And Click on Search Button..................................................pass
 Then Check Country in Location in Search Result.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search by Location" name="To validate Search by Global Location" time="40.782107">
+    <testcase classname="Validate Search by Location" name="To validate Search by Global Location" time="40.751224">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Verify Location filter is Displayed.....................................passed
@@ -705,18 +705,18 @@ And Click on Search Button..................................................pass
 Then Check Global Country in Location in Search Result......................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Validate Search by Location" name="Logout the application" time="8.248491">
+    <testcase classname="Validate Search by Location" name="Logout the application" time="8.234581">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate search by Keywords" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.18904">
+    <testcase classname="To validate search by Keywords" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.182519">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate search by Keywords" name="To validate Search by Keywords" time="27.299282">
+    <testcase classname="To validate search by Keywords" name="To validate Search by Keywords" time="27.604736">
         <system-out><![CDATA[When Click on Keywords Filter...............................................passed
 And Click on Keywords Input box.............................................passed
 And Enter the Keyword.......................................................passed
@@ -727,22 +727,18 @@ Then Check searched Keyboard in company detail page.........................pass
 And Click on SalesIntel Logo................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate search by Keywords" name="To validate All Search Results of Keywords" time="174.021707">
-        <system-out><![CDATA[Then Check Keyword in All Searched Results..................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="To validate search by Keywords" name="Logout the application" time="8.399913">
+    <testcase classname="To validate search by Keywords" name="Logout the application" time="8.244074">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Industry" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.207049">
+    <testcase classname="To validate Search by Industry" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.189329">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Industry" name="To Validate search by Any of Industry Names Filter where Selected All" time="21.47984">
+    <testcase classname="To validate Search by Industry" name="To Validate search by Any of Industry Names Filter where Selected All" time="21.705961">
         <system-out><![CDATA[When Click on Industry Filter...............................................passed
 And Click on Select All Check Box...........................................passed
 And Click on Contact Radio Button...........................................passed
@@ -750,7 +746,7 @@ Then Click on Search Button.................................................pass
 And Click on the First Contact in Search Result.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Industry" name="To Validate search by Any Of Industry Names Filter where a single Industry is selected" time="41.299823">
+    <testcase classname="To validate Search by Industry" name="To Validate search by Any Of Industry Names Filter where a single Industry is selected" time="43.162793">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Industry Filter................................................passed
@@ -760,9 +756,10 @@ And Click on Particular Industry............................................pass
 And Click on Search Button..................................................passed
 And Click on the First Contact in Search Result.............................passed
 Then Check the Industry in Search Result....................................passed
+And Click on the First Contact in Search Result.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Industry" name="To Validate search by None Of Industry Names Filter Where Selected All" time="34.781698">
+    <testcase classname="To validate Search by Industry" name="To Validate search by None Of Industry Names Filter Where Selected All" time="34.603233">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Industry Filter................................................passed
@@ -772,7 +769,7 @@ Then Click on Search Button.................................................pass
 And Click on the First Contact in Search Result.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Industry" name="To Validate search by None Of Industry Names Filter Where single Industry is selected" time="39.269216">
+    <testcase classname="To validate Search by Industry" name="To Validate search by None Of Industry Names Filter Where single Industry is selected" time="66.177223">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Industry Filter................................................passed
@@ -782,9 +779,11 @@ And Enter Industry Name.....................................................pass
 And Click on Particular Industry............................................passed
 And Click on Search Button..................................................passed
 And Click on the First Contact in Search Result.............................passed
+Then Check search results that None of the contact should contain the Industry.passed
+And Click on the First Contact in Search Result.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Industry" name="To Validate search by NAICS Codes in Industry Filter" time="44.922522">
+    <testcase classname="To validate Search by Industry" name="To Validate search by NAICS Codes in Industry Filter" time="52.250293">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Industry Filter................................................passed
@@ -794,9 +793,10 @@ And Enter NAICS Code........................................................pass
 And Click on Search Button..................................................passed
 And Click on the First Contact in Search Result.............................passed
 Then Check Industry for NAICS code in Search Result.........................passed
+And Click on the First Contact in Search Result.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Industry" name="To Validate search by SIC Codes in Industry Filter" time="42.94604">
+    <testcase classname="To validate Search by Industry" name="To Validate search by SIC Codes in Industry Filter" time="49.88935">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Industry Filter................................................passed
@@ -807,60 +807,64 @@ And Enter SIC Code..........................................................pass
 And Click on Search Button..................................................passed
 And Click on the First Contact in Search Result.............................passed
 Then Check Industry for SIC code in Search Result...........................passed
+And Click on the First Contact in Search Result.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Industry" name="Logout the application" time="8.241142">
+    <testcase classname="To validate Search by Industry" name="Logout the application" time="8.234107">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Revenue" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.195635">
+    <testcase classname="To validate Search by Revenue" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.176515">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Revenue" name="To Validate search by Million Revenue Filter" time="28.654667">
+    <testcase classname="To validate Search by Revenue" name="To Validate search by Million Revenue Filter" time="35.663234">
         <system-out><![CDATA[When Click on Revenue Filter................................................passed
 And Enter Minimum Revenue...................................................passed
 And Enter Maximum Revenue...................................................passed
 And Click on Search Button..................................................passed
 And Click on the First Contact in Search Result.............................passed
 Then validate the Revenue in Search Result..................................passed
+And Click on the First Contact in Search Result.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Revenue" name="Logout the application" time="8.941923">
+    <testcase classname="To validate Search by Revenue" name="Logout the application" time="8.228866">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Employees or Size" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.22302">
+    <testcase classname="To validate Search by Employees or Size" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.179028">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Employees or Size" name="To Validate Employees or Size Filter" time="28.720645">
+    <testcase classname="To validate Search by Employees or Size" name="To Validate Employees or Size Filter" time="35.729262">
         <system-out><![CDATA[When Click on Employee Size Filter..........................................passed
 And Enter Minimum Employee Size.............................................passed
 And Enter Maximum Employee Size.............................................passed
+And Click on Contact Radio Button...........................................passed
 And Click on Search Button..................................................passed
 And Click on the First Contact in Search Result.............................passed
 Then validate the Employee Size in Search Result............................passed
+And Click on the First Contact in Search Result.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Employees or Size" name="Logout the application" time="8.270959">
+    <testcase classname="To validate Search by Employees or Size" name="Logout the application" time="8.217378">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.22201">
+    <testcase classname="To validate Search by Technographics" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.188895">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="To validate Search by Any Products in Technographics filter" time="96.704119">
+    <testcase classname="To validate Search by Technographics" name="To validate Search by Any Products in Technographics filter" time="99.878366">
         <system-out><![CDATA[When Validate TECHNOGRAPHICS is displayed...................................passed
 And Click on Products Filter................................................passed
 And Click on Technographic product text box.................................passed
@@ -870,9 +874,10 @@ And Click on Search Button..................................................pass
 And Click on company name...................................................passed
 And Click on All in Company detail page.....................................passed
 Then Check Any technographic product in Company detail page.................passed
+And Click on SalesIntel Logo................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="To validate Search by All Products in Technographics filter" time="66.726425">
+    <testcase classname="To validate Search by Technographics" name="To validate Search by All Products in Technographics filter" time="67.444632">
         <system-out><![CDATA[When Click on SalesIntel Logo...............................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -885,9 +890,10 @@ And Click on Search Button..................................................pass
 And Click on company name...................................................passed
 And Click on All in Company detail page.....................................passed
 Then Check All technographic products in Company detail page................passed
+And Click on SalesIntel Logo................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="To validate Search by None Products in Technographics filter" time="125.14054">
+    <testcase classname="To validate Search by Technographics" name="To validate Search by None Products in Technographics filter" time="128.082734">
         <system-out><![CDATA[When Click on SalesIntel Logo...............................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -900,9 +906,10 @@ And Click on Search Button..................................................pass
 And Click on company name...................................................passed
 And Click on All in Company detail page.....................................passed
 Then Check None of the technographic product is displayed in Company detail page.passed
+And Click on SalesIntel Logo................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="To validate Search by Any Provider in Technographics filter" time="300.719768">
+    <testcase classname="To validate Search by Technographics" name="To validate Search by Any Provider in Technographics filter" time="66.62423">
         <system-out><![CDATA[When Click on SalesIntel Logo...............................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -914,9 +921,10 @@ And Click on Search Button..................................................pass
 And Click on company name...................................................passed
 And Click on All in Company detail page.....................................passed
 Then Check Any technographic Provider in Company detail page................passed
+And Click on SalesIntel Logo................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="To validate Search by All Provider in Technographics filter" time="65.533974">
+    <testcase classname="To validate Search by Technographics" name="To validate Search by All Provider in Technographics filter" time="68.206068">
         <system-out><![CDATA[When Click on SalesIntel Logo...............................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -929,9 +937,10 @@ And Click on Search Button..................................................pass
 And Click on company name...................................................passed
 And Click on All in Company detail page.....................................passed
 Then Check All technographic Providers in Company detail page...............passed
+And Click on SalesIntel Logo................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="To validate Search by None Provider in Technographics filter" time="125.195028">
+    <testcase classname="To validate Search by Technographics" name="To validate Search by None Provider in Technographics filter" time="128.505172">
         <system-out><![CDATA[When Click on SalesIntel Logo...............................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -944,9 +953,10 @@ And Click on Search Button..................................................pass
 And Click on company name...................................................passed
 And Click on All in Company detail page.....................................passed
 Then Check None of the technographic Provider is displayed in Company detail page.passed
+And Click on SalesIntel Logo................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="To validate Select All Checkbox where Search by Any Provide in Technographics filter" time="40.484182">
+    <testcase classname="To validate Search by Technographics" name="To validate Select All Checkbox where Search by Any Category in Technographics filter" time="54.354507">
         <system-out><![CDATA[When Click on SalesIntel Logo...............................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -956,10 +966,10 @@ And Select All Check box for Categories.....................................pass
 And Click on Search Button..................................................passed
 And Click on company name...................................................passed
 And Click on All in Company detail page.....................................passed
-Then Check Any technographic Category in Company detail page to Validate Select ALL.passed
+Then Check Any technographic Category in Company detail page................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="To validate Search by Any Provide in Technographics filter" time="65.40464">
+    <testcase classname="To validate Search by Technographics" name="To validate Search by Any Category in Technographics filter" time="65.603036">
         <system-out><![CDATA[When Click on SalesIntel Logo...............................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -969,10 +979,10 @@ And Enter the Category name.................................................pass
 And Click on Search Button..................................................passed
 And Click on company name...................................................passed
 And Click on All in Company detail page.....................................passed
-Then Check Any technographic Category in Company detail page................passed
+Then Check Any technographic Provider in Company detail page................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="To validate Search by All Provide in Technographics filter" time="66.435293">
+    <testcase classname="To validate Search by Technographics" name="To validate Search by All Category in Technographics filter" time="66.177378">
         <system-out><![CDATA[When Click on SalesIntel Logo...............................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -986,7 +996,7 @@ And Click on All in Company detail page.....................................pass
 Then Check All technographic Category in Company detail page................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="To validate Search by None Provide in Technographics filter" time="126.381479">
+    <testcase classname="To validate Search by Technographics" name="To validate Search by None Category in Technographics filter" time="125.951514">
         <system-out><![CDATA[When Click on SalesIntel Logo...............................................passed
 And Click On Clear Button...................................................passed
 And Click On Do Not Save Button.............................................passed
@@ -1000,18 +1010,18 @@ And Click on All in Company detail page.....................................pass
 Then Check None of the technographic Category is displayed in Company detail page.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Technographics" name="Logout the application" time="8.216409">
+    <testcase classname="To validate Search by Technographics" name="Logout the application" time="8.17859">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by INTENT" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.220047">
+    <testcase classname="To validate Search by INTENT" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.190133">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by INTENT" name="To validate Search by Topics" time="17.363898">
+    <testcase classname="To validate Search by INTENT" name="To validate Search by Topics" time="17.333753">
         <system-out><![CDATA[When Check INTENT is displayed..............................................passed
 And Click on Topics.........................................................passed
 And Select Netflix Topic....................................................passed
@@ -1019,7 +1029,7 @@ And Click on Search Button..................................................pass
 Then Check Searched Topic in Search Result..................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by INTENT" name="To validate Search by Score Threshold" time="35.087846">
+    <testcase classname="To validate Search by INTENT" name="To validate Search by Score Threshold" time="34.994632">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Topics.........................................................passed
@@ -1032,7 +1042,7 @@ And Check Searched Topic in Search Result...................................pass
 Then Check Score in Result..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by INTENT" name="To validate Search by Topic Threshold" time="37.148172">
+    <testcase classname="To validate Search by INTENT" name="To validate Search by Topic Threshold" time="36.987367">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Click on Topics.........................................................passed
@@ -1044,18 +1054,18 @@ And Click on Search Button..................................................pass
 And Check Search result for Topic Threshold.................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by INTENT" name="Logout the application" time="8.241676">
+    <testcase classname="To validate Search by INTENT" name="Logout the application" time="8.227289">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Rankings" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.203129">
+    <testcase classname="To validate Search by Rankings" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.186483">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Rankings" name="To validate Search by Rankings Filter and Select All" time="18.522525">
+    <testcase classname="To validate Search by Rankings" name="To validate Search by Rankings Filter and Select All" time="18.479058">
         <system-out><![CDATA[When Check Ranking filter is displayed......................................passed
 And Click on Ranking Filter.................................................passed
 And Click on Select All Check Box for Rankings..............................passed
@@ -1064,18 +1074,18 @@ And Click on Search Button..................................................pass
 And Check Search Results of Ranking Filter..................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Rankings" name="Logout the application" time="8.234038">
+    <testcase classname="To validate Search by Rankings" name="Logout the application" time="8.227144">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Your Lists Filter" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.211831">
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.183562">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By All Company Lists" time="29.90732">
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By All Company Lists" time="25.908725">
         <system-out><![CDATA[When Check Your Lists Filter is displayed...................................passed
 And Click on Your Lists Filter..............................................passed
 And Select All Companies List...............................................passed
@@ -1084,7 +1094,7 @@ And Click on Search Button..................................................pass
 And Check the search results of Company lists...............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By one Company List" time="222.1385">
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By one Company List" time="31.639336">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Your Lists Filter is displayed....................................passed
@@ -1095,7 +1105,7 @@ And Click on Search Button..................................................pass
 And Check the search results of Company lists...............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By All Contact Lists" time="32.836773">
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By All Contact Lists" time="32.699852">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Your Lists Filter is displayed....................................passed
@@ -1107,7 +1117,7 @@ And Click on Search Button..................................................pass
 And Check the search results of Contact lists...............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By one Contact List" time="33.805025">
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By one Contact List" time="33.734079">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Your Lists Filter is displayed....................................passed
@@ -1119,7 +1129,7 @@ And Click on Search Button..................................................pass
 And Check the search results of Contact lists...............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By All Suppression Lists" time="32.418455">
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By All Suppression Lists" time="34.49089">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Your Lists Filter is displayed....................................passed
@@ -1131,7 +1141,7 @@ And Click on Search Button..................................................pass
 And Check the search results of Suppression lists...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By one Suppression List" time="32.846389">
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By one Suppression List" time="32.829526">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Your Lists Filter is displayed....................................passed
@@ -1143,7 +1153,7 @@ And Click on Search Button..................................................pass
 And Check the search results of Suppression lists...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By All ROD Lists" time="31.859385">
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By All ROD Lists" time="31.699438">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Your Lists Filter is displayed....................................passed
@@ -1154,7 +1164,7 @@ And Click on Search Button..................................................pass
 And Check the search results of ROD lists...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By All ROD Lists 2" time="31.897526">
+    <testcase classname="To validate Search by Your Lists Filter" name="To validate Search By one ROD Lists" time="31.658328">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Your Lists Filter is displayed....................................passed
@@ -1165,18 +1175,18 @@ And Click on Search Button..................................................pass
 And Check the search results of ROD lists...................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Your Lists Filter" name="Logout the application" time="8.243977">
+    <testcase classname="To validate Search by Your Lists Filter" name="Logout the application" time="8.19826">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Results Include Filter" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.212743">
+    <testcase classname="To validate Search by Results Include Filter" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.17717">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Address" time="20.414458">
+    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Address" time="20.398431">
         <system-out><![CDATA[When Check Result include Filter is displayed...............................passed
 And Click on Result Include Filter..........................................passed
 And Select Address CheckBox.................................................passed
@@ -1185,7 +1195,7 @@ And Click on Search Button..................................................pass
 Then Check Whether Results include Address..................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Any Phone" time="37.882337">
+    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Any Phone" time="37.751405">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Result include Filter is displayed................................passed
@@ -1197,7 +1207,7 @@ And Click On Reveal Contact Search Button...................................pass
 Then Check Whether Results include Any Phone................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Any Direct Phone" time="37.863076">
+    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Any Direct Phone" time="37.756217">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Result include Filter is displayed................................passed
@@ -1209,7 +1219,7 @@ And Click On Reveal Contact Search Button...................................pass
 Then Check Whether Results include Any Direct Phone.........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Any Mobile Phone" time="37.885108">
+    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Any Mobile Phone" time="37.765308">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Result include Filter is displayed................................passed
@@ -1221,7 +1231,7 @@ And Click On Reveal Contact Search Button...................................pass
 Then Check Whether Results include Any Mobile Phone.........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Personal Email" time="37.791187">
+    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Personal Email" time="37.727861">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Result include Filter is displayed................................passed
@@ -1233,7 +1243,7 @@ And Click On Reveal Contact Search Button...................................pass
 Then Check Whether Results include Personal Email...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include LinkedIn Url" time="37.761463">
+    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include LinkedIn Url" time="37.718337">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Result include Filter is displayed................................passed
@@ -1245,7 +1255,7 @@ And Click On Reveal Contact Search Button...................................pass
 Then Check Whether Results include LinkedIn Url.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Title" time="37.810932">
+    <testcase classname="To validate Search by Results Include Filter" name="To validate Search by Results Include Title" time="38.085774">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Result include Filter is displayed................................passed
@@ -1257,125 +1267,305 @@ And Click On Reveal Contact Search Button...................................pass
 Then Check Whether Results include Title....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Results Include Filter" name="Logout the application" time="8.247133">
+    <testcase classname="To validate Search by Results Include Filter" name="Logout the application" time="8.239714">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Last Modified Filter" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.215808">
+    <testcase classname="To validate Search by Last Modified Filter" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.19734">
         <system-out><![CDATA[When Enter Valid Username...................................................passed
 And Enter Valid Password....................................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Last Modified Filter" name="To validate Last Modified Within last 7 Days" time="55.251264">
-        <system-out><![CDATA[When Check Whether Last Modified Filter is Displayed........................passed
+    <testcase classname="To validate Search by Last Modified Filter" name="To validate Last Modified Within last 7 Days" time="26.323806">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//Select[@name='lastModified']&quot;}&#10;  (Session info: chrome=108.0.5359.125)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dac405f3d7d947b358c37688406369d1&#10;*** Element info: {Using=xpath, value=//Select[@name='lastModified']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:77)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)&#13;&#10;&#9;at ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:14)&#13;&#10;"><![CDATA[When Check Whether Last Modified Filter is Displayed........................passed
 And Click on Last Modified Date Filter......................................passed
-And Click on Last Modified Dropdown.........................................passed
-And Select Within Last 7 Days...............................................passed
-And Click on Contact Radio Button...........................................passed
-And Click on Search Button..................................................passed
-And Click on the First Contact in Search Result.............................passed
-And Click On Reveal Contact Search Button...................................passed
-And get the Contact Work Email and store it.................................passed
-And Launch Research Portal..................................................passed
-And Login To Research Portal................................................passed
-And Search Contact With Email...............................................passed
-Then Validate the Last modified Date In Research Portal Where modified within 7 Days.passed
-]]></system-out>
+And Click on Last Modified Dropdown.........................................failed
+And Select Within Last 7 Days...............................................skipped
+And Click on Contact Radio Button...........................................skipped
+And Click on Search Button..................................................skipped
+And Click on the First Contact in Search Result.............................skipped
+And Click On Reveal Contact Search Button...................................skipped
+And get the Contact Work Email and store it.................................skipped
+And Launch Research Portal..................................................skipped
+And Login To Research Portal................................................skipped
+And Search Contact With Email...............................................skipped
+Then Validate the Last modified Date In Research Portal Where modified within 7 Days.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//Select[@name='lastModified']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dac405f3d7d947b358c37688406369d1
+*** Element info: {Using=xpath, value=//Select[@name='lastModified']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:77)
+	at org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)
+	at ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:14)
+]]></failure>
     </testcase>
-    <testcase classname="To validate Search by Last Modified Filter" name="To validate SalesIntel application Launching application" time="6.785138">
+    <testcase classname="To validate Search by Last Modified Filter" name="To validate SalesIntel application Launching application" time="6.570761">
         <system-out><![CDATA[Given Launch the url........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Last Modified Filter" name="To validate Last Modified Within last 14 Days" time="53.493573">
-        <system-out><![CDATA[When Check Whether Last Modified Filter is Displayed........................passed
+    <testcase classname="To validate Search by Last Modified Filter" name="To validate Last Modified Within last 14 Days" time="26.717478">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//Select[@name='lastModified']&quot;}&#10;  (Session info: chrome=108.0.5359.125)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dac405f3d7d947b358c37688406369d1&#10;*** Element info: {Using=xpath, value=//Select[@name='lastModified']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:77)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)&#13;&#10;&#9;at ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:34)&#13;&#10;"><![CDATA[When Check Whether Last Modified Filter is Displayed........................passed
 And Click on Last Modified Date Filter......................................passed
-And Click on Last Modified Dropdown.........................................passed
-And Select Within Last 14 Days..............................................passed
-And Click on Contact Radio Button...........................................passed
-And Click on Search Button..................................................passed
-And Click on the First Contact in Search Result.............................passed
-And Click On Reveal Contact Search Button...................................passed
-And get the Contact Work Email and store it.................................passed
-And Launch Research Portal..................................................passed
-And Login To Research Portal................................................passed
-And Search Contact With Email...............................................passed
-Then Validate the Last modified Date In Research Portal Where modified within 14 Days.passed
-]]></system-out>
+And Click on Last Modified Dropdown.........................................failed
+And Select Within Last 14 Days..............................................skipped
+And Click on Contact Radio Button...........................................skipped
+And Click on Search Button..................................................skipped
+And Click on the First Contact in Search Result.............................skipped
+And Click On Reveal Contact Search Button...................................skipped
+And get the Contact Work Email and store it.................................skipped
+And Launch Research Portal..................................................skipped
+And Login To Research Portal................................................skipped
+And Search Contact With Email...............................................skipped
+Then Validate the Last modified Date In Research Portal Where modified within 14 Days.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//Select[@name='lastModified']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dac405f3d7d947b358c37688406369d1
+*** Element info: {Using=xpath, value=//Select[@name='lastModified']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:77)
+	at org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)
+	at ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:34)
+]]></failure>
     </testcase>
-    <testcase classname="To validate Search by Last Modified Filter" name="To validate SalesIntel application Launching application" time="6.103231">
+    <testcase classname="To validate Search by Last Modified Filter" name="To validate SalesIntel application Launching application" time="5.434351">
         <system-out><![CDATA[Given Launch the url........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Last Modified Filter" name="To validate Last Modified Within last 21 Days" time="73.536633">
-        <system-out><![CDATA[When Check Whether Last Modified Filter is Displayed........................passed
+    <testcase classname="To validate Search by Last Modified Filter" name="To validate Last Modified Within last 21 Days" time="26.565106">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//Select[@name='lastModified']&quot;}&#10;  (Session info: chrome=108.0.5359.125)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dac405f3d7d947b358c37688406369d1&#10;*** Element info: {Using=xpath, value=//Select[@name='lastModified']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:77)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)&#13;&#10;&#9;at ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:55)&#13;&#10;"><![CDATA[When Check Whether Last Modified Filter is Displayed........................passed
 And Click on Last Modified Date Filter......................................passed
-And Click on Last Modified Dropdown.........................................passed
-And Select Within Last 21 Days..............................................passed
-And Click on Contact Radio Button...........................................passed
-And Click on Search Button..................................................passed
-And Click On Reveal Contact Search Button...................................passed
-And Click on the First Contact in Search Result.............................passed
-And get the Contact Work Email and store it.................................passed
-And Launch Research Portal..................................................passed
-And Login To Research Portal................................................passed
-And Search Contact With Email...............................................passed
-Then Validate the Last modified Date In Research Portal Where updated within 21 Days.passed
-]]></system-out>
+And Click on Last Modified Dropdown.........................................failed
+And Select Within Last 21 Days..............................................skipped
+And Click on Contact Radio Button...........................................skipped
+And Click on Search Button..................................................skipped
+And Click On Reveal Contact Search Button...................................skipped
+And Click on the First Contact in Search Result.............................skipped
+And get the Contact Work Email and store it.................................skipped
+And Launch Research Portal..................................................skipped
+And Login To Research Portal................................................skipped
+And Search Contact With Email...............................................skipped
+Then Validate the Last modified Date In Research Portal Where updated within 21 Days.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//Select[@name='lastModified']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dac405f3d7d947b358c37688406369d1
+*** Element info: {Using=xpath, value=//Select[@name='lastModified']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:77)
+	at org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)
+	at ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:55)
+]]></failure>
     </testcase>
-    <testcase classname="To validate Search by Last Modified Filter" name="To validate SalesIntel application Launching application" time="4.203076">
+    <testcase classname="To validate Search by Last Modified Filter" name="To validate SalesIntel application Launching application" time="5.219905">
         <system-out><![CDATA[Given Launch the url........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Last Modified Filter" name="To validate Last Modified Within last 30 Days" time="73.362591">
-        <system-out><![CDATA[When Check Whether Last Modified Filter is Displayed........................passed
+    <testcase classname="To validate Search by Last Modified Filter" name="To validate Last Modified Within last 30 Days" time="26.653605">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//Select[@name='lastModified']&quot;}&#10;  (Session info: chrome=108.0.5359.125)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dac405f3d7d947b358c37688406369d1&#10;*** Element info: {Using=xpath, value=//Select[@name='lastModified']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:77)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)&#13;&#10;&#9;at ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:76)&#13;&#10;"><![CDATA[When Check Whether Last Modified Filter is Displayed........................passed
 And Click on Last Modified Date Filter......................................passed
-And Click on Last Modified Dropdown.........................................passed
-And Select Within Last 30 Days..............................................passed
-And Click on Contact Radio Button...........................................passed
-And Click on Search Button..................................................passed
-And Click On Reveal Contact Search Button...................................passed
-And Click on the First Contact in Search Result.............................passed
-And get the Contact Work Email and store it.................................passed
-And Launch Research Portal..................................................passed
-And Login To Research Portal................................................passed
-And Search Contact With Email...............................................passed
-Then Validate the Last modified Date In Research Portal Where updated within 30 Days.passed
-]]></system-out>
+And Click on Last Modified Dropdown.........................................failed
+And Select Within Last 30 Days..............................................skipped
+And Click on Contact Radio Button...........................................skipped
+And Click on Search Button..................................................skipped
+And Click On Reveal Contact Search Button...................................skipped
+And Click on the First Contact in Search Result.............................skipped
+And get the Contact Work Email and store it.................................skipped
+And Launch Research Portal..................................................skipped
+And Login To Research Portal................................................skipped
+And Search Contact With Email...............................................skipped
+Then Validate the Last modified Date In Research Portal Where updated within 30 Days.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//Select[@name='lastModified']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dac405f3d7d947b358c37688406369d1
+*** Element info: {Using=xpath, value=//Select[@name='lastModified']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:77)
+	at org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)
+	at ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:76)
+]]></failure>
     </testcase>
-    <testcase classname="To validate Search by Last Modified Filter" name="To validate SalesIntel application Launching application" time="3.160448">
+    <testcase classname="To validate Search by Last Modified Filter" name="To validate SalesIntel application Launching application" time="5.648626">
         <system-out><![CDATA[Given Launch the url........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate Search by Last Modified Filter" name="To validate Last Modified using Custom filter" time="83.270123">
-        <system-out><![CDATA[When Check Whether Last Modified Filter is Displayed........................passed
+    <testcase classname="To validate Search by Last Modified Filter" name="To validate Last Modified using Custom filter" time="26.620401">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//Select[@name='lastModified']&quot;}&#10;  (Session info: chrome=108.0.5359.125)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dac405f3d7d947b358c37688406369d1&#10;*** Element info: {Using=xpath, value=//Select[@name='lastModified']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:77)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)&#13;&#10;&#9;at ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:96)&#13;&#10;"><![CDATA[When Check Whether Last Modified Filter is Displayed........................passed
 And Click on Last Modified Date Filter......................................passed
-And Click on Last Modified Dropdown.........................................passed
-And Select Custom filter....................................................passed
-And Check particular date is displayed......................................passed
-And Click on Particular Date................................................passed
-And get The Selected Date and Store it......................................passed
-And Click on Contact Radio Button...........................................passed
-And Click on Search Button..................................................passed
-And Click On Reveal Contact Search Button...................................passed
-And Click on the First Contact in Search Result.............................passed
-And get the Contact Work Email and store it.................................passed
-And Launch Research Portal..................................................passed
-And Login To Research Portal................................................passed
-And Search Contact With Email...............................................passed
-Then Validate the Last modified Date In Research Portal Where updated within the Selected Date.passed
-]]></system-out>
+And Click on Last Modified Dropdown.........................................failed
+And Select Custom filter....................................................skipped
+And Check particular date is displayed......................................skipped
+And Click on Particular Date................................................skipped
+And get The Selected Date and Store it......................................skipped
+And Click on Contact Radio Button...........................................skipped
+And Click on Search Button..................................................skipped
+And Click On Reveal Contact Search Button...................................skipped
+And Click on the First Contact in Search Result.............................skipped
+And get the Contact Work Email and store it.................................skipped
+And Launch Research Portal..................................................skipped
+And Login To Research Portal................................................skipped
+And Search Contact With Email...............................................skipped
+Then Validate the Last modified Date In Research Portal Where updated within the Selected Date.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//Select[@name='lastModified']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dac405f3d7d947b358c37688406369d1
+*** Element info: {Using=xpath, value=//Select[@name='lastModified']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:77)
+	at org.stepdefinition.Steps.I_Click_Last_Modified_Dropdown(Steps.java:3233)
+	at ✽.Click on Last Modified Dropdown(file:TC_21_Search_By_Last_Modified.feature:96)
+]]></failure>
     </testcase>
-    <testcase classname="To validate Search by Last Modified Filter" name="To Logout the Research Portal" time="5.073157">
-        <system-out><![CDATA[When Logout the Research Portal.............................................passed
-]]></system-out>
+    <testcase classname="To validate Search by Last Modified Filter" name="To Logout the Research Portal" time="20.232634">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Logout')]&quot;}&#10;  (Session info: chrome=108.0.5359.125)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dac405f3d7d947b358c37688406369d1&#10;*** Element info: {Using=xpath, value=//a[contains(text(),'Logout')]}&#13;&#10;&#9;at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:77)&#13;&#10;&#9;at org.stepdefinition.Steps.I_Click_Logout_Button_In_Research(Steps.java:278)&#13;&#10;&#9;at ✽.Logout the Research Portal(file:TC_21_Search_By_Last_Modified.feature:113)&#13;&#10;"><![CDATA[When Logout the Research Portal.............................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Logout')]"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YOGESH', ip: '172.16.17.243', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Astegic\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dac405f3d7d947b358c37688406369d1
+*** Element info: {Using=xpath, value=//a[contains(text(),'Logout')]}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:77)
+	at org.stepdefinition.Steps.I_Click_Logout_Button_In_Research(Steps.java:278)
+	at ✽.Logout the Research Portal(file:TC_21_Search_By_Last_Modified.feature:113)
+]]></failure>
     </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="To validate SalesIntel application Launching application" time="3.029798">
+    <testcase classname="To validate SalesIntel Tab" name="To validate SalesIntel application Launching application" time="6.190664">
         <system-out><![CDATA[Given Launch the url........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="To Validate Search Box with Company Name in SalesIntel Tab" time="17.658289">
+    <testcase classname="To validate SalesIntel Tab" name="To Validate Search Box with Company Name in SalesIntel Tab" time="18.122974">
         <system-out><![CDATA[When Check Search Box is displayed in SalesIntel Tab........................passed
 And Click on Search Box in SalesIntel Tab...................................passed
 And Enter Company Name in the Search Box....................................passed
@@ -1384,7 +1574,7 @@ And Click on Companies Tab..................................................pass
 And Validate the Searched Company Name In Search Result.....................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="To Validate Search Box with Company Domain in SalesIntel Tab" time="27.871331">
+    <testcase classname="To validate SalesIntel Tab" name="To Validate Search Box with Company Domain in SalesIntel Tab" time="28.626951">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Search Box is displayed in SalesIntel Tab.........................passed
@@ -1395,7 +1585,7 @@ And Click on Companies Tab..................................................pass
 And Validate the Searched Company Domain In Search Result...................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="To Validate Recommended Lists in SalesIntel Tab" time="17.595234">
+    <testcase classname="To validate SalesIntel Tab" name="To Validate Recommended Lists in SalesIntel Tab" time="17.639242">
         <system-out><![CDATA[When Click On Clear Button..................................................passed
 And Click On Do Not Save Button.............................................passed
 And Check Recommended List is displayed in SalesIntel Tab...................passed
@@ -1403,7 +1593,7 @@ And Click on first Recommended List.........................................pass
 Then Validate Search Results for Recommended List...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="Logout the application" time="8.287211">
+    <testcase classname="To validate SalesIntel Tab" name="Logout the application" time="8.295312">
         <system-out><![CDATA[When Click On Setting Options...............................................passed
 Then Click On Logout Options................................................passed
 ]]></system-out>

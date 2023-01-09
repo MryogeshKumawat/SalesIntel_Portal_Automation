@@ -12,9 +12,15 @@ Feature: To validate Search by Employees or Size
     When Click on Employee Size Filter
     And Enter Minimum Employee Size
     And Enter Maximum Employee Size
+    And Click on Contact Radio Button
     And Click on Search Button
     And Click on the First Contact in Search Result
     Then validate the Employee Size in Search Result
+    And Click on the First Contact in Search Result
+
+  @Reg
+  Scenario: To Validate Company size in All search results
+    Then Check Employee or Size in All Searched Results
 
 
   @First @Sanity

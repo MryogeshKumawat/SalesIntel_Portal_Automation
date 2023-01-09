@@ -123,10 +123,10 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//*[contains(text(),'Reset Password')]")
 	private WebElement ResetPasswordButton;
 
-	@FindBy(xpath = "//select[contains(@placeholder,'Select contact from list')]")
+	@FindBy(xpath = "(//span[contains(text(),'--Select--')])[1]/../../../span")
 	private WebElement ContactListDropdown;
 
-	@FindBy(xpath = "//select[contains(@placeholder,'Select')]")
+	@FindBy(xpath = "(//span[contains(text(),'--Select--')])[1]/../../../span")
 	private WebElement CompanyListDropdown;
 
 	@FindBy(xpath = "//*[@placeholder='Work or Personal Email']")
@@ -272,23 +272,23 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//a[contains(text(),'Metro Area')])[1]")
 	private WebElement MetroAreaPage;
 
-	@FindBy(xpath = "(//input[@type='text'])[2]")
+	@FindBy(xpath = "(//input[@type='text'])[3]")
 	private WebElement MetroAreaTextField;
 	@FindBy(xpath = "(//span[contains(text(),'Albany, GA')])[2]")
 	private WebElement MetroAreatInSearchResult;
-	@FindBy(xpath = "(//input[@type='radio'])[2]")
+	@FindBy(xpath = "(//input[@type='radio'])[3]")
 	private WebElement NonUsaRadioButton;
 
 	@FindBy(xpath = "(//input[@type='radio'])[3]")
 	private WebElement GlobalRadioButton;
 
-	@FindBy(xpath = "(//input[@type='text'])[2]")
+	@FindBy(xpath = "(//input[@type='text'])[3]")
 	private WebElement CountryBox;
 
 	@FindBy(xpath = "//span[contains(text(),'Keywords')]")
 	private WebElement KeywordsFilter;
 
-	@FindBy(xpath = "(//input[@type='text'])[3]")
+	@FindBy(xpath = "(//input[@type='text'])[4]")
 	private WebElement KeywordsInputBox;
 
 	@FindBy(xpath = "(//span[contains(text(),'Industry')])[1]")
@@ -339,13 +339,13 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//span[contains(text(),'Categories')]")
 	private WebElement CategoriesFilter;
 
-	@FindBy(xpath = "(//input[@type='text'])[10]")
+	@FindBy(xpath = "(//input[@type='text'])[11]")
 	private WebElement ProductTestBox;
 
-	@FindBy(xpath = "(//input[@type='text'])[11]")
+	@FindBy(xpath = "(//input[@type='text'])[12]")
 	private WebElement ProviderTextBox;
 
-	@FindBy(xpath = "(//input[@type='text'])[12]")
+	@FindBy(xpath = "(//input[@type='text'])[13]")
 	private WebElement CategoryTextBox;
 
 	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]//..//..//../div[3]/div[1]/a")
@@ -420,7 +420,7 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//span[contains(text(),'Last Modified')]")
 	private WebElement LastModifiedFilter;
 
-	@FindBy(xpath = "//Select[@name='lastModified']")
+	@FindBy(xpath = "//span[contains(text(),'Last Modified')]/../../div/app-last-modified/div/div[2]/ng-select/div/span")
 	private WebElement LastModifiedDropDown;
 
 	@FindBy(xpath = "//button[@class='previous']")
@@ -479,19 +479,19 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//input[@type='checkbox'])[113]")
 	private WebElement AllContactList;
 
-	@FindBy(xpath = "(//input[@type='checkbox'])[159]")
+	@FindBy(xpath = "(//input[@type='checkbox'])[160]")
 	private WebElement AllSuppressionList;
 
-	@FindBy(xpath = "(//input[@type='checkbox'])[168]")
+	@FindBy(xpath = "(//input[@type='checkbox'])[169]")
 	private WebElement AllRODList;
 
-	@FindBy(xpath = "(//input[@type='checkbox'])[169]")
+	@FindBy(xpath = "(//input[@type='checkbox'])[170]")
 	private WebElement OneRODList;
 
 	@FindBy(xpath = "//strong[contains(text(),'RoD List')]")
 	private WebElement RODList;
 
-	@FindBy(xpath = "(//span[contains(text(),'3 company')])[1]")
+	@FindBy(xpath = "(//span[contains(text(),'company')])[2]")
 	private WebElement OneCompanyList;
 
 	@FindBy(xpath = "(//span[contains(text(),'Contact Export in CRM')])[1]")
@@ -630,8 +630,8 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//textarea[@placeholder='1234, 5678']")
 	private WebElement NAICScodeInputBox;
 
-	@FindBy(xpath = "//*[@class='list-inline-item px-4 font-weight-light credit-values border-right']")
-	private WebElement UpdatedReveal;
+	@FindBy(xpath = "//span[contains(text(),'credits available')]")
+	private WebElement TotalCredits;
 
 	@FindBy(xpath = "//button[contains(text(),'Clear')]")
 	private WebElement Clearbutton;
@@ -719,7 +719,7 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//span[text()='Location'])[1]")
 	private WebElement LocationTab;
 
-	@FindBy(xpath = "(//input[@type='text'])[2]")
+	@FindBy(xpath = "(//input[@type='text'])[3]")
 	private WebElement Statevalueselection;
 
 	@FindBy(xpath = "(//span[contains(text(),'Human Verifie')])[1]")
@@ -1464,8 +1464,8 @@ public class LoginPage extends Global {
 	public WebElement getNAICScodeInputBox(){
 		return NAICScodeInputBox;
 	}
-	public WebElement getUpdatedReveal() {
-		return UpdatedReveal;
+	public WebElement getTotalCredits() {
+		return TotalCredits;
 	}
 
 	public WebElement getClearbutton() {

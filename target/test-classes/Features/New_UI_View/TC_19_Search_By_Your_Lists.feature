@@ -89,7 +89,7 @@ Feature: To validate Search by Your Lists Filter
     And Check the search results of ROD lists
 
   @First @Sanity
-  Scenario: To validate Search By All ROD Lists
+  Scenario: To validate Search By one ROD Lists
     When Click On Clear Button
     And Click On Do Not Save Button
     And Check Your Lists Filter is displayed

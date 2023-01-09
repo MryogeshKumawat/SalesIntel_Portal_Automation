@@ -17,6 +17,11 @@ Feature: To validate Search by Technographics
     And Click on company name
     And Click on All in Company detail page
     Then Check Any technographic product in Company detail page
+    And Click on SalesIntel Logo
+
+  @Reg
+  Scenario: To Check Any Product in All search results
+    Then Check Any technographic product in Company detail page of All Searched Results
 
   @First @Sanity
   Scenario: To validate Search by All Products in Technographics filter
@@ -32,6 +37,12 @@ Feature: To validate Search by Technographics
     And Click on company name
     And Click on All in Company detail page
     Then Check All technographic products in Company detail page
+    And Click on SalesIntel Logo
+
+
+  @Reg
+  Scenario: To Check All Products in All search results
+    Then Check All technographic products in Company detail page of All Searched Results
 
   @First @Sanity
   Scenario: To validate Search by None Products in Technographics filter
@@ -47,6 +58,12 @@ Feature: To validate Search by Technographics
     And Click on company name
     And Click on All in Company detail page
     Then Check None of the technographic product is displayed in Company detail page
+    And Click on SalesIntel Logo
+
+
+  @Reg
+  Scenario: To Check None of the Product in All search results
+    Then Check None of the technographic products in Company detail page of All Searched Results
 
 
   @First @Sanity
@@ -62,6 +79,11 @@ Feature: To validate Search by Technographics
     And Click on company name
     And Click on All in Company detail page
     Then Check Any technographic Provider in Company detail page
+    And Click on SalesIntel Logo
+
+  @Reg
+  Scenario: To Check Any Provider in All search results
+    Then Check Any technographic Provider in Company detail page of All Searched Results
 
   @First @Sanity
   Scenario: To validate Search by All Provider in Technographics filter
@@ -77,6 +99,11 @@ Feature: To validate Search by Technographics
     And Click on company name
     And Click on All in Company detail page
     Then Check All technographic Providers in Company detail page
+    And Click on SalesIntel Logo
+
+  @Reg
+  Scenario: To Check All Provider in All search results
+    Then Check All technographic Providers in Company detail page of All Searched Results
 
   @First @Sanity
   Scenario: To validate Search by None Provider in Technographics filter
@@ -92,9 +119,14 @@ Feature: To validate Search by Technographics
     And Click on company name
     And Click on All in Company detail page
     Then Check None of the technographic Provider is displayed in Company detail page
+    And Click on SalesIntel Logo
+
+  @Reg
+  Scenario: To Check None of the Provider in All search results
+    Then Check None of the technographic Providers in Company detail page of All Searched Results
 
   @First @Sanity
-  Scenario: To validate Select All Checkbox where Search by Any Provide in Technographics filter
+  Scenario: To validate Select All Checkbox where Search by Any Category in Technographics filter
     When Click on SalesIntel Logo
     And Click On Clear Button
     And Click On Do Not Save Button
@@ -104,11 +136,11 @@ Feature: To validate Search by Technographics
     And Click on Search Button
     And Click on company name
     And Click on All in Company detail page
-    Then Check Any technographic Category in Company detail page to Validate Select ALL
+    Then Check Any technographic Category in Company detail page
 
 
   @First @Sanity
-  Scenario: To validate Search by Any Provide in Technographics filter
+  Scenario: To validate Search by Any Category in Technographics filter
     When Click on SalesIntel Logo
     And Click On Clear Button
     And Click On Do Not Save Button
@@ -118,10 +150,10 @@ Feature: To validate Search by Technographics
     And Click on Search Button
     And Click on company name
     And Click on All in Company detail page
-    Then Check Any technographic Category in Company detail page
+    Then Check Any technographic Provider in Company detail page
 
   @First @Sanity
-  Scenario: To validate Search by All Provide in Technographics filter
+  Scenario: To validate Search by All Category in Technographics filter
     When Click on SalesIntel Logo
     And Click On Clear Button
     And Click On Do Not Save Button
@@ -135,7 +167,7 @@ Feature: To validate Search by Technographics
     Then Check All technographic Category in Company detail page
 
   @First @Sanity
-  Scenario: To validate Search by None Provide in Technographics filter
+  Scenario: To validate Search by None Category in Technographics filter
     When Click on SalesIntel Logo
     And Click On Clear Button
     And Click On Do Not Save Button
