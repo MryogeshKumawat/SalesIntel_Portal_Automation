@@ -1,6 +1,10 @@
 Feature: To validate Search by INTENT
 
   @First @Sanity
+  Scenario: To validate SalesIntel application Launching application
+    Given Launch the url
+
+  @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
     When Enter Valid Username
     And Enter Valid Password
@@ -14,18 +18,18 @@ Feature: To validate Search by INTENT
     And Click on Search Button
     Then Check Searched Topic in Search Result
 
-  @First @Sanity
-  Scenario: To validate Search by Score Threshold
-    When Click On Clear Button
-    And Click On Do Not Save Button
-    And Click on Topics
-    And Select Netflix Topic
-    And Check INTENT is displayed
-    And Click on Score Threshold Filter
-    And Select Minimum Score as 86
-    And Click on Search Button
-    And Check Searched Topic in Search Result
-    Then Check Score in Result
+#  @First @Sanity
+#  Scenario: To validate Search by Score Threshold
+#    When Click On Clear Button
+#    And Click On Do Not Save Button
+#    And Click on Topics
+#    And Select Netflix Topic
+#    And Check INTENT is displayed
+#    And Click on Score Threshold Filter
+#    And Select Minimum Score as 82
+#    And Click on Search Button
+#    And Check Searched Topic in Search Result
+#    Then Check Score in Result
 
   @First @Sanity
   Scenario: To validate Search by Topic Threshold

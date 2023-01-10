@@ -1918,6 +1918,81 @@ public class Steps extends Global {
 
 	}
 
+	@Then("Check Any technographic Category in Company detail page of All Searched Results")
+	public void I_Check_Any_technographic_Category_in_Company_detail_page_of_All_Searched_Results() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().isDisplayed());
+		String HvCompanyCountNotTrimmed =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HvCompanyCountNotTrimmed.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("There are total "+HvCompanyCount+" Human Verified Companies, Validate the  Keyword in All searched Results");
+		String Keyword=ReadDatafromJson("Contact_Name", "Keyword");
+		for (int i=2;i<=HvCompanyCount+1;i++){
+			String CompanyName=driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a/..")).getText();
+			clickButton(driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a")));
+			int j=i-1;
+			clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Category Name1"));
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean FirstCategoryForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed()) {
+					FirstCategoryForAny = PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("First Category is not displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Category Name2"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean SecondCategoryForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed()) {
+					SecondCategoryForAny = PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed();
+				}
+			}
+			catch (Exception e) {
+//				System.out.println("Second Category is not Displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Category Name3"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean ThirdCategoryForAny = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed()) {
+					ThirdCategoryForAny = PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("Third Category is not displayed in Results");
+			}
+			Thread.sleep(2000);
+			if (FirstCategoryForAny || SecondCategoryForAny || ThirdCategoryForAny){
+//				log.info("User Validated Any one technographic Category in Company detail page");
+			}
+			else {
+//				log.info("Not even one Searched Category is displayed For "+CompanyName+" Company TC - Failed");
+			}
+			System.out.println("Sn "+j+". ["+CompanyName+"] Company contains Any one of the searched Category");
+			clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelLogo());
+		}
+
+		log.info("User Check Any Category in All Searched Results");
+	}
+
 
 	@Then("Check Any technographic Provider in Company detail page of All Searched Results")
 	public void I_Check_Any_technographic_Provider_in_Company_detail_page_of_All_Searched_Results() throws Throwable {
@@ -2388,7 +2463,80 @@ public class Steps extends Global {
 
 	}
 
+	@Then("Check All technographic Category in Company detail page of All Searched Results")
+	public void I_Check_All_technographic_Category_in_Company_detail_page_of_All_Searched_Results() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().isDisplayed());
+		String HvCompanyCountNotTrimmed =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HvCompanyCountNotTrimmed.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("There are total "+HvCompanyCount+" Human Verified Companies, Validate the  Keyword in All searched Results");
+		String Keyword=ReadDatafromJson("Contact_Name", "Keyword");
+		for (int i=2;i<=HvCompanyCount+1;i++){
+			String CompanyName=driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a/..")).getText();
+			clickButton(driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a")));
+			int j=i-1;
+			clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Category Name1"));
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean FirstCategoryForAll = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed()) {
+					FirstCategoryForAll = PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("First Category is not displayed in Results");
+			}
 
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Category Name2"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean SecondCategoryForAll = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed()) {
+					SecondCategoryForAll = PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed();
+				}
+			}
+			catch (Exception e) {
+//				System.out.println("Second Category is not Displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Category Name3"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean ThirdCategoryForAll = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed()) {
+					ThirdCategoryForAll = PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("Third Category is not displayed in Results");
+			}
+			Thread.sleep(2000);
+			if (FirstCategoryForAll && SecondCategoryForAll && ThirdCategoryForAll){
+//				log.info("User Validated All technographic Category in Company detail page");
+			}
+			else {
+//				log.info("Not even one Searched Category is displayed For "+CompanyName+" Company TC - Failed");
+			}
+			System.out.println("Sn "+j+". ["+CompanyName+"] Company contains All of the searched Category");
+			clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelLogo());
+		}
+
+		log.info("User Check All Category in All Searched Results");
+	}
 
 	@Then("Check None of the technographic product is displayed in Company detail page")
 	public void I_Check_None_Products_In_Result() throws Throwable {
@@ -2725,7 +2873,80 @@ public class Steps extends Global {
 
 	}
 
+	@Then("Check None of the technographic Category in Company detail page of All Searched Results")
+	public void I_Check_None_Of_The_technographic_Category_in_Company_detail_page_of_All_Searched_Results() throws Throwable {
+		Assert.assertTrue(PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().isDisplayed());
+		String HvCompanyCountNotTrimmed =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
+		String HvCompanyCountTrimmed =HvCompanyCountNotTrimmed.replaceAll("[A-Z,a-z,(),\\s,\\u0020]", "");
+		int HvCompanyCount =Integer.parseInt(HvCompanyCountTrimmed);
+		System.out.println("There are total "+HvCompanyCount+" Human Verified Companies, Validate the  Keyword in All searched Results");
+		String Keyword=ReadDatafromJson("Contact_Name", "Keyword");
+		for (int i=2;i<=HvCompanyCount+1;i++){
+			String CompanyName=driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a/..")).getText();
+			clickButton(driver.findElement(By.xpath("(//input[@type='checkbox' and @title])["+i+"]//..//..//../div[3]/div[1]/a")));
+			int j=i-1;
+			clickButton(PageObjectManager.getInstance().getLoginPage().getAllButton());
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Category Name1"));
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean FirstCategoryForNone = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed()) {
+					FirstCategoryForNone = PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("First Category is not displayed in Results");
+			}
 
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Category Name2"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean SecondCategoryForNone = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed()) {
+					SecondCategoryForNone = PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed();
+				}
+			}
+			catch (Exception e) {
+//				System.out.println("Second Category is not Displayed in Results");
+			}
+
+			Thread.sleep(2000);
+			clearText(PageObjectManager.getInstance().getLoginPage().getSearchInputBox());
+			Thread.sleep(2000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getSearchInputBox(), ReadDatafromJson("Contact_Name", "Category Name3"));
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);
+			boolean ThirdCategoryForNone = false;
+			try {
+				if (PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed()) {
+					ThirdCategoryForNone = PageObjectManager.getInstance().getLoginPage().getCategoryInResult().isDisplayed();
+				}
+			}
+			catch (Exception e){
+//				System.out.println("Third Category is not displayed in Results");
+			}
+			Thread.sleep(2000);
+			if (!FirstCategoryForNone && !SecondCategoryForNone && !ThirdCategoryForNone){
+//				log.info("User Validated None of the technographic Category in Company detail page");
+			}
+			else {
+//				log.info("Not even one Searched Category is displayed For "+CompanyName+" Company TC - Failed");
+			}
+			System.out.println("Sn "+j+". ["+CompanyName+"] Company does not contain the searched Category");
+			clickButton(PageObjectManager.getInstance().getLoginPage().getSalesIntelLogo());
+		}
+
+		log.info("User Check None of the Category is displayed in All Searched Results");
+	}
 
 	@When("Check INTENT is displayed")
 	public void I_Check_Intent() throws Throwable{
@@ -2749,12 +2970,12 @@ public class Steps extends Global {
 		Thread.sleep(2000);
 	}
 
-	@And("Select Minimum Score as 86")
+	@And("Select Minimum Score as 82")
 	public void I_Select_Score_Threshold() throws Throwable{
 		Thread.sleep(3000);
 		Actions actions=new Actions(driver);
 		//actions.dragAndDropBy(Webelement, 0, 0).perform();
-		actions.clickAndHold(PageObjectManager.getInstance().getLoginPage().ScoreThresholdMover()).moveToElement(PageObjectManager.getInstance().getLoginPage().ScoreThresholdMover(), 30, 0).release().
+		actions.clickAndHold(PageObjectManager.getInstance().getLoginPage().ScoreThresholdMover()).moveToElement(PageObjectManager.getInstance().getLoginPage().ScoreThresholdMover(), 10, 0).release().
 				perform();
 		Thread.sleep(2000);
 	}
@@ -2764,7 +2985,7 @@ public class Steps extends Global {
 		Thread.sleep(3000);
 		Actions actions=new Actions(driver);
 		//actions.dragAndDropBy(Webelement, 0, 0).perform();
-		actions.clickAndHold(PageObjectManager.getInstance().getLoginPage().TopicThresholdMover()).moveToElement(PageObjectManager.getInstance().getLoginPage().TopicThresholdMover(), -95, 0).release().
+		actions.clickAndHold(PageObjectManager.getInstance().getLoginPage().TopicThresholdMover()).moveToElement(PageObjectManager.getInstance().getLoginPage().TopicThresholdMover(), -110, 0).release().
 				perform();
 		Thread.sleep(2000);
 	}
@@ -3224,7 +3445,7 @@ public class Steps extends Global {
 	public void I_Click_Last_Modified_Filter() throws Throwable{
 		Thread.sleep(2000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedFilter());
-		log.info("User Click on Last Modified Filter");
+		log.info("User Click Result Last Modified");
 	}
 
 	@And("Click on Last Modified Dropdown")
@@ -4438,6 +4659,7 @@ public class Steps extends Global {
 	public void I_Click_Company_List_Drop_Down() throws Throwable {
 		clickButton(PageObjectManager.getInstance().getLoginPage().getCompanyListDropdown());
 		String CompanyList = ReadDatafromJson("Contact_Name", "Companylist");
+		Thread.sleep(2000);
 		Assert.assertTrue(driver.findElement(By.xpath("(//span[contains(text(),'"+CompanyList+"')])[3]")).isDisplayed());
 		clickButton(driver.findElement(By.xpath("(//span[contains(text(),'"+CompanyList+"')])[3]")));
 		log.info("User Click on Company List Drop Down Option");

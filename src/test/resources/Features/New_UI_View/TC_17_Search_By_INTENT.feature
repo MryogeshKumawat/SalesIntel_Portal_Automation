@@ -22,7 +22,7 @@ Feature: To validate Search by INTENT
     And Select Netflix Topic
     And Check INTENT is displayed
     And Click on Score Threshold Filter
-    And Select Minimum Score as 86
+    And Select Minimum Score as 82
     And Click on Search Button
     And Check Searched Topic in Search Result
     Then Check Score in Result

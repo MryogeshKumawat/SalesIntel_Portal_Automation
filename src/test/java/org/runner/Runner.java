@@ -8,7 +8,8 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = "D:\\Automation\\New_Revdriver\\SalesIntel_QA_Automation-master\\src\\test\\resources\\Features\\New_UI_View\\" +
 		"", glue = {
-		"org.stepdefinition", "org.runner" }, dryRun = false, monochrome = true, tags = { "@First,@Sanity" }, plugin = {
+		"org.stepdefinition", "org.runner" }, dryRun = false, monochrome = true, tags = { "@First,@Sanity" +
+		"" }, plugin = {
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","pretty",
 		"html:src\\test\\resources\\Reports\\HTML", "json:src\\test\\resources\\Reports\\Json\\cucumber.json",
 		"junit:src\\test\\resources\\Reports\\XML\\cucumber.xml" })

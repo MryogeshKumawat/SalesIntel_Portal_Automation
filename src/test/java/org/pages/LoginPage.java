@@ -434,19 +434,19 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//table[@role='grid']/tbody/tr[2]/td[2]/../../../../../div[1]/bs-datepicker-navigation-view/button[3]/span")
 	private WebElement YearFromCustomDate;
 
-	@FindBy(xpath = "//option[contains(text(),'Within last 21 days')]")
+	@FindBy(xpath = "//span[contains(text(),'Within last 21 days')]")
 	private WebElement LastModifiedWithin21Days;
 
-	@FindBy(xpath = "//option[contains(text(),'Within last 30 days')]")
+	@FindBy(xpath = "//span[contains(text(),'Within last 30 days')]")
 	private WebElement LastModifiedWithin30Days;
 
-	@FindBy(xpath = "//option[contains(text(),'Within last 7 days')]")
+	@FindBy(xpath = "//span[contains(text(),'Within last 7 days')]")
 	private WebElement LastModifiedWithin7Days;
 
-	@FindBy(xpath = "//option[contains(text(),'Within last 14 days')]")
+	@FindBy(xpath = "//span[contains(text(),'Within last 14 days')]")
 	private WebElement LastModifiedWithin14Days;
 
-	@FindBy(xpath = "//option[contains(text(),'Custom')]")
+	@FindBy(xpath = "(//span[contains(text(),'Custom')])[2]")
 	private WebElement CustomForLastModified;
 
 	@FindBy(xpath = "//label[contains(text(),'Address')]")
